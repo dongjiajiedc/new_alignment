@@ -68,6 +68,7 @@ def complete_tree(tree, leaves_embeddings):
     root = max(list(tree.nodes()))
     tree_embeddings = _complete_tree(tree_embeddings, root)
     return tree_embeddings
+
 def train(model,dataloader,optimizer,similarities,epoches):
     best_cost = np.inf
     best_model = None
@@ -75,17 +76,25 @@ def train(model,dataloader,optimizer,similarities,epoches):
     for epoch in range(epoches):
         model.train()
         total_loss = 0.0
-        with tqdm(total=len(dataloader), unit='ex') as bar:
-            for step, (triple_ids, triple_similarities) in enumerate(dataloader):
+        # with tqdm(total=len(dataloader), unit='ex') as bar:
+        #     for step, (triple_ids, triple_similarities) in enumerate(dataloader):
+        #         # triple_ids = triple_ids.cuda()
+        #         # triple_similarities = triple_similarities.cuda()
+        #         loss = model.loss(triple_ids, triple_similarities)
+        #         optimizer.zero_grad()
+        #         loss.backward()
+        #         optimizer.step()
+        #         bar.update(1)
+        #         bar.set_postfix(loss=f'{loss.item():.6f}')
+        #         total_loss += loss
+        for step, (triple_ids, triple_similarities) in enumerate(dataloader):
                 # triple_ids = triple_ids.cuda()
                 # triple_similarities = triple_similarities.cuda()
-                loss = model.loss(triple_ids, triple_similarities)
-                optimizer.zero_grad()
-                loss.backward()
-                optimizer.step()
-                bar.update(1)
-                bar.set_postfix(loss=f'{loss.item():.6f}')
-                total_loss += loss
+            loss = model.loss(triple_ids, triple_similarities)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            total_loss += loss
         total_loss = total_loss.item() / (step + 1.0)
         print("\t Epoch {} | average train loss: {:.6f}".format(epoch, total_loss))
 
@@ -277,12 +286,12 @@ def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='
     dataloader = data.DataLoader(dataset, batch_size=32, shuffle=True, num_workers=8, pin_memory=True)
     model = HypHC(dataset.n_nodes, 2, 5e-2, 5e-2 ,0.999)
 
-    if(model_path ==None):
+    if(model_path==None or os.path.exists(model_path)==False):
         model.to("cpu")
         Optimizer = getattr(optim, 'RAdam')
         optimizer = Optimizer(model.parameters(),0.0005)
         train(model,dataloader,optimizer,similarities,epoches);
-        torch.save(model,save_path+'model.pth');
+        torch.save(model.state_dict(),save_path+'model.pth');
     else:
         params = torch.load((model_path), map_location=torch.device('cpu'))
         model.load_state_dict(params, strict=False)
@@ -311,9 +320,9 @@ def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='
 
     where_are_NaNs = np.isnan(embeddings)
     embeddings[where_are_NaNs] = 0
-    # colors = get_colors(y_true, 1234)
+    colors = get_colors(y_true, 1234)
 
-    # ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)
+    ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)
 
     # for i in range(len(embeddings)):
     #     if(i<n):
@@ -325,11 +334,11 @@ def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='
 
         
 
-    # for n1, n2 in tree.edges():
-    #     x1 = embeddings[n1];
-    #     x2 = embeddings[n2];
-    #     plot_geodesic(x1,x2,ax)
-    # fig.savefig(save_path+"graph.png");
+    for n1, n2 in tree.edges():
+        x1 = embeddings[n1];
+        x2 = embeddings[n2];
+        plot_geodesic(x1,x2,ax)
+    fig.savefig(save_path+"graph.png");
 
     embeddings = np.array(uf.pos)
 

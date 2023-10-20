@@ -570,6 +570,8 @@ class show_graph:
         # self.fig.show()
     def show_fig(self):
         self.fig.show();
+    def save_fig(self,path):
+        self.fig.write_image(path)
 
 class show_tree:
     def __init__(self,root1):
@@ -664,6 +666,9 @@ class show_tree:
         # self.fig.show()
     def show_fig(self):
         self.fig.show();
+        
+
+
         
 def run_alignment(folder_path1,folder_path2):
 

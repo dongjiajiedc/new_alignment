@@ -121,7 +121,7 @@ class Preprocessing:
 
         if magic_imputation is True:
             #     set np.random.seed for magic to create same imputation
-            np.random.seed(1)
+            np.random.seed(1234)
             sce.pp.magic(
                 adata,
                 name_list='all_genes',
@@ -169,7 +169,8 @@ def preprocessing_cluster(adata,
 
         sc.tl.pca(
             adata,
-            n_comps=N_pcs
+            n_comps=N_pcs,
+            random_state=1234,
         )
         sc.pp.neighbors(adata,
                         n_neighbors=K,
@@ -312,14 +313,14 @@ def sort_data(
 ):
     if N_1 is not None:
         adata1 = adata1.raw.to_adata()
-        sc.pp.highly_variable_genes(adata1, n_top_genes=N_1)
+        sc.pp.highly_variable_genes(adata1, n_top_genes=N_1,flavor='seurat_v3')
         adata1 = adata1[:, adata1.var['highly_variable']]
     elif N_1 is None:
         pass
 
     if N_2 is not None:
         adata2 = adata2.raw.to_adata()
-        sc.pp.highly_variable_genes(adata2, n_top_genes=N_2)
+        sc.pp.highly_variable_genes(adata2, n_top_genes=N_2,flavor='seurat_v3')
         adata2 = adata2[:, adata2.var['highly_variable']]
     elif N_2 is None:
         pass

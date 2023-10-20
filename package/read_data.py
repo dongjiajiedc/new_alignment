@@ -132,12 +132,14 @@ def read_training_data(sc_path,meta_path,marker,sc_nor,out_dir):
 
     return sc_data, meta, marker
 
-def merge_st_by_radius(cell_path,celltype_path,celltype_column,folder_path,radius):
+def merge_st_by_radius(cell_path,folder_path,radius):
+    np.random.seed(42)
     datas = sc.read_h5ad(cell_path)
+    celltype = datas.obs['celltype']
     datas = datas.to_df()
-    celltype = pd.read_csv(celltype_path,sep="\t")
     adata = datas.copy()
-    adata.loc[list(celltype['Cell']), 'Celltype'] = list(celltype[celltype_column])
+    adata['Celltype']= list(celltype)
+    # adata.loc[list(celltype['Cell']), 'Celltype'] = list(celltype[celltype_column])
     ans_value = []
     ans_label = []
     true_label = [];
