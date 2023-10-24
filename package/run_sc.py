@@ -19,6 +19,7 @@ parser.add_argument('--capacity2','-c2', type=float,default=0.1)
 parser.add_argument('--epoches2','-e2', type=int,default=10)
 
 parser.add_argument('--contin', type=bool,default=False)
+parser.add_argument('--method', type=str,default='average')
 
 args = parser.parse_args()
 
@@ -43,6 +44,8 @@ if(os.path.exists(args.folder_path1)==False):
     print("Input correct folder path for data 1")
 if(os.path.exists(args.folder_path2)==False):
     print("Input correct folder path for data 2")    
+    
+
 cell_path1 = args.cell_path1
 cell_path2= args.cell_path2
 folder_path1 = args.folder_path1
@@ -54,6 +57,7 @@ c2 = args.capacity2
 epoches1 = args.epoches1
 epoches2 = args.epoches2
 contin = args.contin
-alignment_process_st(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1)
+method = args.method
+alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)
 
 # python run_sc.py -cp1 './datas/d1/sample.h5' -f1 "./datas/d1/" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 "./datas/d2/" -r2 50 -c2 0.001 -e2 10

@@ -157,6 +157,7 @@ class Preprocessing:
     # cluster_centroid: pd.DataFrame
     # index is cluster name, columns is gene name, X is gene expression level
     # argument "dimension" is either pca or diffmap
+    
 def preprocessing_cluster(adata,
                         N_pcs=50,
                         K=10,
@@ -183,103 +184,13 @@ def preprocessing_cluster(adata,
         sc.tl.paga(adata, groups='leiden')
 
         return adata if copy else None
-def preprocessing_st_cluster(adata,
-                        N_pcs=20,
-                        K=10,
-                        copy=False,
-                        resolution=0.5,
-                    ):
-        adata.raw = adata
-
-        # adata._inplace_subset_var(adata.var['highly_variable'])
-
-        # sc.tl.pca(
-        #     adata,
-        #     n_comps=N_pcs
-        # )
-        sc.pp.neighbors(adata,
-                        n_neighbors=K,
-                        # n_pcs=N_pcs,
-                        random_state=1234
-                        )
-        sc.tl.diffmap(adata,random_state=1234)
-        sc.tl.umap(adata,random_state=1234)
-        sc.tl.leiden(adata,random_state=1234,resolution = resolution)
-        sc.tl.paga(adata, groups='leiden')
-
-        return adata if copy else None
-    
-def calculate_cluster_centroid(
-    adata,
-    dimension="pca",
-    groupby="leiden"
-):
-
-    if dimension == "pca":
-        X_dimension = "X_pca"
-    elif dimension == "diffmap":
-        X_dimension = "X_diffmap"
-    elif dimension == "raw":
-        X_dimension = "raw"
-    else:
-        raise ValueError(
-            "Argument 'dimension' must be 'pca' or 'diffmap'.")
-
-    if dimension in ["pca", "diffmap"]:
-        clustername = adata.obs[groupby].cat.categories
-        cluster_centroid_data = np.empty(
-            (0, adata.obsm[X_dimension].shape[1]))
-        for i in clustername:
-            a_cluster_data = pd.DataFrame(
-                adata[adata.obs[groupby] == "{}".format(i)].obsm[X_dimension])
-            a_cluster_median = a_cluster_data.median(axis=0).values
-            cluster_centroid_data = np.vstack(
-                (cluster_centroid_data, a_cluster_median))
-    else:
-        clustername = adata.obs[groupby].cat.categories
-        cluster_centroid_data = np.empty(
-            (0, adata.X.shape[1]))
-        for i in clustername:
-            a_cluster_data = pd.DataFrame(
-                adata[adata.obs[groupby] == "{}".format(i)].X)
-            a_cluster_median = a_cluster_data.median(axis=0).values
-            cluster_centroid_data = np.vstack(
-                (cluster_centroid_data, a_cluster_median))
-
-    return cluster_centroid_data
-
-def set_initial_condition(
-        adata,
-        groupby="leiden",
-        method="euclid",
-        dimension="pca",
-        copy=False
-    ):
-    if not isinstance(adata.X, np.ndarray):
-        adata_tmp = adata.copy()
-        adata_tmp.X = adata.X.toarray()
-
-    else:
-        adata_tmp = adata.copy()
-        
-    cluster_centroid_data = calculate_cluster_centroid(
-                        adata_tmp,
-                        dimension=dimension,
-                        groupby=groupby
-                    )
-    adata.uns["cluster_centroid"] = cluster_centroid_data
-    adata.uns["capital"] = {}
-    adata.uns["capital"]["tree"] = {}
-    tree_dict = adata.uns["capital"]["tree"]
-    tree_dict["annotation"] = groupby
-    return adata if copy else None
 
 def calculate_cluster_centroid_for_genes(
         adata,
         gene_list,
         save_path="./",
+        groupby ='leiden',
     ):
-    groupby = adata.uns["capital"]["tree"]["annotation"]
     filtered_data = adata.raw.to_adata()[:, gene_list]
     # filtered_data.to_df().to_csv(save_path+"data_cell.csv");
     # adata.obs.to_csv(save_path+"data_type.csv")

@@ -698,14 +698,6 @@
         "documentation": {}
     },
     {
-        "label": "csr_matrix",
-        "importPath": "scipy.sparse",
-        "description": "scipy.sparse",
-        "isExtraImport": true,
-        "detail": "scipy.sparse",
-        "documentation": {}
-    },
-    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -811,38 +803,11 @@
         "documentation": {}
     },
     {
-        "label": "preprocessing_st_cluster",
-        "kind": 2,
-        "importPath": "datasets.preprecossing",
-        "description": "datasets.preprecossing",
-        "peekOfCode": "def preprocessing_st_cluster(adata,\n                        N_pcs=20,\n                        K=10,\n                        copy=False,\n                        resolution=0.5,\n                    ):\n        adata.raw = adata\n        # adata._inplace_subset_var(adata.var['highly_variable'])\n        # sc.tl.pca(\n        #     adata,",
-        "detail": "datasets.preprecossing",
-        "documentation": {}
-    },
-    {
-        "label": "calculate_cluster_centroid",
-        "kind": 2,
-        "importPath": "datasets.preprecossing",
-        "description": "datasets.preprecossing",
-        "peekOfCode": "def calculate_cluster_centroid(\n    adata,\n    dimension=\"pca\",\n    groupby=\"leiden\"\n):\n    if dimension == \"pca\":\n        X_dimension = \"X_pca\"\n    elif dimension == \"diffmap\":\n        X_dimension = \"X_diffmap\"\n    elif dimension == \"raw\":",
-        "detail": "datasets.preprecossing",
-        "documentation": {}
-    },
-    {
-        "label": "set_initial_condition",
-        "kind": 2,
-        "importPath": "datasets.preprecossing",
-        "description": "datasets.preprecossing",
-        "peekOfCode": "def set_initial_condition(\n        adata,\n        groupby=\"leiden\",\n        method=\"euclid\",\n        dimension=\"pca\",\n        copy=False\n    ):\n    if not isinstance(adata.X, np.ndarray):\n        adata_tmp = adata.copy()\n        adata_tmp.X = adata.X.toarray()",
-        "detail": "datasets.preprecossing",
-        "documentation": {}
-    },
-    {
         "label": "calculate_cluster_centroid_for_genes",
         "kind": 2,
         "importPath": "datasets.preprecossing",
         "description": "datasets.preprecossing",
-        "peekOfCode": "def calculate_cluster_centroid_for_genes(\n        adata,\n        gene_list,\n        save_path=\"./\",\n    ):\n    groupby = adata.uns[\"capital\"][\"tree\"][\"annotation\"]\n    filtered_data = adata.raw.to_adata()[:, gene_list]\n    # filtered_data.to_df().to_csv(save_path+\"data_cell.csv\");\n    # adata.obs.to_csv(save_path+\"data_type.csv\")\n    cluster_centroid_data = np.empty((0, filtered_data.n_vars))",
+        "peekOfCode": "def calculate_cluster_centroid_for_genes(\n        adata,\n        gene_list,\n        save_path=\"./\",\n        groupby ='leiden',\n    ):\n    filtered_data = adata.raw.to_adata()[:, gene_list]\n    # filtered_data.to_df().to_csv(save_path+\"data_cell.csv\");\n    # adata.obs.to_csv(save_path+\"data_type.csv\")\n    cluster_centroid_data = np.empty((0, filtered_data.n_vars))",
         "detail": "datasets.preprecossing",
         "documentation": {}
     },
@@ -1387,11 +1352,11 @@
         "documentation": {}
     },
     {
-        "label": "alignment_process_st",
+        "label": "alignment_process",
         "kind": 2,
         "importPath": "core",
         "description": "core",
-        "peekOfCode": "def alignment_process_st(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin=True,resolution=0.5):\n    current_GMT = time.gmtime()\n    ts = calendar.timegm(current_GMT)\n    print(\"Current timestamp:\", ts)\n    log1 = open(folder_path1+\"log_{}.txt\".format(ts), \"a\")   \n    log2 = open(folder_path2+\"log_{}.txt\".format(ts), \"a\")\n    log1.write(\"args for data1: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path1,folder_path1,radius1,c1,epoches1))\n    log1.write(\"args for data2: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path2,folder_path2,radius2,c2,epoches2))\n    log2.write(\"args for data1: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path1,folder_path1,radius1,c1,epoches1))\n    log2.write(\"args for data2: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path2,folder_path2,radius2,c2,epoches2))",
+        "peekOfCode": "def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin=True,resolution=0.5,method='average'):\n    current_GMT = time.gmtime()\n    ts = calendar.timegm(current_GMT)\n    print(\"Current timestamp:\", ts)\n    log1 = open(folder_path1+\"log_{}.txt\".format(ts), \"a\")   \n    log2 = open(folder_path2+\"log_{}.txt\".format(ts), \"a\")\n    log1.write(\"args for data1: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path1,folder_path1,radius1,c1,epoches1))\n    log1.write(\"args for data2: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path2,folder_path2,radius2,c2,epoches2))\n    log2.write(\"args for data1: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path1,folder_path1,radius1,c1,epoches1))\n    log2.write(\"args for data2: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path2,folder_path2,radius2,c2,epoches2))",
         "detail": "core",
         "documentation": {}
     },
@@ -1517,11 +1482,11 @@
         "documentation": {}
     },
     {
-        "label": "merge_st_by_radius",
+        "label": "merge_by_radius",
         "kind": 2,
         "importPath": "read_data",
         "description": "read_data",
-        "peekOfCode": "def merge_st_by_radius(cell_path,folder_path,radius):\n    np.random.seed(42)\n    datas = sc.read_h5ad(cell_path)\n    celltype = datas.obs['celltype']\n    datas = datas.to_df()\n    adata = datas.copy()\n    adata['Celltype']= list(celltype)\n    # adata.loc[list(celltype['Cell']), 'Celltype'] = list(celltype[celltype_column])\n    ans_value = []\n    ans_label = []",
+        "peekOfCode": "def merge_by_radius(cell_path,folder_path,radius,method='average'):\n    np.random.seed(1234)\n    datas = sc.read_h5ad(cell_path)\n    celltype = datas.obs['celltype']\n    datas = datas.to_df()\n    adata = datas.copy()\n    adata['Celltype']= list(celltype)\n    # adata.loc[list(celltype['Cell']), 'Celltype'] = list(celltype[celltype_column])\n    ans_value = []\n    ans_label = []",
         "detail": "read_data",
         "documentation": {}
     },
@@ -1575,7 +1540,7 @@
         "kind": 5,
         "importPath": "run_sc",
         "description": "run_sc",
-        "peekOfCode": "folder_path1 = args.folder_path1\nfolder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nalignment_process_st(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1)",
+        "peekOfCode": "folder_path1 = args.folder_path1\nfolder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method",
         "detail": "run_sc",
         "documentation": {}
     },
@@ -1584,7 +1549,7 @@
         "kind": 5,
         "importPath": "run_sc",
         "description": "run_sc",
-        "peekOfCode": "folder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nalignment_process_st(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "folder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)",
         "detail": "run_sc",
         "documentation": {}
     },
@@ -1593,7 +1558,7 @@
         "kind": 5,
         "importPath": "run_sc",
         "description": "run_sc",
-        "peekOfCode": "radius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nalignment_process_st(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "radius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
         "detail": "run_sc",
         "documentation": {}
     },
@@ -1602,7 +1567,7 @@
         "kind": 5,
         "importPath": "run_sc",
         "description": "run_sc",
-        "peekOfCode": "radius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nalignment_process_st(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "radius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
         "detail": "run_sc",
         "documentation": {}
     },
@@ -1611,7 +1576,7 @@
         "kind": 5,
         "importPath": "run_sc",
         "description": "run_sc",
-        "peekOfCode": "c1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nalignment_process_st(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "c1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
         "detail": "run_sc",
         "documentation": {}
     },
@@ -1620,7 +1585,7 @@
         "kind": 5,
         "importPath": "run_sc",
         "description": "run_sc",
-        "peekOfCode": "c2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nalignment_process_st(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "c2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
         "detail": "run_sc",
         "documentation": {}
     },
@@ -1629,7 +1594,7 @@
         "kind": 5,
         "importPath": "run_sc",
         "description": "run_sc",
-        "peekOfCode": "epoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nalignment_process_st(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "epoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
         "detail": "run_sc",
         "documentation": {}
     },
@@ -1638,7 +1603,7 @@
         "kind": 5,
         "importPath": "run_sc",
         "description": "run_sc",
-        "peekOfCode": "epoches2 = args.epoches2\ncontin = args.contin\nalignment_process_st(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "epoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
         "detail": "run_sc",
         "documentation": {}
     },
@@ -1647,7 +1612,16 @@
         "kind": 5,
         "importPath": "run_sc",
         "description": "run_sc",
-        "peekOfCode": "contin = args.contin\nalignment_process_st(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "contin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "method",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "method = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
         "detail": "run_sc",
         "documentation": {}
     }

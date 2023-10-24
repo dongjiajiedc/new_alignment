@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-from scipy.sparse import csr_matrix
 import sys
 import warnings
 from utils import *
@@ -132,8 +131,8 @@ def read_training_data(sc_path,meta_path,marker,sc_nor,out_dir):
 
     return sc_data, meta, marker
 
-def merge_st_by_radius(cell_path,folder_path,radius):
-    np.random.seed(42)
+def merge_by_radius(cell_path,folder_path,radius,method='average'):
+    np.random.seed(1234)
     datas = sc.read_h5ad(cell_path)
     celltype = datas.obs['celltype']
     datas = datas.to_df()
@@ -174,7 +173,13 @@ def merge_st_by_radius(cell_path,folder_path,radius):
 
     v = pd.DataFrame(ans_value)
     v['label'] = ans_label
-    ann  = v.groupby("label").mean()
+    if(method=='average'):
+        ann  = v.groupby("label").mean()
+    elif(method=='median'):
+        ann = v.groupby("label").median()
+    elif(method=='max'):
+        ann = v.groupby("label").max()
+
     ann.columns = datas.columns
 
 
@@ -186,6 +191,7 @@ def merge_st_by_radius(cell_path,folder_path,radius):
     v1.to_csv(folder_path +'merge_labels.csv');
     ann.to_csv(folder_path + 'merge_cell_data.csv');
     meta.to_csv(folder_path + 'merge_cell_meta.csv');
+    
     return loss1
 
 def build_hyper_tree(folder_path):
