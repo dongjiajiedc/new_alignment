@@ -21,7 +21,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 from mst import mst
 
-from utils.poincare import project,hyp_dist_djj
+from utils.poincare import project
 from utils.lca import hyp_lca
 from utils.math import arctanh, tanh, arcosh
 
@@ -158,10 +158,10 @@ def sl_np_mst_ij(xs, S):
     return ij
 class  UnionFind:
     
-    def __init__(self, n , pos , c):
+    def __init__(self, n , pos):
         self.n = n
         self.pos = pos
-        self.c = c
+        # self.c = c
         self.parent = [i for i in range(n)]
         self.rank = [0 for i in range(n)]
         self.vis = [0 for i in range(2*n-1)]
@@ -169,7 +169,6 @@ class  UnionFind:
         self.mer = [-1 for i in range(2*n-1)]
         self._next_id = n
         self._tree = [-1 for i in range(2*n-1)]
-
         self._id = [i for i in range(n)]
 
     def _find(self, i):
@@ -255,6 +254,7 @@ class  UnionFind:
 
     def tree(self):
         return [self._tree[i] for i in range(len(self._tree))]
+    
 def get_colors(y, color_seed=1234):
     """random color assignment for label classes."""
     np.random.seed(color_seed)
@@ -296,12 +296,13 @@ def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='
         params = torch.load((model_path), map_location=torch.device('cpu'))
         model.load_state_dict(params, strict=False)
     model.eval()
+    
     sim_fn = lambda x, y: torch.sum(x * y, dim=-1)
     n=len(x);
-    d = model.normalize_embeddings(model.embeddings.weight.data)
-    d = project(d).detach().cpu()
-    ijs = sl_np_mst_ij(d,sim_fn)
-    uf = UnionFind(n,d,c)
+    leaves_embeddings = model.normalize_embeddings(model.embeddings.weight.data)
+    leaves_embeddings = project(leaves_embeddings).detach().cpu()
+    ijs = sl_np_mst_ij(leaves_embeddings,sim_fn)
+    uf = UnionFind(n,leaves_embeddings)
     uf.merge(ijs)
     count=0
 
@@ -309,20 +310,21 @@ def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='
     for i, j in enumerate(uf.tree()[:-1]):
         if(j!=-1):
             tree.add_edge(j, i)
-            
-    fig = plt.figure(figsize=(15, 15))
-    ax = fig.add_subplot(111)
-    circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)
-    ax.add_artist(circle)
 
-    n = len(d)
-    embeddings = np.array(uf.pos)
+    # fig = plt.figure(figsize=(15, 15))
+    # ax = fig.add_subplot(111)
+    # circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)
+    # ax.add_artist(circle)
 
-    where_are_NaNs = np.isnan(embeddings)
-    embeddings[where_are_NaNs] = 0
-    colors = get_colors(y_true, 1234)
+    n = len(leaves_embeddings)
+    # embeddings = np.array(uf.pos)
+    embeddings = complete_tree(tree, leaves_embeddings)
 
-    ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)
+    # where_are_NaNs = np.isnan(embeddings)
+    # embeddings[where_are_NaNs] = 0
+    # colors = get_colors(y_true, 1234)
+
+    # ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)
 
     # for i in range(len(embeddings)):
     #     if(i<n):
@@ -334,13 +336,15 @@ def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='
 
         
 
-    for n1, n2 in tree.edges():
-        x1 = embeddings[n1];
-        x2 = embeddings[n2];
-        plot_geodesic(x1,x2,ax)
-    fig.savefig(save_path+"graph.png");
+    # for n1, n2 in tree.edges():
+    #     x1 = embeddings[n1];
+    #     x2 = embeddings[n2];
+    #     plot_geodesic(x1,x2,ax)
+    # fig.savefig(save_path+"graph.png");
 
-    embeddings = np.array(uf.pos)
+    # embeddings = np.array(uf.pos)
+    
+    dumpy_node = embeddings[n:];
 
     nodes1 = [node(name=str(i),son=[]) for i in range(len(uf.tree()))]
     for i,j in enumerate(uf.tree()):

@@ -1,0 +1,38 @@
+[
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "node",
+        "kind": 6,
+        "importPath": "node",
+        "description": "node",
+        "peekOfCode": "class node:\n    def __init__(self,name,son):\n        self.name=name;\n        self.son=son;\n        self.f=None;\n        self.path=None;\n        self.num_son=0;\n        self.dfs=None;\n    def __repr__(self):\n            return self.name",
+        "detail": "node",
+        "documentation": {}
+    },
+    {
+        "label": "newnode",
+        "kind": 6,
+        "importPath": "node",
+        "description": "node",
+        "peekOfCode": "class newnode:\n    def __init__(self,node1,node2):\n        self.node1 = node1\n        self.node2 = node2\n        self.f = None\n        self.edge = [];\n        self.indegree = 0;\n    def __str__(self):\n        return \"{}_{}\".format(self.node1,self.node2)\n    def __repr__(self):",
+        "detail": "node",
+        "documentation": {}
+    }
+]

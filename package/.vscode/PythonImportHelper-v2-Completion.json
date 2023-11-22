@@ -204,6 +204,30 @@
         "documentation": {}
     },
     {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "nn_merge_uf_fast_np",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "sl_from_embeddings",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
         "label": "nn_merge_uf_fast_np",
         "importPath": "utils.linkage",
         "description": "utils.linkage",
@@ -221,6 +245,22 @@
     },
     {
         "label": "project",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist",
         "importPath": "utils.poincare",
         "description": "utils.poincare",
         "isExtraImport": true,
@@ -285,14 +325,6 @@
     },
     {
         "label": "project",
-        "importPath": "utils.poincare",
-        "description": "utils.poincare",
-        "isExtraImport": true,
-        "detail": "utils.poincare",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_dist_djj",
         "importPath": "utils.poincare",
         "description": "utils.poincare",
         "isExtraImport": true,
@@ -749,6 +781,15 @@
         "documentation": {}
     },
     {
+        "label": "IMDataset",
+        "kind": 6,
+        "importPath": "datasets.improve_dataset",
+        "description": "datasets.improve_dataset",
+        "peekOfCode": "class IMDataset(data.Dataset):\n    def __init__(self,similarities, num_samples,leaves_embeddings,datas):\n        \"\"\"Creates Hierarchical Clustering dataset with triples.\n        @param labels: ground truth labels\n        @type labels: np.array of shape (n_datapoints,)\n        @param similarities: pairwise similarities between datapoints\n        @type similarities: np.array of shape (n_datapoints, n_datapoints)\n        \"\"\"\n        self.similarities = similarities\n        self.leaves_embeddings = leaves_embeddings",
+        "detail": "datasets.improve_dataset",
+        "documentation": {}
+    },
+    {
         "label": "load_data",
         "kind": 2,
         "importPath": "datasets.loading",
@@ -762,7 +803,7 @@
         "kind": 2,
         "importPath": "datasets.loading",
         "description": "datasets.loading",
-        "peekOfCode": "def load_uci_data(dataset,start_idx,end_idx,label_idx):\n    \"\"\"Loads data from UCI repository.\n    @param dataset: UCI dataset name\n    @return: feature vectors, labels\n    @rtype: Tuple[np.array, np.array]\n    \"\"\"\n    x = []\n    y = []\n    ids = {\n        \"zoo\": (1, 17, -1),",
+        "peekOfCode": "def load_uci_data(dataset,start_idx,end_idx,label_idx):\n    \"\"\"Loads data from UCI repository.\n    @param dataset: UCI dataset name\n    @return: feature vectors, labels\n    @rtype: Tuple[np.array, np.array]\n    \"\"\"\n    x = []\n    y = []\n    # data_path = os.path.join(os.environ[\"DATAPATH\"], dataset, \"{}.data\".format(dataset))\n    data_path = dataset",
         "detail": "datasets.loading",
         "documentation": {}
     },
@@ -845,6 +886,15 @@
         "description": "model.hyphc",
         "peekOfCode": "class HypHC(nn.Module):\n    \"\"\"\n    Hyperbolic embedding model for hierarchical clustering.\n    \"\"\"\n    def __init__(self, n_nodes=1, rank=2, temperature=0.05, init_size=1e-3, max_scale=1. - 1e-3):\n        super(HypHC, self).__init__()\n        self.n_nodes = n_nodes\n        self.embeddings = nn.Embedding(n_nodes, rank)\n        self.temperature = temperature\n        self.scale = nn.Parameter(torch.Tensor([init_size]), requires_grad=True)",
         "detail": "model.hyphc",
+        "documentation": {}
+    },
+    {
+        "label": "improvehc",
+        "kind": 6,
+        "importPath": "model.improvehc",
+        "description": "model.improvehc",
+        "peekOfCode": "class improvehc(nn.Module):\n    \"\"\"\n    Hyperbolic embedding model for hierarchical clustering.\n    \"\"\"\n    def __init__(self,leaves_embeddings,dumpy_node, n_nodes=1, rank=2, temperature=0.05, init_size=1e-3, max_scale=1. - 1e-3):\n        super(improvehc, self).__init__()\n        self.leaves_embeddings = leaves_embeddings\n        self.n_nodes = n_nodes\n        self.embeddings = nn.Embedding(n_nodes, rank)\n        self.temperature = temperature",
+        "detail": "model.improvehc",
         "documentation": {}
     },
     {
@@ -1122,16 +1172,16 @@
         "kind": 2,
         "importPath": "utils.poincare",
         "description": "utils.poincare",
-        "peekOfCode": "def hyp_dist_o(x):\n    \"\"\"\n    Computes hyperbolic distance between x and the origin.\n    \"\"\"\n    x_norm = x.norm(dim=-1, p=2, keepdim=True)\n    return 2 * arctanh(x_norm)\ndef hyp_dist_djj(x,y):\n    \"\"\"\n    hyperbolic distance\n    \"\"\"",
+        "peekOfCode": "def hyp_dist_o(x):\n    \"\"\"\n    Computes hyperbolic distance between x and the origin.\n    \"\"\"\n    x_norm = x.norm(dim=-1, p=2, keepdim=True)\n    return 2 * arctanh(x_norm)\ndef hyp_dist(x,y):\n    \"\"\"\n    hyperbolic distance\n    \"\"\"",
         "detail": "utils.poincare",
         "documentation": {}
     },
     {
-        "label": "hyp_dist_djj",
+        "label": "hyp_dist",
         "kind": 2,
         "importPath": "utils.poincare",
         "description": "utils.poincare",
-        "peekOfCode": "def hyp_dist_djj(x,y):\n    \"\"\"\n    hyperbolic distance\n    \"\"\"\n    return arcosh(1+ 2*( (x-y).norm(dim=-1, p=2, keepdim=True))/((1- y.norm(dim=-1, p=2, keepdim=True))*(1- x.norm(dim=-1, p=2, keepdim=True))));",
+        "peekOfCode": "def hyp_dist(x,y):\n    \"\"\"\n    hyperbolic distance\n    \"\"\"\n    return arcosh(1+ 2*( (x-y).norm(dim=-1, p=2, keepdim=True))/((1- y.norm(dim=-1, p=2, keepdim=True))*(1- x.norm(dim=-1, p=2, keepdim=True))));",
         "detail": "utils.poincare",
         "documentation": {}
     },
@@ -1275,7 +1325,7 @@
         "kind": 2,
         "importPath": "utils.visualization",
         "description": "utils.visualization",
-        "peekOfCode": "def plot_tree_from_leaves(ax, tree, leaves_embeddings, labels, color_seed=1234):\n    \"\"\"Plots a tree on leaves embeddings using the LCA construction.\"\"\"\n    circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)\n    ax.add_artist(circle)\n    n = leaves_embeddings.shape[0]\n    embeddings = complete_tree(tree, leaves_embeddings)\n    colors = get_colors(labels, color_seed)\n    ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)\n    print(embeddings,\"djj\")\n    for n1, n2 in tree.edges():",
+        "peekOfCode": "def plot_tree_from_leaves(ax, tree, leaves_embeddings, labels, color_seed=1234):\n    \"\"\"Plots a tree on leaves embeddings using the LCA construction.\"\"\"\n    circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)\n    ax.add_artist(circle)\n    n = leaves_embeddings.shape[0]\n    embeddings = complete_tree(tree, leaves_embeddings)\n    colors = get_colors(labels, color_seed)\n    ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)\n    for n1, n2 in tree.edges():\n        x1 = embeddings[n1]",
         "detail": "utils.visualization",
         "documentation": {}
     },
@@ -1364,12 +1414,12 @@
         "label": {
             "name": "",
             "kind": 6,
-            "peekOfCode": "class  UnionFind:\n    def __init__(self, n , pos , c):\n        self.n = n\n        self.pos = pos\n        self.c = c\n        self.parent = [i for i in range(n)]\n        self.rank = [0 for i in range(n)]\n        self.vis = [0 for i in range(2*n-1)]\n        self.vis2 = [0 for i in range(2*n-1)]\n        self.mer = [-1 for i in range(2*n-1)]"
+            "peekOfCode": "class  UnionFind:\n    def __init__(self, n , pos):\n        self.n = n\n        self.pos = pos\n        # self.c = c\n        self.parent = [i for i in range(n)]\n        self.rank = [0 for i in range(n)]\n        self.vis = [0 for i in range(2*n-1)]\n        self.vis2 = [0 for i in range(2*n-1)]\n        self.mer = [-1 for i in range(2*n-1)]"
         },
         "kind": 6,
         "importPath": "hyper",
         "description": "hyper",
-        "peekOfCode": "class  UnionFind:\n    def __init__(self, n , pos , c):\n        self.n = n\n        self.pos = pos\n        self.c = c\n        self.parent = [i for i in range(n)]\n        self.rank = [0 for i in range(n)]\n        self.vis = [0 for i in range(2*n-1)]\n        self.vis2 = [0 for i in range(2*n-1)]\n        self.mer = [-1 for i in range(2*n-1)]",
+        "peekOfCode": "class  UnionFind:\n    def __init__(self, n , pos):\n        self.n = n\n        self.pos = pos\n        # self.c = c\n        self.parent = [i for i in range(n)]\n        self.rank = [0 for i in range(n)]\n        self.vis = [0 for i in range(2*n-1)]\n        self.vis2 = [0 for i in range(2*n-1)]\n        self.mer = [-1 for i in range(2*n-1)]",
         "detail": "hyper",
         "documentation": {}
     },

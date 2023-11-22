@@ -22,6 +22,12 @@ class node:
         return self.name
     def copy(self):
         return node(self.value,self.son,self.name)
+    def rest(self,n):
+        all = [i for i in range(n)];
+        result = [element for element in all if element not in self.subson];
+        return result
+
+        
     # def __lt__(self, other):
     #     return self.depth < other.depth
     

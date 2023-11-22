@@ -58,7 +58,7 @@ def complete_tree(tree, leaves_embeddings):
                 embeddings = _complete_tree(embeddings, right_c)
                 embeddings = _complete_tree(embeddings, left_c)
             embeddings[node] = hyp_lca_numpy(embeddings[left_c], embeddings[right_c])
-            print("l,r:",left_c,right_c,embeddings[left_c], embeddings[right_c])
+            # print("l,r:",left_c,right_c,embeddings[left_c], embeddings[right_c])
         return embeddings
 
     n = leaves_embeddings.shape[0]
@@ -90,7 +90,6 @@ def plot_tree_from_leaves(ax, tree, leaves_embeddings, labels, color_seed=1234):
     embeddings = complete_tree(tree, leaves_embeddings)
     colors = get_colors(labels, color_seed)
     ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)
-    print(embeddings,"djj")
 
     for n1, n2 in tree.edges():
         x1 = embeddings[n1]
@@ -126,7 +125,7 @@ def plot_tree_from_leaves_djj_1(ax, tree, leaves_embeddings, labels, color_seed=
         x1 = embeddings[n1]
         x2 = embeddings[n2]
         plot_geodesic(x1, x2, ax)
-    # ax.set_xlim(-1.05, 1.05)
-    # ax.set_ylim(-1.05, 1.05)
+    ax.set_xlim(-1.05, 1.05)
+    ax.set_ylim(-1.05, 1.05)
     ax.axis("off")
     return ax

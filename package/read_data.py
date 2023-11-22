@@ -211,6 +211,7 @@ def build_hyper_tree(folder_path):
             nodes[i].value = pos[father_name[i]]
         else:
             nodes[i].value = 0.0
+            
     for i in range(n-1,-1,-1):
         if(type(nodes[i].value) == float):
             count = 0;
@@ -225,6 +226,7 @@ def build_hyper_tree(folder_path):
                 count = 1;
             nodes[i].value = now/count
     return nodes,n
+
 
 def search_tree(now,c,merge_list):
     if(len(now.son) != 2):

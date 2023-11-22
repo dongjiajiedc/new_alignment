@@ -49,14 +49,6 @@ def load_uci_data(dataset,start_idx,end_idx,label_idx):
     """
     x = []
     y = []
-    ids = {
-        "zoo": (1, 17, -1),
-        "iris": (0, 4, -1),
-        "glass": (1, 10, -1),
-        "sc":(1,1595,0),
-        "4_7":(1,514,0),
-        "4_8":(1,514,0),
-    }
     # data_path = os.path.join(os.environ["DATAPATH"], dataset, "{}.data".format(dataset))
     data_path = dataset
     classes = {}
@@ -76,8 +68,8 @@ def load_uci_data(dataset,start_idx,end_idx,label_idx):
     # print(x);
     y = np.array(y, dtype=int) 
     x = np.array(x, dtype=float)
-    # mean = x.mean(0)
-    # std = x.std(0)
-    # x = (x - mean) / std
+    mean = x.mean(0)
+    std = x.std(0)
+    x = (x - mean) / std
     # x = np.nan_to_num(x);
     return x, y

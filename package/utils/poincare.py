@@ -96,7 +96,7 @@ def hyp_dist_o(x):
     x_norm = x.norm(dim=-1, p=2, keepdim=True)
     return 2 * arctanh(x_norm)
 
-def hyp_dist_djj(x,y):
+def hyp_dist(x,y):
     """
     hyperbolic distance
     """
