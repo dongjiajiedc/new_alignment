@@ -1,6 +1,7 @@
 import pandas as pd
-import numpy as np
+import numpy
 import sys
+import torch
 import warnings
 from utils import *
 import anndata
@@ -11,6 +12,7 @@ import warnings
 from scipy.spatial import KDTree
 from alignment import *
 from tqdm import tqdm
+from utils.poincare import project,hyp_dist
 
 # def check_paths(output_folder,output_prefix=None):
 #     # Create relative path
@@ -198,8 +200,9 @@ def build_hyper_tree(folder_path):
     pos_1 = pd.read_csv(folder_path + 'datas.csv')
     pos = pos_1.set_index(pos_1.columns[0]).values
     edge = np.load(folder_path + "datalink.npy");
-    father_name = np.load(folder_path + "dataxy.npy")
+    father_name = np.load(folder_path + "dataname.npy")
     father_name = father_name.astype(np.int)
+    xys = np.load(folder_path+'dataxy.npy');
     n = len(edge)
     n_points = len(pos);
     nodes = [node(name=str(i),son=[]) for i in range(n)];
@@ -211,20 +214,28 @@ def build_hyper_tree(folder_path):
             nodes[i].value = pos[father_name[i]]
         else:
             nodes[i].value = 0.0
-            
-    for i in range(n-1,-1,-1):
-        if(type(nodes[i].value) == float):
-            count = 0;
-            now = 0;
-            for son in nodes[i].son:
-                if(count==0):
-                    now = son.value;
-                else:
-                    now = now + son.value;
-                count += 1
-            if(count==0):
-                count = 1;
-            nodes[i].value = now/count
+    def test(now):
+        for i in now.son:
+            test(i);
+        if(now.son!=[]):
+            l = hyp_dist(torch.tensor(xys[int(now)]),torch.tensor(xys[int(now.son[0])]))
+            r = hyp_dist(torch.tensor(xys[int(now)]),torch.tensor(xys[int(now.son[1])]))
+
+            now.value = (l/(l+r) *now.son[0].value  +  r/(l+r)*now.son[1].value).numpy()
+    test(nodes[0]);    
+    # for i in range(n-1,-1,-1):
+    #     if(type(nodes[i].value) == float):
+    #         count = 0;
+    #         now = 0;
+    #         for son in nodes[i].son:
+    #             if(count==0):
+    #                 now = son.value;
+    #             else:
+    #                 now = now + son.value;
+    #             count += 1
+    #         if(count==0):
+    #             count = 1;
+    #         nodes[i].value = now/count
     return nodes,n
 
 

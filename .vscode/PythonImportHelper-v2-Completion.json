@@ -18,15 +18,6 @@
         "documentation": {}
     },
     {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
-        "documentation": {}
-    },
-    {
         "label": "torch",
         "kind": 6,
         "isExtraImport": true,
@@ -42,6 +33,15 @@
         "importPath": "torch.utils.data",
         "description": "torch.utils.data",
         "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
         "documentation": {}
     },
     {
@@ -260,6 +260,110 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
         "label": "hyp_lca",
         "importPath": "utils.lca",
         "description": "utils.lca",
@@ -449,6 +553,38 @@
         "description": "utils.linkage",
         "isExtraImport": true,
         "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "nn_merge_uf_fast_np",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "sl_from_embeddings",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
         "documentation": {}
     },
     {
@@ -533,6 +669,22 @@
     },
     {
         "label": "project",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist",
         "importPath": "utils.poincare",
         "description": "utils.poincare",
         "isExtraImport": true,
@@ -1288,94 +1440,6 @@
     },
     {
         "label": "*",
-        "importPath": "alignment",
-        "description": "alignment",
-        "isExtraImport": true,
-        "detail": "alignment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "alignment",
-        "description": "alignment",
-        "isExtraImport": true,
-        "detail": "alignment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "alignment",
-        "description": "alignment",
-        "isExtraImport": true,
-        "detail": "alignment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "alignment",
-        "description": "alignment",
-        "isExtraImport": true,
-        "detail": "alignment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "alignment",
-        "description": "alignment",
-        "isExtraImport": true,
-        "detail": "alignment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "alignment",
-        "description": "alignment",
-        "isExtraImport": true,
-        "detail": "alignment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "alignment",
-        "description": "alignment",
-        "isExtraImport": true,
-        "detail": "alignment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "alignment",
-        "description": "alignment",
-        "isExtraImport": true,
-        "detail": "alignment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "alignment",
-        "description": "alignment",
-        "isExtraImport": true,
-        "detail": "alignment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "alignment",
-        "description": "alignment",
-        "isExtraImport": true,
-        "detail": "alignment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "alignment",
-        "description": "alignment",
-        "isExtraImport": true,
-        "detail": "alignment",
-        "documentation": {}
-    },
-    {
-        "label": "*",
         "importPath": "datasets.preprecossing",
         "description": "datasets.preprecossing",
         "isExtraImport": true,
@@ -1814,6 +1878,15 @@
         "documentation": {}
     },
     {
+        "label": "balance_dataset",
+        "kind": 6,
+        "importPath": "package.datasets.balance_dataset",
+        "description": "package.datasets.balance_dataset",
+        "peekOfCode": "class balance_dataset(data.Dataset):\n    def __init__(self,similarities, num_samples,embeddings,distances,datas):\n        \"\"\"Creates Hierarchical Clustering dataset with triples.\n        @param labels: ground truth labels\n        @type labels: np.array of shape (n_datapoints,)\n        @param similarities: pairwise similarities between datapoints\n        @type similarities: np.array of shape (n_datapoints, n_datapoints)\n        \"\"\"\n        self.similarities = similarities\n        self.embeddings = embeddings",
+        "detail": "package.datasets.balance_dataset",
+        "documentation": {}
+    },
+    {
         "label": "HCDataset",
         "kind": 6,
         "importPath": "package.datasets.hc_dataset",
@@ -1919,6 +1992,15 @@
         "description": "package.datasets.triples",
         "peekOfCode": "def generate_all_triples(n_nodes):\n    triples = []\n    for n1 in tqdm(np.arange(n_nodes)):\n        for n2 in np.arange(n1 + 1, n_nodes):\n            for n3 in np.arange(n2 + 1, n_nodes):\n                triples += [(n1, n2, n3)]\n    return np.array(triples)",
         "detail": "package.datasets.triples",
+        "documentation": {}
+    },
+    {
+        "label": "balancehc",
+        "kind": 6,
+        "importPath": "package.model.balancehc",
+        "description": "package.model.balancehc",
+        "peekOfCode": "class balancehc(nn.Module):\n    def __init__(self,nodes,embeddings,hyperparamter=1, rank=2, temperature=0.05, init_size=1e-3, max_scale=1. - 1e-3,):\n        super(balancehc, self).__init__()\n        self.nodes = nodes\n        self.leaves_embeddings = embeddings\n        self.n_nodes = len(embeddings)\n        self.embeddings = nn.Embedding(self.n_nodes, rank)\n        self.temperature = temperature\n        self.scale = nn.Parameter(torch.Tensor([init_size]), requires_grad=True)\n        self.embeddings.weight.data = torch.tensor(embeddings);",
+        "detail": "package.model.balancehc",
         "documentation": {}
     },
     {
@@ -2394,7 +2476,7 @@
         "kind": 6,
         "importPath": "package.alignment",
         "description": "package.alignment",
-        "peekOfCode": "class node:\n    def __init__(self,value=None,son=[],name=''):\n        self.value = value;\n        self.son = son;\n        self.name =name;\n        self.f = None;\n        self.depth=0;\n        self.subson= [];\n    def __repr__(self):\n        return self.name",
+        "peekOfCode": "class node:\n    def __init__(self,value=None,son=[],name=''):\n        self.value = value;\n        self.son = son;\n        self.name =name;\n        self.f = None;\n        self.depth=0;\n        self.subson= [];\n        self.distance_to_root=0;\n        self.path=None;",
         "detail": "package.alignment",
         "documentation": {}
     },
@@ -2542,7 +2624,7 @@
         "kind": 2,
         "importPath": "package.hyper",
         "description": "package.hyper",
-        "peekOfCode": "def search_merge_tree(now,ids,save_path,values,fathers):\n    fathers.append(ids);\n    values.append(now.name);\n    now_id = len(values)-1;\n    for son in now.son:\n        search_merge_tree(son,now_id,save_path,values,fathers)\ndef get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='./',c=-1):\n    np.random.seed(1234)\n    torch.manual_seed(1234)\n    # x, y_true, similarities = load_data('../../../cityu/HypHC/data/4_8/4_8.data',start,end,lable)",
+        "peekOfCode": "def search_merge_tree(now,ids,save_path,values,fathers,xys):\n    fathers.append(ids);\n    values.append(now.name);\n    xys.append(now.value.numpy());\n    now_id = len(values)-1;\n    for son in now.son:\n        search_merge_tree(son,now_id,save_path,values,fathers,xys)\ndef get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='./',c=-1):\n    np.random.seed(1234)\n    torch.manual_seed(1234)",
         "detail": "package.hyper",
         "documentation": {}
     },
@@ -2587,7 +2669,7 @@
         "kind": 2,
         "importPath": "package.read_data",
         "description": "package.read_data",
-        "peekOfCode": "def build_hyper_tree(folder_path):\n    pos_1 = pd.read_csv(folder_path + 'datas.csv')\n    pos = pos_1.set_index(pos_1.columns[0]).values\n    edge = np.load(folder_path + \"datalink.npy\");\n    father_name = np.load(folder_path + \"dataxy.npy\")\n    father_name = father_name.astype(np.int)\n    n = len(edge)\n    n_points = len(pos);\n    nodes = [node(name=str(i),son=[]) for i in range(n)];\n    for i in range(n):",
+        "peekOfCode": "def build_hyper_tree(folder_path):\n    pos_1 = pd.read_csv(folder_path + 'datas.csv')\n    pos = pos_1.set_index(pos_1.columns[0]).values\n    edge = np.load(folder_path + \"datalink.npy\");\n    father_name = np.load(folder_path + \"dataname.npy\")\n    father_name = father_name.astype(np.int)\n    xys = np.load(folder_path+'dataxy.npy');\n    n = len(edge)\n    n_points = len(pos);\n    nodes = [node(name=str(i),son=[]) for i in range(n)];",
         "detail": "package.read_data",
         "documentation": {}
     },

@@ -16,6 +16,12 @@ class node:
         self.f = None;
         self.depth=0;
         self.subson= [];
+        self.distance_to_root=0;
+        self.path=None;
+        self.num_son=0;
+        self.dfs=None;
+    def __int__(self):
+        return int(self.name);
     def __repr__(self):
         return self.name
     def __str__(self):

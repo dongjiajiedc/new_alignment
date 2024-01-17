@@ -267,12 +267,13 @@ def get_colors(y, color_seed=1234):
     return [colors[k] for k in y]
 
 
-def search_merge_tree(now,ids,save_path,values,fathers):
+def search_merge_tree(now,ids,save_path,values,fathers,xys):
     fathers.append(ids);
     values.append(now.name);
+    xys.append(now.value.numpy());
     now_id = len(values)-1;
     for son in now.son:
-        search_merge_tree(son,now_id,save_path,values,fathers)
+        search_merge_tree(son,now_id,save_path,values,fathers,xys)
 
 
 

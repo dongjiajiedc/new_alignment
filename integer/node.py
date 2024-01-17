@@ -15,6 +15,8 @@ class node:
             return self.name
     def __str__(self):
         return self.name
+    def __int__(self):
+        return int(self.name);
 class newnode:
     def __init__(self,node1,node2):
         self.node1 = node1
