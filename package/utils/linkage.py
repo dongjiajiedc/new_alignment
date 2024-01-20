@@ -6,10 +6,9 @@ import numpy as np
 import torch
 from tqdm import tqdm
 
-from mst import mst
-from unionfind import unionfind
+import utils.unionfind as unionfind
 from utils.lca import hyp_lca
-
+from utils.mst import mst
 
 ### Single linkage using MST trick
 
@@ -17,7 +16,7 @@ from utils.lca import hyp_lca
 def sl_np_mst(similarities):
     n = similarities.shape[0]
     similarities=similarities.astype('double')
-    ij, _ = mst.mst(similarities, n)
+    ij, _ = mst(similarities, n)
     uf = unionfind.UnionFind(n)
     uf.merge(ij)
     return uf.tree
@@ -66,4 +65,4 @@ def nn_merge_uf_fast_np(xs, S, partition_ratio=None, verbose=False):
     # Union find merging
     uf = unionfind.UnionFind(n)
     uf.merge(ij)
-    return uf.tree
+    return uf.tree()

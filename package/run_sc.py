@@ -58,6 +58,8 @@ epoches1 = args.epoches1
 epoches2 = args.epoches2
 contin = args.contin
 method = args.method
-alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)
+
+alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=0.5,method=method)
 
 # python run_sc.py -cp1 './datas/d1/sample.h5' -f1 "./datas/d1/" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 "./datas/d2/" -r2 50 -c2 0.001 -e2 10
+# python run_sc.py -cp1 './datas/test/A35.h5' -f1 "./datas/118/1/" -r1 147.63807097087118 -c1 0.001 -e1 5 -cp2 './datas/test/A36.h5' -f2 "./datas/118/2/" -r2 149.58609561052123 -c2 0.001 -e2 5 --contin True

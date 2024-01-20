@@ -1,31 +1,23 @@
-import argparse
-import json
 import logging
 import os
-import math
 import numpy as np
 import torch
 import torch.utils.data as data
-from tqdm import tqdm
 
 import optim
-# from config import config_args
 from datasets.hc_dataset import HCDataset
+from datasets.balance_dataset import balance_dataset
 from datasets.loading import load_data
 from model.hyphc import HypHC
+from model.balancehc import balancehc
+from utils.mst import mst
 from utils.metrics import dasgupta_cost
-from utils.training import add_flags_from_config, get_savedir
-
+from utils.unionfind import UnionFind
 import networkx as nx
 
-import matplotlib.pyplot as plt
-from mst import mst
-
-from utils.poincare import project
+from utils.poincare import project,hyp_dist
 from utils.lca import hyp_lca
-from utils.math import arctanh, tanh, arcosh
 
-from utils.visualization import plot_tree_from_leaves,plot_geodesic
 from alignment import *
 
 
@@ -76,29 +68,15 @@ def train(model,dataloader,optimizer,similarities,epoches):
     for epoch in range(epoches):
         model.train()
         total_loss = 0.0
-        # with tqdm(total=len(dataloader), unit='ex') as bar:
-        #     for step, (triple_ids, triple_similarities) in enumerate(dataloader):
-        #         # triple_ids = triple_ids.cuda()
-        #         # triple_similarities = triple_similarities.cuda()
-        #         loss = model.loss(triple_ids, triple_similarities)
-        #         optimizer.zero_grad()
-        #         loss.backward()
-        #         optimizer.step()
-        #         bar.update(1)
-        #         bar.set_postfix(loss=f'{loss.item():.6f}')
-        #         total_loss += loss
         for step, (triple_ids, triple_similarities) in enumerate(dataloader):
-                # triple_ids = triple_ids.cuda()
-                # triple_similarities = triple_similarities.cuda()
             loss = model.loss(triple_ids, triple_similarities)
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
             total_loss += loss
-        total_loss = total_loss.item() / (step + 1.0)
+        total_loss = total_loss / (step + 1.0)
         print("\t Epoch {} | average train loss: {:.6f}".format(epoch, total_loss))
 
-        # keep best embeddings
         if (epoch + 1) % 1 == 0:
             tree = model.decode_tree(fast_decoding=1)
             cost = dasgupta_cost(tree, similarities)
@@ -126,135 +104,51 @@ def train(model,dataloader,optimizer,similarities,epoches):
         if best_model is not None:
             # load best model
             model.load_state_dict(best_model)
-def dist(x,y):
-    return arcosh(1+ 2*( (x-y).norm(dim=-1, p=2, keepdim=True))/((1- y.norm(dim=-1, p=2, keepdim=True))*(1- x.norm(dim=-1, p=2, keepdim=True))));
-def plot_tree_from_leaves_djj_1(ax, tree, leaves_embeddings, labels, color_seed=1234):
-    """Plots a tree on leaves embeddings using the LCA construction."""
-    circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)
-    ax.add_artist(circle)
-    n = leaves_embeddings.shape[0]
-    embeddings = complete_tree(tree, leaves_embeddings)
-    colors = get_colors(labels, color_seed)
-    ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)
-    
-    for n1, n2 in tree.edges():
-        x1 = embeddings[n1]
-        x2 = embeddings[n2]
-        plot_geodesic(x1, x2, ax)
-    # ax.set_xlim(-1.05, 1.05)
-    # ax.set_ylim(-1.05, 1.05)
-    ax.axis("off")
-    return ax
-def sl_np_mst_ij(xs, S):
-    xs = project(xs).detach().cpu()
+            
+def train2(model,dataloader,optimizer,epoches):
+    best_cost = np.inf
+    best_model = None
+    counter = 0
+    for epoch in range(epoches):
+        model.train()
+        total_loss = 0.0
+        for step, datas in enumerate(dataloader):
+            loss = model.loss(datas[0],datas[1],datas[2],datas[3],datas[4],datas[5])
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            total_loss += loss
+        total_loss = total_loss / (step + 1.0)
+        print("\t Epoch {} | average train loss: {:.6f}".format(epoch, total_loss))
+        model.update();
+        
+        cost = total_loss;
+        if cost < best_cost:
+            counter = 0
+            best_cost = cost
+            best_model = model.state_dict()
+        else:
+            counter += 1
+            if counter == 20:
+#                 logging.info("Early stopping.")
+                return
+            
+    if best_model is not None:
+        # load best model
+        model.load_state_dict(best_model)
+                
 
+def sl_np_mst_ij(xs, S):
+    xs = project(xs).detach()
     xs0 = xs[None, :, :]
     xs1 = xs[:, None, :]
     sim_mat = S(xs0, xs1)  # (n, n)
     similarities = sim_mat.numpy()
     n = similarities.shape[0]
     similarities=similarities.astype('double')
-    ij, _ = mst.mst(similarities, n)
+    ij, _ = mst(similarities, n)
     return ij
-class  UnionFind:
-    
-    def __init__(self, n , pos):
-        self.n = n
-        self.pos = pos
-        # self.c = c
-        self.parent = [i for i in range(n)]
-        self.rank = [0 for i in range(n)]
-        self.vis = [0 for i in range(2*n-1)]
-        self.vis2 = [0 for i in range(2*n-1)]
-        self.mer = [-1 for i in range(2*n-1)]
-        self._next_id = n
-        self._tree = [-1 for i in range(2*n-1)]
-        self._id = [i for i in range(n)]
-
-    def _find(self, i):
-        if self.parent[i] == i:
-            return i
-        else:
-            self.parent[i] = self._find(self.parent[i])
-            return self.parent[i]
-
-    def find(self, i):
-        if (i < 0) or (i > self.n):
-            raise ValueError("Out of bounds index.")
-        return self._find(i)
-
-    def union(self,  i,  j, k=True):
-        root_i = self._find(i)
-        root_j = self._find(j)
-        if root_i == root_j:
-            return False
-        else:
-            
-            if self.rank[root_i] < self.rank[root_j]:
-                self.parent[root_i] = root_j
-                if(k):
-                    self._build(root_j, root_i)
-                
-            elif self.rank[root_i] > self.rank[root_j]:
-                self.parent[root_j] = root_i
-                if(k):
-                    self._build(root_i, root_j)
-                
-            else:
-                
-                self.parent[root_j] = root_i
-                self.rank[root_i] += 1
-                if(k):
-                    self._build(root_i, root_j)
-                
-            return True
-
-
-    def merge(self,ij):
-        for k in range(ij.shape[0]):
-            a=ij[k,0];
-            b=ij[k,1];
-            if(self.mer[a]!=-1):
-                a=self.mer[a];
-            if(self.mer[b]!=-1):
-                b=self.mer[b];
-            self.union(a, b)
-
-    def  _build(self, i, j):
-        self.vis2[i]=1;
-        self.vis2[j]=1;
-        
-        t=np.array(self.pos).tolist()
-        new = np.array(hyp_lca(self.pos[self._id[i]],self.pos[self._id[j]])).tolist()
-        t.append(new);
-        self.pos=torch.tensor(t)
-        
-        self._tree[self._id[i]] = self._next_id
-        self._tree[self._id[j]] = self._next_id
-        self._id[i] = self._next_id
-        self._next_id += 1
-
-    def search(self,k):
-
-        for i in range(len(self._tree)):
-            if(self.vis[i]):
-                continue;            
-            if(self._tree[i]==k):
-                self._tree[i]=self._next_id;  
-                
-        for i in range(len(self._id)):
-            if(self.vis[i]):
-                continue;
-            if(self._id[i]==k):
-                self._id[i]=self._next_id;  
-                
-        
-    def parent(self):
-        return [self.parent[i] for i in range(self.n)]
-
-    def tree(self):
-        return [self._tree[i] for i in range(len(self._tree))]
-    
+  
 def get_colors(y, color_seed=1234):
     """random color assignment for label classes."""
     np.random.seed(color_seed)
@@ -270,21 +164,33 @@ def get_colors(y, color_seed=1234):
 def search_merge_tree(now,ids,save_path,values,fathers,xys):
     fathers.append(ids);
     values.append(now.name);
-    xys.append(now.value.numpy());
+    xys.append(now.value);
     now_id = len(values)-1;
     for son in now.son:
         search_merge_tree(son,now_id,save_path,values,fathers,xys)
 
+def deep_search_tree(now,depth,path,f):
+    now.f=f
+    now.depth=depth;
+    path.append(now);
+    now.path=path.copy();
+    if(f!=now):
+        now.distance_to_root = f.distance_to_root + hyp_dist(f.value,now.value)
+    else:
+        now.distance_to_root = 0
+        
+    for i in now.son:
+        deep_search_tree(i,depth+1,path,now);
+        
+    path.remove(now)
 
-
-def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='./',c=-1):
+def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,model_path2=None,save_path='./',c=-1):
     np.random.seed(1234)
     torch.manual_seed(1234)
-    # x, y_true, similarities = load_data('../../../cityu/HypHC/data/4_8/4_8.data',start,end,lable)
     x, y_true, similarities = load_data(data_path,start,end,lable)
     print("{} length:{}".format(data_path,len(y_true)));
     dataset = HCDataset(x, y_true, similarities, num_samples=50000)
-    dataloader = data.DataLoader(dataset, batch_size=32, shuffle=True, num_workers=8, pin_memory=True)
+    dataloader = data.DataLoader(dataset, batch_size=32, shuffle=True, pin_memory=True)
     model = HypHC(dataset.n_nodes, 2, 5e-2, 5e-2 ,0.999)
 
     if(model_path==None or os.path.exists(model_path)==False):
@@ -296,6 +202,7 @@ def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='
     else:
         params = torch.load((model_path), map_location=torch.device('cpu'))
         model.load_state_dict(params, strict=False)
+
     model.eval()
     
     sim_fn = lambda x, y: torch.sum(x * y, dim=-1)
@@ -303,9 +210,8 @@ def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='
     leaves_embeddings = model.normalize_embeddings(model.embeddings.weight.data)
     leaves_embeddings = project(leaves_embeddings).detach().cpu()
     ijs = sl_np_mst_ij(leaves_embeddings,sim_fn)
-    uf = UnionFind(n,leaves_embeddings)
+    uf = UnionFind(n)
     uf.merge(ijs)
-    count=0
 
     tree = nx.DiGraph()
     for i, j in enumerate(uf.tree()[:-1]):
@@ -316,17 +222,14 @@ def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='
     # ax = fig.add_subplot(111)
     # circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)
     # ax.add_artist(circle)
-
+    
     n = len(leaves_embeddings)
-    # embeddings = np.array(uf.pos)
     embeddings = complete_tree(tree, leaves_embeddings)
-
+    
     # where_are_NaNs = np.isnan(embeddings)
     # embeddings[where_are_NaNs] = 0
     # colors = get_colors(y_true, 1234)
-
     # ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)
-
     # for i in range(len(embeddings)):
     #     if(i<n):
     #         continue;
@@ -334,32 +237,95 @@ def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='
     #         pass;
     #     else:
     #         ax.scatter(embeddings[i][0]*20,embeddings[i][1]*20,color='black',s=20,alpha=0.7)
-
-        
-
     # for n1, n2 in tree.edges():
     #     x1 = embeddings[n1];
     #     x2 = embeddings[n2];
     #     plot_geodesic(x1,x2,ax)
     # fig.savefig(save_path+"graph.png");
-
     # embeddings = np.array(uf.pos)
     
-    dumpy_node = embeddings[n:];
 
     nodes1 = [node(name=str(i),son=[]) for i in range(len(uf.tree()))]
+    for i in range(n):
+        nodes1[i].subson=[i];
     for i,j in enumerate(uf.tree()):
         if(j!=-1):
             nodes1[j].son.append(nodes1[i])
-        nodes1[i].value=embeddings[i];
-        nodes1[i].subson=0
-    ans_list = []
+        nodes1[i].value=torch.tensor(embeddings[i]);
+        nodes1[j].subson.extend(nodes1[i].subson)
     root = nodes1[-1];
 
     values = [];
     fathers = [];
-
-    search_merge_tree(root,-1,0,values,fathers)
-    np.save(save_path+"dataxy.npy",values)
+    xys = [];
+    search_merge_tree(root,-1,0,values,fathers,xys)
+    np.save(save_path+"dataname.npy",values)
     np.save(save_path+"datalink.npy",fathers)
+    np.save(save_path+"dataxy.npy",[i.numpy() for i in xys])
+
+    deep_search_tree(root,0,[],root)
+    result = []
+    distances = []
+    for index in range(n,len(nodes1)):
+        i = nodes1[index]
+        if(len(i.subson)==2):
+            for j in i.rest(n):
+                result.append([i.subson,j,int(i),1,int(j)])
+                
+    for index in range(n,len(nodes1)-1):
+        i = nodes1[index]
+        for i1 in range(len(i.subson)):
+            for i2 in range(i1+1,len(i.subson)):
+                for j in i.rest(n):
+                    result.append([[i.subson[i1],i.subson[i2]],j,int(i),0,int(i.f)])
+            
+    for i in nodes1:
+        distances.append(i.distance_to_root);
+        
+    distances = torch.tensor(distances)
+    embeddings = complete_tree(tree, leaves_embeddings)
+    embeddings = torch.tensor(embeddings)
+
+
+    dataset_test = balance_dataset(similarities,100,embeddings,distances,result)
+    dataloader = data.DataLoader(dataset_test, batch_size=1, shuffle=False, pin_memory=True)
+
+
+    model2 = balancehc(nodes1,torch.tensor(embeddings),hyperparamter = 1)
+                
+    if(model_path2==None or os.path.exists(model_path2)==False):
+        Optimizer = getattr(optim, 'RAdam')
+        optimizer = Optimizer(model2.parameters(),0.0005)
+        train2(model2,dataloader,optimizer,epoches)
+        torch.save(model2.state_dict(),save_path+'balance_model.pth');
+    else:
+        params = torch.load((model_path2), map_location=torch.device('cpu'))
+        model2.load_state_dict(params, strict=False)
+        
+    model2.eval()
+
+    temp = model2.embeddings.weight.data
+    after_balance = embeddings.numpy().copy();
+    for i in range(len(temp)):
+        after_balance[i] = temp[i].detach().numpy() 
+    # after_balance = model2.normalize_embeddings(torch.tensor(after_balance))
+    
+    after_balance = project(torch.tensor(after_balance))
+    after_balance = np.array(after_balance)
+    
+    # colors = get_colors(y_true, 1234)
+    # fig = plt.figure(figsize=(15, 15))
+    # ax = fig.add_subplot(111)
+    # circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)
+    # ax.add_artist(circle)
+    # ax.scatter(after_balance[:n, 0]*20, after_balance[:n, 1]*20, c=colors, s=50, alpha=0.6)
+    # ax.scatter(after_balance[n:,0]*20,after_balance[n:,1]*20,color ='black',s=20,alpha=0.6)
+    # for n1, n2 in tree.edges():
+    #     x1 = after_balance[n1];
+    #     x2 = after_balance[n2]
+    #     plot_geodesic(x1,x2,ax)
+    # fig.savefig(save_path+"graph_after.png")
+
+    np.save(save_path+'dataxy.npy',np.array([after_balance[j] for j in [int(i) for i in values]]))
+
     # return loss2

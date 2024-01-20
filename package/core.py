@@ -13,8 +13,8 @@ def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,ra
     ts = calendar.timegm(current_GMT)
     print("Current timestamp:", ts)
     
-    log1 = open(folder_path1+"log_{}.txt".format(ts), "a")   
-    log2 = open(folder_path2+"log_{}.txt".format(ts), "a")
+    log1 = open(folder_path1+"log_{}.txt".format(ts), "w")   
+    log2 = open(folder_path2+"log_{}.txt".format(ts), "w")
     log1.write("args for data1: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\n".format(cell_path1,folder_path1,radius1,c1,epoches1))
     log1.write("args for data2: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\n".format(cell_path2,folder_path2,radius2,c2,epoches2))
     log2.write("args for data1: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\n".format(cell_path1,folder_path1,radius1,c1,epoches1))
@@ -25,6 +25,9 @@ def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,ra
         loss1 = merge_by_radius(cell_path1,folder_path1,radius1,method)
         print("cell meta score for dataset1: {}\n".format(loss1))
         log1.write("cell metas score for dataset1: {}\n".format(loss1))
+    else:
+        print("dataset1 find files and skip merging")
+
     
     adata1 = pd.read_csv(folder_path1+"merge_cell_data.csv")
     cell_meta = pd.read_csv(folder_path1+"merge_cell_meta.csv")
@@ -39,6 +42,8 @@ def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,ra
         loss2 = merge_by_radius(cell_path2,folder_path2,radius2,method)
         print("cell meta score for dataset2: {}".format(loss2))
         log2.write("cell meta score for dataset2: {}\n".format(loss2))
+    else:
+        print("dataset2 find files and skip merging")
 
     adata2 = pd.read_csv(folder_path2+"merge_cell_data.csv")
     cell_meta = pd.read_csv(folder_path2+"merge_cell_meta.csv")
@@ -115,13 +120,16 @@ def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,ra
     v1['second']=julei
     v1.to_csv(folder_path2+'meta_result.csv')
     
-    if(contin==False) or ((os.path.exists(folder_path1 + 'dataxy.npy') and os.path.exists(folder_path1+'datalink.npy')) == False):
-        
+    if(contin==False) or ((os.path.exists(folder_path1 + 'dataxy.npy') and os.path.exists(folder_path1+'data1link.npy') and os.path.exists(folder_path1+'dataname.npy')) == False):
         get_Hyper_tree(folder_path1+'datas.data',1,tmp1.shape[1]+1,0,epoches1,save_path=folder_path1,c=0)
-        
-    if(contin==False) or ((os.path.exists(folder_path2 + 'dataxy.npy') and os.path.exists(folder_path2+'datalink.npy')) == False):
-    
+    else:
+        print("dataset1 find files and skip embedding");
+
+    if(contin==False) or ((os.path.exists(folder_path2 + 'dataxy.npy') and os.path.exists(folder_path2+'data1link.npy') and os.path.exists(folder_path1+'dataname.npy')) == False):
         get_Hyper_tree(folder_path2+'datas.data',1,tmp2.shape[1]+1,0,epoches2,save_path=folder_path2,c=0)
+    else:
+        print("dataset2 find files and skip embedding")
+
         
     nodes1,n1 = build_hyper_tree(folder_path1)
     nodes2,n2 = build_hyper_tree(folder_path2)
@@ -130,11 +138,6 @@ def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,ra
     merge_list2 = [];
     nodes1[0] = search_tree(nodes1[0],c1,merge_list1)
     nodes2[0] = search_tree(nodes2[0],c2,merge_list2)
-    
-    # for i in range(len(meta_list1)):
-    #     nodes1[i].name= nodes1[i].name +'_'+ meta_list1[i];
-    # for i in range(len(meta_list2)):
-    #     nodes2[i].name= nodes2[i].name +'_'+ meta_list2[i];  
     
     for i in range(len(nodes1)):
         if(int(nodes1[i].name)<len(meta_list1)):

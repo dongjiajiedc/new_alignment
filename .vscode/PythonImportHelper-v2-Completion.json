@@ -225,23 +225,6 @@
         "documentation": {}
     },
     {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "networkx",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "networkx",
-        "description": "networkx",
-        "detail": "networkx",
-        "documentation": {}
-    },
-    {
         "label": "torch.nn",
         "kind": 6,
         "isExtraImport": true,
@@ -356,239 +339,7 @@
         "documentation": {}
     },
     {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca",
-        "importPath": "utils.lca",
-        "description": "utils.lca",
-        "isExtraImport": true,
-        "detail": "utils.lca",
-        "documentation": {}
-    },
-    {
-        "label": "nn_merge_uf_fast_np",
-        "importPath": "utils.linkage",
-        "description": "utils.linkage",
-        "isExtraImport": true,
-        "detail": "utils.linkage",
-        "documentation": {}
-    },
-    {
-        "label": "sl_from_embeddings",
-        "importPath": "utils.linkage",
-        "description": "utils.linkage",
-        "isExtraImport": true,
-        "detail": "utils.linkage",
-        "documentation": {}
-    },
-    {
-        "label": "nn_merge_uf_fast_np",
-        "importPath": "utils.linkage",
-        "description": "utils.linkage",
-        "isExtraImport": true,
-        "detail": "utils.linkage",
-        "documentation": {}
-    },
-    {
-        "label": "sl_from_embeddings",
-        "importPath": "utils.linkage",
-        "description": "utils.linkage",
-        "isExtraImport": true,
-        "detail": "utils.linkage",
-        "documentation": {}
-    },
-    {
-        "label": "nn_merge_uf_fast_np",
-        "importPath": "utils.linkage",
-        "description": "utils.linkage",
-        "isExtraImport": true,
-        "detail": "utils.linkage",
-        "documentation": {}
-    },
-    {
-        "label": "sl_from_embeddings",
-        "importPath": "utils.linkage",
-        "description": "utils.linkage",
-        "isExtraImport": true,
-        "detail": "utils.linkage",
-        "documentation": {}
-    },
-    {
-        "label": "nn_merge_uf_fast_np",
-        "importPath": "utils.linkage",
-        "description": "utils.linkage",
-        "isExtraImport": true,
-        "detail": "utils.linkage",
-        "documentation": {}
-    },
-    {
-        "label": "sl_from_embeddings",
-        "importPath": "utils.linkage",
-        "description": "utils.linkage",
-        "isExtraImport": true,
-        "detail": "utils.linkage",
-        "documentation": {}
-    },
-    {
-        "label": "nn_merge_uf_fast_np",
-        "importPath": "utils.linkage",
-        "description": "utils.linkage",
-        "isExtraImport": true,
-        "detail": "utils.linkage",
-        "documentation": {}
-    },
-    {
-        "label": "sl_from_embeddings",
-        "importPath": "utils.linkage",
-        "description": "utils.linkage",
-        "isExtraImport": true,
-        "detail": "utils.linkage",
-        "documentation": {}
-    },
-    {
-        "label": "project",
-        "importPath": "utils.poincare",
-        "description": "utils.poincare",
-        "isExtraImport": true,
-        "detail": "utils.poincare",
-        "documentation": {}
-    },
-    {
         "label": "hyp_dist",
-        "importPath": "utils.poincare",
-        "description": "utils.poincare",
-        "isExtraImport": true,
-        "detail": "utils.poincare",
-        "documentation": {}
-    },
-    {
-        "label": "project",
         "importPath": "utils.poincare",
         "description": "utils.poincare",
         "isExtraImport": true,
@@ -669,6 +420,14 @@
     },
     {
         "label": "project",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist",
         "importPath": "utils.poincare",
         "description": "utils.poincare",
         "isExtraImport": true,
@@ -852,180 +611,172 @@
         "documentation": {}
     },
     {
-        "label": "setup",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
-        "documentation": {}
-    },
-    {
-        "label": "setup",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
-        "documentation": {}
-    },
-    {
-        "label": "setup",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
-        "documentation": {}
-    },
-    {
-        "label": "setup",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
-        "documentation": {}
-    },
-    {
-        "label": "setup",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
-        "documentation": {}
-    },
-    {
-        "label": "setup",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
-        "documentation": {}
-    },
-    {
-        "label": "cythonize",
-        "importPath": "Cython.Build",
-        "description": "Cython.Build",
-        "isExtraImport": true,
-        "detail": "Cython.Build",
-        "documentation": {}
-    },
-    {
-        "label": "cythonize",
-        "importPath": "Cython.Build",
-        "description": "Cython.Build",
-        "isExtraImport": true,
-        "detail": "Cython.Build",
-        "documentation": {}
-    },
-    {
-        "label": "cythonize",
-        "importPath": "Cython.Build",
-        "description": "Cython.Build",
-        "isExtraImport": true,
-        "detail": "Cython.Build",
-        "documentation": {}
-    },
-    {
-        "label": "cythonize",
-        "importPath": "Cython.Build",
-        "description": "Cython.Build",
-        "isExtraImport": true,
-        "detail": "Cython.Build",
-        "documentation": {}
-    },
-    {
-        "label": "cythonize",
-        "importPath": "Cython.Build",
-        "description": "Cython.Build",
-        "isExtraImport": true,
-        "detail": "Cython.Build",
-        "documentation": {}
-    },
-    {
-        "label": "cythonize",
-        "importPath": "Cython.Build",
-        "description": "Cython.Build",
-        "isExtraImport": true,
-        "detail": "Cython.Build",
-        "documentation": {}
-    },
-    {
-        "label": "mst",
+        "label": "networkx",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "mst",
-        "description": "mst",
-        "detail": "mst",
+        "importPath": "networkx",
+        "description": "networkx",
+        "detail": "networkx",
         "documentation": {}
     },
     {
-        "label": "mst",
-        "importPath": "mst",
-        "description": "mst",
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
         "isExtraImport": true,
-        "detail": "mst",
+        "detail": "utils.lca",
         "documentation": {}
     },
     {
-        "label": "mst",
-        "importPath": "mst",
-        "description": "mst",
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
         "isExtraImport": true,
-        "detail": "mst",
+        "detail": "utils.lca",
         "documentation": {}
     },
     {
-        "label": "mst",
-        "importPath": "mst",
-        "description": "mst",
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
         "isExtraImport": true,
-        "detail": "mst",
+        "detail": "utils.lca",
         "documentation": {}
     },
     {
-        "label": "mst",
-        "importPath": "mst",
-        "description": "mst",
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
         "isExtraImport": true,
-        "detail": "mst",
+        "detail": "utils.lca",
         "documentation": {}
     },
     {
-        "label": "mst",
-        "importPath": "mst",
-        "description": "mst",
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
         "isExtraImport": true,
-        "detail": "mst",
+        "detail": "utils.lca",
         "documentation": {}
     },
     {
-        "label": "mst",
-        "importPath": "mst",
-        "description": "mst",
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
         "isExtraImport": true,
-        "detail": "mst",
+        "detail": "utils.lca",
         "documentation": {}
     },
     {
-        "label": "mst",
-        "importPath": "mst",
-        "description": "mst",
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
         "isExtraImport": true,
-        "detail": "mst",
+        "detail": "utils.lca",
         "documentation": {}
     },
     {
-        "label": "mst",
-        "importPath": "mst",
-        "description": "mst",
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
         "isExtraImport": true,
-        "detail": "mst",
+        "detail": "utils.lca",
         "documentation": {}
     },
     {
-        "label": "mst",
-        "importPath": "mst",
-        "description": "mst",
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
         "isExtraImport": true,
-        "detail": "mst",
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "nn_merge_uf_fast_np",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "sl_from_embeddings",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "nn_merge_uf_fast_np",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "sl_from_embeddings",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "nn_merge_uf_fast_np",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "sl_from_embeddings",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
         "documentation": {}
     },
     {
@@ -1038,39 +789,6 @@
         "documentation": {}
     },
     {
-        "label": "unionfind",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "unionfind",
-        "description": "unionfind",
-        "detail": "unionfind",
-        "documentation": {}
-    },
-    {
-        "label": "unionfind",
-        "importPath": "unionfind",
-        "description": "unionfind",
-        "isExtraImport": true,
-        "detail": "unionfind",
-        "documentation": {}
-    },
-    {
-        "label": "unionfind",
-        "importPath": "unionfind",
-        "description": "unionfind",
-        "isExtraImport": true,
-        "detail": "unionfind",
-        "documentation": {}
-    },
-    {
-        "label": "unionfind",
-        "importPath": "unionfind",
-        "description": "unionfind",
-        "isExtraImport": true,
-        "detail": "unionfind",
-        "documentation": {}
-    },
-    {
         "label": "time",
         "kind": 6,
         "isExtraImport": true,
@@ -1080,6 +798,47 @@
         "documentation": {}
     },
     {
+        "label": "utils.unionfind",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "utils.unionfind",
+        "description": "utils.unionfind",
+        "detail": "utils.unionfind",
+        "documentation": {}
+    },
+    {
+        "label": "UnionFind",
+        "importPath": "utils.unionfind",
+        "description": "utils.unionfind",
+        "isExtraImport": true,
+        "detail": "utils.unionfind",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "importPath": "utils.mst",
+        "description": "utils.mst",
+        "isExtraImport": true,
+        "detail": "utils.mst",
+        "documentation": {}
+    },
+    {
+        "label": "reorder",
+        "importPath": "utils.mst",
+        "description": "utils.mst",
+        "isExtraImport": true,
+        "detail": "utils.mst",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "importPath": "utils.mst",
+        "description": "utils.mst",
+        "isExtraImport": true,
+        "detail": "utils.mst",
+        "documentation": {}
+    },
+    {
         "label": "descendants_traversal",
         "importPath": "utils.tree",
         "description": "utils.tree",
@@ -1152,38 +911,6 @@
         "documentation": {}
     },
     {
-        "label": "tanh",
-        "importPath": "utils.math",
-        "description": "utils.math",
-        "isExtraImport": true,
-        "detail": "utils.math",
-        "documentation": {}
-    },
-    {
-        "label": "arctanh",
-        "importPath": "utils.math",
-        "description": "utils.math",
-        "isExtraImport": true,
-        "detail": "utils.math",
-        "documentation": {}
-    },
-    {
-        "label": "tanh",
-        "importPath": "utils.math",
-        "description": "utils.math",
-        "isExtraImport": true,
-        "detail": "utils.math",
-        "documentation": {}
-    },
-    {
-        "label": "arcosh",
-        "importPath": "utils.math",
-        "description": "utils.math",
-        "isExtraImport": true,
-        "detail": "utils.math",
-        "documentation": {}
-    },
-    {
         "label": "arctanh",
         "importPath": "utils.math",
         "description": "utils.math",
@@ -1293,33 +1020,6 @@
         "description": "utils.math",
         "isExtraImport": true,
         "detail": "utils.math",
-        "documentation": {}
-    },
-    {
-        "label": "argparse",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "argparse",
-        "description": "argparse",
-        "detail": "argparse",
-        "documentation": {}
-    },
-    {
-        "label": "hashlib",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "hashlib",
-        "description": "hashlib",
-        "detail": "hashlib",
-        "documentation": {}
-    },
-    {
-        "label": "matplotlib.pyplot",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "matplotlib.pyplot",
-        "description": "matplotlib.pyplot",
-        "detail": "matplotlib.pyplot",
         "documentation": {}
     },
     {
@@ -1560,15 +1260,6 @@
         "documentation": {}
     },
     {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
-        "documentation": {}
-    },
-    {
         "label": "optim",
         "kind": 6,
         "isExtraImport": true,
@@ -1602,6 +1293,14 @@
         "documentation": {}
     },
     {
+        "label": "balance_dataset",
+        "importPath": "datasets.balance_dataset",
+        "description": "datasets.balance_dataset",
+        "isExtraImport": true,
+        "detail": "datasets.balance_dataset",
+        "documentation": {}
+    },
+    {
         "label": "load_data",
         "importPath": "datasets.loading",
         "description": "datasets.loading",
@@ -1650,11 +1349,11 @@
         "documentation": {}
     },
     {
-        "label": "dasgupta_cost",
-        "importPath": "utils.metrics",
-        "description": "utils.metrics",
+        "label": "balancehc",
+        "importPath": "model.balancehc",
+        "description": "model.balancehc",
         "isExtraImport": true,
-        "detail": "utils.metrics",
+        "detail": "model.balancehc",
         "documentation": {}
     },
     {
@@ -1674,99 +1373,11 @@
         "documentation": {}
     },
     {
-        "label": "add_flags_from_config",
-        "importPath": "utils.training",
-        "description": "utils.training",
+        "label": "dasgupta_cost",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
         "isExtraImport": true,
-        "detail": "utils.training",
-        "documentation": {}
-    },
-    {
-        "label": "get_savedir",
-        "importPath": "utils.training",
-        "description": "utils.training",
-        "isExtraImport": true,
-        "detail": "utils.training",
-        "documentation": {}
-    },
-    {
-        "label": "add_flags_from_config",
-        "importPath": "utils.training",
-        "description": "utils.training",
-        "isExtraImport": true,
-        "detail": "utils.training",
-        "documentation": {}
-    },
-    {
-        "label": "get_savedir",
-        "importPath": "utils.training",
-        "description": "utils.training",
-        "isExtraImport": true,
-        "detail": "utils.training",
-        "documentation": {}
-    },
-    {
-        "label": "add_flags_from_config",
-        "importPath": "utils.training",
-        "description": "utils.training",
-        "isExtraImport": true,
-        "detail": "utils.training",
-        "documentation": {}
-    },
-    {
-        "label": "get_savedir",
-        "importPath": "utils.training",
-        "description": "utils.training",
-        "isExtraImport": true,
-        "detail": "utils.training",
-        "documentation": {}
-    },
-    {
-        "label": "plot_tree_from_leaves",
-        "importPath": "utils.visualization",
-        "description": "utils.visualization",
-        "isExtraImport": true,
-        "detail": "utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "plot_geodesic",
-        "importPath": "utils.visualization",
-        "description": "utils.visualization",
-        "isExtraImport": true,
-        "detail": "utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "plot_tree_from_leaves",
-        "importPath": "utils.visualization",
-        "description": "utils.visualization",
-        "isExtraImport": true,
-        "detail": "utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "plot_geodesic",
-        "importPath": "utils.visualization",
-        "description": "utils.visualization",
-        "isExtraImport": true,
-        "detail": "utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "plot_tree_from_leaves",
-        "importPath": "utils.visualization",
-        "description": "utils.visualization",
-        "isExtraImport": true,
-        "detail": "utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "plot_geodesic",
-        "importPath": "utils.visualization",
-        "description": "utils.visualization",
-        "isExtraImport": true,
-        "detail": "utils.visualization",
+        "detail": "utils.metrics",
         "documentation": {}
     },
     {
@@ -1841,6 +1452,252 @@
         "description": "core",
         "isExtraImport": true,
         "detail": "core",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "cythonize",
+        "importPath": "Cython.Build",
+        "description": "Cython.Build",
+        "isExtraImport": true,
+        "detail": "Cython.Build",
+        "documentation": {}
+    },
+    {
+        "label": "cythonize",
+        "importPath": "Cython.Build",
+        "description": "Cython.Build",
+        "isExtraImport": true,
+        "detail": "Cython.Build",
+        "documentation": {}
+    },
+    {
+        "label": "cythonize",
+        "importPath": "Cython.Build",
+        "description": "Cython.Build",
+        "isExtraImport": true,
+        "detail": "Cython.Build",
+        "documentation": {}
+    },
+    {
+        "label": "cythonize",
+        "importPath": "Cython.Build",
+        "description": "Cython.Build",
+        "isExtraImport": true,
+        "detail": "Cython.Build",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mst",
+        "description": "mst",
+        "detail": "mst",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "importPath": "mst",
+        "description": "mst",
+        "isExtraImport": true,
+        "detail": "mst",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "importPath": "mst",
+        "description": "mst",
+        "isExtraImport": true,
+        "detail": "mst",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "importPath": "mst",
+        "description": "mst",
+        "isExtraImport": true,
+        "detail": "mst",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "importPath": "mst",
+        "description": "mst",
+        "isExtraImport": true,
+        "detail": "mst",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "importPath": "mst",
+        "description": "mst",
+        "isExtraImport": true,
+        "detail": "mst",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "importPath": "mst",
+        "description": "mst",
+        "isExtraImport": true,
+        "detail": "mst",
+        "documentation": {}
+    },
+    {
+        "label": "unionfind",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unionfind",
+        "description": "unionfind",
+        "detail": "unionfind",
+        "documentation": {}
+    },
+    {
+        "label": "unionfind",
+        "importPath": "unionfind",
+        "description": "unionfind",
+        "isExtraImport": true,
+        "detail": "unionfind",
+        "documentation": {}
+    },
+    {
+        "label": "unionfind",
+        "importPath": "unionfind",
+        "description": "unionfind",
+        "isExtraImport": true,
+        "detail": "unionfind",
+        "documentation": {}
+    },
+    {
+        "label": "hashlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "add_flags_from_config",
+        "importPath": "utils.training",
+        "description": "utils.training",
+        "isExtraImport": true,
+        "detail": "utils.training",
+        "documentation": {}
+    },
+    {
+        "label": "get_savedir",
+        "importPath": "utils.training",
+        "description": "utils.training",
+        "isExtraImport": true,
+        "detail": "utils.training",
+        "documentation": {}
+    },
+    {
+        "label": "add_flags_from_config",
+        "importPath": "utils.training",
+        "description": "utils.training",
+        "isExtraImport": true,
+        "detail": "utils.training",
+        "documentation": {}
+    },
+    {
+        "label": "get_savedir",
+        "importPath": "utils.training",
+        "description": "utils.training",
+        "isExtraImport": true,
+        "detail": "utils.training",
+        "documentation": {}
+    },
+    {
+        "label": "plot_tree_from_leaves",
+        "importPath": "utils.visualization",
+        "description": "utils.visualization",
+        "isExtraImport": true,
+        "detail": "utils.visualization",
+        "documentation": {}
+    },
+    {
+        "label": "plot_geodesic",
+        "importPath": "utils.visualization",
+        "description": "utils.visualization",
+        "isExtraImport": true,
+        "detail": "utils.visualization",
+        "documentation": {}
+    },
+    {
+        "label": "plot_tree_from_leaves",
+        "importPath": "utils.visualization",
+        "description": "utils.visualization",
+        "isExtraImport": true,
+        "detail": "utils.visualization",
+        "documentation": {}
+    },
+    {
+        "label": "plot_geodesic",
+        "importPath": "utils.visualization",
+        "description": "utils.visualization",
+        "isExtraImport": true,
+        "detail": "utils.visualization",
         "documentation": {}
     },
     {
@@ -2080,7 +1937,7 @@
         "kind": 2,
         "importPath": "package.utils.linkage",
         "description": "package.utils.linkage",
-        "peekOfCode": "def sl_np_mst(similarities):\n    n = similarities.shape[0]\n    similarities=similarities.astype('double')\n    ij, _ = mst.mst(similarities, n)\n    uf = unionfind.UnionFind(n)\n    uf.merge(ij)\n    return uf.tree\ndef sl_from_embeddings(xs, S):\n    xs0 = xs[None, :, :]\n    xs1 = xs[:, None, :]",
+        "peekOfCode": "def sl_np_mst(similarities):\n    n = similarities.shape[0]\n    similarities=similarities.astype('double')\n    ij, _ = mst(similarities, n)\n    uf = unionfind.UnionFind(n)\n    uf.merge(ij)\n    return uf.tree\ndef sl_from_embeddings(xs, S):\n    xs0 = xs[None, :, :]\n    xs1 = xs[:, None, :]",
         "detail": "package.utils.linkage",
         "documentation": {}
     },
@@ -2184,21 +2041,30 @@
         "documentation": {}
     },
     {
-        "label": "dasgupta_cost_iterative",
-        "kind": 2,
-        "importPath": "package.utils.metrics",
-        "description": "package.utils.metrics",
-        "peekOfCode": "def dasgupta_cost_iterative(tree, similarities):\n    \"\"\" Non-recursive version of DC. Also works on non-binary trees \"\"\"\n    n = len(list(tree.nodes()))\n    root = n - 1\n    cost = [0] * n\n    desc = [None] * n  # intermediate computation: children of node\n    children = [list(tree.neighbors(node)) for node in range(n)]  # children remaining to process\n    stack = [root]\n    while len(stack) > 0:\n        node = stack[-1]",
-        "detail": "package.utils.metrics",
-        "documentation": {}
-    },
-    {
         "label": "dasgupta_cost",
         "kind": 2,
         "importPath": "package.utils.metrics",
         "description": "package.utils.metrics",
         "peekOfCode": "def dasgupta_cost(tree, similarities):\n    \"\"\" Non-recursive version of DC for binary trees.\n    Optimized for speed by reordering similarity matrix for locality\n    \"\"\"\n    n = len(list(tree.nodes()))\n    root = n - 1\n    n_leaves = len(similarities)\n    leaves = descendants_traversal(tree)\n    n_desc, left_desc = descendants_count(tree)\n    cost = [0] * n  # local cost for every node",
         "detail": "package.utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "kind": 2,
+        "importPath": "package.utils.mst",
+        "description": "package.utils.mst",
+        "peekOfCode": "def mst(dists, n):\n    ij = np.empty((n - 1, 2), dtype=np.int)\n    Z = ij\n    l = np.empty(n-1)\n    l_ = l\n    # Which nodes were already merged.\n    merged = np.zeros(n, dtype=np.int)\n    # Best distance of node i to current tree\n    D = np.empty(n)\n    D[:] = - np.inf",
+        "detail": "package.utils.mst",
+        "documentation": {}
+    },
+    {
+        "label": "reorder",
+        "kind": 2,
+        "importPath": "package.utils.mst",
+        "description": "package.utils.mst",
+        "peekOfCode": "def reorder( A,  idx, n):\n    \"\"\"\n    A : (n, n)\n    idx: (n)\n    \"\"\"\n    B = np.empty((n, n))\n    B_ = B\n    for i in range(n):\n        k = idx[i]\n        for j in range(n):",
+        "detail": "package.utils.mst",
         "documentation": {}
     },
     {
@@ -2328,42 +2194,6 @@
         "documentation": {}
     },
     {
-        "label": "str2bool",
-        "kind": 2,
-        "importPath": "package.utils.training",
-        "description": "package.utils.training",
-        "peekOfCode": "def str2bool(v):\n    \"\"\"Converts string to boolean.\"\"\"\n    if isinstance(v, bool):\n        return v\n    if v.lower() in ('yes', 'true', 't', 'y', '1'):\n        return True\n    elif v.lower() in ('no', 'false', 'f', 'n', '0'):\n        return False\n    else:\n        raise argparse.ArgumentTypeError('Boolean value expected.')",
-        "detail": "package.utils.training",
-        "documentation": {}
-    },
-    {
-        "label": "add_flags_from_config",
-        "kind": 2,
-        "importPath": "package.utils.training",
-        "description": "package.utils.training",
-        "peekOfCode": "def add_flags_from_config(parser, config_dict):\n    \"\"\"Adds a flag (and default value) to an ArgumentParser for each parameter in a config.\"\"\"\n    def OrNone(default):\n        def func(x):\n            # Convert \"none\" to proper None object\n            if x.lower() == \"none\":\n                return None\n            # If default is None (and x is not None), return x without conversion as str\n            elif default is None:\n                return str(x)",
-        "detail": "package.utils.training",
-        "documentation": {}
-    },
-    {
-        "label": "hash_dict",
-        "kind": 2,
-        "importPath": "package.utils.training",
-        "description": "package.utils.training",
-        "peekOfCode": "def hash_dict(values):\n    \"\"\"Hash of dict key, value pairs.\"\"\"\n    m = hashlib.sha256()\n    keys = sorted(list(values.keys()))\n    for k in keys:\n        if k != \"seed\":\n            m.update(str(values[k]).encode('utf-8'))\n    return m.hexdigest()\ndef get_savedir(args):\n    \"\"\"Hash of args used for training.\"\"\"",
-        "detail": "package.utils.training",
-        "documentation": {}
-    },
-    {
-        "label": "get_savedir",
-        "kind": 2,
-        "importPath": "package.utils.training",
-        "description": "package.utils.training",
-        "peekOfCode": "def get_savedir(args):\n    \"\"\"Hash of args used for training.\"\"\"\n    dir_hash = hash_dict(args.__dict__)\n    save_dir = os.path.join(os.environ[\"SAVEPATH\"], args.dataset, dir_hash)\n    return save_dir",
-        "detail": "package.utils.training",
-        "documentation": {}
-    },
-    {
         "label": "descendants_traversal",
         "kind": 2,
         "importPath": "package.utils.tree",
@@ -2382,93 +2212,16 @@
         "documentation": {}
     },
     {
-        "label": "mobius_add",
-        "kind": 2,
-        "importPath": "package.utils.visualization",
-        "description": "package.utils.visualization",
-        "peekOfCode": "def mobius_add(x, y):\n    \"\"\"Mobius addition in numpy.\"\"\"\n    xy = np.sum(x * y, 1, keepdims=True)\n    x2 = np.sum(x * x, 1, keepdims=True)\n    y2 = np.sum(y * y, 1, keepdims=True)\n    num = (1 + 2 * xy + y2) * x + (1 - x2) * y\n    den = 1 + 2 * xy + x2 * y2\n    return num / den\ndef mobius_mul(x, t):\n    \"\"\"Mobius multiplication in numpy.\"\"\"",
-        "detail": "package.utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "mobius_mul",
-        "kind": 2,
-        "importPath": "package.utils.visualization",
-        "description": "package.utils.visualization",
-        "peekOfCode": "def mobius_mul(x, t):\n    \"\"\"Mobius multiplication in numpy.\"\"\"\n    normx = np.sqrt(np.sum(x * x, 1, keepdims=True)) \n    return np.tanh(t * np.arctanh(normx)) * x / normx \ndef geodesic_fn(x, y, nb_points=100):\n    \"\"\"Get coordinates of points on the geodesic between x and y.\"\"\"\n    t = np.linspace(0, 1, nb_points)\n    x_rep = np.repeat(x.reshape((1, -1)), len(t), 0)\n    y_rep = np.repeat(y.reshape((1, -1)), len(t), 0)\n    t1 = mobius_add(-x_rep, y_rep)",
-        "detail": "package.utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "geodesic_fn",
-        "kind": 2,
-        "importPath": "package.utils.visualization",
-        "description": "package.utils.visualization",
-        "peekOfCode": "def geodesic_fn(x, y, nb_points=100):\n    \"\"\"Get coordinates of points on the geodesic between x and y.\"\"\"\n    t = np.linspace(0, 1, nb_points)\n    x_rep = np.repeat(x.reshape((1, -1)), len(t), 0)\n    y_rep = np.repeat(y.reshape((1, -1)), len(t), 0)\n    t1 = mobius_add(-x_rep, y_rep)\n    t2 = mobius_mul(t1, t.reshape((-1, 1)))\n    return mobius_add(x_rep, t2)\ndef plot_geodesic(x, y, ax):\n    \"\"\"Plots geodesic between x and y.\"\"\"",
-        "detail": "package.utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "plot_geodesic",
-        "kind": 2,
-        "importPath": "package.utils.visualization",
-        "description": "package.utils.visualization",
-        "peekOfCode": "def plot_geodesic(x, y, ax):\n    \"\"\"Plots geodesic between x and y.\"\"\"\n    points = geodesic_fn(x, y)\n    ax.plot(points[:, 0]*20, points[:, 1]*20, color='black', linewidth=1.5, alpha=1)\ndef complete_tree(tree, leaves_embeddings):\n    \"\"\"Get embeddings of internal nodes from leaves' embeddings using LCA construction.\"\"\"\n    def _complete_tree(embeddings, node):\n        children = list(tree.neighbors(node))\n        if len(children) == 2:\n            left_c, right_c = children",
-        "detail": "package.utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "complete_tree",
-        "kind": 2,
-        "importPath": "package.utils.visualization",
-        "description": "package.utils.visualization",
-        "peekOfCode": "def complete_tree(tree, leaves_embeddings):\n    \"\"\"Get embeddings of internal nodes from leaves' embeddings using LCA construction.\"\"\"\n    def _complete_tree(embeddings, node):\n        children = list(tree.neighbors(node))\n        if len(children) == 2:\n            left_c, right_c = children\n            left_leaf = is_leaf(tree, left_c)\n            right_leaf = is_leaf(tree, right_c)\n            if left_leaf and right_leaf:\n                pass",
-        "detail": "package.utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "hyp_lca_numpy",
-        "kind": 2,
-        "importPath": "package.utils.visualization",
-        "description": "package.utils.visualization",
-        "peekOfCode": "def hyp_lca_numpy(x, y):\n    \"\"\"Computes the hyperbolic LCA in numpy.\"\"\"\n    x = torch.from_numpy(x).view((1, 2))\n    y = torch.from_numpy(y).view((1, 2))\n    lca = hyp_lca(x, y, return_coord=True)\n    return lca.view((2,)).numpy()\ndef is_leaf(tree, node):\n    \"\"\"check if node is a leaf in tree.\"\"\"\n    return len(list(tree.neighbors(node))) == 0\ndef plot_tree_from_leaves(ax, tree, leaves_embeddings, labels, color_seed=1234):",
-        "detail": "package.utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "is_leaf",
-        "kind": 2,
-        "importPath": "package.utils.visualization",
-        "description": "package.utils.visualization",
-        "peekOfCode": "def is_leaf(tree, node):\n    \"\"\"check if node is a leaf in tree.\"\"\"\n    return len(list(tree.neighbors(node))) == 0\ndef plot_tree_from_leaves(ax, tree, leaves_embeddings, labels, color_seed=1234):\n    \"\"\"Plots a tree on leaves embeddings using the LCA construction.\"\"\"\n    circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)\n    ax.add_artist(circle)\n    n = leaves_embeddings.shape[0]\n    embeddings = complete_tree(tree, leaves_embeddings)\n    colors = get_colors(labels, color_seed)",
-        "detail": "package.utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "plot_tree_from_leaves",
-        "kind": 2,
-        "importPath": "package.utils.visualization",
-        "description": "package.utils.visualization",
-        "peekOfCode": "def plot_tree_from_leaves(ax, tree, leaves_embeddings, labels, color_seed=1234):\n    \"\"\"Plots a tree on leaves embeddings using the LCA construction.\"\"\"\n    circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)\n    ax.add_artist(circle)\n    n = leaves_embeddings.shape[0]\n    embeddings = complete_tree(tree, leaves_embeddings)\n    colors = get_colors(labels, color_seed)\n    ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)\n    for n1, n2 in tree.edges():\n        x1 = embeddings[n1]",
-        "detail": "package.utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "get_colors",
-        "kind": 2,
-        "importPath": "package.utils.visualization",
-        "description": "package.utils.visualization",
-        "peekOfCode": "def get_colors(y, color_seed=1234):\n    \"\"\"random color assignment for label classes.\"\"\"\n    np.random.seed(color_seed)\n    colors = {}\n    for k in np.unique(y):\n        r = np.random.random()\n        b = np.random.random()\n        g = np.random.random()\n        colors[k] = (r, g, b)\n    return [colors[k] for k in y]",
-        "detail": "package.utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "plot_tree_from_leaves_djj_1",
-        "kind": 2,
-        "importPath": "package.utils.visualization",
-        "description": "package.utils.visualization",
-        "peekOfCode": "def plot_tree_from_leaves_djj_1(ax, tree, leaves_embeddings, labels, color_seed=1234):\n    \"\"\"Plots a tree on leaves embeddings using the LCA construction.\"\"\"\n    circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)\n    ax.add_artist(circle)\n    n = leaves_embeddings.shape[0]\n    embeddings = complete_tree(tree, leaves_embeddings)\n    colors = get_colors(labels, color_seed)\n    ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)\n    for n1, n2 in tree.edges():\n        x1 = embeddings[n1]",
-        "detail": "package.utils.visualization",
+        "label": {
+            "name": "",
+            "kind": 6,
+            "peekOfCode": "class  UnionFind:\n    def __init__(self, n):\n        self.n = n\n        # self.c = c\n        self.parent = [i for i in range(n)]\n        self.rank = [0 for i in range(n)]\n        self._next_id = n\n        self._tree = [-1 for i in range(2*n-1)]\n        self._id = [i for i in range(n)]\n    def _find(self, i):"
+        },
+        "kind": 6,
+        "importPath": "package.utils.unionfind",
+        "description": "package.utils.unionfind",
+        "peekOfCode": "class  UnionFind:\n    def __init__(self, n):\n        self.n = n\n        # self.c = c\n        self.parent = [i for i in range(n)]\n        self.rank = [0 for i in range(n)]\n        self._next_id = n\n        self._tree = [-1 for i in range(2*n-1)]\n        self._id = [i for i in range(n)]\n    def _find(self, i):",
+        "detail": "package.utils.unionfind",
         "documentation": {}
     },
     {
@@ -2530,21 +2283,8 @@
         "kind": 2,
         "importPath": "package.core",
         "description": "package.core",
-        "peekOfCode": "def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin=True,resolution=0.5,method='average'):\n    current_GMT = time.gmtime()\n    ts = calendar.timegm(current_GMT)\n    print(\"Current timestamp:\", ts)\n    log1 = open(folder_path1+\"log_{}.txt\".format(ts), \"a\")   \n    log2 = open(folder_path2+\"log_{}.txt\".format(ts), \"a\")\n    log1.write(\"args for data1: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path1,folder_path1,radius1,c1,epoches1))\n    log1.write(\"args for data2: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path2,folder_path2,radius2,c2,epoches2))\n    log2.write(\"args for data1: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path1,folder_path1,radius1,c1,epoches1))\n    log2.write(\"args for data2: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path2,folder_path2,radius2,c2,epoches2))",
+        "peekOfCode": "def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin=True,resolution=0.5,method='average'):\n    current_GMT = time.gmtime()\n    ts = calendar.timegm(current_GMT)\n    print(\"Current timestamp:\", ts)\n    log1 = open(folder_path1+\"log_{}.txt\".format(ts), \"w\")   \n    log2 = open(folder_path2+\"log_{}.txt\".format(ts), \"w\")\n    log1.write(\"args for data1: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path1,folder_path1,radius1,c1,epoches1))\n    log1.write(\"args for data2: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path2,folder_path2,radius2,c2,epoches2))\n    log2.write(\"args for data1: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path1,folder_path1,radius1,c1,epoches1))\n    log2.write(\"args for data2: -cp1 {} -f1 {},-r1 {},-c1 {},-e {}\\n\".format(cell_path2,folder_path2,radius2,c2,epoches2))",
         "detail": "package.core",
-        "documentation": {}
-    },
-    {
-        "label": {
-            "name": "",
-            "kind": 6,
-            "peekOfCode": "class  UnionFind:\n    def __init__(self, n , pos):\n        self.n = n\n        self.pos = pos\n        # self.c = c\n        self.parent = [i for i in range(n)]\n        self.rank = [0 for i in range(n)]\n        self.vis = [0 for i in range(2*n-1)]\n        self.vis2 = [0 for i in range(2*n-1)]\n        self.mer = [-1 for i in range(2*n-1)]"
-        },
-        "kind": 6,
-        "importPath": "package.hyper",
-        "description": "package.hyper",
-        "peekOfCode": "class  UnionFind:\n    def __init__(self, n , pos):\n        self.n = n\n        self.pos = pos\n        # self.c = c\n        self.parent = [i for i in range(n)]\n        self.rank = [0 for i in range(n)]\n        self.vis = [0 for i in range(2*n-1)]\n        self.vis2 = [0 for i in range(2*n-1)]\n        self.mer = [-1 for i in range(2*n-1)]",
-        "detail": "package.hyper",
         "documentation": {}
     },
     {
@@ -2579,25 +2319,16 @@
         "kind": 2,
         "importPath": "package.hyper",
         "description": "package.hyper",
-        "peekOfCode": "def train(model,dataloader,optimizer,similarities,epoches):\n    best_cost = np.inf\n    best_model = None\n    counter = 0\n    for epoch in range(epoches):\n        model.train()\n        total_loss = 0.0\n        # with tqdm(total=len(dataloader), unit='ex') as bar:\n        #     for step, (triple_ids, triple_similarities) in enumerate(dataloader):\n        #         # triple_ids = triple_ids.cuda()",
+        "peekOfCode": "def train(model,dataloader,optimizer,similarities,epoches):\n    best_cost = np.inf\n    best_model = None\n    counter = 0\n    for epoch in range(epoches):\n        model.train()\n        total_loss = 0.0\n        for step, (triple_ids, triple_similarities) in enumerate(dataloader):\n            loss = model.loss(triple_ids, triple_similarities)\n            optimizer.zero_grad()",
         "detail": "package.hyper",
         "documentation": {}
     },
     {
-        "label": "dist",
+        "label": "train2",
         "kind": 2,
         "importPath": "package.hyper",
         "description": "package.hyper",
-        "peekOfCode": "def dist(x,y):\n    return arcosh(1+ 2*( (x-y).norm(dim=-1, p=2, keepdim=True))/((1- y.norm(dim=-1, p=2, keepdim=True))*(1- x.norm(dim=-1, p=2, keepdim=True))));\ndef plot_tree_from_leaves_djj_1(ax, tree, leaves_embeddings, labels, color_seed=1234):\n    \"\"\"Plots a tree on leaves embeddings using the LCA construction.\"\"\"\n    circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)\n    ax.add_artist(circle)\n    n = leaves_embeddings.shape[0]\n    embeddings = complete_tree(tree, leaves_embeddings)\n    colors = get_colors(labels, color_seed)\n    ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)",
-        "detail": "package.hyper",
-        "documentation": {}
-    },
-    {
-        "label": "plot_tree_from_leaves_djj_1",
-        "kind": 2,
-        "importPath": "package.hyper",
-        "description": "package.hyper",
-        "peekOfCode": "def plot_tree_from_leaves_djj_1(ax, tree, leaves_embeddings, labels, color_seed=1234):\n    \"\"\"Plots a tree on leaves embeddings using the LCA construction.\"\"\"\n    circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)\n    ax.add_artist(circle)\n    n = leaves_embeddings.shape[0]\n    embeddings = complete_tree(tree, leaves_embeddings)\n    colors = get_colors(labels, color_seed)\n    ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)\n    for n1, n2 in tree.edges():\n        x1 = embeddings[n1]",
+        "peekOfCode": "def train2(model,dataloader,optimizer,epoches):\n    best_cost = np.inf\n    best_model = None\n    counter = 0\n    for epoch in range(epoches):\n        model.train()\n        total_loss = 0.0\n        for step, datas in enumerate(dataloader):\n            loss = model.loss(datas[0],datas[1],datas[2],datas[3],datas[4],datas[5])\n            optimizer.zero_grad()",
         "detail": "package.hyper",
         "documentation": {}
     },
@@ -2606,7 +2337,7 @@
         "kind": 2,
         "importPath": "package.hyper",
         "description": "package.hyper",
-        "peekOfCode": "def sl_np_mst_ij(xs, S):\n    xs = project(xs).detach().cpu()\n    xs0 = xs[None, :, :]\n    xs1 = xs[:, None, :]\n    sim_mat = S(xs0, xs1)  # (n, n)\n    similarities = sim_mat.numpy()\n    n = similarities.shape[0]\n    similarities=similarities.astype('double')\n    ij, _ = mst.mst(similarities, n)\n    return ij",
+        "peekOfCode": "def sl_np_mst_ij(xs, S):\n    xs = project(xs).detach()\n    xs0 = xs[None, :, :]\n    xs1 = xs[:, None, :]\n    sim_mat = S(xs0, xs1)  # (n, n)\n    similarities = sim_mat.numpy()\n    n = similarities.shape[0]\n    similarities=similarities.astype('double')\n    ij, _ = mst(similarities, n)\n    return ij",
         "detail": "package.hyper",
         "documentation": {}
     },
@@ -2624,7 +2355,16 @@
         "kind": 2,
         "importPath": "package.hyper",
         "description": "package.hyper",
-        "peekOfCode": "def search_merge_tree(now,ids,save_path,values,fathers,xys):\n    fathers.append(ids);\n    values.append(now.name);\n    xys.append(now.value.numpy());\n    now_id = len(values)-1;\n    for son in now.son:\n        search_merge_tree(son,now_id,save_path,values,fathers,xys)\ndef get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='./',c=-1):\n    np.random.seed(1234)\n    torch.manual_seed(1234)",
+        "peekOfCode": "def search_merge_tree(now,ids,save_path,values,fathers,xys):\n    fathers.append(ids);\n    values.append(now.name);\n    xys.append(now.value);\n    now_id = len(values)-1;\n    for son in now.son:\n        search_merge_tree(son,now_id,save_path,values,fathers,xys)\ndef deep_search_tree(now,depth,path,f):\n    now.f=f\n    now.depth=depth;",
+        "detail": "package.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "deep_search_tree",
+        "kind": 2,
+        "importPath": "package.hyper",
+        "description": "package.hyper",
+        "peekOfCode": "def deep_search_tree(now,depth,path,f):\n    now.f=f\n    now.depth=depth;\n    path.append(now);\n    now.path=path.copy();\n    if(f!=now):\n        now.distance_to_root = f.distance_to_root + hyp_dist(f.value,now.value)\n    else:\n        now.distance_to_root = 0\n    for i in now.son:",
         "detail": "package.hyper",
         "documentation": {}
     },
@@ -2633,7 +2373,7 @@
         "kind": 2,
         "importPath": "package.hyper",
         "description": "package.hyper",
-        "peekOfCode": "def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,save_path='./',c=-1):\n    np.random.seed(1234)\n    torch.manual_seed(1234)\n    # x, y_true, similarities = load_data('../../../cityu/HypHC/data/4_8/4_8.data',start,end,lable)\n    x, y_true, similarities = load_data(data_path,start,end,lable)\n    print(\"{} length:{}\".format(data_path,len(y_true)));\n    dataset = HCDataset(x, y_true, similarities, num_samples=50000)\n    dataloader = data.DataLoader(dataset, batch_size=32, shuffle=True, num_workers=8, pin_memory=True)\n    model = HypHC(dataset.n_nodes, 2, 5e-2, 5e-2 ,0.999)\n    if(model_path==None or os.path.exists(model_path)==False):",
+        "peekOfCode": "def get_Hyper_tree(data_path,start,end,lable,epoches,model_path=None,model_path2=None,save_path='./',c=-1):\n    np.random.seed(1234)\n    torch.manual_seed(1234)\n    x, y_true, similarities = load_data(data_path,start,end,lable)\n    print(\"{} length:{}\".format(data_path,len(y_true)));\n    dataset = HCDataset(x, y_true, similarities, num_samples=50000)\n    dataloader = data.DataLoader(dataset, batch_size=32, shuffle=True, pin_memory=True)\n    model = HypHC(dataset.n_nodes, 2, 5e-2, 5e-2 ,0.999)\n    if(model_path==None or os.path.exists(model_path)==False):\n        model.to(\"cpu\")",
         "detail": "package.hyper",
         "documentation": {}
     },
@@ -2723,7 +2463,7 @@
         "kind": 5,
         "importPath": "package.run_sc",
         "description": "package.run_sc",
-        "peekOfCode": "folder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)",
+        "peekOfCode": "folder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=0.5,method=method)",
         "detail": "package.run_sc",
         "documentation": {}
     },
@@ -2732,7 +2472,7 @@
         "kind": 5,
         "importPath": "package.run_sc",
         "description": "package.run_sc",
-        "peekOfCode": "radius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "radius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=0.5,method=method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
         "detail": "package.run_sc",
         "documentation": {}
     },
@@ -2741,7 +2481,7 @@
         "kind": 5,
         "importPath": "package.run_sc",
         "description": "package.run_sc",
-        "peekOfCode": "radius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "radius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=0.5,method=method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10\n# python run_sc.py -cp1 './datas/test/A35.h5' -f1 \"./datas/118/1/\" -r1 147.63807097087118 -c1 0.001 -e1 5 -cp2 './datas/test/A36.h5' -f2 \"./datas/118/2/\" -r2 149.58609561052123 -c2 0.001 -e2 5 --contin True",
         "detail": "package.run_sc",
         "documentation": {}
     },
@@ -2750,7 +2490,7 @@
         "kind": 5,
         "importPath": "package.run_sc",
         "description": "package.run_sc",
-        "peekOfCode": "c1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "c1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=0.5,method=method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10\n# python run_sc.py -cp1 './datas/test/A35.h5' -f1 \"./datas/118/1/\" -r1 147.63807097087118 -c1 0.001 -e1 5 -cp2 './datas/test/A36.h5' -f2 \"./datas/118/2/\" -r2 149.58609561052123 -c2 0.001 -e2 5 --contin True",
         "detail": "package.run_sc",
         "documentation": {}
     },
@@ -2759,7 +2499,7 @@
         "kind": 5,
         "importPath": "package.run_sc",
         "description": "package.run_sc",
-        "peekOfCode": "c2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "c2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=0.5,method=method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10\n# python run_sc.py -cp1 './datas/test/A35.h5' -f1 \"./datas/118/1/\" -r1 147.63807097087118 -c1 0.001 -e1 5 -cp2 './datas/test/A36.h5' -f2 \"./datas/118/2/\" -r2 149.58609561052123 -c2 0.001 -e2 5 --contin True",
         "detail": "package.run_sc",
         "documentation": {}
     },
@@ -2768,7 +2508,7 @@
         "kind": 5,
         "importPath": "package.run_sc",
         "description": "package.run_sc",
-        "peekOfCode": "epoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "epoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=0.5,method=method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10\n# python run_sc.py -cp1 './datas/test/A35.h5' -f1 \"./datas/118/1/\" -r1 147.63807097087118 -c1 0.001 -e1 5 -cp2 './datas/test/A36.h5' -f2 \"./datas/118/2/\" -r2 149.58609561052123 -c2 0.001 -e2 5 --contin True",
         "detail": "package.run_sc",
         "documentation": {}
     },
@@ -2777,7 +2517,7 @@
         "kind": 5,
         "importPath": "package.run_sc",
         "description": "package.run_sc",
-        "peekOfCode": "epoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "epoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=0.5,method=method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10\n# python run_sc.py -cp1 './datas/test/A35.h5' -f1 \"./datas/118/1/\" -r1 147.63807097087118 -c1 0.001 -e1 5 -cp2 './datas/test/A36.h5' -f2 \"./datas/118/2/\" -r2 149.58609561052123 -c2 0.001 -e2 5 --contin True",
         "detail": "package.run_sc",
         "documentation": {}
     },
@@ -2786,7 +2526,7 @@
         "kind": 5,
         "importPath": "package.run_sc",
         "description": "package.run_sc",
-        "peekOfCode": "contin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "contin = args.contin\nmethod = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=0.5,method=method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10\n# python run_sc.py -cp1 './datas/test/A35.h5' -f1 \"./datas/118/1/\" -r1 147.63807097087118 -c1 0.001 -e1 5 -cp2 './datas/test/A36.h5' -f2 \"./datas/118/2/\" -r2 149.58609561052123 -c2 0.001 -e2 5 --contin True",
         "detail": "package.run_sc",
         "documentation": {}
     },
@@ -2795,7 +2535,7 @@
         "kind": 5,
         "importPath": "package.run_sc",
         "description": "package.run_sc",
-        "peekOfCode": "method = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=1,method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10",
+        "peekOfCode": "method = args.method\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin,resolution=0.5,method=method)\n# python run_sc.py -cp1 './datas/d1/sample.h5' -f1 \"./datas/d1/\" -r1 50 -c1 0.001 -e1 10 -cp2 './datas/d2/sample.h5' -f2 \"./datas/d2/\" -r2 50 -c2 0.001 -e2 10\n# python run_sc.py -cp1 './datas/test/A35.h5' -f1 \"./datas/118/1/\" -r1 147.63807097087118 -c1 0.001 -e1 5 -cp2 './datas/test/A36.h5' -f2 \"./datas/118/2/\" -r2 149.58609561052123 -c2 0.001 -e2 5 --contin True",
         "detail": "package.run_sc",
         "documentation": {}
     },

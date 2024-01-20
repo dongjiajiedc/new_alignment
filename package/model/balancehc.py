@@ -1,13 +1,10 @@
 
-import networkx as nx
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from alignment import *
 
-from utils.lca import hyp_lca
-from utils.linkage import nn_merge_uf_fast_np, sl_from_embeddings
-from utils.poincare import project,hyp_dist
+from utils.poincare import hyp_dist
 import numpy as np
 
 class balancehc(nn.Module):
