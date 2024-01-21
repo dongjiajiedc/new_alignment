@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 import os
 import csv
 import itertools
-
+import pulp as plp
 
 class node:
     def __init__(self,value=None,son=[],name=''):
@@ -32,6 +32,17 @@ class node:
         all = [i for i in range(n)];
         result = [element for element in all if element not in self.subson];
         return result
+class newnode:
+    def __init__(self,node1,node2):
+        self.node1 = node1
+        self.node2 = node2
+        self.f = None
+        self.edge = [];
+        self.indegree = 0;
+    def __str__(self):
+        return "{}_{}".format(self.node1,self.node2)
+    def __repr__(self):
+        return "{}_{}".format(self.node1,self.node2)
 
         
     # def __lt__(self, other):
@@ -678,130 +689,7 @@ class show_tree:
         # self.fig.show()
     def show_fig(self):
         self.fig.show();
-        
-
-
-        
-def run_alignment(folder_path1,folder_path2):
-
-    pos_1 = pd.read_csv(folder_path1+"datas.csv",index_col="Unnamed: 0").sort_index().values
-    pos_2 = pd.read_csv(folder_path2+"datas.csv",index_col="Unnamed: 0").sort_index().values
-    edge_1 = np.load(folder_path1+"datalink.npy");
-    edge_2 = np.load(folder_path2+"datalink.npy");
-    mer1 = np.load(folder_path1+"datamerge.npy");
-    mer2 = np.load(folder_path2+"datamerge.npy");
-
-    n1 = len(pos_1)
-    n2 = len(pos_2)
-
-    root1 = -1;
-    for i,j in edge_1:
-        root1 = max(root1,i);
-    length1 = root1 + 1;
-
-    root2 = -1;
-    for i,j in edge_2:
-        root2 = max(root2,i);
-    length2 = root2 + 1;
-
-    nodes1 = [node(name=str(i),son=[]) for i in range(length1)]
-    nodes2 = [node(name=str(i),son=[]) for i in range(length2)]
-    for i,j in edge_1:
-        nodes1[i].son.append(nodes1[j])
-    for i,j in edge_2:
-        nodes2[i].son.append(nodes2[j])
-    for i in range(len(pos_1)):
-        nodes1[i].value = pos_1[i];
-        nodes1[i].subson = [nodes1[i].name];
-    for i in range(len(pos_2)):
-        nodes2[i].value = pos_2[i];
-        nodes2[i].subson = [nodes2[i].name]
-
-        
-    for i in range(len(pos_1),length1):
-        if(mer1[i]!= -1):
-            nodes1[i].value = nodes1[mer1[i]].value
-            nodes1[i].name = nodes1[mer1[i]].name+'(t)'
-            nodes1[i].subson  = nodes1[mer1[i]].subson;
-        else:
-            for son in nodes1[i].son:
-                nodes1[i].subson.extend(son.subson);
-        
-    for i in range(len(pos_2),length2):
-        if(mer2[i]!= -1):
-            nodes2[i].value = nodes2[mer2[i]].value
-            nodes2[i].name = nodes2[mer2[i]].name+'(t)'
-            nodes2[i].subson = nodes2[mer2[i]].subson
-        else:
-            for son in nodes2[i].son:
-                nodes2[i].subson.extend(son.subson);
-
-                
-    adata1 = pd.read_csv(folder_path1+"data_cell.csv")
-    type1 = pd.read_csv(folder_path1+"data_type.csv")[['Unnamed: 0','leiden']]
-    datas1 = type1.merge(adata1,how="inner",on="Unnamed: 0")
-    datas1 = datas1.set_index("Unnamed: 0")
-            
-    adata2 = pd.read_csv(folder_path2+"data_cell.csv")
-    type2 = pd.read_csv(folder_path2+"data_type.csv")[['Unnamed: 0','leiden']]
-    datas2 = type2.merge(adata2,how="inner",on="Unnamed: 0")
-    datas2 = datas2.set_index("Unnamed: 0")
-            
-    for i in range(len(pos_1),length1):
-        if(mer1[i]!=-1):
-            continue;
-        med = []
-        for sub in nodes1[i].subson:
-            subdata = datas1[datas1['leiden']==int(sub)];
-            med.extend(subdata.values[:,1:].tolist());
-        med = np.array(med);
-        p = pd.DataFrame(med);
-        nodes1[i].value = p.mean(axis=0).values;
-        
-    for i in range(len(pos_2),length2):
-
-        if(mer2[i]!=-1):
-            continue;
-        med = []
-        for sub in nodes2[i].subson:
-            subdata = datas2[datas2['leiden']==int(sub)];
-            med.extend(subdata.values[:,1:].tolist());
-        med = np.array(med);
-        p = pd.DataFrame(med);
-        nodes2[i].value = p.mean(axis=0).values;
-
-    # for i in range(len(pos_1),length1):
-    #     sum = np.array([0 for j in range(len(pos_1[0]))],dtype=np.float32);
-    #     med = [];
-    #     for son in nodes1[i].son:
-    #         sum = sum + son.value;
-    #         med.append(son.value);
-    #     sum= sum / max(len(nodes1[i].son),1);
-    #     med = np.array(med);
-    #     p = pd.DataFrame(med);
-    #     nodes1[i].value = p.mean(axis=0).values;
-    #     nodes1[i].value = sum;
-        
-
-        
-    # for i in range(len(pos_2),len(pos_2)*2-1):
-    #     sum = np.array([0 for j in range(len(pos_2[0]))],dtype=np.float32);
-    #     med = [];
-    #     for son in nodes2[i].son:
-    #         sum= sum + son.value;
-    #         med.append(son.value);
-    #     sum= sum / max(len(nodes2[i].son),1);
-    #     med = np.array(med);
-    #     p =pd.DataFrame(med);
-    #     nodes2[i].value = p.mean(axis=0).values;
-    #     nodes2[i].value = sum
-    T=tree_alignment(nodes1[root1],nodes2[root2],1);
-    minn = T.run_alignment();
-    T.show_ans();
-    ans = T.get_ans()
-    ans
-    G=show_graph(ans,nodes1[root1],nodes2[root2]);
-    G.show_fig()
+               
 def show_the_tree(folder_path1):
     pos_1 = pd.read_csv(folder_path1+"datas.csv",index_col="Unnamed: 0").sort_index().values
     edge_1 = np.load(folder_path1+"datalink.npy");
@@ -845,3 +733,153 @@ def show_the_tree(folder_path1):
         p = pd.DataFrame(med);
         nodes1[i].value = p.mean(axis=0).values;
     show_tree(nodes1[root1]).show_fig()
+    
+
+def find_path_root(now,dfs,path,dfs_node,f):
+    now.path=path.copy();
+    now.f=f
+    now.dfs=dfs;
+    path.append(now);
+    dfs_node.append(now);
+    for i in now.son:
+        dfs=find_path_root(i,dfs+1,path,dfs_node,now);
+        
+    path.remove(now)
+    now.num_son = dfs-now.dfs;
+    return dfs
+
+def find_indgee(lists,indegree):
+    ans=[]
+    for i in lists:
+        if(i.indegree == indegree):
+            ans.append(i);
+    return ans;
+
+def run_alignment_linear(nodes1,nodes2):
+    values1 = np.array([i.value for i in nodes1])
+    values2 = np.array([i.value for i in nodes2])
+    similarities =np.zeros((len(values1),len(values2)))
+    for i in range(len(values1)):
+        for j in range(len(values2)):
+            similarities[i][j]=np.corrcoef(values1[i],values2[j])[0][1]
+            
+    n = len(nodes1)
+    m = len(nodes2)
+    set_I = range(0, n)
+    set_J = range(0, m)
+    c = {(i,j): similarities[i][j] for i in set_I for j in set_J}
+    dfs_node1=[]
+    dfs_node2=[]
+    root1 = nodes1[0]
+    root2 = nodes2[0]
+    find_path_root(root1,0,[],dfs_node1,root1)
+    find_path_root(root2,0,[],dfs_node2,root2)
+    x_vars  = {(i,j):plp.LpVariable(cat=plp.LpBinary, name="x_{0}_{1}".format(i,j)) for i in set_I for j in set_J}
+    
+    opt_model = plp.LpProblem(name="MIP Model")
+    for i in set_I:
+        opt_model.addConstraint(
+        plp.LpConstraint(e=plp.lpSum(x_vars[i,j] for j in set_J),
+                        sense=plp.LpConstraintGE,
+                        rhs=1,
+                        name="constraintI{0}".format(i)))
+
+    for j in set_J:
+        opt_model.addConstraint(
+        plp.LpConstraint(e=plp.lpSum(x_vars[i,j] for i in set_I),
+                        sense=plp.LpConstraintGE,
+                        rhs=1,
+                        name="constraintJ{0}".format(j))) 
+    for i in dfs_node1:
+        for j in dfs_node2:
+            for k in i.path:
+                for l in j.path:
+                    if(k==[]or l==[]):
+                        continue;
+                    # print(i,j,k,l)
+                    opt_model.addConstraint(
+                    plp.LpConstraint(e=x_vars[i.dfs,j.dfs]+x_vars[i.dfs,l.dfs]+x_vars[k.dfs,j.dfs],
+                                    sense=plp.LpConstraintLE,
+                                    rhs=2,
+                                    name="constraint{}_{}_{}_{}_1".format(i,j,k,l)))
+    for i in dfs_node1:
+        if(len(i.son)==2):
+            l=i.son[0];
+            r=i.son[1];
+            for j in dfs_node2:
+                opt_model.addConstraint(
+                plp.LpConstraint(e=x_vars[l.dfs,j.dfs]+x_vars[r.dfs,j.dfs]-x_vars[i.dfs,j.dfs],
+                                    sense=plp.LpConstraintLE,
+                                    rhs=1,
+                                    name="constraint{}_{}_{}_{}_1".format(i,j,k,l)))
+                    
+
+    objective = plp.lpSum(x_vars[i,j] * c[i,j] for i in set_I for j in set_J)
+    opt_model.sense = plp.LpMaximize
+    opt_model.setObjective(objective)
+    opt_model.solve()
+    print('SOLUTION:')
+    for v in opt_model.variables():
+        print(f'\t\t{v.name} = {v.varValue}')
+
+    print('\n') # Prints a blank line
+    print(f'OBJECTIVE VALUE: {opt_model.objective.value()}')
+    
+    result_node = []
+    for v in opt_model.variables():
+        if(v.value()==0):
+            continue
+        l = int(v.name.split('_')[1])
+        r = int(v.name.split('_')[2])
+        tn = newnode(dfs_node1[l],dfs_node2[r])
+        result_node.append(tn);
+        
+    for i in range(len(result_node)):
+        for j in range(len(result_node)):
+            if(i==j):
+                continue
+            p1 = result_node[i]
+            p2 = result_node[j]
+            if((p1.node1 in p2.node1.path or p1.node1 == p2.node1) and (p1.node2 in p2.node2.path or p1.node2==p2.node2)):
+                result_node[i].edge.append(result_node[j])
+                result_node[j].indegree +=1
+
+    root=find_indgee(result_node,0)[0]
+    
+    c=0;z=0
+
+    for i in result_node:
+        ans = str(i).split('_')
+        if(len(ans) == 4):
+            c+=1
+            if(ans[1] == ans[3]):
+                z+=1
+    print('correct alignment rate:{}'.format(z/c))
+    return z/c
+
+def run_alignment(nodes1,nodes2,folder_path1,folder_path2,meta_list1,meta_list2):
+    
+    T=tree_alignment(nodes1[0],nodes2[0],1);
+    minn = T.run_alignment();
+    T.show_ans();
+    ans = T.get_ans()
+    G=show_graph(ans,nodes1[0],nodes2[0]);
+    # G.show_fig()
+    G.save_fig(folder_path1+'alignment.png')
+    G.save_fig(folder_path2+'alignment.png')
+    
+    n1 =len(nodes1)
+    n2 =len(nodes2)
+
+    print("average cost for one node:{}\n".format(minn/(n1+n2)))
+    
+    c=0;z=0
+    for i,j in ans:
+        i=int(i.split('_')[0])
+        j=int(j.split('_')[0])
+        if(i<len(meta_list1) and j <len(meta_list2)):
+            c+=1
+            if(meta_list1[i]==meta_list2[j]):
+                z+=1;
+    print('correct alignment rate:{}'.format(z/c))
+    return z/c;

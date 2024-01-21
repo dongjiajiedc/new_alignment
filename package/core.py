@@ -7,7 +7,7 @@ from sklearn.metrics import adjusted_rand_score
 import calendar
 import time
 
-def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin=True,resolution=0.5,method='average'):
+def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,contin=True,resolution=0.5,method='average',alignment=1):
     
     current_GMT = time.gmtime()
     ts = calendar.timegm(current_GMT)
@@ -146,36 +146,43 @@ def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,ra
     for i in range(len(nodes2)):
         if(int(nodes2[i].name)<len(meta_list2)):
             nodes2[i].name= nodes2[i].name +'_'+ meta_list2[int(nodes2[i].name)];  
- 
+    rate = 0;        
+    if(alignment==1):
+        rate = run_alignment(nodes1,nodes2,folder_path1,folder_path2,meta_list1,meta_list2);
+    elif(alignment==2):
+        rate = run_alignment_linear(nodes1,nodes2);
         
-    T=tree_alignment(nodes1[0],nodes2[0],1);
-    minn = T.run_alignment();
-    T.show_ans();
-    ans = T.get_ans()
-    G=show_graph(ans,nodes1[0],nodes2[0]);
-    # G.show_fig()
-    G.save_fig(folder_path1+'alignment.png')
-    G.save_fig(folder_path2+'alignment.png')
+    log1.write("Alignment score: "+ str(rate)+'\n')
+    log2.write("Alignment score: "+ str(rate)+'\n')
 
-    log1.write('alignment anslist:{}\n'.format(ans))
-    log2.write('alignment anslist:{}\n'.format(ans))
-
-    log1.write("average cost for one node:{}\n".format(minn/(n1+n2)))
-    log2.write("average cost for one node:{}\n".format(minn/(n1+n2)))
-
-    print("average cost for one node:{}\n".format(minn/(n1+n2)))
     
-    c=0;z=0
-    for i,j in ans:
-        i=int(i.split('_')[0])
-        j=int(j.split('_')[0])
-        if(i<len(meta_list1) and j <len(meta_list2)):
-            c+=1
-            if(meta_list1[i]==meta_list2[j]):
-                z+=1;
-    print('correct alignment rate:{}'.format(z/c))
-    log1.write('correct alignment rate:{}\n'.format(z/c))
-    log2.write('correct alignment rate:{}\n'.format(z/c))
+    # T=tree_alignment(nodes1[0],nodes2[0],1);
+    # minn = T.run_alignment();
+    # T.show_ans();
+    # ans = T.get_ans()
+    # G=show_graph(ans,nodes1[0],nodes2[0]);
+    # # G.show_fig()
+    # G.save_fig(folder_path1+'alignment.png')
+    # G.save_fig(folder_path2+'alignment.png')
+
+    # log1.write('alignment anslist:{}\n'.format(ans))
+    # log2.write('alignment anslist:{}\n'.format(ans))
+
+    # log1.write("average cost for one node:{}\n".format(minn/(n1+n2)))
+    # log2.write("average cost for one node:{}\n".format(minn/(n1+n2)))
+
+    # print("average cost for one node:{}\n".format(minn/(n1+n2)))
+    
+    # c=0;z=0
+    # for i,j in ans:
+    #     i=int(i.split('_')[0])
+    #     j=int(j.split('_')[0])
+    #     if(i<len(meta_list1) and j <len(meta_list2)):
+    #         c+=1
+    #         if(meta_list1[i]==meta_list2[j]):
+    #             z+=1;
+    # print('correct alignment rate:{}'.format(z/c))
+    
 
     log1.close()
     log2.close()
