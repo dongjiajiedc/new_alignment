@@ -3,10 +3,11 @@ import numpy as np
 import pandas as pd
 import math
 import plotly.graph_objs as go
-import os
-import csv
 import itertools
 import pulp as plp
+from utils.poincare import hyp_dist
+import torch
+
 
 class node:
     def __init__(self,value=None,son=[],name=''):
@@ -734,6 +735,70 @@ def show_the_tree(folder_path1):
         nodes1[i].value = p.mean(axis=0).values;
     show_tree(nodes1[root1]).show_fig()
     
+
+def build_hyper_tree_from_folder(folder_path):
+    pos_1 = pd.read_csv(folder_path + 'datas.csv')
+    pos = pos_1.set_index(pos_1.columns[0]).values
+    edge = np.load(folder_path + "datalink.npy");
+    father_name = np.load(folder_path + "dataname.npy")
+    father_name = father_name.astype(np.int)
+    xys = np.load(folder_path+'dataxy.npy');
+    n = len(edge)
+    n_points = len(pos);
+    nodes = [node(name=str(i),son=[]) for i in range(n)];
+    for i in range(n):
+        if(edge[i]!=-1):
+            nodes[edge[i]].son.append(nodes[i])
+        nodes[i].name = str(father_name[i])
+        if(father_name[i]<n_points):
+            nodes[i].value = pos[father_name[i]]
+        else:
+            nodes[i].value = 0.0
+    def test(now):
+        for i in now.son:
+            test(i);
+        if(now.son!=[]):
+            l = hyp_dist(torch.tensor(xys[int(now)]),torch.tensor(xys[int(now.son[0])]))
+            r = hyp_dist(torch.tensor(xys[int(now)]),torch.tensor(xys[int(now.son[1])]))
+
+            now.value = (l/(l+r) *now.son[0].value  +  r/(l+r)*now.son[1].value).numpy()
+    test(nodes[0]);    
+    return nodes,n
+
+def search_tree(now,c,merge_list):
+    if(len(now.son) != 2):
+        return now;
+    lson = search_tree(now.son[0],c,merge_list);
+    now.son[0] = lson;
+    rson = search_tree(now.son[1],c,merge_list);
+    now.son[1] = rson
+
+    if(np.linalg.norm(lson.value-rson.value)<=c):
+        if(len(lson.son)>1 and len(rson.son)>1):
+            pass
+        elif(len(lson.son)>1):
+            merge_list.append((rson.name,lson.name))
+            print(rson.name,lson.name)
+            now = rson.copy();
+            now.son=[]
+
+            if(len(rson.son)==0):
+                now.son.append(lson);
+            else:
+                now.son.append(lson);
+                now.son.append(rson.son);
+            # now.son.append(lson);
+        else:
+            merge_list.append((rson.name,lson.name))
+            print(rson.name,lson.name)
+            now = lson.copy();
+            now.son=[]
+            if(len(lson.son)==0):
+                now.son.append(rson);
+            else:
+                now.son.append(lson.son);
+                now.son.append(rson);
+    return now;
 
 def find_path_root(now,dfs,path,dfs_node,f):
     now.path=path.copy();
