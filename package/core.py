@@ -31,29 +31,36 @@ def merge_by_radius(cell_path,folder_path,radius,method='average',meta_col='cell
     now_label = 0;
     now =  datas.values;
 
-    progress_bar = tqdm(total=len(now), ncols=80)
-    while len(now) != 0:
-        rnd = np.random.randint(now.shape[0], size=1);
-        rand_choice = now[rnd, :].reshape(-1)
-        tree = KDTree(now);
-        indices = tree.query_ball_point(rand_choice,r)
-        points_within_k = now[indices]
-        now = now.tolist();
+    if(r <=0):
+        ans_value = now
+        ans_label = [i for i in range(len(ans_value))]
+        true_label = list(celltype)
+    else:
+        progress_bar = tqdm(total=len(now), ncols=80)
+        while len(now) != 0:
+            rnd = np.random.randint(now.shape[0], size=1);
+            rand_choice = now[rnd, :].reshape(-1)
+            tree = KDTree(now);
+            indices = tree.query_ball_point(rand_choice,r)
+            now = now.tolist();
 
-        for i in points_within_k:
-            ans_value.append(i.tolist())
-            ans_label.append(now_label);
-            index = now.index(i.tolist());
-            true_label.append(now_labels[index]);
-            now.pop(index)
-            now_labels.pop(index)
-        now_label+=1;
+            for i in indices:
+                ans_value.append(now[i])
+                ans_label.append(now_label);
+                true_label.append(now_labels[i]);
+            now_label+=1;
+            indices.sort(reverse=True);
+            for i in indices:
+                now.pop(i)
+                now_labels.pop(i)
+
             
         now = np.array(now);
-        progress_bar.update(len(points_within_k))
+        progress_bar.update(len(indices))
         sys.stdout.flush()
 
     progress_bar.close()
+
 
     v = pd.DataFrame(ans_value)
     v['label'] = ans_label
