@@ -1,5 +1,14 @@
 [
     {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
         "label": "numpy",
         "kind": 6,
         "isExtraImport": true,
@@ -9,12 +18,964 @@
         "documentation": {}
     },
     {
+        "label": "anndata",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "anndata",
+        "description": "anndata",
+        "detail": "anndata",
+        "documentation": {}
+    },
+    {
+        "label": "AnnData",
+        "importPath": "anndata",
+        "description": "anndata",
+        "isExtraImport": true,
+        "detail": "anndata",
+        "documentation": {}
+    },
+    {
+        "label": "AnnData",
+        "importPath": "anndata",
+        "description": "anndata",
+        "isExtraImport": true,
+        "detail": "anndata",
+        "documentation": {}
+    },
+    {
+        "label": "AnnData",
+        "importPath": "anndata",
+        "description": "anndata",
+        "isExtraImport": true,
+        "detail": "anndata",
+        "documentation": {}
+    },
+    {
+        "label": "AnnData",
+        "importPath": "anndata",
+        "description": "anndata",
+        "isExtraImport": true,
+        "detail": "anndata",
+        "documentation": {}
+    },
+    {
+        "label": "scanpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scanpy",
+        "description": "scanpy",
+        "detail": "scanpy",
+        "documentation": {}
+    },
+    {
+        "label": "scipy.sparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "csr_matrix",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "issparse",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "csr_matrix",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "issparse",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "csr_matrix",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "csc_matrix",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "isspmatrix",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "issparse",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "csr_matrix",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "csc_matrix",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "csr_matrix",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "csr_matrix",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "cell2location",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cell2location",
+        "description": "cell2location",
+        "detail": "cell2location",
+        "documentation": {}
+    },
+    {
+        "label": "docopt",
+        "importPath": "docopt",
+        "description": "docopt",
+        "isExtraImport": true,
+        "detail": "docopt",
+        "documentation": {}
+    },
+    {
+        "label": "filter_genes",
+        "importPath": "cell2location.utils.filtering",
+        "description": "cell2location.utils.filtering",
+        "isExtraImport": true,
+        "detail": "cell2location.utils.filtering",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "choice",
+        "importPath": "numpy.random",
+        "description": "numpy.random",
+        "isExtraImport": true,
+        "detail": "numpy.random",
+        "documentation": {}
+    },
+    {
+        "label": "choice",
+        "importPath": "numpy.random",
+        "description": "numpy.random",
+        "isExtraImport": true,
+        "detail": "numpy.random",
+        "documentation": {}
+    },
+    {
+        "label": "choice",
+        "importPath": "numpy.random",
+        "description": "numpy.random",
+        "isExtraImport": true,
+        "detail": "numpy.random",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "seaborn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "seaborn",
+        "description": "seaborn",
+        "detail": "seaborn",
+        "documentation": {}
+    },
+    {
+        "label": "LinearSegmentedColormap",
+        "importPath": "matplotlib.colors",
+        "description": "matplotlib.colors",
+        "isExtraImport": true,
+        "detail": "matplotlib.colors",
+        "documentation": {}
+    },
+    {
+        "label": "to_hex",
+        "importPath": "matplotlib.colors",
+        "description": "matplotlib.colors",
+        "isExtraImport": true,
+        "detail": "matplotlib.colors",
+        "documentation": {}
+    },
+    {
+        "label": "to_rgb",
+        "importPath": "matplotlib.colors",
+        "description": "matplotlib.colors",
+        "isExtraImport": true,
+        "detail": "matplotlib.colors",
+        "documentation": {}
+    },
+    {
+        "label": "to_rgba",
+        "importPath": "matplotlib.colors",
+        "description": "matplotlib.colors",
+        "isExtraImport": true,
+        "detail": "matplotlib.colors",
+        "documentation": {}
+    },
+    {
+        "label": "LinearSegmentedColormap",
+        "importPath": "matplotlib.colors",
+        "description": "matplotlib.colors",
+        "isExtraImport": true,
+        "detail": "matplotlib.colors",
+        "documentation": {}
+    },
+    {
+        "label": "to_hex",
+        "importPath": "matplotlib.colors",
+        "description": "matplotlib.colors",
+        "isExtraImport": true,
+        "detail": "matplotlib.colors",
+        "documentation": {}
+    },
+    {
+        "label": "to_rgb",
+        "importPath": "matplotlib.colors",
+        "description": "matplotlib.colors",
+        "isExtraImport": true,
+        "detail": "matplotlib.colors",
+        "documentation": {}
+    },
+    {
+        "label": "to_rgba",
+        "importPath": "matplotlib.colors",
+        "description": "matplotlib.colors",
+        "isExtraImport": true,
+        "detail": "matplotlib.colors",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "isExtraImport": true,
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "colors",
+        "importPath": "matplotlib",
+        "description": "matplotlib",
+        "isExtraImport": true,
+        "detail": "matplotlib",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.patches",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.patches",
+        "description": "matplotlib.patches",
+        "detail": "matplotlib.patches",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "cosine_similarity",
+        "importPath": "sklearn.metrics.pairwise",
+        "description": "sklearn.metrics.pairwise",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics.pairwise",
+        "documentation": {}
+    },
+    {
+        "label": "cosine_similarity",
+        "importPath": "sklearn.metrics.pairwise",
+        "description": "sklearn.metrics.pairwise",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics.pairwise",
+        "documentation": {}
+    },
+    {
+        "label": "warnings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "warnings",
+        "description": "warnings",
+        "detail": "warnings",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "rpy2.robjects",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rpy2.robjects",
+        "description": "rpy2.robjects",
+        "detail": "rpy2.robjects",
+        "documentation": {}
+    },
+    {
+        "label": "pandas2ri",
+        "importPath": "rpy2.robjects",
+        "description": "rpy2.robjects",
+        "isExtraImport": true,
+        "detail": "rpy2.robjects",
+        "documentation": {}
+    },
+    {
         "label": "torch",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "torch",
         "description": "torch",
         "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "multiprocessing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "Pool",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "cpu_count",
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "isExtraImport": true,
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Generator",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "torch.distributed",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.distributed",
+        "description": "torch.distributed",
+        "detail": "torch.distributed",
+        "documentation": {}
+    },
+    {
+        "label": "pearsonr",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "pearsonr",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "adjusted_rand_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "adjusted_rand_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "adjusted_rand_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "adjusted_rand_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "inplace_column_scale",
+        "importPath": "sklearn.utils.sparsefuncs",
+        "description": "sklearn.utils.sparsefuncs",
+        "isExtraImport": true,
+        "detail": "sklearn.utils.sparsefuncs",
+        "documentation": {}
+    },
+    {
+        "label": "inplace_row_scale",
+        "importPath": "sklearn.utils.sparsefuncs",
+        "description": "sklearn.utils.sparsefuncs",
+        "isExtraImport": true,
+        "detail": "sklearn.utils.sparsefuncs",
+        "documentation": {}
+    },
+    {
+        "label": "inplace_column_scale",
+        "importPath": "sklearn.utils.sparsefuncs",
+        "description": "sklearn.utils.sparsefuncs",
+        "isExtraImport": true,
+        "detail": "sklearn.utils.sparsefuncs",
+        "documentation": {}
+    },
+    {
+        "label": "inplace_row_scale",
+        "importPath": "sklearn.utils.sparsefuncs",
+        "description": "sklearn.utils.sparsefuncs",
+        "isExtraImport": true,
+        "detail": "sklearn.utils.sparsefuncs",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "numba",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numba",
+        "description": "numba",
+        "detail": "numba",
+        "documentation": {}
+    },
+    {
+        "label": "njit",
+        "importPath": "numba",
+        "description": "numba",
+        "isExtraImport": true,
+        "detail": "numba",
+        "documentation": {}
+    },
+    {
+        "label": "prange",
+        "importPath": "numba",
+        "description": "numba",
+        "isExtraImport": true,
+        "detail": "numba",
+        "documentation": {}
+    },
+    {
+        "label": "njit",
+        "importPath": "numba",
+        "description": "numba",
+        "isExtraImport": true,
+        "detail": "numba",
+        "documentation": {}
+    },
+    {
+        "label": "prange",
+        "importPath": "numba",
+        "description": "numba",
+        "isExtraImport": true,
+        "detail": "numba",
+        "documentation": {}
+    },
+    {
+        "label": "anndata._core.views",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "anndata._core.views",
+        "description": "anndata._core.views",
+        "detail": "anndata._core.views",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "scipy.spatial",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scipy.spatial",
+        "description": "scipy.spatial",
+        "detail": "scipy.spatial",
+        "documentation": {}
+    },
+    {
+        "label": "KDTree",
+        "importPath": "scipy.spatial",
+        "description": "scipy.spatial",
+        "isExtraImport": true,
+        "detail": "scipy.spatial",
+        "documentation": {}
+    },
+    {
+        "label": "KDTree",
+        "importPath": "scipy.spatial",
+        "description": "scipy.spatial",
+        "isExtraImport": true,
+        "detail": "scipy.spatial",
+        "documentation": {}
+    },
+    {
+        "label": "KDTree",
+        "importPath": "scipy.spatial",
+        "description": "scipy.spatial",
+        "isExtraImport": true,
+        "detail": "scipy.spatial",
+        "documentation": {}
+    },
+    {
+        "label": "KDTree",
+        "importPath": "scipy.spatial",
+        "description": "scipy.spatial",
+        "isExtraImport": true,
+        "detail": "scipy.spatial",
+        "documentation": {}
+    },
+    {
+        "label": "KDTree",
+        "importPath": "scipy.spatial",
+        "description": "scipy.spatial",
+        "isExtraImport": true,
+        "detail": "scipy.spatial",
+        "documentation": {}
+    },
+    {
+        "label": "KDTree",
+        "importPath": "scipy.spatial",
+        "description": "scipy.spatial",
+        "isExtraImport": true,
+        "detail": "scipy.spatial",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "tarfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tarfile",
+        "description": "tarfile",
+        "detail": "tarfile",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "nnls",
+        "importPath": "scipy.optimize",
+        "description": "scipy.optimize",
+        "isExtraImport": true,
+        "detail": "scipy.optimize",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "cytobulk",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cytobulk",
+        "description": "cytobulk",
+        "detail": "cytobulk",
+        "documentation": {}
+    },
+    {
+        "label": "ascii_uppercase",
+        "importPath": "string",
+        "description": "string",
+        "isExtraImport": true,
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "ascii_uppercase",
+        "importPath": "string",
+        "description": "string",
+        "isExtraImport": true,
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "ascii_uppercase",
+        "importPath": "string",
+        "description": "string",
+        "isExtraImport": true,
+        "detail": "string",
         "documentation": {}
     },
     {
@@ -100,185 +1061,12 @@
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "anndata",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "anndata",
-        "description": "anndata",
-        "detail": "anndata",
-        "documentation": {}
-    },
-    {
-        "label": "AnnData",
-        "importPath": "anndata",
-        "description": "anndata",
-        "isExtraImport": true,
-        "detail": "anndata",
-        "documentation": {}
-    },
-    {
-        "label": "AnnData",
-        "importPath": "anndata",
-        "description": "anndata",
-        "isExtraImport": true,
-        "detail": "anndata",
-        "documentation": {}
-    },
-    {
-        "label": "AnnData",
-        "importPath": "anndata",
-        "description": "anndata",
-        "isExtraImport": true,
-        "detail": "anndata",
-        "documentation": {}
-    },
-    {
-        "label": "AnnData",
-        "importPath": "anndata",
-        "description": "anndata",
-        "isExtraImport": true,
-        "detail": "anndata",
-        "documentation": {}
-    },
-    {
-        "label": "pandas",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
-        "documentation": {}
-    },
-    {
-        "label": "scanpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "scanpy",
-        "description": "scanpy",
-        "detail": "scanpy",
-        "documentation": {}
-    },
-    {
         "label": "scanpy.external",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "scanpy.external",
         "description": "scanpy.external",
         "detail": "scanpy.external",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
-        "label": "torch.nn",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "torch.nn",
-        "description": "torch.nn",
-        "detail": "torch.nn",
         "documentation": {}
     },
     {
@@ -1013,15 +1801,6 @@
         "documentation": {}
     },
     {
-        "label": "time",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "time",
-        "description": "time",
-        "detail": "time",
-        "documentation": {}
-    },
-    {
         "label": "utils.unionfind",
         "kind": 6,
         "isExtraImport": true,
@@ -1451,38 +2230,6 @@
         "documentation": {}
     },
     {
-        "label": "adjusted_rand_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "adjusted_rand_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "adjusted_rand_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "adjusted_rand_score",
-        "importPath": "sklearn.metrics",
-        "description": "sklearn.metrics",
-        "isExtraImport": true,
-        "detail": "sklearn.metrics",
-        "documentation": {}
-    },
-    {
         "label": "*",
         "importPath": "utils",
         "description": "utils",
@@ -1512,54 +2259,6 @@
         "description": "utils",
         "isExtraImport": true,
         "detail": "utils",
-        "documentation": {}
-    },
-    {
-        "label": "KDTree",
-        "importPath": "scipy.spatial",
-        "description": "scipy.spatial",
-        "isExtraImport": true,
-        "detail": "scipy.spatial",
-        "documentation": {}
-    },
-    {
-        "label": "KDTree",
-        "importPath": "scipy.spatial",
-        "description": "scipy.spatial",
-        "isExtraImport": true,
-        "detail": "scipy.spatial",
-        "documentation": {}
-    },
-    {
-        "label": "KDTree",
-        "importPath": "scipy.spatial",
-        "description": "scipy.spatial",
-        "isExtraImport": true,
-        "detail": "scipy.spatial",
-        "documentation": {}
-    },
-    {
-        "label": "KDTree",
-        "importPath": "scipy.spatial",
-        "description": "scipy.spatial",
-        "isExtraImport": true,
-        "detail": "scipy.spatial",
-        "documentation": {}
-    },
-    {
-        "label": "KDTree",
-        "importPath": "scipy.spatial",
-        "description": "scipy.spatial",
-        "isExtraImport": true,
-        "detail": "scipy.spatial",
-        "documentation": {}
-    },
-    {
-        "label": "KDTree",
-        "importPath": "scipy.spatial",
-        "description": "scipy.spatial",
-        "isExtraImport": true,
-        "detail": "scipy.spatial",
         "documentation": {}
     },
     {
@@ -1569,15 +2268,6 @@
         "importPath": "calendar",
         "description": "calendar",
         "detail": "calendar",
-        "documentation": {}
-    },
-    {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
         "documentation": {}
     },
     {
@@ -1775,15 +2465,6 @@
         "documentation": {}
     },
     {
-        "label": "warnings",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "warnings",
-        "description": "warnings",
-        "detail": "warnings",
-        "documentation": {}
-    },
-    {
         "label": "setup",
         "importPath": "setuptools",
         "description": "setuptools",
@@ -1939,15 +2620,6 @@
         "documentation": {}
     },
     {
-        "label": "matplotlib.pyplot",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "matplotlib.pyplot",
-        "description": "matplotlib.pyplot",
-        "detail": "matplotlib.pyplot",
-        "documentation": {}
-    },
-    {
         "label": "csv",
         "kind": 6,
         "isExtraImport": true,
@@ -1989,108 +2661,796 @@
         "documentation": {}
     },
     {
-        "label": "json",
+        "label": "add_flags_from_config",
+        "importPath": "utils.training",
+        "description": "utils.training",
+        "isExtraImport": true,
+        "detail": "utils.training",
+        "documentation": {}
+    },
+    {
+        "label": "get_savedir",
+        "importPath": "utils.training",
+        "description": "utils.training",
+        "isExtraImport": true,
+        "detail": "utils.training",
+        "documentation": {}
+    },
+    {
+        "label": "add_flags_from_config",
+        "importPath": "utils.training",
+        "description": "utils.training",
+        "isExtraImport": true,
+        "detail": "utils.training",
+        "documentation": {}
+    },
+    {
+        "label": "get_savedir",
+        "importPath": "utils.training",
+        "description": "utils.training",
+        "isExtraImport": true,
+        "detail": "utils.training",
+        "documentation": {}
+    },
+    {
+        "label": "plot_tree_from_leaves",
+        "importPath": "utils.visualization",
+        "description": "utils.visualization",
+        "isExtraImport": true,
+        "detail": "utils.visualization",
+        "documentation": {}
+    },
+    {
+        "label": "plot_geodesic",
+        "importPath": "utils.visualization",
+        "description": "utils.visualization",
+        "isExtraImport": true,
+        "detail": "utils.visualization",
+        "documentation": {}
+    },
+    {
+        "label": "plot_tree_from_leaves",
+        "importPath": "utils.visualization",
+        "description": "utils.visualization",
+        "isExtraImport": true,
+        "detail": "utils.visualization",
+        "documentation": {}
+    },
+    {
+        "label": "plot_geodesic",
+        "importPath": "utils.visualization",
+        "description": "utils.visualization",
+        "isExtraImport": true,
+        "detail": "utils.visualization",
+        "documentation": {}
+    },
+    {
+        "label": "run_cell2location",
+        "kind": 2,
+        "importPath": "CytoBulk.analysis.st_deconv.stcell2",
+        "description": "CytoBulk.analysis.st_deconv.stcell2",
+        "peekOfCode": "def run_cell2location(sc_adata,st_adata,project,ref_run_name,run_name):\n    print(\"data\")\n    selected = filter_genes(sc_adata, cell_count_cutoff=5, cell_percentage_cutoff2=0.03, nonz_mean_cutoff=1.12)\n    sc_adata = sc_adata[:, selected].copy()\n    cell2location.models.RegressionModel.setup_anndata(adata=sc_adata,\n                        # cell type, covariate used for constructing signatures\n                        labels_key='Celltype_minor'\n                       )\n    mod = cell2location.models.RegressionModel(sc_adata)\n    mod.view_anndata_setup()",
+        "detail": "CytoBulk.analysis.st_deconv.stcell2",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "CytoBulk.analysis.st_deconv.stcell2",
+        "description": "CytoBulk.analysis.st_deconv.stcell2",
+        "peekOfCode": "def main():\n    project_list = [\"NSCLC_GSE179373\",\"KIRC_GSE121636\",\"HNSC_GSE139324\"]\n    for i in project_list:\n      st_data = f\"/data1/wangxueying/cytobulk/eval_data/{i}/{i}_expression_test.csv\"\n      st_meta = f\"/data1/wangxueying/cytobulk/eval_data/{i}/meta_test.csv\"\n      sc_adata = f\"/data1/wangxueying/cytobulk/eval_data/{i}/{i}_sc_data_cell2.txt\"\n      sc_meta = f\"/data1/wangxueying/cytobulk/eval_data/{i}/{i}_sc_meta.txt\"\n      project = i\n      results_folder = f\"/data1/wangxueying/cytobulk/out/{i}/cell2\"\n      #st_adata = sc.read_visium(st_adata,library_id=\"st\")",
+        "detail": "CytoBulk.analysis.st_deconv.stcell2",
+        "documentation": {}
+    },
+    {
+        "label": "get_count_data",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.get._counts",
+        "description": "CytoBulk.cytobulk.get._counts",
+        "peekOfCode": "def get_count_data(adata,counts_location=None):\n    data = adata.layers[counts_location].copy() if counts_location else adata.X.copy()\n    if not isinstance(data, np.ndarray):\n        data= data.toarray()\n    data_df = pd.DataFrame(data,index=adata.obs_names,columns=adata.var_names).transpose()\n    return data_df\ndef get_count_data_t(adata,counts_location=None):\n    data = adata.layers[counts_location].copy() if counts_location else adata.X.copy()\n    if not isinstance(data, np.ndarray):\n        data= data.toarray()",
+        "detail": "CytoBulk.cytobulk.get._counts",
+        "documentation": {}
+    },
+    {
+        "label": "get_count_data_t",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.get._counts",
+        "description": "CytoBulk.cytobulk.get._counts",
+        "peekOfCode": "def get_count_data_t(adata,counts_location=None):\n    data = adata.layers[counts_location].copy() if counts_location else adata.X.copy()\n    if not isinstance(data, np.ndarray):\n        data= data.toarray()\n    return pd.DataFrame(data,index=adata.obs_names,columns=adata.var_names)",
+        "detail": "CytoBulk.cytobulk.get._counts",
+        "documentation": {}
+    },
+    {
+        "label": "get_meta",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.get._meta",
+        "description": "CytoBulk.cytobulk.get._meta",
+        "peekOfCode": "def get_meta(\n    adata,\n    position_key=\"obs\",\n    columns=None\n):\n    \"\"\"\n    Get an :class:`~pandas.DataFrame` with the positions of the observations.\n    Parameters\n    ----------\n    adata",
+        "detail": "CytoBulk.cytobulk.get._meta",
+        "documentation": {}
+    },
+    {
+        "label": "get_coords",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.get._meta",
+        "description": "CytoBulk.cytobulk.get._meta",
+        "peekOfCode": "def get_coords(visium_adata):\n    df_coords = visium_adata.obs[['array_row', 'array_col']]\n    df_coords.columns = ['row','col']\n    df_coords.index.name = 'SpotID'\n    return df_coords",
+        "detail": "CytoBulk.cytobulk.get._meta",
+        "documentation": {}
+    },
+    {
+        "label": "Const",
         "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
+        "importPath": "CytoBulk.cytobulk.plots._eval_plot",
+        "description": "CytoBulk.cytobulk.plots._eval_plot",
+        "peekOfCode": "class Const:\n    \"\"\"\n    Some COLOR SET used in the class.\n    \"\"\"\n    COLOR_BLUE = ['#191970','#ADD8E6','#22AAA1']\n    DIFF_COLOR_GRAY = ['#474350','#FAFAC6']\n    FIG_FORMAT = 'svg'\ndef plot_mse_box(ground_truth,df_list,name_list,title,num_column=6,skipping_mse_calculation=False,\n                color_set=Const.COLOR_BLUE,fig_format=None,out_dir='/out',filter_list=None,save=True):\n    sns.set(font_scale=0.8,style=\"white\")",
+        "detail": "CytoBulk.cytobulk.plots._eval_plot",
         "documentation": {}
     },
     {
-        "label": "add_flags_from_config",
-        "importPath": "utils.training",
-        "description": "utils.training",
-        "isExtraImport": true,
-        "detail": "utils.training",
+        "label": "plot_mse_box",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.plots._eval_plot",
+        "description": "CytoBulk.cytobulk.plots._eval_plot",
+        "peekOfCode": "def plot_mse_box(ground_truth,df_list,name_list,title,num_column=6,skipping_mse_calculation=False,\n                color_set=Const.COLOR_BLUE,fig_format=None,out_dir='/out',filter_list=None,save=True):\n    sns.set(font_scale=0.8,style=\"white\")\n    if skipping_mse_calculation:\n        mse_result_list= df_list\n    else:\n        mse_result_list=[]\n        for method_index in range(len(name_list)):\n            df = df_list[method_index]\n            mse_result = utils.eval_each_sample_mse(ground_truth,df,name_list[method_index])",
+        "detail": "CytoBulk.cytobulk.plots._eval_plot",
         "documentation": {}
     },
     {
-        "label": "get_savedir",
-        "importPath": "utils.training",
-        "description": "utils.training",
-        "isExtraImport": true,
-        "detail": "utils.training",
+        "label": "Const",
+        "kind": 6,
+        "importPath": "CytoBulk.cytobulk.plots._plot",
+        "description": "CytoBulk.cytobulk.plots._plot",
+        "peekOfCode": "class Const:\n    \"\"\"\n    Some COLOR SET used in the class.\n    \"\"\"\n    DIFF_COLOR_2 = ['#011F5B','#F19CBB']\n    #DIFF_COLOR_N = ['#005f73','#94d2bd','#e9d8a6','#fac748','#e76f51','#9b2226']\n    DIFF_COLOR_N = ['#191970','#ADD8E6']\n    FIG_FORMAT = 'svg'\ndef _plot_scatter_2label(x1,x2,X1_label,X2_label,title,color_set=None,fig_format=None,out_dir='/out'):\n    columns=x1.columns",
+        "detail": "CytoBulk.cytobulk.plots._plot",
         "documentation": {}
     },
     {
-        "label": "add_flags_from_config",
-        "importPath": "utils.training",
-        "description": "utils.training",
-        "isExtraImport": true,
-        "detail": "utils.training",
+        "label": "plot_batch_effect",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.plots._plot",
+        "description": "CytoBulk.cytobulk.plots._plot",
+        "peekOfCode": "def plot_batch_effect(bulk_adata,pseudo_bulk,out_dir,title=''):\n    def _get_paired_data(adata,status=None):\n        data = get.count_data(adata,counts_location=status)\n        return(utils.pca(data))\n    def _plot_paired_data(bulk_adata,pseudo_bulk,title,out_dir,status=None):\n        X1 = _get_paired_data(bulk_adata,status)\n        X2 = _get_paired_data(pseudo_bulk,status)\n        _plot_scatter_2label(X1,X2,X1_label=\"input_data\",X2_label=\"simulated data\",title=title,out_dir=out_dir)\n    _plot_paired_data(bulk_adata,pseudo_bulk,title+\"(original)\",out_dir=out_dir)\n    _plot_paired_data(bulk_adata,pseudo_bulk,title+\"(batch effected)\",out_dir=out_dir,status=\"batch_effected\")",
+        "detail": "CytoBulk.cytobulk.plots._plot",
         "documentation": {}
     },
     {
-        "label": "get_savedir",
-        "importPath": "utils.training",
-        "description": "utils.training",
-        "isExtraImport": true,
-        "detail": "utils.training",
+        "label": "qc_bulk_sc",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.preprocessing._filtering",
+        "description": "CytoBulk.cytobulk.preprocessing._filtering",
+        "peekOfCode": "def qc_bulk_sc(bulk_data,\n            sc_adata,\n            min_counts_per_sample=100,\n            min_genes_per_sample=100,\n            out_dir='.',\n            dataset_name='',\n            **kwargs):\n    \"\"\"\n    Quality control in bulk dataframe and sc adata.\n    Parameters",
+        "detail": "CytoBulk.cytobulk.preprocessing._filtering",
         "documentation": {}
     },
     {
-        "label": "plot_tree_from_leaves",
-        "importPath": "utils.visualization",
-        "description": "utils.visualization",
-        "isExtraImport": true,
-        "detail": "utils.visualization",
+        "label": "high_variable_gene",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.preprocessing._filtering",
+        "description": "CytoBulk.cytobulk.preprocessing._filtering",
+        "peekOfCode": "def high_variable_gene(adata,flavor):\n    sc.pp.highly_variable_genes(adata, min_mean=0, max_mean=np.inf, min_disp=0.25,flavor=flavor)\n    return adata[:, adata.var.highly_variable]\ndef qc_st_sc(st_adata,\n            sc_adata,\n            min_counts_per_sample=1,\n            min_genes_per_sample=5,\n            dataset_name='',\n            out_dir='.',\n            **kwargs):",
+        "detail": "CytoBulk.cytobulk.preprocessing._filtering",
         "documentation": {}
     },
     {
-        "label": "plot_geodesic",
-        "importPath": "utils.visualization",
-        "description": "utils.visualization",
-        "isExtraImport": true,
-        "detail": "utils.visualization",
+        "label": "qc_st_sc",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.preprocessing._filtering",
+        "description": "CytoBulk.cytobulk.preprocessing._filtering",
+        "peekOfCode": "def qc_st_sc(st_adata,\n            sc_adata,\n            min_counts_per_sample=1,\n            min_genes_per_sample=5,\n            dataset_name='',\n            out_dir='.',\n            **kwargs):\n    \"\"\"\n    Quality control in bulk dataframe and sc adata.\n    Parameters",
+        "detail": "CytoBulk.cytobulk.preprocessing._filtering",
         "documentation": {}
     },
     {
-        "label": "plot_tree_from_leaves",
-        "importPath": "utils.visualization",
-        "description": "utils.visualization",
-        "isExtraImport": true,
-        "detail": "utils.visualization",
+        "label": "qc_sc",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.preprocessing._filtering",
+        "description": "CytoBulk.cytobulk.preprocessing._filtering",
+        "peekOfCode": "def qc_sc(sc_adata,**kwargs):\n    \"\"\"\n    Quality control in sc adata.\n    Parameters\n    ----------\n    sc_adata: anndata.AnnData\n        An :class:`~anndata.AnnData` containing the expression to filter.\n    **kwargs:\n        Additional keyword arguments forwarded to\n        :func:`~cytobulk.preprocessing._filter_adata`.",
+        "detail": "CytoBulk.cytobulk.preprocessing._filtering",
         "documentation": {}
     },
     {
-        "label": "plot_geodesic",
-        "importPath": "utils.visualization",
-        "description": "utils.visualization",
-        "isExtraImport": true,
-        "detail": "utils.visualization",
+        "label": "preprocessing",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.preprocessing._preprocessing",
+        "description": "CytoBulk.cytobulk.preprocessing._preprocessing",
+        "peekOfCode": "def preprocessing(bulk_data,\n                sc_adata,\n                annotation_key,\n                is_st:False,\n                marker_data=None,\n                rename=None,\n                dataset_name=\"\",\n                out_dir='.',\n                different_source=True,\n                cell_list=None,",
+        "detail": "CytoBulk.cytobulk.preprocessing._preprocessing",
         "documentation": {}
     },
     {
-        "label": "csr_matrix",
-        "importPath": "scipy.sparse",
-        "description": "scipy.sparse",
-        "isExtraImport": true,
-        "detail": "scipy.sparse",
+        "label": "find_marker_giotto",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.preprocessing._rpackage",
+        "description": "CytoBulk.cytobulk.preprocessing._rpackage",
+        "peekOfCode": "def find_marker_giotto(sc_adata,anno_key,out_dir='./',project=''):\n    \"\"\"\n    find marker gene for each cell type using Giotto package.\n    Parameters\n    ----------\n    raw_sc_adata : anndata.AnnData\n        An :class:`~anndata.AnnData` containing the raw expression.\n    annotation_key : string, optional\n        The `.obs` key where the single cell annotation is stored.: anndata.AnnData.\n    out_dir : string, optional",
+        "detail": "CytoBulk.cytobulk.preprocessing._rpackage",
         "documentation": {}
     },
     {
-        "label": "csr_matrix",
-        "importPath": "scipy.sparse",
-        "description": "scipy.sparse",
-        "isExtraImport": true,
-        "detail": "scipy.sparse",
+        "label": "remove_batch_effect",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.preprocessing._rpackage",
+        "description": "CytoBulk.cytobulk.preprocessing._rpackage",
+        "peekOfCode": "def remove_batch_effect(pseudo_bulk, bulk_adata, out_dir, project='',batch_effect=True):\n    \"\"\"\n    Remove batch effect between pseudo_bulk and input bulk data.\n    Parameters\n    ----------\n    pseudo_bulk : anndata.AnnData\n        An :class:`~anndata.AnnData` containing the pseudo expression.\n    bulk_adata : anndata.AnnData\n        An :class:`~anndata.AnnData` containing the input expression.\n    out_dir : string, optional",
+        "detail": "CytoBulk.cytobulk.preprocessing._rpackage",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
+        "label": "os.environ[\"R_HOME\"]",
+        "kind": 5,
+        "importPath": "CytoBulk.cytobulk.preprocessing._rpackage",
+        "description": "CytoBulk.cytobulk.preprocessing._rpackage",
+        "peekOfCode": "os.environ[\"R_HOME\"] = \"D:/R/R-4.3.1\" \nos.environ[\"PATH\"] = \"D:/R/R-4.3.1/bin/x64\" + \";\" + os.environ[\"R_HOME\"] \nimport rpy2.robjects as robjects\nfrom rpy2.robjects import pandas2ri\nfrom .. import utils\nfrom .. import get\nfrom os.path import exists\ndef find_marker_giotto(sc_adata,anno_key,out_dir='./',project=''):\n    \"\"\"\n    find marker gene for each cell type using Giotto package.",
+        "detail": "CytoBulk.cytobulk.preprocessing._rpackage",
         "documentation": {}
     },
     {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "CytoBulk.cytobulk.preprocessing._rpackage",
+        "description": "CytoBulk.cytobulk.preprocessing._rpackage",
+        "peekOfCode": "os.environ[\"PATH\"] = \"D:/R/R-4.3.1/bin/x64\" + \";\" + os.environ[\"R_HOME\"] \nimport rpy2.robjects as robjects\nfrom rpy2.robjects import pandas2ri\nfrom .. import utils\nfrom .. import get\nfrom os.path import exists\ndef find_marker_giotto(sc_adata,anno_key,out_dir='./',project=''):\n    \"\"\"\n    find marker gene for each cell type using Giotto package.\n    Parameters",
+        "detail": "CytoBulk.cytobulk.preprocessing._rpackage",
+        "documentation": {}
+    },
+    {
+        "label": "Const",
+        "kind": 6,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "class Const:\n    \"\"\"\n    Some constants used in the class.\n    \"\"\"\n    MODE_TRAINING = \"training\"\n    MODE_PREDICTION = \"prediction\"\n    SAMPLE_COL = \"sample_name\"\n    GENE_SYMBOL_COL = \"GeneSymbol\"\n    BATCH_SIZE = 64\n    LEARNING_RATE = 0.005",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "LinearModel",
+        "kind": 6,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "class LinearModel(torch.nn.Module):\n    def __init__(self, t):\n        super(LinearModel, self).__init__()\n        self.encoder = torch.nn.Sequential(\n            torch.nn.Linear(t,64),\n            nn.BatchNorm1d(64),\n            torch.nn.Linear(64,1),\n            torch.nn.Sigmoid()\n        )\n    def forward(self, t):",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "GraphConv",
+        "kind": 6,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "class GraphConv(nn.Module):\n    def __init__(self, in_c, out_c, K, device, bias=True, normalize=True):\n        super(GraphConv, self).__init__()\n        self.device = device\n        self.normalize = normalize\n        self.weight = nn.Parameter(torch.Tensor(K + 1, 1, in_c, out_c))\n        nn.init.orthogonal_(self.weight, gain=nn.init.calculate_gain('leaky_relu', 0.4))\n        if bias:\n            self.bias = nn.Parameter(torch.Tensor(1, 1, out_c))\n            # nn.init.zeros_(self.bias)",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "GraphNet_bulk",
+        "kind": 6,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "class GraphNet_bulk(nn.Module):\n    def __init__(self, in_c, hid_c, out_c, K, device):\n        super(GraphNet_bulk, self).__init__()\n        self.conv1 = GraphConv(in_c=in_c, out_c=hid_c, K=K, device=device)\n        self.conv2 = GraphConv(in_c=hid_c, out_c=out_c, K=K, device=device)\n        self.act = nn.ELU()\n    def forward(self, graph, data):\n        graph_data = graph\n        flow_x = data\n        B, N = flow_x.size(0), flow_x.size(1)",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "GraphNet_st",
+        "kind": 6,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "class GraphNet_st(nn.Module):\n    def __init__(self, in_c, hid_c, out_c, K, device):\n        super(GraphNet_st, self).__init__()\n        self.conv1 = GraphConv(in_c=in_c, out_c=out_c, K=K, device=device)\n        self.act = nn.ELU()\n    def forward(self, graph, data):\n        graph_data = graph\n        flow_x = data\n        B, N = flow_x.size(0), flow_x.size(1)\n        flow_x = flow_x.view(B, 1, N)",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "InferDataset",
+        "kind": 6,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "class InferDataset(torch.utils.data.Dataset):\n    def __init__(self, data):\n        self.data = data\n    def __getitem__(self, index):\n        x = self.data[index]\n        return x\n    def __len__(self):\n        return len(self.data)\ndef get_G(cell_name, sel_gene, sc_adata,annotation_key):\n        def _get_mat_YW(sc_df):",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "GraphDeconv",
+        "kind": 6,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "class GraphDeconv:\n    def __init__(\n            self,\n            cell_num=200,\n            mode=Const.MODE_PREDICTION,\n            use_gpu=True\n    ):\n        \"\"\"\n            cell_num: int, the number of cell for each bulk sample.\n            mode: string, prediction or training.",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "configure_device",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "def configure_device(use_gpu):\n    if use_gpu:\n        if torch.cuda.is_available(): return \"cuda\"\n        if torch.backends.mps.is_available(): return \"mps\"\n    return \"cpu\"\ndef naive_parallel(\n        func: Callable, \n        args: Generator, \n        cpu_limit = mp.cpu_count()\n):",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "naive_parallel",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "def naive_parallel(\n        func: Callable, \n        args: Generator, \n        cpu_limit = mp.cpu_count()\n):\n    print(f\"Try to allocate {cpu_limit}, \", end='')\n    cpu_limit = min(cpu_limit, mp.cpu_count())\n    print(f\"{cpu_limit} cpu(s) are currently available.\")\n    with mp.Pool(processes=cpu_limit) as pool:\n        ret = pool.starmap_async(func, args)",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "change_lr",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "def change_lr(optim, new_lr):\n    for g in optim.param_groups:\n        g['lr'] = new_lr\nclass InferDataset(torch.utils.data.Dataset):\n    def __init__(self, data):\n        self.data = data\n    def __getitem__(self, index):\n        x = self.data[index]\n        return x\n    def __len__(self):",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "get_G",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "def get_G(cell_name, sel_gene, sc_adata,annotation_key):\n        def _get_mat_YW(sc_df):\n            mat_Y = torch.FloatTensor(sc_df.values)\n            mat_W = mat_Y @ mat_Y.t()\n            return mat_W\n        sec_num = 1e-20\n        sub_adata = sc_adata[sc_adata.obs[annotation_key]==cell_name,sel_gene].copy()\n        sub_df = get.count_data(sub_adata)\n        mat_W = _get_mat_YW(sub_df)\n        num = len(mat_W)",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "select_gene",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "def select_gene(expression: pd.DataFrame, sel_gene: list):\n    warnings.simplefilter(action='ignore', category=pd.errors.PerformanceWarning)\n    ret_exp = pd.DataFrame(expression.iloc[:, 0])\n    for gene in sel_gene:\n        ret_exp[gene] = expression[gene] if gene in expression.columns else 0\n    return ret_exp.iloc[:, 1:]\ndef train_cell_loop_once(cell, \n                        marker,\n                        presudo_bulk,\n                        bulk_adata,",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "train_cell_loop_once",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "description": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "peekOfCode": "def train_cell_loop_once(cell, \n                        marker,\n                        presudo_bulk,\n                        bulk_adata,\n                        batch_size,\n                        sc_adata,\n                        out_dir,\n                        device,\n                        annotation_key,\n                        project_name,",
+        "detail": "CytoBulk.cytobulk.tools.model._graph_deconv",
+        "documentation": {}
+    },
+    {
+        "label": "bulk_deconv",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.tools._deconv",
+        "description": "CytoBulk.cytobulk.tools._deconv",
+        "peekOfCode": "def bulk_deconv(bulk_data,\n                sc_adata,\n                annotation_key,\n                marker_data=None,\n                rename=None,\n                dataset_name=\"\",\n                out_dir='.',\n                different_source=True,\n                cell_list=None,\n                scale_factors=100000,",
+        "detail": "CytoBulk.cytobulk.tools._deconv",
+        "documentation": {}
+    },
+    {
+        "label": "st_deconv",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.tools._deconv",
+        "description": "CytoBulk.cytobulk.tools._deconv",
+        "peekOfCode": "def st_deconv(st_adata,\n            sc_adata,\n            annotation_key,\n            marker_data=None,\n            rename=None,\n            dataset_name=\"\",\n            out_dir='.',\n            different_source=True,\n            cell_list=None,\n            scale_factors=10000,",
+        "detail": "CytoBulk.cytobulk.tools._deconv",
+        "documentation": {}
+    },
+    {
+        "label": "bulk_mapping",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.tools._mapping",
+        "description": "CytoBulk.cytobulk.tools._mapping",
+        "peekOfCode": "def bulk_mapping(frac_data,\n                bulk_adata,\n                sc_adata,\n                n_cell=100,\n                annotation_key=\"curated_cell_type\",\n                bulk_layer=None,\n                sc_layer=None,\n                reorder=True,\n                multiprocessing=True,\n                cpu_num=cpu_count()-2,",
+        "detail": "CytoBulk.cytobulk.tools._mapping",
+        "documentation": {}
+    },
+    {
+        "label": "st_mapping",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.tools._mapping",
+        "description": "CytoBulk.cytobulk.tools._mapping",
+        "peekOfCode": "def st_mapping(st_adata,sc_adata,deconv_results,solution_method=\"cytospace\"):\n    if solution_method==\"cytospace\":\n        main_cytospace(st_adata,sc_adata,deconv_results)\n    return",
+        "detail": "CytoBulk.cytobulk.tools._mapping",
+        "documentation": {}
+    },
+    {
+        "label": "Const",
+        "kind": 6,
+        "importPath": "CytoBulk.cytobulk.tools._segmentation",
+        "description": "CytoBulk.cytobulk.tools._segmentation",
+        "peekOfCode": "class Const:\n    PIX_X = 'X'\n    PIX_Y = 'Y'\ndef rgb2grey(img: np.ndarray):\n    return np.dot(img[...,:3], [0.2989, 0.5870, 0.1140])\n# TODO: deal with the vesiculars\ndef predict_cell_num(img_path, \n                     spot_path,\n                     crop_r,\n                     save_png_result=None,",
+        "detail": "CytoBulk.cytobulk.tools._segmentation",
+        "documentation": {}
+    },
+    {
+        "label": "rgb2grey",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.tools._segmentation",
+        "description": "CytoBulk.cytobulk.tools._segmentation",
+        "peekOfCode": "def rgb2grey(img: np.ndarray):\n    return np.dot(img[...,:3], [0.2989, 0.5870, 0.1140])\n# TODO: deal with the vesiculars\ndef predict_cell_num(img_path, \n                     spot_path,\n                     crop_r,\n                     save_png_result=None,\n                     model_type='cyto2', \n                     cellprob_threshold=1):\n    '''",
+        "detail": "CytoBulk.cytobulk.tools._segmentation",
+        "documentation": {}
+    },
+    {
+        "label": "predict_cell_num",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.tools._segmentation",
+        "description": "CytoBulk.cytobulk.tools._segmentation",
+        "peekOfCode": "def predict_cell_num(img_path, \n                     spot_path,\n                     crop_r,\n                     save_png_result=None,\n                     model_type='cyto2', \n                     cellprob_threshold=1):\n    '''\n    Params:\n    -----\n    img_path: str, WSI. size can be arbitrary.",
+        "detail": "CytoBulk.cytobulk.tools._segmentation",
+        "documentation": {}
+    },
+    {
+        "label": "eval_fraction",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._evaluation",
+        "description": "CytoBulk.cytobulk.utils._evaluation",
+        "peekOfCode": "def eval_fraction(df1,df2,out_dir=',',save=True):\n    cells=[]\n    sig=[]\n    mse=[]\n    p_value=[]\n    cell_name = df1.columns.values.tolist()\n    for j in range(len(cell_name)):\n        data1 = df1.loc[:,cell_name[j]].values\n        data2 = df2.loc[:,cell_name[j]].values\n        mse_tmp = mean_squared_error(data1, data2)",
+        "detail": "CytoBulk.cytobulk.utils._evaluation",
+        "documentation": {}
+    },
+    {
+        "label": "eval_comparsion",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._evaluation",
+        "description": "CytoBulk.cytobulk.utils._evaluation",
+        "peekOfCode": "def eval_comparsion(df1,df2_list,method_name,out_dir=',',save=True):\n    cells=[]\n    sig=[]\n    mse=[]\n    p_value=[]\n    cell_name = df1.columns.values.tolist()\n    methods = []\n    for i in range(len(df2_list)):\n        for j in range(len(cell_name)):\n            data1 = df2_list[i].loc[:,cell_name[j]].values",
+        "detail": "CytoBulk.cytobulk.utils._evaluation",
+        "documentation": {}
+    },
+    {
+        "label": "eval_each_sample_mse",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._evaluation",
+        "description": "CytoBulk.cytobulk.utils._evaluation",
+        "peekOfCode": "def eval_each_sample_mse(df1,df2,method_name,out_dir=',',save=True):\n    cells=[]\n    mse=[]\n    samples=[]\n    cell_name = df1.columns.values.tolist()\n    methods = []\n    sample_name = df1.index.tolist()\n    df2 = df2.loc[sample_name,:]\n    for i in range(len(df1)):\n        for j in range(len(cell_name)):",
+        "detail": "CytoBulk.cytobulk.utils._evaluation",
+        "documentation": {}
+    },
+    {
+        "label": "get_sum",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._math",
+        "description": "CytoBulk.cytobulk.utils._math",
+        "peekOfCode": "def get_sum(\n    X,\n    axis,\n    dtype=None,\n):\n    \"\"\"\n    Calculates the sum of a sparse matrix or array-like in a specified axis and\n    returns a flattened result.\n    Parameters\n    ----------",
+        "detail": "CytoBulk.cytobulk.utils._math",
+        "documentation": {}
+    },
+    {
+        "label": "log1p",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._math",
+        "description": "CytoBulk.cytobulk.utils._math",
+        "peekOfCode": "def log1p(\n    X,\n):\n    \"\"\"\n    Calculates log1p inplace and in parallel.\n    Parameters\n    ----------\n    X\n        A :class:`~numpy.ndarray` with more than 1 dimension, a `scipy` sparse\n        matrix, or something which has an attribute `.X` which fits this",
+        "detail": "CytoBulk.cytobulk.utils._math",
+        "documentation": {}
+    },
+    {
+        "label": "pca",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._math",
+        "description": "CytoBulk.cytobulk.utils._math",
+        "peekOfCode": "def pca(X,dimension=2):\n    \"\"\"\n    Calculates decompositioned data  with 2 dimensions.\n    Parameters\n    ----------\n    X\n        A :class:`~pd.dataframe` with more than 2 dimension.\n    dimension: int\n        The number to indicate needed dimension.\n    Returns",
+        "detail": "CytoBulk.cytobulk.utils._math",
+        "documentation": {}
+    },
+    {
+        "label": "normalization_cpm",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._math",
+        "description": "CytoBulk.cytobulk.utils._math",
+        "peekOfCode": "def normalization_cpm(adata,scale_factors=None,trans_method=None,layer=None):\n    \"\"\"\n    Normalize counts per cell.\n    Parameters\n    ----------\n    scale_factors: int, optional\n        After normalization, each observation (cell) has a total count equal to the median \n        of total counts for observations (cells) before normalization.\n    trans_method: None or 'log', optional\n        If log, Computes X=log(X+1), where log denotes the natural logarithm unless a different base is given.",
+        "detail": "CytoBulk.cytobulk.utils._math",
+        "documentation": {}
+    },
+    {
+        "label": "normal_center_df",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._math",
+        "description": "CytoBulk.cytobulk.utils._math",
+        "peekOfCode": "def normal_center_df(data):\n    scaler = StandardScaler()\n    scaler.fit(data.values)\n    trans_data = scaler.transform(data.values)\n    return pd.DataFrame(trans_data,index=data.index,columns=data.columns)\ndef pear(A,B):\n    tmp = np.corrcoef(A.flatten(), B.flatten())\n    return tmp[0,1] \ndef calculate_distance(matrix1,matrix2):\n    return (1 - sp.distance.cdist(matrix1, matrix2, 'cosine'))",
+        "detail": "CytoBulk.cytobulk.utils._math",
+        "documentation": {}
+    },
+    {
+        "label": "pear",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._math",
+        "description": "CytoBulk.cytobulk.utils._math",
+        "peekOfCode": "def pear(A,B):\n    tmp = np.corrcoef(A.flatten(), B.flatten())\n    return tmp[0,1] \ndef calculate_distance(matrix1,matrix2):\n    return (1 - sp.distance.cdist(matrix1, matrix2, 'cosine'))",
+        "detail": "CytoBulk.cytobulk.utils._math",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_distance",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._math",
+        "description": "CytoBulk.cytobulk.utils._math",
+        "peekOfCode": "def calculate_distance(matrix1,matrix2):\n    return (1 - sp.distance.cdist(matrix1, matrix2, 'cosine'))",
+        "detail": "CytoBulk.cytobulk.utils._math",
+        "documentation": {}
+    },
+    {
+        "label": "check_paths",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._read_data",
+        "description": "CytoBulk.cytobulk.utils._read_data",
+        "peekOfCode": "def check_paths(output_folder,output_prefix=None):\n    # Create relative path\n    output_path = os.path.join(os.getcwd(), output_folder)\n    # Make sure that the folder exists\n    Path(output_path).mkdir(parents=True, exist_ok=True)\n    if os.path.exists(os.path.join(output_path, f\"{output_prefix}assigned_locations.csv\")):\n        print(\"\\033[91mWARNING\\033[0m: Running this will overwrite previous results, choose a new\"\n              \" 'output_folder' or 'output_prefix'\")\n    return output_path\ndef read_file(file_path, file_label):",
+        "detail": "CytoBulk.cytobulk.utils._read_data",
+        "documentation": {}
+    },
+    {
+        "label": "read_file",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._read_data",
+        "description": "CytoBulk.cytobulk.utils._read_data",
+        "peekOfCode": "def read_file(file_path, file_label):\n    \"\"\"\n    Read data with given path.\n    Parameters\n    ----------\n        file_path\n            file path.\n        file_label\n            the file label to raise exception.\n    Returns",
+        "detail": "CytoBulk.cytobulk.utils._read_data",
+        "documentation": {}
+    },
+    {
+        "label": "bulk_simulation",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._stimulation",
+        "description": "CytoBulk.cytobulk.utils._stimulation",
+        "peekOfCode": "def bulk_simulation(sc_adata,\n                    cell_list,\n                    annotation_key,\n                    project,\n                    out_dir,\n                    n_sample_each_group=100,\n                    min_cells_each_group=100,\n                    cell_gap_each_group=100,\n                    group_number=5,\n                    rename_dict=None,",
+        "detail": "CytoBulk.cytobulk.utils._stimulation",
+        "documentation": {}
+    },
+    {
+        "label": "st_simulation",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._stimulation",
+        "description": "CytoBulk.cytobulk.utils._stimulation",
+        "peekOfCode": "def st_simulation(sc_adata,\n                cell_list,\n                annotation_key,\n                project,\n                out_dir,\n                n_sample_each_group=1000,\n                min_cells_each_group=8,\n                cell_gap_each_group=1,\n                group_number=5,\n                rename_dict=None,",
+        "detail": "CytoBulk.cytobulk.utils._stimulation",
+        "documentation": {}
+    },
+    {
+        "label": "st_simulation_case",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._stimulation",
+        "description": "CytoBulk.cytobulk.utils._stimulation",
+        "peekOfCode": "def st_simulation_case(sc_adata,\n                    cell_list,\n                    annotation_key,\n                    project,\n                    out_dir,\n                    n_sample_each_group=100,\n                    min_cells_each_group=6,\n                    cell_gap_each_group=1,\n                    group_number=5,\n                    rename_dict=None,",
+        "detail": "CytoBulk.cytobulk.utils._stimulation",
+        "documentation": {}
+    },
+    {
+        "label": "bulk_simulation_case",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._stimulation",
+        "description": "CytoBulk.cytobulk.utils._stimulation",
+        "peekOfCode": "def bulk_simulation_case(sc_adata,\n                        cell_list,\n                        annotation_key,\n                        project,\n                        out_dir,\n                        n_sample_each_group=100,\n                        min_cells_each_group=100,\n                        cell_gap_each_group=100,\n                        group_number=5,\n                        rename_dict=None,",
+        "detail": "CytoBulk.cytobulk.utils._stimulation",
+        "documentation": {}
+    },
+    {
+        "label": "compute_cluster_averages",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._utils",
+        "description": "CytoBulk.cytobulk.utils._utils",
+        "peekOfCode": "def compute_cluster_averages(adata, annotation_key, common_cell,use_raw=False,project='',save=False,out_dir='./'):\n    \"\"\"\n    Compute average expression of each gene in each cluster.\n    Parameters\n    ----------\n    adata\n        AnnData object of reference single-cell dataset.\n    annotation_key\n        Name of adata.obs column containing cluster labels.\n    common_cell",
+        "detail": "CytoBulk.cytobulk.utils._utils",
+        "documentation": {}
+    },
+    {
+        "label": "compute_bulk_with_average_exp",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._utils",
+        "description": "CytoBulk.cytobulk.utils._utils",
+        "peekOfCode": "def compute_bulk_with_average_exp(pseudo_bulk, average_cell_exp,save=False,out_dir='./',project=''):\n    \"\"\"\n    Compute average expression of each gene in each cluster\n    Parameters\n    ----------\n    pseudo_bulk\n        AnnData object of reference single-cell dataset\n    annotation_key\n        Name of adata.obs column containing cluster labels\n    common_cell",
+        "detail": "CytoBulk.cytobulk.utils._utils",
+        "documentation": {}
+    },
+    {
+        "label": "data_dict_integration",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._utils",
+        "description": "CytoBulk.cytobulk.utils._utils",
+        "peekOfCode": "def data_dict_integration(common_list,data_df,data_dict,common_cell,top_num=100):\n    \"\"\"\n    Integration the dataframe and dict.\n    Parameters\n    ----------\n    data\n        Dataframe and the columns is the key.\n    dict\n        Dictionary with key and values.\n    top_number",
+        "detail": "CytoBulk.cytobulk.utils._utils",
+        "documentation": {}
+    },
+    {
+        "label": "marker_integration",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._utils",
+        "description": "CytoBulk.cytobulk.utils._utils",
+        "peekOfCode": "def marker_integration(common_list,data_df,data_dict,common_cell,top_num=100):\n    \"\"\"\n    Integration the dataframe and dict.\n    Parameters\n    ----------\n    data\n        Dataframe and the columns is the key.\n    dict\n        Dictionary with key and values.\n    top_number",
+        "detail": "CytoBulk.cytobulk.utils._utils",
+        "documentation": {}
+    },
+    {
+        "label": "filter_samples",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._utils",
+        "description": "CytoBulk.cytobulk.utils._utils",
+        "peekOfCode": "def filter_samples(pseudo_bulk, bulk_adata,data_num,num=500,cut_off=0.9,loc=None):\n    from sklearn.metrics.pairwise import cosine_similarity\n    sample_name = pseudo_bulk.obs_names\n    if loc:\n        bulk_matrix = bulk_adata.layers[loc]\n        pseudo_matrix = pseudo_bulk.layers[loc]\n    else:\n        bulk_matrix = bulk_adata.X\n        pseudo_matrix = pseudo_bulk.X\n    #similarity_matrix = np.matmul(bulk_matrix,pseudo_matrix.T)",
+        "detail": "CytoBulk.cytobulk.utils._utils",
+        "documentation": {}
+    },
+    {
+        "label": "compute_average_cosin",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._utils",
+        "description": "CytoBulk.cytobulk.utils._utils",
+        "peekOfCode": "def compute_average_cosin(pseudo_bulk_tensor,bulk_adata,loc=None):\n    from sklearn.metrics.pairwise import cosine_similarity\n    valid_list=[]\n    for i in pseudo_bulk_tensor:\n        valid_list.append(i[0].numpy())\n    pseudo_matrix = np.array(valid_list)\n    if loc:\n        bulk_matrix = bulk_adata.layers[loc]\n    else:\n        bulk_matrix = bulk_adata.X",
+        "detail": "CytoBulk.cytobulk.utils._utils",
+        "documentation": {}
+    },
+    {
+        "label": "filter_gene",
+        "kind": 2,
+        "importPath": "CytoBulk.cytobulk.utils._utils",
+        "description": "CytoBulk.cytobulk.utils._utils",
+        "peekOfCode": "def filter_gene(expression,reference,out_dir,cell_type,save=True):\n    data_list=[expression,reference]\n    filtered_list=[]\n    for df in data_list:\n        print(df)\n        zero_count_per_column = (df == 0).sum(axis=0)\n        columns_to_keep = zero_count_per_column[zero_count_per_column <= (len(df) / 2)].index\n        df_filtered = df[columns_to_keep]\n        filtered_list.append(df_filtered)\n    common_columns = filtered_list[0].columns.intersection(filtered_list[1].columns)",
+        "detail": "CytoBulk.cytobulk.utils._utils",
+        "documentation": {}
+    },
+    {
+        "label": "test_read_adata",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_pl_preprocessing",
+        "description": "CytoBulk.tests.test_pl_preprocessing",
+        "peekOfCode": "def test_read_adata(adata_path):\n    return sc.read_h5ad(adata_path)\n@pytest.mark.skip\ndef test_read_df(data_path):\n    return pd.read_csv(data_path,index_col=0,sep='\\t')\n# tested\n@pytest.mark.skip\n@pytest.mark.parametrize(\"adata_path\", [(\"../data/A36_sample.h5ad\")])\ndef test_sc_qc(adata_path):\n    sc = test_read_adata(adata_path)",
+        "detail": "CytoBulk.tests.test_pl_preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "test_read_df",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_pl_preprocessing",
+        "description": "CytoBulk.tests.test_pl_preprocessing",
+        "peekOfCode": "def test_read_df(data_path):\n    return pd.read_csv(data_path,index_col=0,sep='\\t')\n# tested\n@pytest.mark.skip\n@pytest.mark.parametrize(\"adata_path\", [(\"../data/A36_sample.h5ad\")])\ndef test_sc_qc(adata_path):\n    sc = test_read_adata(adata_path)\n    assert isinstance(ct.pp.qc_sc(sc,save=True,out_dir='../data',project='A36_sample'),ad.AnnData)\n    #return ct.pp.qc_sc(sc)   \n@pytest.mark.skip",
+        "detail": "CytoBulk.tests.test_pl_preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "test_sc_qc",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_pl_preprocessing",
+        "description": "CytoBulk.tests.test_pl_preprocessing",
+        "peekOfCode": "def test_sc_qc(adata_path):\n    sc = test_read_adata(adata_path)\n    assert isinstance(ct.pp.qc_sc(sc,save=True,out_dir='../data',project='A36_sample'),ad.AnnData)\n    #return ct.pp.qc_sc(sc)   \n@pytest.mark.skip\n@pytest.mark.parametrize(\"adata_path,bulk_path\", [(\"../data/A36_sample.h5ad\",\"../data/reference_bulk_data/A35_sample_stimulated_bulk.txt\")])\ndef test_qc_bulk_sc(bulk_path,adata_path):\n    sc = test_read_adata(adata_path)\n    bulk = test_read_df(bulk_path)\n    ct.pp.qc_bulk_sc(bulk_data = bulk,sc_adata = sc,save=True,out_dir='../data',dataset_name='A36_sc_35_bulk')",
+        "detail": "CytoBulk.tests.test_pl_preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "test_qc_bulk_sc",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_pl_preprocessing",
+        "description": "CytoBulk.tests.test_pl_preprocessing",
+        "peekOfCode": "def test_qc_bulk_sc(bulk_path,adata_path):\n    sc = test_read_adata(adata_path)\n    bulk = test_read_df(bulk_path)\n    ct.pp.qc_bulk_sc(bulk_data = bulk,sc_adata = sc,save=True,out_dir='../data',dataset_name='A36_sc_35_bulk')\n@pytest.mark.parametrize(\"adata_path,bulk_path,marker_path,annotation_key\", [(\"../data/filtered_A36_sample.h5ad\",\n                                                                            \"../data/reference_bulk_data/A35_sample_stimulated_bulk.txt\",\n                                                                            \"../data/cell_meta.xlsx\",\n                                                                            \"Manually_curated_celltype\")])\ndef test_preprocessing_bulk_sc(bulk_path,adata_path,marker_path,annotation_key):\n    sc = test_read_adata(adata_path)",
+        "detail": "CytoBulk.tests.test_pl_preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "test_preprocessing_bulk_sc",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_pl_preprocessing",
+        "description": "CytoBulk.tests.test_pl_preprocessing",
+        "peekOfCode": "def test_preprocessing_bulk_sc(bulk_path,adata_path,marker_path,annotation_key):\n    sc = test_read_adata(adata_path)\n    bulk = test_read_df(bulk_path)\n    marker = pd.read_excel(marker_path, sheet_name = \"marker\")\n    names = pd.read_excel(marker_path, sheet_name = \"rename\")\n    names = names.set_index(['Original_name'])['Curated_name'].to_dict()\n    ct.pp.preprocessing(bulk_data = bulk,sc_adata = sc,marker_data=marker,\n                        annotation_key =annotation_key,\n                        rename = names,\n                        out_dir='../data',dataset_name='filtered_A36_sc_35')",
+        "detail": "CytoBulk.tests.test_pl_preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "test_read_adata",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_tl_tools",
+        "description": "CytoBulk.tests.test_tl_tools",
+        "peekOfCode": "def test_read_adata(adata_path):\n    return sc.read_h5ad(adata_path)\n@pytest.mark.skip\ndef test_read_df(data_path):\n    return pd.read_csv(data_path,index_col=0,sep='\\t')\n@pytest.mark.skip\ndef test_read_csv(data_path):\n    return pd.read_csv(data_path,index_col=0,sep=',')\n@pytest.mark.skip\n@pytest.mark.parametrize(\"adata_path,bulk_path,marker_path,annotation_key\", [(\"../data/filtered_A36_sample.h5ad\",",
+        "detail": "CytoBulk.tests.test_tl_tools",
+        "documentation": {}
+    },
+    {
+        "label": "test_read_df",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_tl_tools",
+        "description": "CytoBulk.tests.test_tl_tools",
+        "peekOfCode": "def test_read_df(data_path):\n    return pd.read_csv(data_path,index_col=0,sep='\\t')\n@pytest.mark.skip\ndef test_read_csv(data_path):\n    return pd.read_csv(data_path,index_col=0,sep=',')\n@pytest.mark.skip\n@pytest.mark.parametrize(\"adata_path,bulk_path,marker_path,annotation_key\", [(\"../data/filtered_A36_sample.h5ad\",\n                                                                            \"../data/reference_bulk_data/A35_sample_stimulated_bulk.txt\",\n                                                                            \"../data/cell_meta.xlsx\",\n                                                                            \"curated_cell_type\")])",
+        "detail": "CytoBulk.tests.test_tl_tools",
+        "documentation": {}
+    },
+    {
+        "label": "test_read_csv",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_tl_tools",
+        "description": "CytoBulk.tests.test_tl_tools",
+        "peekOfCode": "def test_read_csv(data_path):\n    return pd.read_csv(data_path,index_col=0,sep=',')\n@pytest.mark.skip\n@pytest.mark.parametrize(\"adata_path,bulk_path,marker_path,annotation_key\", [(\"../data/filtered_A36_sample.h5ad\",\n                                                                            \"../data/reference_bulk_data/A35_sample_stimulated_bulk.txt\",\n                                                                            \"../data/cell_meta.xlsx\",\n                                                                            \"curated_cell_type\")])\ndef test_bulk_deconv(bulk_path,adata_path,marker_path,annotation_key):\n    sc = test_read_adata(adata_path)\n    bulk = test_read_df(bulk_path)",
+        "detail": "CytoBulk.tests.test_tl_tools",
+        "documentation": {}
+    },
+    {
+        "label": "test_bulk_deconv",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_tl_tools",
+        "description": "CytoBulk.tests.test_tl_tools",
+        "peekOfCode": "def test_bulk_deconv(bulk_path,adata_path,marker_path,annotation_key):\n    sc = test_read_adata(adata_path)\n    bulk = test_read_df(bulk_path)\n    marker = pd.read_excel(marker_path, sheet_name = \"marker\")\n    names = pd.read_excel(marker_path, sheet_name = \"rename\")\n    names = names.set_index(['Original_name'])['Curated_name'].to_dict()\n    ct.tl.bulk_deconv(bulk_data = bulk,sc_adata = sc,marker_data=marker,\n                        annotation_key =annotation_key,\n                        rename = names,\n                        out_dir='D:/project/CytoBulk/case/st_human_sc',dataset_name='filtered_A36_sc_35')",
+        "detail": "CytoBulk.tests.test_tl_tools",
+        "documentation": {}
+    },
+    {
+        "label": "test_bulk_mapping",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_tl_tools",
+        "description": "CytoBulk.tests.test_tl_tools",
+        "peekOfCode": "def test_bulk_mapping(frac_data,sc_adata,bulk_adata,n_cell,annotation_key):\n    frac_data = test_read_csv(frac_data)\n    sc_adata = test_read_adata(sc_adata)\n    bulk_adata = test_read_adata(bulk_adata)\n    ct.tl.bulk_mapping(frac_data = frac_data,\n                        sc_adata = sc_adata,\n                        bulk_adata = bulk_adata,\n                        n_cell = n_cell,\n                        annotation_key=annotation_key,\n                        dataset_name=\"filtered_A36_sc_35\",",
+        "detail": "CytoBulk.tests.test_tl_tools",
+        "documentation": {}
+    },
+    {
+        "label": "test_st_deconv",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_tl_tools",
+        "description": "CytoBulk.tests.test_tl_tools",
+        "peekOfCode": "def test_st_deconv(bulk_path,adata_path,marker_path,annotation_key,out_dir,dataset_name):\n    sc = test_read_adata(adata_path)\n    st = test_read_adata(bulk_path)\n    marker = pd.read_excel(marker_path, sheet_name = \"marker\")\n    names = pd.read_excel(marker_path, sheet_name = \"rename\")\n    names = names.set_index(['Original_name'])['Curated_name'].to_dict()\n    ct.tl.st_deconv(st_adata = st,sc_adata = sc,marker_data=marker,\n                        annotation_key =annotation_key,\n                        rename = names,\n                        out_dir=out_dir,",
+        "detail": "CytoBulk.tests.test_tl_tools",
+        "documentation": {}
+    },
+    {
+        "label": "test_st_deconv_hnsc",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_tl_tools",
+        "description": "CytoBulk.tests.test_tl_tools",
+        "peekOfCode": "def test_st_deconv_hnsc(bulk_path,adata_path,marker_path,annotation_key,out_dir,dataset_name):\n    sc_adata = test_read_adata(adata_path)\n    sc_adata.__dict__['_raw'].__dict__['_var'] = sc_adata.__dict__['_raw'].__dict__['_var'].rename(columns={'_index': 'features'})\n    st = pd.read_csv(bulk_path,index_col=0)\n    st_adata = sc.AnnData(st)\n    marker = pd.read_excel(marker_path, sheet_name = \"marker\")\n    names = pd.read_excel(marker_path, sheet_name = \"rename\")\n    names = names.set_index(['Original_name'])['Curated_name'].to_dict()\n    ct.tl.st_deconv(st_adata = st_adata,sc_adata = sc_adata,marker_data=marker,\n                        annotation_key =annotation_key,",
+        "detail": "CytoBulk.tests.test_tl_tools",
+        "documentation": {}
+    },
+    {
+        "label": "test_st_deconv",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_tl_tools",
+        "description": "CytoBulk.tests.test_tl_tools",
+        "peekOfCode": "def test_st_deconv(bulk_path,adata_path,marker_path,annotation_key,out_dir,dataset_name):\n    sc = test_read_adata(adata_path)\n    st = test_read_adata(bulk_path)\n    marker = pd.read_excel(marker_path, sheet_name = \"marker\")\n    names = pd.read_excel(marker_path, sheet_name = \"rename\")\n    names = names.set_index(['Original_name'])['Curated_name'].to_dict()\n    ct.tl.st_deconv(st_adata = st,sc_adata = sc,marker_data=marker,\n                        annotation_key =annotation_key,\n                        rename = names,\n                        out_dir=out_dir,",
+        "detail": "CytoBulk.tests.test_tl_tools",
+        "documentation": {}
+    },
+    {
+        "label": "test_simulation_st",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_tl_tools",
+        "description": "CytoBulk.tests.test_tl_tools",
+        "peekOfCode": "def test_simulation_st(sc_adata,dataset_name, out_dir, annotation_key,marker_path):\n    sc = test_read_adata(sc_adata)\n    marker = pd.read_excel(marker_path, sheet_name = \"marker\")\n    names = pd.read_excel(marker_path, sheet_name = \"rename\")\n    names = names.set_index(['Original_name'])['Curated_name'].to_dict()\n    sc.__dict__['_raw'].__dict__['_var'] = sc.__dict__['_raw'].__dict__['_var'].rename(columns={'_index': 'features'})\n    common_cell = names.keys()\n    pseudo_st = ct.ul.st_simulation_case(\n                sc, \n                common_cell, ",
+        "detail": "CytoBulk.tests.test_tl_tools",
+        "documentation": {}
+    },
+    {
+        "label": "test_st_mapping",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_tl_tools",
+        "description": "CytoBulk.tests.test_tl_tools",
+        "peekOfCode": "def test_st_mapping(sc_adata,st_adata,marker_path,annotation_key,out_dir,dataset_name):\n    sc = test_read_adata(sc_adata)\n    st = test_read_adata(st_adata)\n    sc.__dict__['_raw'].__dict__['_var'] = sc.__dict__['_raw'].__dict__['_var'].rename(columns={'_index': 'features'})\n    marker = pd.read_excel(marker_path, sheet_name = \"marker\")\n    names = pd.read_excel(marker_path, sheet_name = \"rename\")\n    names = names.set_index(['Original_name'])['Curated_name'].to_dict()\n    ct.tl.st_deconv(st_adata = st,sc_adata = sc,marker_data=marker,\n                        annotation_key =annotation_key,\n                        rename = names,",
+        "detail": "CytoBulk.tests.test_tl_tools",
+        "documentation": {}
+    },
+    {
+        "label": "test_st_mapping",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_tl_tools",
+        "description": "CytoBulk.tests.test_tl_tools",
+        "peekOfCode": "def test_st_mapping(image_path,st_path):\n    st = sc.read_visium(st_path)\n    '''\n    '''\n    ct.tl.img_segmentation(image_path = image_path,st_data = st)\nif __name__ == '__main__':\n    pytest.main([\"-s\", \"test_tl_tools.py\"])",
+        "detail": "CytoBulk.tests.test_tl_tools",
+        "documentation": {}
+    },
+    {
+        "label": "test_read_adata",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_ul_stimulation",
+        "description": "CytoBulk.tests.test_ul_stimulation",
+        "peekOfCode": "def test_read_adata(adata_path):\n    return sc.read_h5ad(adata_path)\n@pytest.mark.parametrize(\"adata_path, project, out_dir,annotation_key,marker_path\", [(\"../data/A35_sample.h5ad\",\"A35_sample\",\"../data\",\"Manually_curated_celltype\",\n                                                                                    \"../data/cell_meta.xlsx\")])\n@pytest.mark.skip\ndef test_stimulation_bulk(adata_path,project, out_dir, annotation_key,marker_path):\n    sc = test_read_adata(adata_path)\n    marker = pd.read_excel(marker_path, sheet_name = \"marker\")\n    names = pd.read_excel(marker_path, sheet_name = \"rename\")\n    names = names.set_index(['Original_name'])['Curated_name'].to_dict()",
+        "detail": "CytoBulk.tests.test_ul_stimulation",
+        "documentation": {}
+    },
+    {
+        "label": "test_stimulation_bulk",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_ul_stimulation",
+        "description": "CytoBulk.tests.test_ul_stimulation",
+        "peekOfCode": "def test_stimulation_bulk(adata_path,project, out_dir, annotation_key,marker_path):\n    sc = test_read_adata(adata_path)\n    marker = pd.read_excel(marker_path, sheet_name = \"marker\")\n    names = pd.read_excel(marker_path, sheet_name = \"rename\")\n    names = names.set_index(['Original_name'])['Curated_name'].to_dict()\n    common_cell = names.keys()\n    pseudo_bulk, pseudo_prop = ct.ul.bulk_simulation(sc, \n                                common_cell, \n                                annotation_key = annotation_key,\n                                project=project, ",
+        "detail": "CytoBulk.tests.test_ul_stimulation",
+        "documentation": {}
+    },
+    {
+        "label": "test_stimulation_case",
+        "kind": 2,
+        "importPath": "CytoBulk.tests.test_ul_stimulation",
+        "description": "CytoBulk.tests.test_ul_stimulation",
+        "peekOfCode": "def test_stimulation_case(adata_path,project, out_dir, annotation_key,marker_path):\n    sc = test_read_adata(adata_path)\n    marker = pd.read_excel(marker_path, sheet_name = \"marker\")\n    names = pd.read_excel(marker_path, sheet_name = \"rename\")\n    names = names.set_index(['Original_name'])['Curated_name'].to_dict()\n    common_cell = names.keys()\n    pseudo_bulk, pseudo_prop = ct.ul.bulk_simulation_case(\n                                sc, \n                                common_cell, \n                                annotation_key = annotation_key,",
+        "detail": "CytoBulk.tests.test_ul_stimulation",
         "documentation": {}
     },
     {
