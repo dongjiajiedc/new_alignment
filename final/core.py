@@ -42,7 +42,11 @@ def merge_by_radius(cell_path,folder_path,radius,method='average',meta_col='cell
     
     np.random.seed(1234)
     datas = sc.read_h5ad(cell_path)
+    sc.pp.highly_variable_genes(datas)
+    hvg_mask = datas.var['highly_variable']
+    datas = datas[:, hvg_mask].copy()
     celltype = datas.obs[meta_col]
+
     datas = datas.to_df()
     adata = datas.copy()
     adata['Celltype']= list(celltype)
@@ -54,13 +58,15 @@ def merge_by_radius(cell_path,folder_path,radius,method='average',meta_col='cell
     r= radius
     now_label = 0;
     now =  datas.values;
+    progress_bar = tqdm(total=len(now), ncols=80)
 
     if(r <=0):
         ans_value = now
         ans_label = [i for i in range(len(ans_value))]
         true_label = list(celltype)
+        progress_bar.update(len(now))
+
     else:
-        progress_bar = tqdm(total=len(now), ncols=80)
         while len(now) != 0:
             rnd = np.random.randint(now.shape[0], size=1);
             rand_choice = now[rnd, :].reshape(-1)
@@ -79,9 +85,9 @@ def merge_by_radius(cell_path,folder_path,radius,method='average',meta_col='cell
                 now_labels.pop(i)
 
             
-        now = np.array(now);
-        progress_bar.update(len(indices))
-        sys.stdout.flush()
+            now = np.array(now);
+            progress_bar.update(len(indices))
+            sys.stdout.flush()
 
     progress_bar.close()
 
@@ -104,12 +110,13 @@ def merge_by_radius(cell_path,folder_path,radius,method='average',meta_col='cell
     loss1 = 1-(v1.groupby("label").describe()[0]['count'] - v1.groupby("label").describe()[0]['freq']).sum() / (v1.groupby("label").describe()[0]['count'].sum())
     v.to_csv(folder_path +'merge_values.csv');
     v1.to_csv(folder_path +'merge_labels.csv');
+    
     ann.to_csv(folder_path + 'merge_cell_data.csv');
     meta.to_csv(folder_path + 'merge_cell_meta.csv');
     
     return loss1
 
-def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col='celltype',contin=True,resolution=0.5,method='average',alignment=1,n_pca=50):
+def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col='celltype',contin=False,resolution=0.5,method='average',alignment=1,n_pca=50):
     """
     Performs alignment of two datasets. 
     
@@ -201,7 +208,11 @@ def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,ra
     adata2.obs['celltype'] = cell_meta.values.reshape(-1)
     
 
-    
+    n_pca = min(n_pca,len(adata1)-1)
+    n_pca = min(n_pca,len(adata2)-1)
+    n_pca = min(n_pca,len(adata1.var)-1)
+    n_pca = min(n_pca,len(adata2.var)-1)
+
     preprocessing_cluster(adata1,N_pcs=n_pca,resolution=resolution)
     preprocessing_cluster(adata2,N_pcs=n_pca,resolution=resolution)
     
@@ -253,7 +264,7 @@ def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,ra
         julei.append(adata1.obs['leiden'].iloc[v1['label'][i]][0])
     v1['first']=lisan
     v1['second']=julei
-    v1.to_csv(folder_path1+'meta_result.csv')
+    v1.to_csv(folder_path1+'meta_result.csv',index=None)
     
     v1 = pd.read_csv(folder_path2+"merge_labels.csv")
     meta = pd.read_csv(folder_path2+"merge_cell_meta.csv")
@@ -266,7 +277,7 @@ def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,ra
         julei.append(adata2.obs['leiden'].iloc[v1['label'][i]][0])
     v1['first']=lisan
     v1['second']=julei
-    v1.to_csv(folder_path2+'meta_result.csv')
+    v1.to_csv(folder_path2+'meta_result.csv',index=None)
     
     if(contin==False) or ((os.path.exists(folder_path1 + 'dataxy.npy') and os.path.exists(folder_path1+'data1link.npy') and os.path.exists(folder_path1+'dataname.npy')) == False):
         get_Hyper_tree(folder_path1+'datas.data',1,tmp1.shape[1]+1,0,epoches1,save_path=folder_path1)
@@ -297,7 +308,7 @@ def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,ra
             
     rate = 0;        
     if(alignment==1):
-        rate = run_alignment(nodes1,nodes2,folder_path1,folder_path2,meta_list1,meta_list2);
+        rate,anslist,ans = run_alignment(nodes1,nodes2,folder_path1,folder_path2,meta_list1,meta_list2);
     elif(alignment==2):
         rate = run_alignment_linear(nodes1,nodes2);
         

@@ -717,48 +717,8 @@ class show_tree:
         self.fig.show();
                
 def show_the_tree(folder_path1):
-    pos_1 = pd.read_csv(folder_path1+"datas.csv",index_col="Unnamed: 0").sort_index().values
-    edge_1 = np.load(folder_path1+"datalink.npy");
-    mer1 = np.load(folder_path1+"datamerge.npy");
-
-    n1 = len(pos_1)
-
-    root1 = -1;
-    for i,j in edge_1:
-        root1 = max(root1,i);
-    length1 = root1 + 1;    
-    nodes1 = [node(name=str(i),son=[]) for i in range(length1)]
-    for i,j in edge_1:
-        nodes1[i].son.append(nodes1[j])
-
-    for i in range(len(pos_1)):
-        nodes1[i].value = pos_1[i];
-        nodes1[i].subson = [nodes1[i].name];
-
-        
-    for i in range(len(pos_1),length1):
-        if(mer1[i]!= -1):
-            nodes1[i].value = nodes1[mer1[i]].value
-            nodes1[i].name = nodes1[mer1[i]].name+'(t)'
-            nodes1[i].subson  = nodes1[mer1[i]].subson;
-        else:
-            for son in nodes1[i].son:
-                nodes1[i].subson.extend(son.subson);
-    adata1 = pd.read_csv(folder_path1+"data_cell.csv")
-    type1 = pd.read_csv(folder_path1+"data_type.csv")[['Unnamed: 0','leiden']]
-    datas1 = type1.merge(adata1,how="inner",on="Unnamed: 0")
-    datas1 = datas1.set_index("Unnamed: 0")
-    for i in range(len(pos_1),length1):
-        if(mer1[i]!=-1):
-            continue;
-        med = []
-        for sub in nodes1[i].subson:
-            subdata = datas1[datas1['leiden']==int(sub)];
-            med.extend(subdata.values[:,1:].tolist());
-        med = np.array(med);
-        p = pd.DataFrame(med);
-        nodes1[i].value = p.mean(axis=0).values;
-    show_tree(nodes1[root1]).show_fig()
+    nodes1,n1 = build_hyper_tree_from_folder(folder_path1)
+    show_tree(nodes1[0]).show_fig()
     
 
 def build_hyper_tree_from_folder(folder_path):
@@ -916,11 +876,20 @@ def run_alignment_linear(nodes1,nodes2):
                 plp.LpConstraint(e=x_vars[l.dfs,j.dfs]+x_vars[r.dfs,j.dfs]-x_vars[i.dfs,j.dfs],
                                     sense=plp.LpConstraintLE,
                                     rhs=1,
-                                    name="constraint{}_{}_{}_{}_1".format(i,j,k,l)))
-                    
+                                    name="constraint{}_{}_{}_{}_2".format(i,j,l,r)))
+    for j in dfs_node2:
+        if(len(j.son)==2):
+            l=j.son[0];
+            r=j.son[1];
+            for i in dfs_node1:
+                opt_model.addConstraint(
+                plp.LpConstraint(e=x_vars[i.dfs,l.dfs]+x_vars[i.dfs,r.dfs]-x_vars[i.dfs,j.dfs],
+                                    sense=plp.LpConstraintLE,
+                                    rhs=1,
+                                    name="constraint{}_{}_{}_{}_3".format(i,j,l,r)))
 
-    objective = plp.lpSum(x_vars[i,j] * c[i,j] for i in set_I for j in set_J)
-    opt_model.sense = plp.LpMaximize
+    objective = plp.lpSum(x_vars[i,j] * (1-c[i,j]) for i in set_I for j in set_J)
+    opt_model.sense = plp.LpMinimize
     opt_model.setObjective(objective)
     opt_model.solve()
     print('SOLUTION:')
@@ -981,6 +950,7 @@ def run_alignment(nodes1,nodes2,folder_path1,folder_path2,meta_list1,meta_list2)
     print("average cost for one node:{}\n".format(minn/(n1+n2)))
     
     c=0;z=0
+    anslist = [];
     for i,j in ans:
         i=int(i.split('_')[0])
         j=int(j.split('_')[0])
@@ -988,5 +958,6 @@ def run_alignment(nodes1,nodes2,folder_path1,folder_path2,meta_list1,meta_list2)
             c+=1
             if(meta_list1[i]==meta_list2[j]):
                 z+=1;
+            anslist.append((i,j))
     print('correct alignment rate:{}'.format(z/c))
-    return z/c;
+    return z/c,anslist,ans;

@@ -160,13 +160,22 @@ class Preprocessing:
     
 def preprocessing_cluster(adata,
                         N_pcs=50,
-                        K=10,
+                        K=15,
                         copy=False,
                         resolution=0.5,
+                        min_genes=200,
+                        min_cells=3
                     ):
-        adata.raw = adata
+    
+        if(N_pcs > len(adata.var)):
+            N_pcs = len(adata.var)
 
-        # adata._inplace_subset_var(adata.var['highly_variable'])
+        # adata = adata.copy() if copy else adata
+        sc.pp.filter_cells(adata, min_genes=min_genes)
+        sc.pp.filter_genes(adata, min_cells=min_cells)
+        sc.pp.normalize_total(adata, exclude_highly_expressed=True)
+        sc.pp.log1p(adata)
+        # adata.raw = adata.copy()
 
         sc.tl.pca(
             adata,
@@ -175,7 +184,6 @@ def preprocessing_cluster(adata,
         )
         sc.pp.neighbors(adata,
                         n_neighbors=K,
-                        n_pcs=N_pcs,
                         random_state=1234
                         )
         sc.tl.diffmap(adata,random_state=1234)
@@ -191,7 +199,7 @@ def calculate_cluster_centroid_for_genes(
         save_path="./",
         groupby ='leiden',
     ):
-    filtered_data = adata.raw.to_adata()[:, gene_list]
+    filtered_data = adata[:, gene_list]
     # filtered_data.to_df().to_csv(save_path+"data_cell.csv");
     # adata.obs.to_csv(save_path+"data_type.csv")
     cluster_centroid_data = np.empty((0, filtered_data.n_vars))
@@ -223,29 +231,16 @@ def sort_data(
     N_2=2000
 ):
     if N_1 is not None:
-        adata1 = adata1.raw.to_adata()
-        sc.pp.highly_variable_genes(adata1, n_top_genes=N_1,flavor='seurat_v3')
+        sc.pp.highly_variable_genes(adata1, n_top_genes=N_1)
         adata1 = adata1[:, adata1.var['highly_variable']]
-    elif N_1 is None:
-        pass
 
     if N_2 is not None:
-        adata2 = adata2.raw.to_adata()
-        sc.pp.highly_variable_genes(adata2, n_top_genes=N_2,flavor='seurat_v3')
+        # adata2 = adata2.raw.to_adata()
+        sc.pp.highly_variable_genes(adata2, n_top_genes=N_2)
         adata2 = adata2[:, adata2.var['highly_variable']]
-    elif N_2 is None:
-        pass
-
+    
     s1 = set(adata1.var.index)
     s2 = set(adata2.var.index)
     intersection_list = list(s1.intersection(s2))
-
-    if len(intersection_list) < 2:
-        raise ValueError("highly variable genes of intersection of data1 and data2 are not enough "\
-                            "to calculate the cost of a tree alignment. \n"\
-                            "Specify num_genes1 and num_genes2 carefully.")
-
-    print("{} genes are used to calculate cost of tree alignment.\n".format(
-        len(intersection_list)))
 
     return intersection_list

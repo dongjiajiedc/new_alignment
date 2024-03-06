@@ -1223,14 +1223,6 @@
         "documentation": {}
     },
     {
-        "label": "hyp_dist",
-        "importPath": "utils.poincare",
-        "description": "utils.poincare",
-        "isExtraImport": true,
-        "detail": "utils.poincare",
-        "documentation": {}
-    },
-    {
         "label": "expmap",
         "importPath": "utils.poincare",
         "description": "utils.poincare",
@@ -3472,15 +3464,6 @@
         "documentation": {}
     },
     {
-        "label": "IMDataset",
-        "kind": 6,
-        "importPath": "final.datasets.improve_dataset",
-        "description": "final.datasets.improve_dataset",
-        "peekOfCode": "class IMDataset(data.Dataset):\n    def __init__(self,similarities, num_samples,leaves_embeddings,datas):\n        \"\"\"Creates Hierarchical Clustering dataset with triples.\n        @param labels: ground truth labels\n        @type labels: np.array of shape (n_datapoints,)\n        @param similarities: pairwise similarities between datapoints\n        @type similarities: np.array of shape (n_datapoints, n_datapoints)\n        \"\"\"\n        self.similarities = similarities\n        self.leaves_embeddings = leaves_embeddings",
-        "detail": "final.datasets.improve_dataset",
-        "documentation": {}
-    },
-    {
         "label": "load_data",
         "kind": 2,
         "importPath": "final.datasets.loading",
@@ -3530,7 +3513,7 @@
         "kind": 2,
         "importPath": "final.datasets.preprecossing",
         "description": "final.datasets.preprecossing",
-        "peekOfCode": "def preprocessing_cluster(adata,\n                        N_pcs=50,\n                        K=10,\n                        copy=False,\n                        resolution=0.5,\n                    ):\n        adata.raw = adata\n        # adata._inplace_subset_var(adata.var['highly_variable'])\n        sc.tl.pca(\n            adata,",
+        "peekOfCode": "def preprocessing_cluster(adata,\n                        N_pcs=50,\n                        K=15,\n                        copy=False,\n                        resolution=0.5,\n                        min_genes=200,\n                        min_cells=3\n                    ):\n        if(N_pcs > len(adata.var)):\n            N_pcs = len(adata.var)",
         "detail": "final.datasets.preprecossing",
         "documentation": {}
     },
@@ -3539,7 +3522,7 @@
         "kind": 2,
         "importPath": "final.datasets.preprecossing",
         "description": "final.datasets.preprecossing",
-        "peekOfCode": "def calculate_cluster_centroid_for_genes(\n        adata,\n        gene_list,\n        save_path=\"./\",\n        groupby ='leiden',\n    ):\n    filtered_data = adata.raw.to_adata()[:, gene_list]\n    # filtered_data.to_df().to_csv(save_path+\"data_cell.csv\");\n    # adata.obs.to_csv(save_path+\"data_type.csv\")\n    cluster_centroid_data = np.empty((0, filtered_data.n_vars))",
+        "peekOfCode": "def calculate_cluster_centroid_for_genes(\n        adata,\n        gene_list,\n        save_path=\"./\",\n        groupby ='leiden',\n    ):\n    filtered_data = adata[:, gene_list]\n    # filtered_data.to_df().to_csv(save_path+\"data_cell.csv\");\n    # adata.obs.to_csv(save_path+\"data_type.csv\")\n    cluster_centroid_data = np.empty((0, filtered_data.n_vars))",
         "detail": "final.datasets.preprecossing",
         "documentation": {}
     },
@@ -3548,7 +3531,7 @@
         "kind": 2,
         "importPath": "final.datasets.preprecossing",
         "description": "final.datasets.preprecossing",
-        "peekOfCode": "def sort_data(\n    adata1,\n    adata2,\n    N_1=2000,\n    N_2=2000\n):\n    if N_1 is not None:\n        adata1 = adata1.raw.to_adata()\n        sc.pp.highly_variable_genes(adata1, n_top_genes=N_1,flavor='seurat_v3')\n        adata1 = adata1[:, adata1.var['highly_variable']]",
+        "peekOfCode": "def sort_data(\n    adata1,\n    adata2,\n    N_1=2000,\n    N_2=2000\n):\n    if N_1 is not None:\n        sc.pp.highly_variable_genes(adata1, n_top_genes=N_1)\n        adata1 = adata1[:, adata1.var['highly_variable']]\n    if N_2 is not None:",
         "detail": "final.datasets.preprecossing",
         "documentation": {}
     },
@@ -3586,15 +3569,6 @@
         "description": "final.model.hyphc",
         "peekOfCode": "class HypHC(nn.Module):\n    \"\"\"\n    Hyperbolic embedding model for hierarchical clustering.\n    \"\"\"\n    def __init__(self, n_nodes=1, rank=2, temperature=0.05, init_size=1e-3, max_scale=1. - 1e-3):\n        super(HypHC, self).__init__()\n        self.n_nodes = n_nodes\n        self.embeddings = nn.Embedding(n_nodes, rank)\n        self.temperature = temperature\n        self.scale = nn.Parameter(torch.Tensor([init_size]), requires_grad=True)",
         "detail": "final.model.hyphc",
-        "documentation": {}
-    },
-    {
-        "label": "improvehc",
-        "kind": 6,
-        "importPath": "final.model.improvehc",
-        "description": "final.model.improvehc",
-        "peekOfCode": "class improvehc(nn.Module):\n    \"\"\"\n    Hyperbolic embedding model for hierarchical clustering.\n    \"\"\"\n    def __init__(self,leaves_embeddings,dumpy_node, n_nodes=1, rank=2, temperature=0.05, init_size=1e-3, max_scale=1. - 1e-3):\n        super(improvehc, self).__init__()\n        self.leaves_embeddings = leaves_embeddings\n        self.n_nodes = n_nodes\n        self.embeddings = nn.Embedding(n_nodes, rank)\n        self.temperature = temperature",
-        "detail": "final.model.improvehc",
         "documentation": {}
     },
     {
@@ -3993,7 +3967,7 @@
         "kind": 2,
         "importPath": "final.alignment",
         "description": "final.alignment",
-        "peekOfCode": "def show_the_tree(folder_path1):\n    pos_1 = pd.read_csv(folder_path1+\"datas.csv\",index_col=\"Unnamed: 0\").sort_index().values\n    edge_1 = np.load(folder_path1+\"datalink.npy\");\n    mer1 = np.load(folder_path1+\"datamerge.npy\");\n    n1 = len(pos_1)\n    root1 = -1;\n    for i,j in edge_1:\n        root1 = max(root1,i);\n    length1 = root1 + 1;    \n    nodes1 = [node(name=str(i),son=[]) for i in range(length1)]",
+        "peekOfCode": "def show_the_tree(folder_path1):\n    nodes1,n1 = build_hyper_tree_from_folder(folder_path1)\n    show_tree(nodes1[0]).show_fig()\ndef build_hyper_tree_from_folder(folder_path):\n    \"\"\"\n    Build the tree from the folder\n    \"\"\"\n    pos_1 = pd.read_csv(folder_path + 'datas.csv')\n    pos = pos_1.set_index(pos_1.columns[0]).values\n    edge = np.load(folder_path + \"datalink.npy\");",
         "detail": "final.alignment",
         "documentation": {}
     },
@@ -4065,7 +4039,7 @@
         "kind": 2,
         "importPath": "final.core",
         "description": "final.core",
-        "peekOfCode": "def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col='celltype',contin=True,resolution=0.5,method='average',alignment=1,n_pca=50):\n    \"\"\"\n    Performs alignment of two datasets. \n    Parameters\n    ----------\n    cell_path1 : string\n        Path to the first dataset's cell data h5ad file \n    cell_path2 : string\n        Path to the second dataset's cell data h5ad file \n    folder_path1 : string",
+        "peekOfCode": "def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col='celltype',contin=False,resolution=0.5,method='average',alignment=1,n_pca=50):\n    \"\"\"\n    Performs alignment of two datasets. \n    Parameters\n    ----------\n    cell_path1 : string\n        Path to the first dataset's cell data h5ad file \n    cell_path2 : string\n        Path to the second dataset's cell data h5ad file \n    folder_path1 : string",
         "detail": "final.core",
         "documentation": {}
     },
@@ -4160,6 +4134,15 @@
         "documentation": {}
     },
     {
+        "label": "str2bool",
+        "kind": 2,
+        "importPath": "final.run_sc",
+        "description": "final.run_sc",
+        "peekOfCode": "def str2bool(v):\n    if isinstance(v, bool):\n        return v\n    if v.lower() in ('yes', 'true', 't', 'y', '1'):\n        return True\n    elif v.lower() in ('no', 'false', 'f', 'n', '0'):\n        return False\n    else:\n        raise argparse.ArgumentTypeError('Boolean value expected.')\nwarnings.filterwarnings(\"ignore\")",
+        "detail": "final.run_sc",
+        "documentation": {}
+    },
+    {
         "label": "parser",
         "kind": 5,
         "importPath": "final.run_sc",
@@ -4191,7 +4174,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "folder_path1 = args.folder_path1\nfolder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method",
+        "peekOfCode": "folder_path1 = args.folder_path1\nfolder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4200,7 +4183,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "folder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment = args.alignment",
+        "peekOfCode": "folder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4209,7 +4192,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "radius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution",
+        "peekOfCode": "radius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4218,7 +4201,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "radius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca",
+        "peekOfCode": "radius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4227,7 +4210,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "c1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col",
+        "peekOfCode": "c1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4236,7 +4219,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "c2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)",
+        "peekOfCode": "c2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4245,7 +4228,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "epoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/1/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "peekOfCode": "epoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4254,7 +4237,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "epoches2 = args.epoches2\ncontin = args.contin\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/1/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "peekOfCode": "epoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4263,7 +4246,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "contin = args.contin\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/1/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "peekOfCode": "contin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4272,7 +4255,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "method = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/1/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "peekOfCode": "method = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4281,7 +4264,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "alignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/1/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "peekOfCode": "alignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4290,7 +4273,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "resolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/1/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "peekOfCode": "resolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4299,7 +4282,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "n_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/1/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "peekOfCode": "n_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
         "detail": "final.run_sc",
         "documentation": {}
     },
@@ -4308,7 +4291,7 @@
         "kind": 5,
         "importPath": "final.run_sc",
         "description": "final.run_sc",
-        "peekOfCode": "meta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/1/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "peekOfCode": "meta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
         "detail": "final.run_sc",
         "documentation": {}
     },

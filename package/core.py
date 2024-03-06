@@ -79,9 +79,9 @@ def merge_by_radius(cell_path,folder_path,radius,method='average',meta_col='cell
                 now_labels.pop(i)
 
             
-        now = np.array(now);
-        progress_bar.update(len(indices))
-        sys.stdout.flush()
+            now = np.array(now);
+            progress_bar.update(len(indices))
+            sys.stdout.flush()
 
     progress_bar.close()
 

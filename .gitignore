@@ -8,3 +8,10 @@ stst/
 ALL.chr22.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz
 final/datas
 CytoBulk/
+scAlign/
+*.pdf
+home1.ipynb
+atcc/
+eval/datas/*
+eval/capital
+*.h5ad

@@ -2,6 +2,17 @@ from core import *
 import argparse
 import warnings
 import os
+
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
+
 warnings.filterwarnings("ignore")
 
 parser = argparse.ArgumentParser()
@@ -18,7 +29,7 @@ parser.add_argument('--radius2','-r2', type=float,default=15)
 parser.add_argument('--capacity2','-c2', type=float,default=0.1)
 parser.add_argument('--epoches2','-e2', type=int,default=10)
 
-parser.add_argument('--contin', type=bool,default=False)
+parser.add_argument('--contin', type=str,default='False')
 parser.add_argument('--method', type=str,default='average')
 parser.add_argument('--alignment', type=int,default=1)
 parser.add_argument('--resolution', type=float,default=0.5)
@@ -60,13 +71,13 @@ c1 = args.capacity1
 c2 = args.capacity2
 epoches1 = args.epoches1
 epoches2 = args.epoches2
-contin = args.contin
+contin = str2bool(args.contin)
 method = args.method
 alignment = args.alignment
 resolution = args.resolution
 n_pca = args.n_pca
 meta_col = args.meta_col
-
 alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)
 
-# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 "./datas/120/1/" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/1/sample1_small.h5' -f2 "./datas/120/2/" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100
+# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 "./datas/120/1/" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 "./datas/120/2/" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100
+
