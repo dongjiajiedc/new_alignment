@@ -10,20 +10,62 @@ from datasets.balance_dataset import balance_dataset
 from datasets.loading import load_data
 from model.hyphc import HypHC
 from model.balancehc import balancehc
-from utils.mst import mst
+from utils.mst import *
 from utils.metrics import dasgupta_cost
 from utils.unionfind import UnionFind
 import networkx as nx
 
 from utils.poincare import project,hyp_dist
 from utils.lca import hyp_lca
-
+from core import *
 from alignment import *
 
+from scipy.sparse.csgraph import minimum_spanning_tree
+from scipy.spatial.distance import pdist, squareform
+import matplotlib.pyplot  as plt
 
 
 from utils.lca import hyp_lca
 
+def save_graph(embeddings,tree,y_true,save):
+    colors = get_colors(y_true, 1234)
+    fig = plt.figure(figsize=(15, 15))
+    ax = fig.add_subplot(111)
+    circle = plt.Circle((0, 0), 1.0, color='r', alpha=0.1)
+    ax.add_artist(circle)
+    ax.scatter(embeddings[:n, 0], embeddings[:n, 1], c=colors, s=50, alpha=0.6)
+    ax.scatter(embeddings[n:,0],embeddings[n:,1],color ='black',s=20,alpha=0.6)
+    for n1, n2 in tree.edges():
+        x1 = embeddings[n1]
+        x2 = embeddings[n2]
+        plot_geodesic(x1,x2,ax)
+    fig.savefig(save);
+
+def mobius_add(x, y):
+
+    """Mobius addition in numpy."""
+    xy = np.sum(x * y, 1, keepdims=True)
+    x2 = np.sum(x * x, 1, keepdims=True)
+    y2 = np.sum(y * y, 1, keepdims=True)
+    num = (1 + 2 * xy + y2) * x + (1 - x2) * y
+    den = 1 + 2 * xy + x2 * y2
+    return num / den
+def mobius_mul(x, t):
+    """Mobius multiplication in numpy."""
+    normx = np.sqrt(np.sum(x * x, 1, keepdims=True))
+    return np.tanh(t * np.arctanh(normx)) * x / normx
+def geodesic_fn(x, y, nb_points=100):
+    """Get coordinates of points on the geodesic between x and y."""
+    t = np.linspace(0, 1, nb_points)
+    x_rep = np.repeat(x.reshape((1, -1)), len(t), 0)
+    y_rep = np.repeat(y.reshape((1, -1)), len(t), 0)
+    t1 = mobius_add(-x_rep, y_rep)
+    t2 = mobius_mul(t1, t.reshape((-1, 1)))
+    return mobius_add(x_rep, t2)
+def plot_geodesic(x, y, ax):
+    """Plots geodesic between x and y."""
+    points = geodesic_fn(x, y)
+    ax.plot(points[:, 0], points[:, 1], color='black', linewidth=1.5, alpha=1)
 def hyp_lca_numpy(x, y):
     """
     Computes the hyperbolic LCA in numpy.
@@ -99,6 +141,7 @@ def train(model,dataloader,optimizer,similarities,epoches):
                 counter += 1
                 if counter == 20:
     #                 logging.info("Early stopping.")
+                    print("early stopping.")
                     return
 
     # anneal temperature
@@ -114,8 +157,8 @@ def train(model,dataloader,optimizer,similarities,epoches):
         if best_model is not None:
             # load best model
             model.load_state_dict(best_model)
-            
-def train2(model,dataloader,optimizer,epoches):
+
+def train2(model,dataloader1,optimizer,epoches):
     """
     Train the rotation model
     """
@@ -124,18 +167,16 @@ def train2(model,dataloader,optimizer,epoches):
     counter = 0
     for epoch in range(epoches):
         model.train()
-        total_loss = 0.0
-        for step, datas in enumerate(dataloader):
+        total_loss1 = 0.0
+        for step, datas in enumerate(dataloader1):
             loss = model.loss(datas[0],datas[1],datas[2],datas[3],datas[4],datas[5])
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
-            total_loss += loss
-        total_loss = total_loss / (step + 1.0)
-        print("\t Epoch {} | average train loss: {:.6f}".format(epoch, total_loss))
-        model.update();
+            total_loss1 += loss
+        print("\t Epoch {} | average train loss1: {:.6f}".format(epoch, total_loss1 / (step + 1)))
         
-        cost = total_loss;
+        cost = total_loss1;
         if cost < best_cost:
             counter = 0
             best_cost = cost
@@ -143,7 +184,51 @@ def train2(model,dataloader,optimizer,epoches):
         else:
             counter += 1
             if counter == 20:
-#                 logging.info("Early stopping.")
+                print("early stopping.")
+                return
+            
+    if best_model is not None:
+        # load best model
+        model.load_state_dict(best_model)
+         
+            
+def train3(model,dataloader1,dataloader2,optimizer,epoches):
+    """
+    Train the rotation model
+    """
+    best_cost = np.inf
+    best_model = None
+    counter = 0
+    for epoch in range(epoches):
+        model.train()
+        total_loss1 = 0.0
+        for step, datas in enumerate(dataloader1):
+            loss = model.loss(datas[0],datas[1],datas[2],datas[3],datas[4],datas[5])
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            total_loss1 += loss
+        print("\t Epoch {} | average train loss1: {:.6f}".format(epoch, total_loss1 / (step + 1)))
+        
+        total_loss2 = 0.0
+        for step, datas in enumerate(dataloader2):
+            loss = model.loss(datas[0],datas[1],datas[2],datas[3],datas[4],datas[5])
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            total_loss2 += loss
+        print("\t Epoch {} | average train loss2: {:.6f}".format(epoch, total_loss2/(step + 1)))
+        model.update();
+        
+        cost = total_loss1 + total_loss2;
+        if cost < best_cost:
+            counter = 0
+            best_cost = cost
+            best_model = model.state_dict()
+        else:
+            counter += 1
+            if counter == 20:
+                print("early stopping.")
                 return
             
     if best_model is not None:
@@ -162,7 +247,7 @@ def sl_np_mst_ij(xs, S):
     similarities = sim_mat.numpy()
     n = similarities.shape[0]
     similarities=similarities.astype('double')
-    ij, _ = mst(similarities, n)
+    ij, _ = mst.mst(similarities, n)
     return ij
   
 def get_colors(y, color_seed=1234):
@@ -205,10 +290,128 @@ def deep_search_tree(now,depth,path,f):
         
     for i in now.son:
         deep_search_tree(i,depth+1,path,now);
-        
-    path.remove(now)
+        now.subson.extend(i.subson)
 
-def get_Hyper_tree(data_path,start,end,label,epoches,model_path=None,model_path2=None,save_path='./'):
+    path.remove(now)
+    
+def merge_points(similarities,root,nodes,embeddings,epoches,c1,c2,n):
+    root,_ = search_tree(root,c1,c2,n)
+    print(_)
+    if(_ == True):
+        return torch.tensor(embeddings),root,_
+    nodes_merge = [];
+    add_meta(root,[],nodes_merge)
+    for i in nodes_merge:
+        if(int(i)<n):
+            i.subson = [int(i)]
+        else:
+            i.subson=[]
+    result1 = []
+    result2 = []
+    deep_search_tree(nodes_merge[0],0,[],nodes_merge[0])
+    distances = []
+    for i in nodes_merge:
+        if(int(i)>=n):
+            if(int(i.son[0]) <n and int(i.son[1])<n ):
+                for i1,j1 in itertools.combinations(i.subson,2):
+                    for j in i.rest(n):
+                        result1.append([[i1,j1],j,int(i),1,int(j)])
+                    
+    for i in nodes_merge[1:]:
+        if(int(i)>=n and len(i.son)>=2):
+            for i1 in range(len(i.subson)):
+                for i2 in range(i1+1,len(i.subson)):
+                    for j in i.rest(n):
+                        result2.append([[i.subson[i1],i.subson[i2]],j,int(i),0,int(i.f)])
+            
+    for i in nodes:
+        distances.append(i.distance_to_root);
+    distances = torch.tensor(distances)
+    
+    model2 = balancehc(nodes,torch.tensor(embeddings),hyperparamter = 1)
+
+    if(len(result1) !=0 and len(result2)!=0):
+        
+        dataset_test1 = balance_dataset(similarities,len(result1),embeddings,distances,result1)
+        dataloader1 = data.DataLoader(dataset_test1, batch_size=1, shuffle=True, pin_memory=True)
+        
+        dataset_test2 = balance_dataset(similarities,min(1000,len(result2)),embeddings,distances,result2)
+        dataloader2 = data.DataLoader(dataset_test2, batch_size=1, shuffle=True, pin_memory=True)    
+        
+        
+        Optimizer = getattr(optim, 'RAdam')
+        optimizer = Optimizer(model2.parameters(),0.0005)
+        train3(model2,dataloader1,dataloader2,optimizer,epoches)
+    temp = model2.embeddings.weight.data
+    return temp,nodes_merge[0],_
+
+
+def rotate(nodes,embeddings,epoches,n,similarities):
+    deep_search_tree(nodes[-1],0,[],nodes[-1])
+    result1 = []
+    result2 = []
+
+    distances = []
+    for i in nodes:
+        if(int(i)>=n):
+            if(int(i.son[0]) <n and int(i.son[1])<n ):
+                for i1,j1 in itertools.combinations(i.subson,2):
+                    for j in i.rest(n):
+                        result1.append([[i1,j1],j,int(i),1,int(j)])
+                    
+    for i in nodes[:-1]:
+        if(int(i)>=n and len(i.son)>=2):
+            for i1 in range(len(i.subson)):
+                for i2 in range(i1+1,len(i.subson)):
+                    for j in i.rest(n):
+                        result2.append([[i.subson[i1],i.subson[i2]],j,int(i),0,int(i.f)])
+            
+    for i in nodes:
+        distances.append(i.distance_to_root);
+    distances = torch.tensor(distances)
+    dataset_test1 = balance_dataset(similarities,len(result1),embeddings,distances,result1)
+    dataloader1 = data.DataLoader(dataset_test1, batch_size=1, shuffle=True, pin_memory=True)
+    length = min(len(result2),5000)
+    dataset_test2 = balance_dataset(similarities,length,embeddings,distances,result2)
+    dataloader2 = data.DataLoader(dataset_test2, batch_size=1, shuffle=True, pin_memory=True)    
+    
+    model2 = balancehc(nodes,torch.tensor(embeddings),hyperparamter = 1)
+    
+    Optimizer = getattr(optim, 'RAdam')
+    optimizer = Optimizer(model2.parameters(),0.0005)
+    train3(model2,dataloader1,dataloader2,optimizer,epoches)
+    temp = model2.embeddings.weight.data
+    return temp
+
+
+def merge_points_with_c(embeddings,nodes,data_path,start,end,label,folder_path,epoches,c1,c2):
+    np.random.seed(1234)
+    torch.manual_seed(1234)
+    x, y_true, similarities = load_data(data_path,start,end,label)
+    n=len(x)
+    root = nodes[-1];
+    _ = False
+    while(_ == False):
+        temp,root,_ = merge_points(similarities,root,nodes,embeddings,epoches,c1,c2,n)
+        for i in nodes:
+            i.hyper = temp[int(i)]
+            i.value =  temp[int(i)]
+        embeddings = temp.numpy();
+    # add_meta(root,meta_list,[])
+    # show_tree(root,color=['#184e77','#1a759f','#168aad',"#34a0a4",'#52b69a','#99d98c','#76c893','#99d98c']).show_fig()
+    # remove_meta(root);
+    
+    
+    names = [];
+    fathers = [];
+    xys = [];
+    search_merge_tree(root,-1,0,names,fathers,xys)
+    np.save(folder_path+"dataname_merge.npy",names)
+    np.save(folder_path+"datalink_merge.npy",fathers)
+    np.save(folder_path+"dataxy_merge.npy",[i.numpy() for i in xys])   
+
+
+def get_Hyper_tree(data_path,start,end,label,epoches1,epoches2,model_path=None,save_path='./', mst1 = False):
     """
     Embedding the dataset into hyperbolic tree structure
     
@@ -249,8 +452,8 @@ def get_Hyper_tree(data_path,start,end,label,epoches,model_path=None,model_path2
         model.to("cpu")
         Optimizer = getattr(optim, 'RAdam')
         optimizer = Optimizer(model.parameters(),0.0005)
-        train(model,dataloader,optimizer,similarities,epoches);
-        torch.save(model.state_dict(),save_path+'model.pth');
+        train(model,dataloader,optimizer,similarities,epoches1);
+        torch.save(model.state_dict(),save_path+'model1.pth');
     else:
         params = torch.load((model_path), map_location=torch.device('cpu'))
         model.load_state_dict(params, strict=False)
@@ -270,32 +473,11 @@ def get_Hyper_tree(data_path,start,end,label,epoches,model_path=None,model_path2
         if(j!=-1):
             tree.add_edge(j, i)
 
-    # fig = plt.figure(figsize=(15, 15))
-    # ax = fig.add_subplot(111)
-    # circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)
-    # ax.add_artist(circle)
-    
     n = len(leaves_embeddings)
     embeddings = complete_tree(tree, leaves_embeddings)
     
-    # where_are_NaNs = np.isnan(embeddings)
-    # embeddings[where_are_NaNs] = 0
-    # colors = get_colors(y_true, 1234)
-    # ax.scatter(embeddings[:n, 0]*20, embeddings[:n, 1]*20, c=colors, s=50, alpha=0.6)
-    # for i in range(len(embeddings)):
-    #     if(i<n):
-    #         continue;
-    #     if(uf.mer[i]!=-1):
-    #         pass;
-    #     else:
-    #         ax.scatter(embeddings[i][0]*20,embeddings[i][1]*20,color='black',s=20,alpha=0.7)
-    # for n1, n2 in tree.edges():
-    #     x1 = embeddings[n1];
-    #     x2 = embeddings[n2];
-    #     plot_geodesic(x1,x2,ax)
-    # fig.savefig(save_path+"graph.png");
-    # embeddings = np.array(uf.pos)
     
+
 
     nodes1 = [node(name=str(i),son=[]) for i in range(len(uf.tree()))]
     for i in range(n):
@@ -304,80 +486,79 @@ def get_Hyper_tree(data_path,start,end,label,epoches,model_path=None,model_path2
         if(j!=-1):
             nodes1[j].son.append(nodes1[i])
         nodes1[i].value=torch.tensor(embeddings[i]);
-        nodes1[j].subson.extend(nodes1[i].subson)
+        nodes1[i].hyper=torch.tensor(embeddings[i])
     root = nodes1[-1];
 
-    values = [];
+    names = [];
     fathers = [];
     xys = [];
-    search_merge_tree(root,-1,0,values,fathers,xys)
-    np.save(save_path+"dataname.npy",values)
+    search_merge_tree(root,-1,0,names,fathers,xys)
+    np.save(save_path+"dataname.npy",names)
     np.save(save_path+"datalink.npy",fathers)
     np.save(save_path+"dataxy.npy",[i.numpy() for i in xys])
-
-    deep_search_tree(root,0,[],root)
-    result = []
-    distances = []
-    for index in range(n,len(nodes1)):
-        i = nodes1[index]
-        if(len(i.subson)==2):
-            for j in i.rest(n):
-                result.append([i.subson,j,int(i),1,int(j)])
-                
-    for index in range(n,len(nodes1)-1):
-        i = nodes1[index]
-        for i1 in range(len(i.subson)):
-            for i2 in range(i1+1,len(i.subson)):
-                for j in i.rest(n):
-                    result.append([[i.subson[i1],i.subson[i2]],j,int(i),0,int(i.f)])
-            
+    
+    temp = rotate(nodes1,embeddings,epoches2,n,similarities)
+    for i in range(n):
+        nodes1[i].subson=[i];
     for i in nodes1:
-        distances.append(i.distance_to_root);
-        
-    distances = torch.tensor(distances)
-    embeddings = complete_tree(tree, leaves_embeddings)
-    embeddings = torch.tensor(embeddings)
-
-
-    dataset_test = balance_dataset(similarities,100,embeddings,distances,result)
-    dataloader = data.DataLoader(dataset_test, batch_size=1, shuffle=False, pin_memory=True)
-
-
-    model2 = balancehc(nodes1,torch.tensor(embeddings),hyperparamter = 1)
-                
-    if(model_path2==None or os.path.exists(model_path2)==False):
-        Optimizer = getattr(optim, 'RAdam')
-        optimizer = Optimizer(model2.parameters(),0.0005)
-        train2(model2,dataloader,optimizer,epoches)
-        torch.save(model2.state_dict(),save_path+'balance_model.pth');
-    else:
-        params = torch.load((model_path2), map_location=torch.device('cpu'))
-        model2.load_state_dict(params, strict=False)
-        
-    model2.eval()
-
-    temp = model2.embeddings.weight.data
-    after_balance = embeddings.numpy().copy();
+        i.hyper = temp[int(i)]
+        i.value =  temp[int(i)]
+    embeddings = temp.numpy();
+    root = nodes1[-1]
+    
+    after_balance = embeddings.copy();
     for i in range(len(temp)):
         after_balance[i] = temp[i].detach().numpy() 
-    # after_balance = model2.normalize_embeddings(torch.tensor(after_balance))
     
     after_balance = project(torch.tensor(after_balance))
     after_balance = np.array(after_balance)
     
-    # colors = get_colors(y_true, 1234)
-    # fig = plt.figure(figsize=(15, 15))
-    # ax = fig.add_subplot(111)
-    # circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)
-    # ax.add_artist(circle)
-    # ax.scatter(after_balance[:n, 0]*20, after_balance[:n, 1]*20, c=colors, s=50, alpha=0.6)
-    # ax.scatter(after_balance[n:,0]*20,after_balance[n:,1]*20,color ='black',s=20,alpha=0.6)
-    # for n1, n2 in tree.edges():
-    #     x1 = after_balance[n1];
-    #     x2 = after_balance[n2]
-    #     plot_geodesic(x1,x2,ax)
-    # fig.savefig(save_path+"graph_after.png")
+    colors = get_colors(meta_list, 1234)
+    fig = plt.figure(figsize=(15, 15))
+    ax = fig.add_subplot(111)
+    circle = plt.Circle((0, 0), 20.0, color='r', alpha=0.1)
+    ax.add_artist(circle)
+    ax.scatter(after_balance[:n, 0]*20, after_balance[:n, 1]*20, c=colors, s=50, alpha=0.6)
+    ax.scatter(after_balance[n:,0]*20,after_balance[n:,1]*20,color ='black',s=20,alpha=0.6)
+    for n1, n2 in tree.edges():
+        x1 = after_balance[n1];
+        x2 = after_balance[n2]
+        plot_geodesic(x1,x2,ax)
+    fig.savefig(save_path+"graph_after.png")
 
-    np.save(save_path+'dataxy.npy',np.array([after_balance[j] for j in [int(i) for i in values]]))
+    names = [];
+    fathers = [];
+    xys = [];
+    search_merge_tree(root,-1,0,names,fathers,xys)
+    np.save(save_path+"dataname.npy",names)
+    np.save(save_path+"datalink.npy",fathers)
+    np.save(save_path+"dataxy.npy",[i.numpy() for i in xys])
 
-    # return loss2
+    if(mst1):
+        n_tree = int((len(names)+1) /2)
+        true_nodes = [i for i in names if int(i) < n_tree]
+        true_nodes_xy = [after_balance[j] for j in [int(i) for i in true_nodes]]
+        y = pdist(true_nodes_xy, hyp_dist)
+        Y = squareform(y)
+        G = nx.from_numpy_matrix(Y, create_using=nx.Graph())
+        G = nx.relabel_nodes(G, dict(zip(G, true_nodes)))
+        T = nx.minimum_spanning_tree(G)
+        sorted(T.edges(data=True))
+        root_node = 0
+        tree = nx.dfs_tree(T, str(root_node))
+        tree.edges()
+        nodes = [node(name=str(i),son=[]) for i in range(n_tree)]
+        for i,j in tree.edges():
+            nodes[int(i)].son.append(nodes[int(j)])
+        for i in range(n_tree):
+            nodes[i].value = true_nodes_xy[true_nodes.index(str(i))]
+        names = [];
+        fathers = [];
+        xys = [];
+
+        search_merge_tree(nodes[root_node],-1,0,names,fathers,xys)
+        
+        np.save(save_path+"dataname.npy",names)
+        np.save(save_path+"datalink.npy",fathers)
+        np.save(save_path+"dataxy.npy",xys)
+    return embeddings,nodes1;

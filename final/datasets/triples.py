@@ -1,7 +1,6 @@
 """Triplet sampling utils."""
 
 import numpy as np
-from tqdm import tqdm
 
 
 def samples_triples(n_nodes, num_samples):
@@ -33,8 +32,9 @@ def samples_triples(n_nodes, num_samples):
 
 def generate_all_triples(n_nodes):
     triples = []
-    for n1 in tqdm(np.arange(n_nodes)):
+    for n1 in np.arange(n_nodes):
         for n2 in np.arange(n1 + 1, n_nodes):
             for n3 in np.arange(n2 + 1, n_nodes):
                 triples += [(n1, n2, n3)]
+    print("Generating all pairs {}".format(str(len(triples))))
     return np.array(triples)

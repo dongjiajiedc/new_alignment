@@ -104,6 +104,7 @@ class balancehc(nn.Module):
         for i in now.son:
             self.deep_search_tree(i,depth+1,path,now);
         path.remove(now)
+    
     def find_lca(self,node1,node2):
         minnum = min(len(node1.path),len(node2.path));
         for i in range(minnum):

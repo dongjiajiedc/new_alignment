@@ -1,0 +1,1755 @@
+[
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "torch.utils.data",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "generate_all_triples",
+        "importPath": "datasets.triples",
+        "description": "datasets.triples",
+        "isExtraImport": true,
+        "detail": "datasets.triples",
+        "documentation": {}
+    },
+    {
+        "label": "samples_triples",
+        "importPath": "datasets.triples",
+        "description": "datasets.triples",
+        "isExtraImport": true,
+        "detail": "datasets.triples",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "anndata",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "anndata",
+        "description": "anndata",
+        "detail": "anndata",
+        "documentation": {}
+    },
+    {
+        "label": "AnnData",
+        "importPath": "anndata",
+        "description": "anndata",
+        "isExtraImport": true,
+        "detail": "anndata",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "scanpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scanpy",
+        "description": "scanpy",
+        "detail": "scanpy",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "expmap",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "egrad2rgrad",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "inner",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "ptransp",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_NORM",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist_o",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "networkx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "networkx",
+        "description": "networkx",
+        "detail": "networkx",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "nn_merge_uf_fast_np",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "sl_from_embeddings",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "torch.optim",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.optim",
+        "description": "torch.optim",
+        "detail": "torch.optim",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "utils.unionfind",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "utils.unionfind",
+        "description": "utils.unionfind",
+        "detail": "utils.unionfind",
+        "documentation": {}
+    },
+    {
+        "label": "UnionFind",
+        "importPath": "utils.unionfind",
+        "description": "utils.unionfind",
+        "isExtraImport": true,
+        "detail": "utils.unionfind",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "importPath": "utils.mst",
+        "description": "utils.mst",
+        "isExtraImport": true,
+        "detail": "utils.mst",
+        "documentation": {}
+    },
+    {
+        "label": "reorder",
+        "importPath": "utils.mst",
+        "description": "utils.mst",
+        "isExtraImport": true,
+        "detail": "utils.mst",
+        "documentation": {}
+    },
+    {
+        "label": "descendants_traversal",
+        "importPath": "utils.tree",
+        "description": "utils.tree",
+        "isExtraImport": true,
+        "detail": "utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": "descendants_count",
+        "importPath": "utils.tree",
+        "description": "utils.tree",
+        "isExtraImport": true,
+        "detail": "utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": "arctanh",
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "isExtraImport": true,
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "tanh",
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "isExtraImport": true,
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "arcosh",
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "isExtraImport": true,
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.graph_objs",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.graph_objs",
+        "description": "plotly.graph_objs",
+        "detail": "plotly.graph_objs",
+        "documentation": {}
+    },
+    {
+        "label": "itertools",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "itertools",
+        "description": "itertools",
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "pulp",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pulp",
+        "description": "pulp",
+        "detail": "pulp",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "hyper",
+        "description": "hyper",
+        "isExtraImport": true,
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "eval",
+        "description": "eval",
+        "isExtraImport": true,
+        "detail": "eval",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "datasets.preprecossing",
+        "description": "datasets.preprecossing",
+        "isExtraImport": true,
+        "detail": "datasets.preprecossing",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "datasets.preprecossing",
+        "description": "datasets.preprecossing",
+        "isExtraImport": true,
+        "detail": "datasets.preprecossing",
+        "documentation": {}
+    },
+    {
+        "label": "adjusted_rand_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "KDTree",
+        "importPath": "scipy.spatial",
+        "description": "scipy.spatial",
+        "isExtraImport": true,
+        "detail": "scipy.spatial",
+        "documentation": {}
+    },
+    {
+        "label": "calendar",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "calendar",
+        "description": "calendar",
+        "detail": "calendar",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "scib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scib",
+        "description": "scib",
+        "detail": "scib",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "core",
+        "description": "core",
+        "isExtraImport": true,
+        "detail": "core",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "core",
+        "description": "core",
+        "isExtraImport": true,
+        "detail": "core",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "core",
+        "description": "core",
+        "isExtraImport": true,
+        "detail": "core",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "rpy2.robjects",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rpy2.robjects",
+        "description": "rpy2.robjects",
+        "detail": "rpy2.robjects",
+        "documentation": {}
+    },
+    {
+        "label": "pandas2ri",
+        "importPath": "rpy2.robjects",
+        "description": "rpy2.robjects",
+        "isExtraImport": true,
+        "detail": "rpy2.robjects",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "plotly.graph_objects",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "plotly.graph_objects",
+        "description": "plotly.graph_objects",
+        "detail": "plotly.graph_objects",
+        "documentation": {}
+    },
+    {
+        "label": "D3Blocks",
+        "importPath": "d3blocks",
+        "description": "d3blocks",
+        "isExtraImport": true,
+        "detail": "d3blocks",
+        "documentation": {}
+    },
+    {
+        "label": "optim",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "optim",
+        "description": "optim",
+        "detail": "optim",
+        "documentation": {}
+    },
+    {
+        "label": "HCDataset",
+        "importPath": "datasets.hc_dataset",
+        "description": "datasets.hc_dataset",
+        "isExtraImport": true,
+        "detail": "datasets.hc_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "balance_dataset",
+        "importPath": "datasets.balance_dataset",
+        "description": "datasets.balance_dataset",
+        "isExtraImport": true,
+        "detail": "datasets.balance_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "importPath": "datasets.loading",
+        "description": "datasets.loading",
+        "isExtraImport": true,
+        "detail": "datasets.loading",
+        "documentation": {}
+    },
+    {
+        "label": "HypHC",
+        "importPath": "model.hyphc",
+        "description": "model.hyphc",
+        "isExtraImport": true,
+        "detail": "model.hyphc",
+        "documentation": {}
+    },
+    {
+        "label": "balancehc",
+        "importPath": "model.balancehc",
+        "description": "model.balancehc",
+        "isExtraImport": true,
+        "detail": "model.balancehc",
+        "documentation": {}
+    },
+    {
+        "label": "dasgupta_cost",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "minimum_spanning_tree",
+        "importPath": "scipy.sparse.csgraph",
+        "description": "scipy.sparse.csgraph",
+        "isExtraImport": true,
+        "detail": "scipy.sparse.csgraph",
+        "documentation": {}
+    },
+    {
+        "label": "pdist",
+        "importPath": "scipy.spatial.distance",
+        "description": "scipy.spatial.distance",
+        "isExtraImport": true,
+        "detail": "scipy.spatial.distance",
+        "documentation": {}
+    },
+    {
+        "label": "squareform",
+        "importPath": "scipy.spatial.distance",
+        "description": "scipy.spatial.distance",
+        "isExtraImport": true,
+        "detail": "scipy.spatial.distance",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "warnings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "warnings",
+        "description": "warnings",
+        "detail": "warnings",
+        "documentation": {}
+    },
+    {
+        "label": "balance_dataset",
+        "kind": 6,
+        "importPath": "datasets.balance_dataset",
+        "description": "datasets.balance_dataset",
+        "peekOfCode": "class balance_dataset(data.Dataset):\n    def __init__(self,similarities, num_samples,embeddings,distances,datas):\n        \"\"\"Creates Hierarchical Clustering dataset with triples.\n        @param labels: ground truth labels\n        @type labels: np.array of shape (n_datapoints,)\n        @param similarities: pairwise similarities between datapoints\n        @type similarities: np.array of shape (n_datapoints, n_datapoints)\n        \"\"\"\n        self.similarities = similarities\n        self.embeddings = embeddings",
+        "detail": "datasets.balance_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "HCDataset",
+        "kind": 6,
+        "importPath": "datasets.hc_dataset",
+        "description": "datasets.hc_dataset",
+        "peekOfCode": "class HCDataset(data.Dataset):\n    \"\"\"Hierarchical clustering dataset.\"\"\"\n    def __init__(self, features, labels, similarities, num_samples,sample=0):\n        \"\"\"Creates Hierarchical Clustering dataset with triples.\n        @param labels: ground truth labels\n        @type labels: np.array of shape (n_datapoints,)\n        @param similarities: pairwise similarities between datapoints\n        @type similarities: np.array of shape (n_datapoints, n_datapoints)\n        \"\"\"\n        self.features = features",
+        "detail": "datasets.hc_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "kind": 2,
+        "importPath": "datasets.loading",
+        "description": "datasets.loading",
+        "peekOfCode": "def load_data(dataset, start_idx,end_idx,label_idx,normalize=True):\n    \"\"\"Load dataset.\n    @param dataset: dataset name\n    @type dataset: str\n    @param normalize: whether to normalize features or not\n    @type normalize: boolean\n    @return: feature vectors, labels, and pairwise similarities computed with cosine similarity\n    @rtype: Tuple[np.array, np.array, np.array]\n    \"\"\"\n    x = []",
+        "detail": "datasets.loading",
+        "documentation": {}
+    },
+    {
+        "label": "preprocessing_cluster",
+        "kind": 2,
+        "importPath": "datasets.preprecossing",
+        "description": "datasets.preprecossing",
+        "peekOfCode": "def preprocessing_cluster(adata,\n                        N_pcs=50,\n                        K=30,\n                        copy=False,\n                        resolution=0.5,\n                    ):\n        # if(N_pcs > len(adata.var)):\n        #     N_pcs = len(adata.var)\n        sc.tl.pca(\n            adata,",
+        "detail": "datasets.preprecossing",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_cluster_centroid_for_genes",
+        "kind": 2,
+        "importPath": "datasets.preprecossing",
+        "description": "datasets.preprecossing",
+        "peekOfCode": "def calculate_cluster_centroid_for_genes(\n        adata,\n        gene_list,\n        save_path=\"./\",\n        groupby ='leiden',\n        X_dimension='X_pca',\n    ):\n    filtered_data = adata[:, gene_list]\n    # filtered_data.to_df().to_csv(save_path+\"data_cell.csv\");\n    # adata.obs.to_csv(save_path+\"data_type.csv\")",
+        "detail": "datasets.preprecossing",
+        "documentation": {}
+    },
+    {
+        "label": "sort_data",
+        "kind": 2,
+        "importPath": "datasets.preprecossing",
+        "description": "datasets.preprecossing",
+        "peekOfCode": "def sort_data(\n    adata1,\n    adata2,\n    N_1=2000,\n    N_2=2000\n):\n    temp1 = adata1.copy()\n    sc.pp.highly_variable_genes(temp1, n_top_genes=N_1)\n    temp1 = temp1[:, temp1.var['highly_variable']]\n    temp2 = adata2.copy()",
+        "detail": "datasets.preprecossing",
+        "documentation": {}
+    },
+    {
+        "label": "samples_triples",
+        "kind": 2,
+        "importPath": "datasets.triples",
+        "description": "datasets.triples",
+        "peekOfCode": "def samples_triples(n_nodes, num_samples):\n    num_samples = int(num_samples)\n    all_nodes = np.arange(n_nodes)\n    mesh = np.array(np.meshgrid(all_nodes, all_nodes))\n    pairs = mesh.T.reshape(-1, 2)\n    pairs = pairs[pairs[:, 0] < pairs[:, 1]]\n    n_pairs = pairs.shape[0]\n    if num_samples < n_pairs:\n        print(\"Generating all pairs subset\")\n        subset = np.random.choice(np.arange(n_pairs), num_samples, replace=False)",
+        "detail": "datasets.triples",
+        "documentation": {}
+    },
+    {
+        "label": "generate_all_triples",
+        "kind": 2,
+        "importPath": "datasets.triples",
+        "description": "datasets.triples",
+        "peekOfCode": "def generate_all_triples(n_nodes):\n    triples = []\n    for n1 in np.arange(n_nodes):\n        for n2 in np.arange(n1 + 1, n_nodes):\n            for n3 in np.arange(n2 + 1, n_nodes):\n                triples += [(n1, n2, n3)]\n    print(\"Generating all pairs {}\".format(str(len(triples))))\n    return np.array(triples)",
+        "detail": "datasets.triples",
+        "documentation": {}
+    },
+    {
+        "label": "balancehc",
+        "kind": 6,
+        "importPath": "model.balancehc",
+        "description": "model.balancehc",
+        "peekOfCode": "class balancehc(nn.Module):\n    def __init__(self,nodes,embeddings,hyperparamter=1, rank=2, temperature=0.05, init_size=1e-3, max_scale=1. - 1e-3,):\n        super(balancehc, self).__init__()\n        self.nodes = nodes\n        self.leaves_embeddings = embeddings\n        self.n_nodes = len(embeddings)\n        self.embeddings = nn.Embedding(self.n_nodes, rank)\n        self.temperature = temperature\n        self.scale = nn.Parameter(torch.Tensor([init_size]), requires_grad=True)\n        self.embeddings.weight.data = torch.tensor(embeddings);",
+        "detail": "model.balancehc",
+        "documentation": {}
+    },
+    {
+        "label": "HypHC",
+        "kind": 6,
+        "importPath": "model.hyphc",
+        "description": "model.hyphc",
+        "peekOfCode": "class HypHC(nn.Module):\n    \"\"\"\n    Hyperbolic embedding model for hierarchical clustering.\n    \"\"\"\n    def __init__(self, n_nodes=1, rank=2, temperature=0.05, init_size=1e-3, max_scale=1. - 1e-3):\n        super(HypHC, self).__init__()\n        self.n_nodes = n_nodes\n        self.embeddings = nn.Embedding(n_nodes, rank)\n        self.temperature = temperature\n        self.scale = nn.Parameter(torch.Tensor([init_size]), requires_grad=True)",
+        "detail": "model.hyphc",
+        "documentation": {}
+    },
+    {
+        "label": "RAdam",
+        "kind": 6,
+        "importPath": "optim.radam",
+        "description": "optim.radam",
+        "peekOfCode": "class RAdam(torch.optim.Adam):\n    \"\"\"Riemannian Adam with the same API as :class:`torch.optim.Adam`\n    Parameters\n    ----------\n    params : iterable\n        iterable of parameters to optimize or dicts defining\n        parameter groups\n    lr : float (optional)\n        learning rate (default: 1e-3)\n    betas : Tuple[float, float] (optional)",
+        "detail": "optim.radam",
+        "documentation": {}
+    },
+    {
+        "label": "copy_or_set_",
+        "kind": 2,
+        "importPath": "optim.radam",
+        "description": "optim.radam",
+        "peekOfCode": "def copy_or_set_(dest, source):\n    \"\"\"\n    Parameters\n    ----------\n    dest : torch.Tensor\n        Destination tensor where to store new data\n    source : torch.Tensor\n        Source data to put in the new tensor\n    Returns\n    -------",
+        "detail": "optim.radam",
+        "documentation": {}
+    },
+    {
+        "label": "isometric_transform",
+        "kind": 2,
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "peekOfCode": "def isometric_transform(a, x):\n    \"\"\"Reflection (circle inversion of x through orthogonal circle centered at a).\"\"\"\n    r2 = torch.sum(a ** 2, dim=-1, keepdim=True) - 1.\n    u = x - a\n    return r2 / torch.sum(u ** 2, dim=-1, keepdim=True) * u + a\ndef reflection_center(mu):\n    \"\"\"Center of inversion circle.\"\"\"\n    return mu / torch.sum(mu ** 2, dim=-1, keepdim=True)\ndef euc_reflection(x, a):\n    \"\"\"",
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "reflection_center",
+        "kind": 2,
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "peekOfCode": "def reflection_center(mu):\n    \"\"\"Center of inversion circle.\"\"\"\n    return mu / torch.sum(mu ** 2, dim=-1, keepdim=True)\ndef euc_reflection(x, a):\n    \"\"\"\n    Euclidean reflection (also hyperbolic) of x\n    Along the geodesic that goes through a and the origin\n    (straight line)\n    \"\"\"\n    xTa = torch.sum(x * a, dim=-1, keepdim=True)",
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "euc_reflection",
+        "kind": 2,
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "peekOfCode": "def euc_reflection(x, a):\n    \"\"\"\n    Euclidean reflection (also hyperbolic) of x\n    Along the geodesic that goes through a and the origin\n    (straight line)\n    \"\"\"\n    xTa = torch.sum(x * a, dim=-1, keepdim=True)\n    norm_a_sq = torch.sum(a ** 2, dim=-1, keepdim=True).clamp_min(MIN_NORM)\n    proj = xTa * a / norm_a_sq\n    return 2 * proj - x",
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "kind": 2,
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "peekOfCode": "def hyp_lca(a, b, return_coord=True):\n    \"\"\"\n    Computes projection of the origin on the geodesic between a and b, at scale c\n    More optimized than hyp_lca1\n    \"\"\"\n    r = reflection_center(a)\n    b_inv = isometric_transform(r, b)\n    o_inv = a\n    o_inv_ref = euc_reflection(o_inv, b_inv)\n    o_ref = isometric_transform(r, o_inv_ref)",
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "sl_np_mst",
+        "kind": 2,
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "peekOfCode": "def sl_np_mst(similarities):\n    n = similarities.shape[0]\n    similarities=similarities.astype('double')\n    ij, _ = mst(similarities, n)\n    uf = unionfind.UnionFind(n)\n    uf.merge(ij)\n    return uf.tree\ndef sl_from_embeddings(xs, S):\n    xs0 = xs[None, :, :]\n    xs1 = xs[:, None, :]",
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "sl_from_embeddings",
+        "kind": 2,
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "peekOfCode": "def sl_from_embeddings(xs, S):\n    xs0 = xs[None, :, :]\n    xs1 = xs[:, None, :]\n    sim_mat = S(xs0, xs1)  # (n, n)\n    return sl_np_mst(sim_mat.numpy())\ndef nn_merge_uf_fast_np(xs, S, partition_ratio=None, verbose=False):\n    \"\"\" Uses Cython union find and numpy sorting\n    partition_ratio: either None, or real number > 1\n    similarities will be partitioned into buckets of geometrically increasing size\n    \"\"\"",
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "nn_merge_uf_fast_np",
+        "kind": 2,
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "peekOfCode": "def nn_merge_uf_fast_np(xs, S, partition_ratio=None, verbose=False):\n    \"\"\" Uses Cython union find and numpy sorting\n    partition_ratio: either None, or real number > 1\n    similarities will be partitioned into buckets of geometrically increasing size\n    \"\"\"\n    n = xs.shape[0]\n    xs0 = xs[None, :, :]\n    xs1 = xs[:, None, :]\n    dist_mat = -S(xs0, xs1)  # (n, n)\n    i, j = np.meshgrid(np.arange(n, dtype=int), np.arange(n, dtype=int))",
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "Artanh",
+        "kind": 6,
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "peekOfCode": "class Artanh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        x = x.clamp(-1 + 1e-5, 1 - 1e-5)\n        ctx.save_for_backward(x)\n        dtype = x.dtype\n        x = x.double()\n        return (torch.log_(1 + x).sub_(torch.log_(1 - x))).mul_(0.5).to(dtype)\n    @staticmethod\n    def backward(ctx, grad_output):",
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "Arcosh",
+        "kind": 6,
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "peekOfCode": "class Arcosh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        x = x.clamp(min=1 + 1e-7)\n        ctx.save_for_backward(x)\n        z = x.double()\n        return (z + torch.sqrt_(z.pow(2) - 1)).clamp_min_(1e-15).log_().to(x.dtype)\n    @staticmethod\n    def backward(ctx, grad_output):\n        input, = ctx.saved_tensors",
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "Arsinh",
+        "kind": 6,
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "peekOfCode": "class Arsinh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        ctx.save_for_backward(x)\n        z = x.double()\n        return (z + torch.sqrt_(1 + z.pow(2))).clamp_min_(1e-15).log_().to(x.dtype)\n    @staticmethod\n    def backward(ctx, grad_output):\n        input, = ctx.saved_tensors\n        return grad_output / (1 + input ** 2) ** 0.5",
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "arctanh",
+        "kind": 2,
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "peekOfCode": "def arctanh(x):\n    return Artanh.apply(x)\ndef tanh(x):\n    return x.clamp(-15, 15).tanh()\nclass Arcosh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        x = x.clamp(min=1 + 1e-7)\n        ctx.save_for_backward(x)\n        z = x.double()",
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "tanh",
+        "kind": 2,
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "peekOfCode": "def tanh(x):\n    return x.clamp(-15, 15).tanh()\nclass Arcosh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        x = x.clamp(min=1 + 1e-7)\n        ctx.save_for_backward(x)\n        z = x.double()\n        return (z + torch.sqrt_(z.pow(2) - 1)).clamp_min_(1e-15).log_().to(x.dtype)\n    @staticmethod",
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "arcosh",
+        "kind": 2,
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "peekOfCode": "def arcosh(x):\n    return Arcosh.apply(x)\ndef cosh(x, clamp=15):\n    return x.clamp(-clamp, clamp).cosh()\nclass Arsinh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        ctx.save_for_backward(x)\n        z = x.double()\n        return (z + torch.sqrt_(1 + z.pow(2))).clamp_min_(1e-15).log_().to(x.dtype)",
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "cosh",
+        "kind": 2,
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "peekOfCode": "def cosh(x, clamp=15):\n    return x.clamp(-clamp, clamp).cosh()\nclass Arsinh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        ctx.save_for_backward(x)\n        z = x.double()\n        return (z + torch.sqrt_(1 + z.pow(2))).clamp_min_(1e-15).log_().to(x.dtype)\n    @staticmethod\n    def backward(ctx, grad_output):",
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "arsinh",
+        "kind": 2,
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "peekOfCode": "def arsinh(x):\n    return Arsinh.apply(x)\ndef sinh(x, clamp=15):\n    return x.clamp(-clamp, clamp).sinh()",
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "sinh",
+        "kind": 2,
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "peekOfCode": "def sinh(x, clamp=15):\n    return x.clamp(-clamp, clamp).sinh()",
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "dasgupta_cost",
+        "kind": 2,
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "peekOfCode": "def dasgupta_cost(tree, similarities):\n    \"\"\" Non-recursive version of DC for binary trees.\n    Optimized for speed by reordering similarity matrix for locality\n    \"\"\"\n    n = len(list(tree.nodes()))\n    root = n - 1\n    n_leaves = len(similarities)\n    leaves = descendants_traversal(tree)\n    n_desc, left_desc = descendants_count(tree)\n    cost = [0] * n ",
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "kind": 2,
+        "importPath": "utils.mst",
+        "description": "utils.mst",
+        "peekOfCode": "def mst(dists, n):\n    ij = np.empty((n - 1, 2), dtype=np.int)\n    Z = ij\n    l = np.empty(n-1)\n    l_ = l\n    merged = np.zeros(n, dtype=np.int)\n    D = np.empty(n)\n    D[:] = - np.inf\n    j = np.empty(n, dtype=np.int)\n    x = 0 ",
+        "detail": "utils.mst",
+        "documentation": {}
+    },
+    {
+        "label": "reorder",
+        "kind": 2,
+        "importPath": "utils.mst",
+        "description": "utils.mst",
+        "peekOfCode": "def reorder( A,  idx, n):\n    \"\"\"\n    A : (n, n)\n    idx: (n)\n    \"\"\"\n    B = np.empty((n, n))\n    B_ = B\n    for i in range(n):\n        k = idx[i]\n        for j in range(n):",
+        "detail": "utils.mst",
+        "documentation": {}
+    },
+    {
+        "label": "egrad2rgrad",
+        "kind": 2,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "def egrad2rgrad(p, dp):\n    \"\"\"Converts Euclidean gradient to Hyperbolic gradient.\"\"\"\n    lambda_p = lambda_(p)\n    dp /= lambda_p.pow(2)\n    return dp\ndef lambda_(x):\n    \"\"\"Computes the conformal factor.\"\"\"\n    x_sqnorm = torch.sum(x.data.pow(2), dim=-1, keepdim=True)\n    return 2 / (1. - x_sqnorm).clamp_min(MIN_NORM)\ndef inner(x, u, v=None):",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "lambda_",
+        "kind": 2,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "def lambda_(x):\n    \"\"\"Computes the conformal factor.\"\"\"\n    x_sqnorm = torch.sum(x.data.pow(2), dim=-1, keepdim=True)\n    return 2 / (1. - x_sqnorm).clamp_min(MIN_NORM)\ndef inner(x, u, v=None):\n    \"\"\"Computes inner product for two tangent vectors.\"\"\"\n    if v is None:\n        v = u\n    lx = lambda_(x)\n    return lx ** 2 * (u * v).sum(dim=-1, keepdim=True)",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "inner",
+        "kind": 2,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "def inner(x, u, v=None):\n    \"\"\"Computes inner product for two tangent vectors.\"\"\"\n    if v is None:\n        v = u\n    lx = lambda_(x)\n    return lx ** 2 * (u * v).sum(dim=-1, keepdim=True)\ndef gyration(u, v, w):\n    \"\"\"Gyration.\"\"\"\n    u2 = u.pow(2).sum(dim=-1, keepdim=True)\n    v2 = v.pow(2).sum(dim=-1, keepdim=True)",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "gyration",
+        "kind": 2,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "def gyration(u, v, w):\n    \"\"\"Gyration.\"\"\"\n    u2 = u.pow(2).sum(dim=-1, keepdim=True)\n    v2 = v.pow(2).sum(dim=-1, keepdim=True)\n    uv = (u * v).sum(dim=-1, keepdim=True)\n    uw = (u * w).sum(dim=-1, keepdim=True)\n    vw = (v * w).sum(dim=-1, keepdim=True)\n    a = - uw * v2 + vw + 2 * uv * vw\n    b = - vw * u2 - uw\n    d = 1 + 2 * uv + u2 * v2",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "ptransp",
+        "kind": 2,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "def ptransp(x, y, u):\n    \"\"\"Parallel transport.\"\"\"\n    lx = lambda_(x)\n    ly = lambda_(y)\n    return gyration(y, -x, u) * lx / ly\ndef expmap(u, p):\n    u_norm = u.norm(dim=-1, p=2, keepdim=True).clamp_min(MIN_NORM)\n    second_term = tanh(lambda_(p) * u_norm / 2) * u / u_norm\n    gamma_1 = mobius_add(p, second_term)\n    return gamma_1",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "expmap",
+        "kind": 2,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "def expmap(u, p):\n    u_norm = u.norm(dim=-1, p=2, keepdim=True).clamp_min(MIN_NORM)\n    second_term = tanh(lambda_(p) * u_norm / 2) * u / u_norm\n    gamma_1 = mobius_add(p, second_term)\n    return gamma_1\ndef project(x):\n    \"\"\"Projects points on the manifold.\"\"\"\n    norm = x.norm(dim=-1, p=2, keepdim=True).clamp_min(MIN_NORM)\n    eps = BALL_EPS[x.dtype]\n    maxnorm = (1 - eps)",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "kind": 2,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "def project(x):\n    \"\"\"Projects points on the manifold.\"\"\"\n    norm = x.norm(dim=-1, p=2, keepdim=True).clamp_min(MIN_NORM)\n    eps = BALL_EPS[x.dtype]\n    maxnorm = (1 - eps)\n    cond = norm > maxnorm\n    projected = x / norm * maxnorm\n    return torch.where(cond, projected, x)\ndef mobius_add(x, y):\n    \"\"\"Mobius addition.\"\"\"",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "mobius_add",
+        "kind": 2,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "def mobius_add(x, y):\n    \"\"\"Mobius addition.\"\"\"\n    x2 = torch.sum(x * x, dim=-1, keepdim=True)\n    y2 = torch.sum(y * y, dim=-1, keepdim=True)\n    xy = torch.sum(x * y, dim=-1, keepdim=True)\n    num = (1 + 2 * xy + y2) * x + (1 - x2) * y\n    denom = 1 + 2 * xy + x2 * y2\n    return num / denom.clamp_min(MIN_NORM)\ndef mobius_mul(x, t):\n    \"\"\"Mobius scalar multiplication.\"\"\"",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "mobius_mul",
+        "kind": 2,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "def mobius_mul(x, t):\n    \"\"\"Mobius scalar multiplication.\"\"\"\n    normx = x.norm(dim=-1, p=2, keepdim=True).clamp_min(MIN_NORM)\n    return tanh(t * arctanh(normx)) * x / normx\ndef get_midpoint_o(x):\n    \"\"\"\n    Computes hyperbolic midpoint between x and the origin.\n    \"\"\"\n    return mobius_mul(x, 0.5)\ndef hyp_dist_o(x):",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "get_midpoint_o",
+        "kind": 2,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "def get_midpoint_o(x):\n    \"\"\"\n    Computes hyperbolic midpoint between x and the origin.\n    \"\"\"\n    return mobius_mul(x, 0.5)\ndef hyp_dist_o(x):\n    \"\"\"\n    Computes hyperbolic distance between x and the origin.\n    \"\"\"\n    x_norm = x.norm(dim=-1, p=2, keepdim=True)",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist_o",
+        "kind": 2,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "def hyp_dist_o(x):\n    \"\"\"\n    Computes hyperbolic distance between x and the origin.\n    \"\"\"\n    x_norm = x.norm(dim=-1, p=2, keepdim=True)\n    return 2 * arctanh(x_norm)\ndef hyp_dist(x,y):\n    \"\"\"\n    hyperbolic distance\n    \"\"\"",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist",
+        "kind": 2,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "def hyp_dist(x,y):\n    \"\"\"\n    hyperbolic distance\n    \"\"\"\n    if(torch.Tensor == type(x)) == False:\n        x=torch.tensor(x)\n    if(torch.Tensor == type(y)) == False:\n        y=torch.tensor(y)        \n    return arcosh(1+ 2*( (x-y).norm(dim=-1, p=2, keepdim=True))/((1- y.norm(dim=-1, p=2, keepdim=True))*(1- x.norm(dim=-1, p=2, keepdim=True))));",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_NORM",
+        "kind": 5,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "MIN_NORM = 1e-15\nBALL_EPS = {torch.float32: 4e-3, torch.float64: 1e-5}\ndef egrad2rgrad(p, dp):\n    \"\"\"Converts Euclidean gradient to Hyperbolic gradient.\"\"\"\n    lambda_p = lambda_(p)\n    dp /= lambda_p.pow(2)\n    return dp\ndef lambda_(x):\n    \"\"\"Computes the conformal factor.\"\"\"\n    x_sqnorm = torch.sum(x.data.pow(2), dim=-1, keepdim=True)",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "BALL_EPS",
+        "kind": 5,
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "peekOfCode": "BALL_EPS = {torch.float32: 4e-3, torch.float64: 1e-5}\ndef egrad2rgrad(p, dp):\n    \"\"\"Converts Euclidean gradient to Hyperbolic gradient.\"\"\"\n    lambda_p = lambda_(p)\n    dp /= lambda_p.pow(2)\n    return dp\ndef lambda_(x):\n    \"\"\"Computes the conformal factor.\"\"\"\n    x_sqnorm = torch.sum(x.data.pow(2), dim=-1, keepdim=True)\n    return 2 / (1. - x_sqnorm).clamp_min(MIN_NORM)",
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "descendants_traversal",
+        "kind": 2,
+        "importPath": "utils.tree",
+        "description": "utils.tree",
+        "peekOfCode": "def descendants_traversal(tree):\n    \"\"\"Get all descendants non-recursively, in traversal order.\"\"\"\n    n = len(list(tree.nodes()))\n    root = n - 1\n    traversal = []\n    children = [list(tree.neighbors(node)) for node in range(n)]  # children remaining to process\n    is_leaf = [len(children[node]) == 0 for node in range(n)]\n    stack = [root]\n    while len(stack) > 0:\n        node = stack[-1]",
+        "detail": "utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": "descendants_count",
+        "kind": 2,
+        "importPath": "utils.tree",
+        "description": "utils.tree",
+        "peekOfCode": "def descendants_count(tree):\n    \"\"\"For every node, count its number of descendant leaves, and the number of leaves before it.\"\"\"\n    n = len(list(tree.nodes()))\n    root = n - 1\n    left = [0] * n\n    desc = [0] * n\n    leaf_idx = 0\n    children = [list(tree.neighbors(node))[::-1] for node in range(n)]  # children remaining to process\n    stack = [root]\n    while len(stack) > 0:",
+        "detail": "utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 6,
+            "peekOfCode": "class  UnionFind:\n    def __init__(self, n):\n        self.n = n\n        # self.c = c\n        self.parent = [i for i in range(n)]\n        self.rank = [0 for i in range(n)]\n        self._next_id = n\n        self._tree = [-1 for i in range(2*n-1)]\n        self._id = [i for i in range(n)]\n    def _find(self, i):"
+        },
+        "kind": 6,
+        "importPath": "utils.unionfind",
+        "description": "utils.unionfind",
+        "peekOfCode": "class  UnionFind:\n    def __init__(self, n):\n        self.n = n\n        # self.c = c\n        self.parent = [i for i in range(n)]\n        self.rank = [0 for i in range(n)]\n        self._next_id = n\n        self._tree = [-1 for i in range(2*n-1)]\n        self._id = [i for i in range(n)]\n    def _find(self, i):",
+        "detail": "utils.unionfind",
+        "documentation": {}
+    },
+    {
+        "label": "node",
+        "kind": 6,
+        "importPath": "alignment",
+        "description": "alignment",
+        "peekOfCode": "class node:\n    \"\"\"\n    Class of the node of the tree\n    \"\"\"\n    def __init__(self,value=None,son=[],name='',hyper=None):\n        self.value = value;\n        self.hyper = hyper;\n        self.son = son;\n        self.name =name;\n        self.f = None;",
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "newnode",
+        "kind": 6,
+        "importPath": "alignment",
+        "description": "alignment",
+        "peekOfCode": "class newnode:\n    \"\"\"\n    Class of the aligned nodes by linear programming\n    \"\"\"\n    def __init__(self,node1,node2):\n        self.node1 = node1\n        self.node2 = node2\n        self.f = None\n        self.edge = [];\n        self.indegree = 0;",
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "tree_alignment",
+        "kind": 6,
+        "importPath": "alignment",
+        "description": "alignment",
+        "peekOfCode": "class tree_alignment:\n    \"\"\"\n    Class is used to perform tree alignment between two trees\n    \"\"\"\n    def __init__(self,root1,root2,cost1):\n        self.cost1 = cost1;\n        self.dp = dict();\n        self.forestdp = dict();\n        self.anslist = [];\n        self.ansnodes = [];",
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "show_graph",
+        "kind": 6,
+        "importPath": "alignment",
+        "description": "alignment",
+        "peekOfCode": "class show_graph:\n    def __init__(self,ans,root1,root2,color=None):\n        self.ans = ans;\n        self.pos_x=[];\n        self.pos_y=[];\n        self.edges=[];\n        self.label_hash = dict(); \n        self.labels = [];\n        self.hover_text =[];\n        self.values=[];",
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "show_tree",
+        "kind": 6,
+        "importPath": "alignment",
+        "description": "alignment",
+        "peekOfCode": "class show_tree:\n    def __init__(self,root1,color=None):\n        self.pos_x=[];\n        self.pos_y=[];\n        self.edges=[];\n        self.label_hash = dict(); \n        self.labels = [];\n        self.hover_text =[];\n        self.values=[];\n        self.cnt = 0;",
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "show_the_tree",
+        "kind": 2,
+        "importPath": "alignment",
+        "description": "alignment",
+        "peekOfCode": "def show_the_tree(folder_path1,after=False):\n    nodes1 = build_hyper_tree_from_folder(folder_path1,after)\n    show_tree(nodes1[0]).show_fig()\ndef build_hyper_tree_from_folder(folder_path,after=False,mst1=False):\n    \"\"\"\n    Build the tree from the folder\n    \"\"\"\n    if(mst1):\n        pos_1 = pd.read_csv(folder_path + 'datas.csv')\n        pos = pos_1.set_index(pos_1.columns[0]).values",
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "build_hyper_tree_from_folder",
+        "kind": 2,
+        "importPath": "alignment",
+        "description": "alignment",
+        "peekOfCode": "def build_hyper_tree_from_folder(folder_path,after=False,mst1=False):\n    \"\"\"\n    Build the tree from the folder\n    \"\"\"\n    if(mst1):\n        pos_1 = pd.read_csv(folder_path + 'datas.csv')\n        pos = pos_1.set_index(pos_1.columns[0]).values\n        edge = np.load(folder_path + \"datalink.npy\");\n        father_name = np.load(folder_path + \"dataname.npy\")\n        father_name = father_name.astype(np.int)",
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "search_tree",
+        "kind": 2,
+        "importPath": "alignment",
+        "description": "alignment",
+        "peekOfCode": "def search_tree(now,c,c1,n):\n    \"\"\"\n    Merge the tree nodes according of the c\n    \"\"\"\n    if(len(now.son) < 2):\n        return now,True;\n    sons = []\n    flag = True\n    for i in range(len(now.son)):\n        son,f1 = search_tree(now.son[i],c,c1,n);",
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "find_path_root",
+        "kind": 2,
+        "importPath": "alignment",
+        "description": "alignment",
+        "peekOfCode": "def find_path_root(now,dfs,path,dfs_node,f):\n    \"\"\"\n    Find the path to the root\n    \"\"\"\n    now.path=path.copy();\n    now.f=f\n    now.dfs=dfs;\n    path.append(now);\n    dfs_node.append(now);\n    for i in now.son:",
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "find_indegree",
+        "kind": 2,
+        "importPath": "alignment",
+        "description": "alignment",
+        "peekOfCode": "def find_indegree(lists,indegree):\n    \"\"\"\n    Find the indegrees\n    \"\"\"\n    ans=[]\n    for i in lists:\n        if(i.indegree == indegree):\n            ans.append(i);\n    return ans;\ndef run_alignment_linear(nodes1,nodes2):",
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "run_alignment_linear",
+        "kind": 2,
+        "importPath": "alignment",
+        "description": "alignment",
+        "peekOfCode": "def run_alignment_linear(nodes1,nodes2):\n    \"\"\"\n    Alignment two trees by linear programming\n    \"\"\"\n    values1 = np.array([i.value for i in nodes1])\n    values2 = np.array([i.value for i in nodes2])\n    similarities =np.zeros((len(values1),len(values2)))\n    for i in range(len(values1)):\n        for j in range(len(values2)):\n            similarities[i][j]=np.corrcoef(values1[i],values2[j])[0][1]",
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "run_alignment",
+        "kind": 2,
+        "importPath": "alignment",
+        "description": "alignment",
+        "peekOfCode": "def run_alignment(nodes1,nodes2,folder_path1,folder_path2,meta_list1,meta_list2):\n    \"\"\"\n    Alignment two trees by dynmaic programming\n    \"\"\"\n    T=tree_alignment(nodes1[0],nodes2[0],1);\n    minn = T.run_alignment();\n    T.show_ans();\n    ans = T.get_ans()\n    G=show_graph(ans,nodes1[0],nodes2[0]);\n    # G.show_fig()",
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "add_meta",
+        "kind": 2,
+        "importPath": "core",
+        "description": "core",
+        "peekOfCode": "def add_meta(now,meta_list,merge):\n    if(int(now.name)<len(meta_list)):\n        now.name= now.name +'_'+ meta_list[int(now.name)];\n    merge.append(now)\n    for i in now.son:\n        add_meta(i,meta_list,merge)\ndef remove_meta(now):\n    if(len(now.name.split('_')) >1):\n        now.name = now.name.split('_')[0]\n    for i in now.son:",
+        "detail": "core",
+        "documentation": {}
+    },
+    {
+        "label": "remove_meta",
+        "kind": 2,
+        "importPath": "core",
+        "description": "core",
+        "peekOfCode": "def remove_meta(now):\n    if(len(now.name.split('_')) >1):\n        now.name = now.name.split('_')[0]\n    for i in now.son:\n        remove_meta(i)\ndef merge_by_radius(cell_path,folder_path,radius,method='average',meta_col='celltype'):\n    \"\"\"\n    Merge the cells of the datasets according to the radius \n    Parameters\n    ----------",
+        "detail": "core",
+        "documentation": {}
+    },
+    {
+        "label": "merge_by_radius",
+        "kind": 2,
+        "importPath": "core",
+        "description": "core",
+        "peekOfCode": "def merge_by_radius(cell_path,folder_path,radius,method='average',meta_col='celltype'):\n    \"\"\"\n    Merge the cells of the datasets according to the radius \n    Parameters\n    ----------\n    cell_path : string\n        Path to the dataset's cell data h5ad file \n    folder_path1 : string\n        Path to the folder to save the result files of the dataset      \n    radius : float",
+        "detail": "core",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_cluster_celltype",
+        "kind": 2,
+        "importPath": "core",
+        "description": "core",
+        "peekOfCode": "def calculate_cluster_celltype(adata,groupby = 'leiden', meta_col = 'celltype'):\n    meta_list = []\n    clustername = adata.obs[groupby].unique().tolist()\n    clustername = list(map(int, clustername))\n    clustername.sort()\n    for value in clustername:\n        indices = [i for i, x in enumerate(adata.obs[groupby]) if x == str(value)]\n        t = [adata.obs[meta_col].tolist()[index] for index in indices]\n        most_common_element = max(t, key=t.count)\n        meta_list.append(most_common_element)",
+        "detail": "core",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_meta_ori",
+        "kind": 2,
+        "importPath": "core",
+        "description": "core",
+        "peekOfCode": "def calculate_meta_ori(folder_path,adata):\n    v = pd.read_csv(folder_path+\"merge_labels.csv\")\n    meta = adata.obs['celltype']\n    cell_type = []\n    cluster = []\n    for i in range(len(v)):\n        cell_type.append(meta.iloc[v['meta_label'][i]][0])\n        cluster.append(adata.obs['leiden'].iloc[v['meta_label'][i]][0])\n    v['celltype_meta']=cell_type\n    v['cluster']=cluster",
+        "detail": "core",
+        "documentation": {}
+    },
+    {
+        "label": "alignment_process",
+        "kind": 2,
+        "importPath": "core",
+        "description": "core",
+        "peekOfCode": "def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col='celltype',contin=False,resolution=0.5,method='average',alignment=1,n_pca=50,mst1=False):\n    \"\"\"\n    Performs alignment of two datasets. \n    Parameters\n    ----------\n    cell_path1 : string\n        Path to the first dataset's cell data h5ad file \n    cell_path2 : string\n        Path to the second dataset's cell data h5ad file \n    folder_path1 : string",
+        "detail": "core",
+        "documentation": {}
+    },
+    {
+        "label": "get_count_data",
+        "kind": 2,
+        "importPath": "eval",
+        "description": "eval",
+        "peekOfCode": "def get_count_data(adata,counts_location=None):\n    data = adata.layers[counts_location].copy() if counts_location else adata.X.copy()\n    if not isinstance(data, np.ndarray):\n        data= data.toarray()\n    data_df = pd.DataFrame(data,index=adata.obs_names,columns=adata.var_names).transpose()\n    return data_df\ndef check_paths(output_folder,output_prefix=None):\n    output_path = os.path.join(os.getcwd(), output_folder)\n    Path(output_path).mkdir(parents=True, exist_ok=True)\n    return output_path",
+        "detail": "eval",
+        "documentation": {}
+    },
+    {
+        "label": "check_paths",
+        "kind": 2,
+        "importPath": "eval",
+        "description": "eval",
+        "peekOfCode": "def check_paths(output_folder,output_prefix=None):\n    output_path = os.path.join(os.getcwd(), output_folder)\n    Path(output_path).mkdir(parents=True, exist_ok=True)\n    return output_path\ndef remove_batch_effect(pseudo_bulk, bulk_adata, out_dir, project='',batch_effect=True):\n    \"\"\"\n    Remove batch effect between pseudo_bulk and input bulk data.\n    Parameters\n    ----------\n    pseudo_bulk : anndata.AnnData",
+        "detail": "eval",
+        "documentation": {}
+    },
+    {
+        "label": "remove_batch_effect",
+        "kind": 2,
+        "importPath": "eval",
+        "description": "eval",
+        "peekOfCode": "def remove_batch_effect(pseudo_bulk, bulk_adata, out_dir, project='',batch_effect=True):\n    \"\"\"\n    Remove batch effect between pseudo_bulk and input bulk data.\n    Parameters\n    ----------\n    pseudo_bulk : anndata.AnnData\n        An :class:`~anndata.AnnData` containing the pseudo expression.\n    bulk_adata : anndata.AnnData\n        An :class:`~anndata.AnnData` containing the input expression.\n    out_dir : string, optional",
+        "detail": "eval",
+        "documentation": {}
+    },
+    {
+        "label": "get_atc",
+        "kind": 2,
+        "importPath": "eval",
+        "description": "eval",
+        "peekOfCode": "def get_atc(ans,nodes1,adata1,adata2,inter_gene):\n    anslist_dist = dict(ans)\n    anslist_dist.keys()\n    def search_lineage(now,path,anss):\n        path.append(now.name)\n        if(now.son==[]):\n            anss.append(path);\n            return\n        for i in now.son:\n            search_lineage(i,path.copy(),anss);",
+        "detail": "eval",
+        "documentation": {}
+    },
+    {
+        "label": "chord_graph",
+        "kind": 2,
+        "importPath": "eval",
+        "description": "eval",
+        "peekOfCode": "def chord_graph(ans,nodes1,nodes2):\n    def cost(i,j):\n        df = pd.DataFrame(\n            {\"A\": i.value, \"B\":j.value})\n        mincost = df.corr(method=\"spearman\").iloc[0, 1] +1\n        return mincost/2\n    l1=[]\n    l2=[]\n    l3=[]\n    for i,j in ans:",
+        "detail": "eval",
+        "documentation": {}
+    },
+    {
+        "label": "show_3d",
+        "kind": 2,
+        "importPath": "eval",
+        "description": "eval",
+        "peekOfCode": "def show_3d(ans,nodes1,nodes2):\n    t=show_graph(ans,nodes1[0],nodes2[0]);\n    s = 13\n    # Helix equation\n    x, y, z =t.pos_x,t.pos_y,[0 for i in t.pos_x]\n    names = [i+' '+j for i,j in zip(t.labels,t.hover_text)]\n    x=np.array(x)\n    y=np.array(y)\n    layout = go.Layout(\n        scene=dict(",
+        "detail": "eval",
+        "documentation": {}
+    },
+    {
+        "label": "show_2d",
+        "kind": 2,
+        "importPath": "eval",
+        "description": "eval",
+        "peekOfCode": "def show_2d(ans,nodes1,nodes2):\n    show_graph(ans,nodes1[0],nodes2[0],color=['#184e77','#1a759f','#168aad',\"#34a0a4\",'#52b69a','#99d98c','#76c893','#99d98c']).show_fig()",
+        "detail": "eval",
+        "documentation": {}
+    },
+    {
+        "label": "add_meta",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def add_meta(now,meta_list,merge):\n    if(int(now.name)<len(meta_list)):\n        now.name= now.name +'_'+ meta_list[int(now.name)];\n    merge.append(now)\n    for i in now.son:\n        add_meta(i,meta_list,merge)\ndef remove_meta(now):\n    if(len(now.name.split('_')) >1):\n        now.name = now.name.split('_')[0]\n    for i in now.son:",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "remove_meta",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def remove_meta(now):\n    if(len(now.name.split('_')) >1):\n        now.name = now.name.split('_')[0]\n    for i in now.son:\n        remove_meta(i)\ndef save_graph(embeddings,tree,y_true,save):\n    colors = get_colors(y_true, 1234)\n    fig = plt.figure(figsize=(15, 15))\n    ax = fig.add_subplot(111)\n    circle = plt.Circle((0, 0), 1.0, color='r', alpha=0.1)",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "save_graph",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def save_graph(embeddings,tree,y_true,save):\n    colors = get_colors(y_true, 1234)\n    fig = plt.figure(figsize=(15, 15))\n    ax = fig.add_subplot(111)\n    circle = plt.Circle((0, 0), 1.0, color='r', alpha=0.1)\n    ax.add_artist(circle)\n    ax.scatter(embeddings[:n, 0], embeddings[:n, 1], c=colors, s=50, alpha=0.6)\n    ax.scatter(embeddings[n:,0],embeddings[n:,1],color ='black',s=20,alpha=0.6)\n    for n1, n2 in tree.edges():\n        x1 = embeddings[n1]",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "mobius_add",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def mobius_add(x, y):\n    \"\"\"Mobius addition in numpy.\"\"\"\n    xy = np.sum(x * y, 1, keepdims=True)\n    x2 = np.sum(x * x, 1, keepdims=True)\n    y2 = np.sum(y * y, 1, keepdims=True)\n    num = (1 + 2 * xy + y2) * x + (1 - x2) * y\n    den = 1 + 2 * xy + x2 * y2\n    return num / den\ndef mobius_mul(x, t):\n    \"\"\"Mobius multiplication in numpy.\"\"\"",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "mobius_mul",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def mobius_mul(x, t):\n    \"\"\"Mobius multiplication in numpy.\"\"\"\n    normx = np.sqrt(np.sum(x * x, 1, keepdims=True))\n    return np.tanh(t * np.arctanh(normx)) * x / normx\ndef geodesic_fn(x, y, nb_points=100):\n    \"\"\"Get coordinates of points on the geodesic between x and y.\"\"\"\n    t = np.linspace(0, 1, nb_points)\n    x_rep = np.repeat(x.reshape((1, -1)), len(t), 0)\n    y_rep = np.repeat(y.reshape((1, -1)), len(t), 0)\n    t1 = mobius_add(-x_rep, y_rep)",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "geodesic_fn",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def geodesic_fn(x, y, nb_points=100):\n    \"\"\"Get coordinates of points on the geodesic between x and y.\"\"\"\n    t = np.linspace(0, 1, nb_points)\n    x_rep = np.repeat(x.reshape((1, -1)), len(t), 0)\n    y_rep = np.repeat(y.reshape((1, -1)), len(t), 0)\n    t1 = mobius_add(-x_rep, y_rep)\n    t2 = mobius_mul(t1, t.reshape((-1, 1)))\n    return mobius_add(x_rep, t2)\ndef plot_geodesic(x, y, ax):\n    \"\"\"Plots geodesic between x and y.\"\"\"",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "plot_geodesic",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def plot_geodesic(x, y, ax):\n    \"\"\"Plots geodesic between x and y.\"\"\"\n    points = geodesic_fn(x, y)\n    ax.plot(points[:, 0], points[:, 1], color='black', linewidth=1.5, alpha=1)\ndef hyp_lca_numpy(x, y):\n    \"\"\"\n    Computes the hyperbolic LCA in numpy.\n    \"\"\"\n    x = torch.from_numpy(x).view((1, 2))\n    y = torch.from_numpy(y).view((1, 2))",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca_numpy",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def hyp_lca_numpy(x, y):\n    \"\"\"\n    Computes the hyperbolic LCA in numpy.\n    \"\"\"\n    x = torch.from_numpy(x).view((1, 2))\n    y = torch.from_numpy(y).view((1, 2))\n    lca = hyp_lca(x, y, return_coord=True)\n    return lca.view((2,)).numpy()\ndef is_leaf(tree, node):\n    \"\"\"",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "is_leaf",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def is_leaf(tree, node):\n    \"\"\"\n    Check if node is a leaf in tree.\n    \"\"\"\n    return len(list(tree.neighbors(node))) == 0\ndef complete_tree(tree, leaves_embeddings):\n    \"\"\"\n    Get embeddings of internal nodes from leaves' embeddings using LCA construction.\n    \"\"\"\n    def _complete_tree(embeddings, node):",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "complete_tree",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def complete_tree(tree, leaves_embeddings):\n    \"\"\"\n    Get embeddings of internal nodes from leaves' embeddings using LCA construction.\n    \"\"\"\n    def _complete_tree(embeddings, node):\n        children = list(tree.neighbors(node))\n        if len(children) == 2:\n            left_c, right_c = children\n            left_leaf = is_leaf(tree, left_c)\n            right_leaf = is_leaf(tree, right_c)",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def train(model,dataloader,optimizer,similarities,epoches):\n    \"\"\"\n    Train the embedding model\n    \"\"\"\n    best_cost = np.inf\n    best_model = None\n    counter = 0\n    for epoch in range(epoches):\n        model.train()\n        total_loss = 0.0",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "train2",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def train2(model,dataloader1,optimizer,epoches):\n    \"\"\"\n    Train the rotation model\n    \"\"\"\n    best_cost = np.inf\n    best_model = None\n    counter = 0\n    for epoch in range(epoches):\n        model.train()\n        total_loss1 = 0.0",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "train3",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def train3(model,dataloader1,dataloader2,optimizer,epoches):\n    \"\"\"\n    Train the rotation model\n    \"\"\"\n    best_cost = np.inf\n    best_model = None\n    counter = 0\n    for epoch in range(epoches):\n        model.train()\n        total_loss1 = 0.0",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "sl_np_mst_ij",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def sl_np_mst_ij(xs, S):\n    \"\"\"\n    Return the ij to merge the unionfind\n    \"\"\"\n    xs = project(xs).detach()\n    xs0 = xs[None, :, :]\n    xs1 = xs[:, None, :]\n    sim_mat = S(xs0, xs1)  # (n, n)\n    similarities = sim_mat.numpy()\n    n = similarities.shape[0]",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "get_colors",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def get_colors(y, color_seed=1234):\n    \"\"\"\n    Random color assignment for label classes.\n    \"\"\"\n    np.random.seed(color_seed)\n    colors = {}\n    for k in np.unique(y):\n        r = np.random.random()\n        b = np.random.random()\n        g = np.random.random()",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "search_merge_tree",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def search_merge_tree(now,ids,save_path,values,fathers,xys):\n    \"\"\"\n    Search the tree and save the information\n    \"\"\"\n    fathers.append(ids);\n    values.append(now.name);\n    xys.append(now.value);\n    now_id = len(values)-1;\n    for son in now.son:\n        search_merge_tree(son,now_id,save_path,values,fathers,xys)",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "deep_search_tree",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def deep_search_tree(now,depth,path,f):\n    \"\"\"\n    Search the tree and calculate the information\n    \"\"\"\n    now.f=f\n    now.depth=depth;\n    path.append(now);\n    now.path=path.copy();\n    if(f!=now):\n        now.distance_to_root = f.distance_to_root + hyp_dist(f.value,now.value)",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "merge_points",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def merge_points(similarities,root,nodes,embeddings,epoches,c1,c2,n):\n    root,_ = search_tree(root,c1,c2,n)\n    print(_)\n    if(_ == True):\n        return torch.tensor(embeddings),root,_\n    nodes_merge = [];\n    add_meta(root,[],nodes_merge)\n    for i in nodes_merge:\n        if(int(i)<n):\n            i.subson = [int(i)]",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "rotate",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def rotate(nodes,embeddings,epoches,n,similarities):\n    deep_search_tree(nodes[-1],0,[],nodes[-1])\n    result1 = []\n    result2 = []\n    distances = []\n    for i in nodes:\n        if(int(i)>=n):\n            if(int(i.son[0]) <n and int(i.son[1])<n ):\n                for i1,j1 in itertools.combinations(i.subson,2):\n                    for j in i.rest(n):",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "merge_points_with_c",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def merge_points_with_c(embeddings,nodes,data_path,start,end,label,folder_path,epoches,c1,c2):\n    np.random.seed(1234)\n    torch.manual_seed(1234)\n    x, y_true, similarities = load_data(data_path,start,end,label)\n    n=len(x)\n    root = nodes[-1];\n    _ = False\n    while(_ == False):\n        temp,root,_ = merge_points(similarities,root,nodes,embeddings,epoches,c1,c2,n)\n        for i in nodes:",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "get_Hyper_tree",
+        "kind": 2,
+        "importPath": "hyper",
+        "description": "hyper",
+        "peekOfCode": "def get_Hyper_tree(data_path,start,end,label,epoches1,epoches2,meta_list,model_path=None,save_path='./', mst1 = False):\n    \"\"\"\n    Embedding the dataset into hyperbolic tree structure\n    Parameters\n    ----------\n    data_path : string\n        Path of the cluster center file\n    start : int\n        Index of the starting in the data file\n    end : int",
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "str2bool",
+        "kind": 2,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "def str2bool(v):\n    if isinstance(v, bool):\n        return v\n    if v.lower() in ('yes', 'true', 't', 'y', '1'):\n        return True\n    elif v.lower() in ('no', 'false', 'f', 'n', '0'):\n        return False\n    else:\n        raise argparse.ArgumentTypeError('Boolean value expected.')\nwarnings.filterwarnings(\"ignore\")",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument('--cell_path1','-cp1', type=str)\nparser.add_argument('--folder_path1','-f1', type=str)\nparser.add_argument('--radius1','-r1', type=float,default=15)\nparser.add_argument('--capacity1','-c1', type=float,default=0.1)\nparser.add_argument('--epoches1','-e1', type=int,default=10)\nparser.add_argument('--cell_path2','-cp2', type=str)\nparser.add_argument('--folder_path2','-f2', type=str)\nparser.add_argument('--radius2','-r2', type=float,default=15)\nparser.add_argument('--capacity2','-c2', type=float,default=0.1)",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "args = parser.parse_args()\nif(args.cell_path1 ==None):\n    print(\"Please input the h5 file path for data 1\")\n    exit()\nif(args.cell_path2 ==None):\n    print(\"Please input the h5 file paht for data 2\")\n    exit()\nif(os.path.exists(args.cell_path1)==False):\n    print(\"Input correct path for data 1\")\nif(os.path.exists(args.cell_path2)==False):",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "cell_path1",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "cell_path1 = args.cell_path1\ncell_path2= args.cell_path2\nfolder_path1 = args.folder_path1\nfolder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "folder_path1",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "folder_path1 = args.folder_path1\nfolder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "folder_path2",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "folder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "radius1",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "radius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "radius2",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "radius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "c1",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "c1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "c2",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "c2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "epoches1",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "epoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "epoches2",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "epoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "contin",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "contin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "method",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "method = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "alignment",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "alignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "resolution",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "resolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "n_pca",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "n_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "meta_col",
+        "kind": 5,
+        "importPath": "run_sc",
+        "description": "run_sc",
+        "peekOfCode": "meta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "run_sc",
+        "documentation": {}
+    }
+]

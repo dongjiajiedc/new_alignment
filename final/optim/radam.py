@@ -7,8 +7,6 @@ from utils.poincare import expmap, egrad2rgrad, inner, project, ptransp
 
 def copy_or_set_(dest, source):
     """
-    A workaround to respect strides of :code:`dest` when copying :code:`source`
-    (https://github.com/geoopt/geoopt/issues/70)
     Parameters
     ----------
     dest : torch.Tensor
@@ -52,8 +50,6 @@ class RAdam(torch.optim.Adam):
     stabilize : int
         Stabilize parameters if they are off-manifold due to numerical
         reasons every ``stabilize`` steps (default: ``None`` -- no stabilize)
-    .. _On the Convergence of Adam and Beyond:
-        https://openreview.net/forum?id=ryQu7f-RZ
     """
 
     def step(self, closure=None):

@@ -4,14 +4,6 @@ import os
 
 import numpy as np
 
-UCI_DATASETS = [
-    "glass",
-    "zoo",
-    "iris",
-    "sc",
-    "4_7",
-    "4_8",
-]
 
 
 def load_data(dataset, start_idx,end_idx,label_idx,normalize=True):
@@ -24,36 +16,11 @@ def load_data(dataset, start_idx,end_idx,label_idx,normalize=True):
     @return: feature vectors, labels, and pairwise similarities computed with cosine similarity
     @rtype: Tuple[np.array, np.array, np.array]
     """
-    # if dataset in UCI_DATASETS:
-    x, y = load_uci_data(dataset, start_idx,end_idx,label_idx)
-    # else:
-    #     raise NotImplementedError("Unknown dataset {}.".format(dataset))
-    if normalize:
-        x = x / np.linalg.norm(x, axis=1, keepdims=True)
-    x0 = x[None, :, :]
-    x1 = x[:, None, :]
-    cos = (x0 * x1).sum(-1)
-    similarities = 0.5 * (1 + cos)
-    similarities = np.triu(similarities) + np.triu(similarities).T
-    similarities[np.diag_indices_from(similarities)] = 1.0
-    similarities[similarities > 1.0] = 1.0
-    return x, y, similarities
-
-
-def load_uci_data(dataset,start_idx,end_idx,label_idx):
-    """Loads data from UCI repository.
-
-    @param dataset: UCI dataset name
-    @return: feature vectors, labels
-    @rtype: Tuple[np.array, np.array]
-    """
     x = []
     y = []
-    # data_path = os.path.join(os.environ["DATAPATH"], dataset, "{}.data".format(dataset))
     data_path = dataset
     classes = {}
     class_counter = 0
-    # start_idx, end_idx, label_idx = ids[dataset]
     with open(data_path, 'r') as f:
         for line in f:
             split_line = line.split(",")
@@ -71,5 +38,14 @@ def load_uci_data(dataset,start_idx,end_idx,label_idx):
     mean = x.mean(0)
     std = x.std(0)
     x = (x - mean) / std
-    # x = np.nan_to_num(x);
-    return x, y
+    
+    if normalize:
+        x = x / np.linalg.norm(x, axis=1, keepdims=True)
+    x0 = x[None, :, :]
+    x1 = x[:, None, :]
+    cos = (x0 * x1).sum(-1)
+    similarities = 0.5 * (1 + cos)
+    similarities = np.triu(similarities) + np.triu(similarities).T
+    similarities[np.diag_indices_from(similarities)] = 1.0
+    similarities[similarities > 1.0] = 1.0
+    return x, y, similarities

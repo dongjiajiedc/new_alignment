@@ -100,4 +100,8 @@ def hyp_dist(x,y):
     """
     hyperbolic distance
     """
+    if(torch.Tensor == type(x)) == False:
+        x=torch.tensor(x)
+    if(torch.Tensor == type(y)) == False:
+        y=torch.tensor(y)        
     return arcosh(1+ 2*( (x-y).norm(dim=-1, p=2, keepdim=True))/((1- y.norm(dim=-1, p=2, keepdim=True))*(1- x.norm(dim=-1, p=2, keepdim=True))));

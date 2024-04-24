@@ -9,7 +9,7 @@ library(zellkonverter)
 
 
 
-adata <- readH5AD('../datas/32/adata12.h5ad')
+adata <- readH5AD('../datas/l/12/data12.h5ad')
 
 adata@assays@data@listData[["counts"]] <- array(as.vector(adata@assays@data@listData[["X"]]), dim = dim(adata@assays@data@listData[["X"]]))
 

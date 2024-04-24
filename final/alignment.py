@@ -7,14 +7,17 @@ import itertools
 import pulp as plp
 from utils.poincare import hyp_dist
 import torch
+import random
+
 
 
 class node:
     """
     Class of the node of the tree
     """
-    def __init__(self,value=None,son=[],name=''):
+    def __init__(self,value=None,son=[],name='',hyper=None):
         self.value = value;
+        self.hyper = hyper;
         self.son = son;
         self.name =name;
         self.f = None;
@@ -31,7 +34,7 @@ class node:
     def __str__(self):
         return self.name
     def copy(self):
-        return node(self.value,self.son,self.name)
+        return node(self.value,self.son,self.name,self.hyper)
     def rest(self,n):
         all = [i for i in range(n)];
         result = [element for element in all if element not in self.subson];
@@ -46,6 +49,8 @@ class newnode:
         self.f = None
         self.edge = [];
         self.indegree = 0;
+        self.value = 0;
+        self.name = self.node1.name + self.node2.name
     def __str__(self):
         return "{}_{}".format(self.node1,self.node2)
     def __repr__(self):
@@ -623,7 +628,7 @@ class show_graph:
         self.fig.write_image(path)
 
 class show_tree:
-    def __init__(self,root1):
+    def __init__(self,root1,color=None):
         
         self.pos_x=[];
         self.pos_y=[];
@@ -634,18 +639,23 @@ class show_tree:
         self.values=[];
         self.cnt = 0;
         self.height=5;
+        self.celltypes = [];
         self.fig = go.Figure();
-        
+        self.color = color;
         self.root1 = root1;
         self.run_graph();
         
-    def cal_tree_pos(self,now,l,r,h,f,pos_x,pos_y,edges,label_hash,labels,hover_text,values):
+    def cal_tree_pos(self,now,l,r,h,f,pos_x,pos_y,edges,label_hash,labels,hover_text,values,celltypes):
         mid = (l+r)/2
         pos_x.append(mid);
         pos_y.append(h)
         label_hash[now.name]=self.cnt;
         num_son = len(now.son);
         labels.append("{}".format(now.name));
+        if(len(now.name.split('_')) >1):
+            celltypes.append(now.name.split('_')[1])
+        else:
+            celltypes.append('empty');
         edges.append((f.name,now.name));
         hover_text.append("connect Empty");
         values.append(np.linalg.norm(now.value));
@@ -654,14 +664,23 @@ class show_tree:
         length = (r-l)/num_son;
         for i in range(num_son):
             self.cnt+=1;
-            self.cal_tree_pos(now.son[i],l+i*length,l+(i+1)*length,h-1.5,now,pos_x,pos_y,edges,label_hash,labels,hover_text,values);
+            self.cal_tree_pos(now.son[i],l+i*length,l+(i+1)*length,h-1.5,now,pos_x,pos_y,edges,label_hash,labels,hover_text,values,celltypes);
             
 
     def run_graph(self):
         
-        self.cal_tree_pos(self.root1,1,10,self.height,self.root1, self.pos_x,self.pos_y,self.edges,self.label_hash,self.labels,self.hover_text,self.values);
+        self.cal_tree_pos(self.root1,1,10,self.height,self.root1, self.pos_x,self.pos_y,self.edges,self.label_hash,self.labels,self.hover_text,self.values,self.celltypes);
         
-        
+        unique_categories = list(set(self.celltypes))
+        if(self.color == None):
+            category_colors = {cat: f'#{random.randint(0, 0xFFFFFF):06x}' for cat in unique_categories}
+        elif(len(self.color)>= len(unique_categories)):
+            category_colors = {cat: col  for cat,col in zip(unique_categories,self.color[:len(unique_categories)])}
+        else:
+            category_colors = {cat: f'#{random.randint(0, 0xFFFFFF):06x}' for cat in unique_categories}
+            
+        category_colors['empty'] = '#fff'
+        print(category_colors)
         for i in self.edges:
             p1,p2 = i;
             index1=self.label_hash[p1];
@@ -674,31 +693,61 @@ class show_tree:
                 x0=x1, y0=y1, x1=x2, y1=y2,
                 line=dict(
                     color="#333",
-                    width=4,
+                    width=2,
                 ),
                 layer="below"
             )
-        self.fig.add_trace(go.Scatter(x=self.pos_x,
-                        y=self.pos_y,
-                        mode='markers+text',
-                        marker=dict(symbol='circle-dot',
-                                        size=50,
-                                        # color='#5B91D9',  
-                                        color=self.values,
-                                        colorscale="peach",
-                                        showscale=True,
-                                        # line=dict(color='rgb(50,50,50)', width=1)
-                                        ),
-                        text=self.labels,
-                        hoverinfo='text',
-                        # hovertext=self.hover_text,
-                        #textposition="top center",
-                        textfont=dict(family='sans serif',
-                        size=18,
-                        color='#000000'
-                            ),
-                        opacity=0.8,
-                        ))
+        # Iterate over unique cell types
+        for cell_type in unique_categories:
+            indexs = [i for i in range(len(self.celltypes)) if self.celltypes[i] == cell_type]
+            x_cell = [self.pos_x[i] for i in indexs]
+            y_cell = [self.pos_y[i] for i in indexs]
+            
+            # Add scatter trace for the current cell type
+            self.fig.add_trace(go.Scatter(
+                x=x_cell,
+                y=y_cell,
+                mode='markers+text',
+                name=cell_type,
+                legendgroup=cell_type,
+                marker=dict(
+                    symbol='circle-dot',
+                    size=10,
+                    color=category_colors[cell_type]  # Set color based on cell type
+                ),
+                # text=[self.labels[i] for i in indexs],
+                hoverinfo='text',
+                hovertext=[self.labels[i] for i in indexs],
+                # #textposition="top center",
+                # textfont=dict(family='sans serif',
+                # size=18,
+                # color='#000000'
+                # ),
+                # opacity=0.8,
+            ))
+
+        # self.fig.add_trace(go.Scatter(x=self.pos_x,
+        #                 y=self.pos_y,
+        #                 mode='markers+text',
+        #                 marker=dict(symbol='circle-dot',
+        #                                 size=50,
+        #                                 # color='#5B91D9',  
+        #                                 # color=self.values,
+        #                                 color=[category_colors[cat] for cat in self.celltypes],
+        #                                 # colorscale="peach",
+        #                                 # showscale=True,
+        #                                 # line=dict(color='rgb(50,50,50)', width=1)
+        #                                 ),
+        #                 text=self.labels,
+        #                 hoverinfo='text',
+        #                 # hovertext=self.hover_text,
+        #                 #textposition="top center",
+        #                 textfont=dict(family='sans serif',
+        #                 size=18,
+        #                 color='#000000'
+        #                     ),
+        #                 opacity=0.8,
+        #                 ))
         self.fig.update_layout(  
             xaxis= dict(showline=False, # hide axis line, grid, ticklabels and  title
                     zeroline=False,
@@ -710,27 +759,50 @@ class show_tree:
                     showgrid=False,
                     showticklabels=False,
                     ),
-        width=1000, height=500)
+        width=1000, height=500
+        )
         
         # self.fig.show()
     def show_fig(self):
         self.fig.show();
                
-def show_the_tree(folder_path1):
-    nodes1,n1 = build_hyper_tree_from_folder(folder_path1)
+def show_the_tree(folder_path1,after=False):
+    nodes1 = build_hyper_tree_from_folder(folder_path1,after)
     show_tree(nodes1[0]).show_fig()
     
-
-def build_hyper_tree_from_folder(folder_path):
+def build_hyper_tree_from_folder(folder_path,after=False,mst1=False):
     """
     Build the tree from the folder
     """
+    if(mst1):
+        pos_1 = pd.read_csv(folder_path + 'datas.csv')
+        pos = pos_1.set_index(pos_1.columns[0]).values
+        edge = np.load(folder_path + "datalink.npy");
+        father_name = np.load(folder_path + "dataname.npy")
+        father_name = father_name.astype(np.int)
+        xys = np.load(folder_path+'dataxy.npy');
+        n_points = len(pos);
+        nodes = [node(name=str(i),son=[]) for i in range(n_points)];
+        for i in range(n_points-1):
+            if(edge[i]!=-1):
+                nodes[edge[i]].son.append(nodes[i])
+            nodes[i].name = str(father_name[i])
+            nodes[i].value = pos[father_name[i]]
+        return nodes
+    
     pos_1 = pd.read_csv(folder_path + 'datas.csv')
     pos = pos_1.set_index(pos_1.columns[0]).values
-    edge = np.load(folder_path + "datalink.npy");
-    father_name = np.load(folder_path + "dataname.npy")
-    father_name = father_name.astype(np.int)
-    xys = np.load(folder_path+'dataxy.npy');
+    if(after):
+        edge = np.load(folder_path + "datalink_merge.npy");
+        father_name = np.load(folder_path + "dataname_merge.npy")
+        father_name = father_name.astype(np.int)
+        xys = np.load(folder_path+'dataxy_merge.npy');    
+    else:
+        edge = np.load(folder_path + "datalink.npy");
+        father_name = np.load(folder_path + "dataname.npy")
+        father_name = father_name.astype(np.int)
+        xys = np.load(folder_path+'dataxy.npy');
+        
     n = len(edge)
     n_points = len(pos);
     nodes = [node(name=str(i),son=[]) for i in range(n)];
@@ -742,54 +814,76 @@ def build_hyper_tree_from_folder(folder_path):
             nodes[i].value = pos[father_name[i]]
         else:
             nodes[i].value = 0.0
+        nodes[i].hyper = xys[i];
+            
     def test(now):
         for i in now.son:
             test(i);
         if(now.son!=[]):
-            l = hyp_dist(torch.tensor(xys[int(now)]),torch.tensor(xys[int(now.son[0])]))
-            r = hyp_dist(torch.tensor(xys[int(now)]),torch.tensor(xys[int(now.son[1])]))
+            son_values = []
+            all = 0;
+            for i in now.son:
+                values = hyp_dist(torch.tensor(now.hyper),torch.tensor(i.hyper))
+                values = values.numpy()
+                all += values;
+                son_values.append(values*i.value)
+            son_values = np.array(son_values)
+            son_values /=all
+            now.value = son_values.sum(axis=0)
+    test(nodes[0]);  
+    return nodes
 
-            now.value = (l/(l+r) *now.son[0].value  +  r/(l+r)*now.son[1].value).numpy()
-    test(nodes[0]);    
-    return nodes,n
-
-def search_tree(now,c,merge_list):
+def search_tree(now,c,c1,n):
     """
     Merge the tree nodes according of the c
     """
-    if(len(now.son) != 2):
-        return now;
-    lson = search_tree(now.son[0],c,merge_list);
-    now.son[0] = lson;
-    rson = search_tree(now.son[1],c,merge_list);
-    now.son[1] = rson
+    if(len(now.son) < 2):
+        return now,True;
+    
+    sons = []
+    flag = True
+    for i in range(len(now.son)):
+        son,f1 = search_tree(now.son[i],c,c1,n);
+        now.son[i]=son
+        sons.append(son)
+        flag = (flag and f1)
+    maxn = 10000;
+    maxnn = None;
+    
+    for i in sons:
+        if(int(i)<n):
+            dis = hyp_dist(i.hyper,now.hyper)
+            if(dis<=c and dis<maxn):
+                maxn = dis;
+                maxnn = i;
+    lson = now.son[0]
+    rson = now.son[1]
+    if(flag and maxnn != None and int(now)>=n and hyp_dist(lson.hyper,rson.hyper)<=c1):
+        sons.remove(maxnn);
+        print(now,maxnn)
+        now = maxnn;
+        now.son= now.son + sons;
+        flag = False;
+    
+    # lson = search_tree(now.son[0],c,n);
+    # now.son[0] = lson;
+    # rson = search_tree(now.son[1],c,n);
+    # now.son[1] = rson
+    # distance_l = hyp_dist(lson.hyper,now.hyper);
+    # distance_r = hyp_dist(rson.hyper,now.hyper)
+    
+    # if(distance_l< distance_r and int(lson)<n):
+    #     if(distance_l<=c):
+    #         now = lson.copy();
+    #         now.son.append(rson);
+    #         pass;
+    # elif(int(rson)<n):
+    #     if(distance_r<=c):
+    #         now = rson.copy();
+    #         now.son.append(lson)
+    #         pass
 
-    if(np.linalg.norm(lson.value-rson.value)<=c):
-        if(len(lson.son)>1 and len(rson.son)>1):
-            pass
-        elif(len(lson.son)>1):
-            merge_list.append((rson.name,lson.name))
-            print(rson.name,lson.name)
-            now = rson.copy();
-            now.son=[]
-
-            if(len(rson.son)==0):
-                now.son.append(lson);
-            else:
-                now.son.append(lson);
-                now.son.append(rson.son);
-            # now.son.append(lson);
-        else:
-            merge_list.append((rson.name,lson.name))
-            print(rson.name,lson.name)
-            now = lson.copy();
-            now.son=[]
-            if(len(lson.son)==0):
-                now.son.append(rson);
-            else:
-                now.son.append(lson.son);
-                now.son.append(rson);
-    return now;
+    return now,flag;
 
 def find_path_root(now,dfs,path,dfs_node,f):
     """
@@ -840,7 +934,7 @@ def run_alignment_linear(nodes1,nodes2):
     find_path_root(root1,0,[],dfs_node1,root1)
     find_path_root(root2,0,[],dfs_node2,root2)
     x_vars  = {(i,j):plp.LpVariable(cat=plp.LpBinary, name="x_{0}_{1}".format(i,j)) for i in set_I for j in set_J}
-    
+    x_vars[0,0] =plp.LpVariable(cat='Integer',lowBound=1,upBound=1, name="x_0_0")
     opt_model = plp.LpProblem(name="MIP Model")
     for i in set_I:
         opt_model.addConstraint(
@@ -849,12 +943,12 @@ def run_alignment_linear(nodes1,nodes2):
                         rhs=1,
                         name="constraintI{0}".format(i)))
 
-    for j in set_J:
-        opt_model.addConstraint(
-        plp.LpConstraint(e=plp.lpSum(x_vars[i,j] for i in set_I),
-                        sense=plp.LpConstraintGE,
-                        rhs=1,
-                        name="constraintJ{0}".format(j))) 
+    # for j in set_J:
+    #     opt_model.addConstraint(
+    #     plp.LpConstraint(e=plp.lpSum(x_vars[i,j] for i in set_I),
+    #                     sense=plp.LpConstraintGE,
+    #                     rhs=1,
+    #                     name="constraintJ{0}".format(j))) 
     for i in dfs_node1:
         for j in dfs_node2:
             for k in i.path:
@@ -900,6 +994,7 @@ def run_alignment_linear(nodes1,nodes2):
     print(f'OBJECTIVE VALUE: {opt_model.objective.value()}')
     
     result_node = []
+    anslist = []
     for v in opt_model.variables():
         if(v.value()==0):
             continue
@@ -907,6 +1002,7 @@ def run_alignment_linear(nodes1,nodes2):
         r = int(v.name.split('_')[2])
         tn = newnode(dfs_node1[l],dfs_node2[r])
         result_node.append(tn);
+        anslist.append((str(dfs_node1[l]),str(dfs_node2[r])))
         
     for i in range(len(result_node)):
         for j in range(len(result_node)):
@@ -917,7 +1013,13 @@ def run_alignment_linear(nodes1,nodes2):
             if((p1.node1 in p2.node1.path or p1.node1 == p2.node1) and (p1.node2 in p2.node2.path or p1.node2==p2.node2)):
                 result_node[i].edge.append(result_node[j])
                 result_node[j].indegree +=1
-
+                
+    for i in range(len(result_node)):
+        for j in range(len(result_node)):
+            if(i==j):
+                continue
+            p1 = result_node[i]
+            p2 = result_node[j]
     root=find_indegree(result_node,0)[0]
     
     c=0;z=0
@@ -929,7 +1031,7 @@ def run_alignment_linear(nodes1,nodes2):
             if(ans[1] == ans[3]):
                 z+=1
     print('correct alignment rate:{}'.format(z/c))
-    return z/c
+    return z/c,result_node,anslist
 
 def run_alignment(nodes1,nodes2,folder_path1,folder_path2,meta_list1,meta_list2):
     """

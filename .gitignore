@@ -15,3 +15,7 @@ atcc/
 eval/datas/*
 eval/capital
 *.h5ad
+*.csv
+*.data
+*.npy
+*.pth

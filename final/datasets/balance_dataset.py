@@ -53,8 +53,12 @@ class balance_dataset(data.Dataset):
             temp.append(self.datas[i]);
         temp = np.array(temp)
         # self.datas= temp;
-        
-        if num_samples > len(temp):
+        if(num_samples <0):
+            num_samples = len(temp)
+        elif num_samples <=len(temp):
+            rnd = np.random.choice(np.arange(len(temp)), num_samples, replace=False)
+            temp = temp[rnd]
+        else:
             n_pairs = len(temp);
             k_base = int(num_samples / n_pairs)
             k_rem = num_samples - (k_base * n_pairs)
