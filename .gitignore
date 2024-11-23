@@ -19,3 +19,5 @@ eval/capital
 *.data
 *.npy
 *.pth
+*.tsv
+*.zip

@@ -130,7 +130,7 @@ def train(model,dataloader,optimizer,similarities,epoches):
         print("\t Epoch {} | average train loss: {:.6f}".format(epoch, total_loss))
 
         if (epoch + 1) % 1 == 0:
-            tree = model.decode_tree(fast_decoding=1)
+            tree = model.decode_tree(fast_decoding=0)
             cost = dasgupta_cost(tree, similarities)
             logging.info("{}:\t{:.4f}".format("Dasgupta's cost", cost))
             if cost < best_cost:
@@ -157,6 +157,7 @@ def train(model,dataloader,optimizer,similarities,epoches):
         if best_model is not None:
             # load best model
             model.load_state_dict(best_model)
+            print(best_cost)
 
 def train2(model,dataloader1,optimizer,epoches):
     """

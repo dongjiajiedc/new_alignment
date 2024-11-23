@@ -116,6 +116,22 @@
         "documentation": {}
     },
     {
+        "label": "generate_all_triples",
+        "importPath": "datasets.triples",
+        "description": "datasets.triples",
+        "isExtraImport": true,
+        "detail": "datasets.triples",
+        "documentation": {}
+    },
+    {
+        "label": "samples_triples",
+        "importPath": "datasets.triples",
+        "description": "datasets.triples",
+        "isExtraImport": true,
+        "detail": "datasets.triples",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -130,6 +146,14 @@
         "isExtraImport": true,
         "importPath": "anndata",
         "description": "anndata",
+        "detail": "anndata",
+        "documentation": {}
+    },
+    {
+        "label": "AnnData",
+        "importPath": "anndata",
+        "description": "anndata",
+        "isExtraImport": true,
         "detail": "anndata",
         "documentation": {}
     },
@@ -375,6 +399,134 @@
         "description": "alignment",
         "isExtraImport": true,
         "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "alignment",
+        "description": "alignment",
+        "isExtraImport": true,
+        "detail": "alignment",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "expmap",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "egrad2rgrad",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "inner",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "ptransp",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_NORM",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist_o",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist",
+        "importPath": "utils.poincare",
+        "description": "utils.poincare",
+        "isExtraImport": true,
+        "detail": "utils.poincare",
         "documentation": {}
     },
     {
@@ -1019,6 +1171,54 @@
         "documentation": {}
     },
     {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "importPath": "utils.lca",
+        "description": "utils.lca",
+        "isExtraImport": true,
+        "detail": "utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "nn_merge_uf_fast_np",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "sl_from_embeddings",
+        "importPath": "utils.linkage",
+        "description": "utils.linkage",
+        "isExtraImport": true,
+        "detail": "utils.linkage",
+        "documentation": {}
+    },
+    {
         "label": "nn_merge_uf_fast_np",
         "importPath": "utils.linkage",
         "description": "utils.linkage",
@@ -1221,11 +1421,35 @@
         "documentation": {}
     },
     {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
         "label": "utils.unionfind",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "utils.unionfind",
         "description": "utils.unionfind",
+        "detail": "utils.unionfind",
+        "documentation": {}
+    },
+    {
+        "label": "UnionFind",
+        "importPath": "utils.unionfind",
+        "description": "utils.unionfind",
+        "isExtraImport": true,
         "detail": "utils.unionfind",
         "documentation": {}
     },
@@ -1318,35 +1542,19 @@
         "documentation": {}
     },
     {
-        "label": "descendants_traversal",
-        "importPath": "utils.tree",
-        "description": "utils.tree",
+        "label": "reorder",
+        "importPath": "utils.mst",
+        "description": "utils.mst",
         "isExtraImport": true,
-        "detail": "utils.tree",
+        "detail": "utils.mst",
         "documentation": {}
     },
     {
-        "label": "descendants_count",
-        "importPath": "utils.tree",
-        "description": "utils.tree",
+        "label": "mst",
+        "importPath": "utils.mst",
+        "description": "utils.mst",
         "isExtraImport": true,
-        "detail": "utils.tree",
-        "documentation": {}
-    },
-    {
-        "label": "descendants_traversal",
-        "importPath": "utils.tree",
-        "description": "utils.tree",
-        "isExtraImport": true,
-        "detail": "utils.tree",
-        "documentation": {}
-    },
-    {
-        "label": "descendants_count",
-        "importPath": "utils.tree",
-        "description": "utils.tree",
-        "isExtraImport": true,
-        "detail": "utils.tree",
+        "detail": "utils.mst",
         "documentation": {}
     },
     {
@@ -1395,6 +1603,78 @@
         "description": "utils.tree",
         "isExtraImport": true,
         "detail": "utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": "descendants_traversal",
+        "importPath": "utils.tree",
+        "description": "utils.tree",
+        "isExtraImport": true,
+        "detail": "utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": "descendants_count",
+        "importPath": "utils.tree",
+        "description": "utils.tree",
+        "isExtraImport": true,
+        "detail": "utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": "descendants_traversal",
+        "importPath": "utils.tree",
+        "description": "utils.tree",
+        "isExtraImport": true,
+        "detail": "utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": "descendants_count",
+        "importPath": "utils.tree",
+        "description": "utils.tree",
+        "isExtraImport": true,
+        "detail": "utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": "descendants_traversal",
+        "importPath": "utils.tree",
+        "description": "utils.tree",
+        "isExtraImport": true,
+        "detail": "utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": "descendants_count",
+        "importPath": "utils.tree",
+        "description": "utils.tree",
+        "isExtraImport": true,
+        "detail": "utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": "arctanh",
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "isExtraImport": true,
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "tanh",
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "isExtraImport": true,
+        "detail": "utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "arcosh",
+        "importPath": "utils.math",
+        "description": "utils.math",
+        "isExtraImport": true,
+        "detail": "utils.math",
         "documentation": {}
     },
     {
@@ -1684,6 +1964,30 @@
     },
     {
         "label": "*",
+        "importPath": "hyper",
+        "description": "hyper",
+        "isExtraImport": true,
+        "detail": "hyper",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "datasets.preprecossing",
+        "description": "datasets.preprecossing",
+        "isExtraImport": true,
+        "detail": "datasets.preprecossing",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "datasets.preprecossing",
+        "description": "datasets.preprecossing",
+        "isExtraImport": true,
+        "detail": "datasets.preprecossing",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "datasets.preprecossing",
         "description": "datasets.preprecossing",
         "isExtraImport": true,
@@ -1748,6 +2052,22 @@
     },
     {
         "label": "adjusted_rand_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "adjusted_rand_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "silhouette_score",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
         "isExtraImport": true,
@@ -1832,6 +2152,46 @@
         "description": "utils",
         "isExtraImport": true,
         "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "KDTree",
+        "importPath": "scipy.spatial",
+        "description": "scipy.spatial",
+        "isExtraImport": true,
+        "detail": "scipy.spatial",
         "documentation": {}
     },
     {
@@ -1958,11 +2318,11 @@
         "documentation": {}
     },
     {
-        "label": "balance_dataset",
-        "importPath": "datasets.balance_dataset",
-        "description": "datasets.balance_dataset",
+        "label": "HCDataset",
+        "importPath": "datasets.hc_dataset",
+        "description": "datasets.hc_dataset",
         "isExtraImport": true,
-        "detail": "datasets.balance_dataset",
+        "detail": "datasets.hc_dataset",
         "documentation": {}
     },
     {
@@ -1982,11 +2342,19 @@
         "documentation": {}
     },
     {
-        "label": "load_data",
-        "importPath": "datasets.loading",
-        "description": "datasets.loading",
+        "label": "balance_dataset",
+        "importPath": "datasets.balance_dataset",
+        "description": "datasets.balance_dataset",
         "isExtraImport": true,
-        "detail": "datasets.loading",
+        "detail": "datasets.balance_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "balance_dataset",
+        "importPath": "datasets.balance_dataset",
+        "description": "datasets.balance_dataset",
+        "isExtraImport": true,
+        "detail": "datasets.balance_dataset",
         "documentation": {}
     },
     {
@@ -2019,6 +2387,30 @@
         "description": "datasets.loading",
         "isExtraImport": true,
         "detail": "datasets.loading",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "importPath": "datasets.loading",
+        "description": "datasets.loading",
+        "isExtraImport": true,
+        "detail": "datasets.loading",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "importPath": "datasets.loading",
+        "description": "datasets.loading",
+        "isExtraImport": true,
+        "detail": "datasets.loading",
+        "documentation": {}
+    },
+    {
+        "label": "HypHC",
+        "importPath": "model.hyphc",
+        "description": "model.hyphc",
+        "isExtraImport": true,
+        "detail": "model.hyphc",
         "documentation": {}
     },
     {
@@ -2086,11 +2478,11 @@
         "documentation": {}
     },
     {
-        "label": "dasgupta_cost",
-        "importPath": "utils.metrics",
-        "description": "utils.metrics",
+        "label": "balancehc",
+        "importPath": "model.balancehc",
+        "description": "model.balancehc",
         "isExtraImport": true,
-        "detail": "utils.metrics",
+        "detail": "model.balancehc",
         "documentation": {}
     },
     {
@@ -2123,6 +2515,46 @@
         "description": "utils.metrics",
         "isExtraImport": true,
         "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "dasgupta_cost",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "dasgupta_cost",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "core",
+        "description": "core",
+        "isExtraImport": true,
+        "detail": "core",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "core",
+        "description": "core",
+        "isExtraImport": true,
+        "detail": "core",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "core",
+        "description": "core",
+        "isExtraImport": true,
+        "detail": "core",
         "documentation": {}
     },
     {
@@ -2187,6 +2619,62 @@
         "description": "scipy.sparse.csgraph",
         "isExtraImport": true,
         "detail": "scipy.sparse.csgraph",
+        "documentation": {}
+    },
+    {
+        "label": "minimum_spanning_tree",
+        "importPath": "scipy.sparse.csgraph",
+        "description": "scipy.sparse.csgraph",
+        "isExtraImport": true,
+        "detail": "scipy.sparse.csgraph",
+        "documentation": {}
+    },
+    {
+        "label": "pdist",
+        "importPath": "scipy.spatial.distance",
+        "description": "scipy.spatial.distance",
+        "isExtraImport": true,
+        "detail": "scipy.spatial.distance",
+        "documentation": {}
+    },
+    {
+        "label": "squareform",
+        "importPath": "scipy.spatial.distance",
+        "description": "scipy.spatial.distance",
+        "isExtraImport": true,
+        "detail": "scipy.spatial.distance",
+        "documentation": {}
+    },
+    {
+        "label": "pdist",
+        "importPath": "scipy.spatial.distance",
+        "description": "scipy.spatial.distance",
+        "isExtraImport": true,
+        "detail": "scipy.spatial.distance",
+        "documentation": {}
+    },
+    {
+        "label": "squareform",
+        "importPath": "scipy.spatial.distance",
+        "description": "scipy.spatial.distance",
+        "isExtraImport": true,
+        "detail": "scipy.spatial.distance",
+        "documentation": {}
+    },
+    {
+        "label": "pdist",
+        "importPath": "scipy.spatial.distance",
+        "description": "scipy.spatial.distance",
+        "isExtraImport": true,
+        "detail": "scipy.spatial.distance",
+        "documentation": {}
+    },
+    {
+        "label": "squareform",
+        "importPath": "scipy.spatial.distance",
+        "description": "scipy.spatial.distance",
+        "isExtraImport": true,
+        "detail": "scipy.spatial.distance",
         "documentation": {}
     },
     {
@@ -2249,6 +2737,157 @@
         "documentation": {}
     },
     {
+        "label": "docopt",
+        "importPath": "docopt",
+        "description": "docopt",
+        "isExtraImport": true,
+        "detail": "docopt",
+        "documentation": {}
+    },
+    {
+        "label": "docopt",
+        "importPath": "docopt",
+        "description": "docopt",
+        "isExtraImport": true,
+        "detail": "docopt",
+        "documentation": {}
+    },
+    {
+        "label": "Cytograph",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "Cytograph",
+        "description": "Cytograph",
+        "detail": "Cytograph",
+        "documentation": {}
+    },
+    {
+        "label": "multiprocessing",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "multiprocessing",
+        "description": "multiprocessing",
+        "detail": "multiprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "NearestNeighbors",
+        "importPath": "sklearn.neighbors",
+        "description": "sklearn.neighbors",
+        "isExtraImport": true,
+        "detail": "sklearn.neighbors",
+        "documentation": {}
+    },
+    {
+        "label": "NearestNeighbors",
+        "importPath": "sklearn.neighbors",
+        "description": "sklearn.neighbors",
+        "isExtraImport": true,
+        "detail": "sklearn.neighbors",
+        "documentation": {}
+    },
+    {
+        "label": "NearestNeighbors",
+        "importPath": "sklearn.neighbors",
+        "description": "sklearn.neighbors",
+        "isExtraImport": true,
+        "detail": "sklearn.neighbors",
+        "documentation": {}
+    },
+    {
+        "label": "NearestNeighbors",
+        "importPath": "sklearn.neighbors",
+        "description": "sklearn.neighbors",
+        "isExtraImport": true,
+        "detail": "sklearn.neighbors",
+        "documentation": {}
+    },
+    {
+        "label": "scipy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scipy",
+        "description": "scipy",
+        "detail": "scipy",
+        "documentation": {}
+    },
+    {
+        "label": "gc",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "gc",
+        "description": "gc",
+        "detail": "gc",
+        "documentation": {}
+    },
+    {
+        "label": "binom",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "binom",
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "isExtraImport": true,
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "scipy.sparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "csr_matrix",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "csr_matrix",
+        "importPath": "scipy.sparse",
+        "description": "scipy.sparse",
+        "isExtraImport": true,
+        "detail": "scipy.sparse",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "eval",
+        "description": "eval",
+        "isExtraImport": true,
+        "detail": "eval",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "eval",
         "description": "eval",
@@ -2299,6 +2938,14 @@
         "documentation": {}
     },
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "rpy2.robjects",
         "kind": 6,
         "isExtraImport": true,
@@ -2313,6 +2960,22 @@
         "description": "rpy2.robjects",
         "isExtraImport": true,
         "detail": "rpy2.robjects",
+        "documentation": {}
+    },
+    {
+        "label": "pandas2ri",
+        "importPath": "rpy2.robjects",
+        "description": "rpy2.robjects",
+        "isExtraImport": true,
+        "detail": "rpy2.robjects",
+        "documentation": {}
+    },
+    {
+        "label": "exists",
+        "importPath": "os.path",
+        "description": "os.path",
+        "isExtraImport": true,
+        "detail": "os.path",
         "documentation": {}
     },
     {
@@ -2341,44 +3004,86 @@
         "documentation": {}
     },
     {
+        "label": "D3Blocks",
+        "importPath": "d3blocks",
+        "description": "d3blocks",
+        "isExtraImport": true,
+        "detail": "d3blocks",
+        "documentation": {}
+    },
+    {
+        "label": "Extension",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "setup",
+        "importPath": "setuptools",
+        "description": "setuptools",
+        "isExtraImport": true,
+        "detail": "setuptools",
+        "documentation": {}
+    },
+    {
+        "label": "mysymnmf",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysymnmf",
+        "description": "mysymnmf",
+        "detail": "mysymnmf",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
         "label": "scanpy.external",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "scanpy.external",
         "description": "scanpy.external",
         "detail": "scanpy.external",
-        "documentation": {}
-    },
-    {
-        "label": "setup",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
-        "documentation": {}
-    },
-    {
-        "label": "setup",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
-        "documentation": {}
-    },
-    {
-        "label": "setup",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
-        "documentation": {}
-    },
-    {
-        "label": "setup",
-        "importPath": "setuptools",
-        "description": "setuptools",
-        "isExtraImport": true,
-        "detail": "setuptools",
         "documentation": {}
     },
     {
@@ -2616,22 +3321,6 @@
         "description": "utils.visualization",
         "isExtraImport": true,
         "detail": "utils.visualization",
-        "documentation": {}
-    },
-    {
-        "label": "csr_matrix",
-        "importPath": "scipy.sparse",
-        "description": "scipy.sparse",
-        "isExtraImport": true,
-        "detail": "scipy.sparse",
-        "documentation": {}
-    },
-    {
-        "label": "csr_matrix",
-        "importPath": "scipy.sparse",
-        "description": "scipy.sparse",
-        "isExtraImport": true,
-        "detail": "scipy.sparse",
         "documentation": {}
     },
     {
@@ -3575,6 +4264,285 @@
         "documentation": {}
     },
     {
+        "label": "main",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.CytoTour",
+        "description": "fyp.datas.after.CytoTour-jan-dev.CytoTour",
+        "peekOfCode": "def main(arguments):\n    print(\"start filtering LRIs with spatial data\")\n    st_files = arguments.get(\"<st_file>\")\n    spilt_dir = arguments.get(\"<spilt_dir>\")\n    cells_per_file = int(arguments.get(\"<cells_per_file>\"))\n    lr_pair = arguments.get(\"<lr_pair>\")\n    pathwaydb = arguments.get(\"<pathwaydb>\")\n    cell_sender = str(arguments.get(\"--cell_sender\"))\n    cell_receiver = str(arguments.get(\"--cell_receiver\"))\n    parallel = arguments.get(\"--parallel\")",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.CytoTour",
+        "documentation": {}
+    },
+    {
+        "label": "PathGraph",
+        "kind": 6,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.Cytograph",
+        "description": "fyp.datas.after.CytoTour-jan-dev.Cytograph",
+        "peekOfCode": "class PathGraph(object):\n    def __init__(self,valid_gene,max_hop=4):\n        self.max_hop = max_hop\n        self.n_nodes = len(valid_gene)\n        # Initialize the adjacency matrix\n        # Create a matrix with `num_of_nodes` rows and columns\n        self.lr_g = np.zeros((self.max_hop+1,self.n_nodes,self.n_nodes))\n        self.tf_g = np.zeros((self.max_hop+1,self.n_nodes,self.n_nodes))\n        self.hop_g = np.zeros((self.n_nodes,self.n_nodes))\n        self.nodes = valid_gene",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.Cytograph",
+        "documentation": {}
+    },
+    {
+        "label": "preprocessh5ad",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "description": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "peekOfCode": "def preprocessh5ad(h5ad_filePath,output_dir,pathway_path,species='Human'):\n    adata = sc.read_h5ad(h5ad_filePath)\n    st_data = adata.to_df()\n    st_data = st_data.transpose()\n    st_data = st_data[st_data.apply(np.sum,axis=1)!=0]\n    st_gene = st_data.index.values.tolist()\n    # print(f\"st_gene------{len(st_gene)}---{st_gene[0]}\")\n    pathway = pd.read_table(pathway_path,delimiter='\\t',encoding= 'unicode_escape')\n    pathway = pathway[[\"src\",\"dest\",\"src_tf\",\"dest_tf\"]][pathway['species'] == species].drop_duplicates()\n    pathway = pathway[(pathway['src'].isin(st_gene))&(pathway['dest'].isin(st_gene))]",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "split_h5ad",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "description": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "peekOfCode": "def split_h5ad(input_file, output_dir, pathway_path, cells_per_file=10000, species='Human'):\n    # 加载h5ad文件\n    adata = preprocessh5ad(input_file, output_dir, pathway_path, species)\n    # 计算需要分割成多少个文件\n    n_cells = adata.shape[0]\n    n_files = np.ceil(n_cells / cells_per_file).astype(int)\n    # 确保输出目录存在\n    os.makedirs(output_dir, exist_ok=True)\n    # 保存元数据为CSV文件\n    if 'meta' in adata.obsm_keys():",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "split_csv",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "description": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "peekOfCode": "def split_csv(input_file, output_dir, pathway_path, cells_per_file=10000,species='Human'):\n    # 加载CSV文件\n    st_data = pd.read_csv(input_file,index_col=0)\n    st_data = st_data[st_data.sum(axis=1) != 0]\n    st_gene = st_data.index.values.tolist()\n    # print(f\"st_gene------{len(st_gene)}---{st_gene[0]}\")\n    pathway = pd.read_table(pathway_path,delimiter='\\t',encoding= 'unicode_escape')\n    pathway = pathway[[\"src\",\"dest\",\"src_tf\",\"dest_tf\"]][pathway['species'] == species].drop_duplicates()\n    pathway = pathway[(pathway['src'].isin(st_gene))&(pathway['dest'].isin(st_gene))]\n    valid_gene = list(set(pathway['src'].values).union(set(pathway['dest'].values)))",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_cell_matrix",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "description": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "peekOfCode": "def retrieve_cell_matrix(cell_list, split_files_dir, cells_per_file=10000):\n    # 创建一个字典来按文件标号组织细胞ID\n    cells_by_file = {}\n    for cell_id in cell_list:\n        # 计算cell_id所在的文件标号\n        file_index = int(cell_id.split('_')[-1]) // cells_per_file\n        # 计算在文件中的序号（如果需要）\n        cell_index = int(cell_id.split('_')[-1]) % cells_per_file\n        # 将cell_id添加到对应文件标号的列表中\n        if file_index not in cells_by_file:",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_cell_matrix_2",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "description": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "peekOfCode": "def retrieve_cell_matrix_2(cell_list, split_files_dir, cells_per_file=10000):\n    # 创建一个字典来按文件标号组织细胞ID\n    cells_by_file = {}\n    for cell_id in cell_list:\n        # 计算cell_id所在的文件标号\n        file_index = int(cell_id.split('_')[-1]) // cells_per_file\n        # 计算在文件中的序号（如果需要）\n        cell_index = int(cell_id.split('_')[-1]) % cells_per_file\n        # 将cell_id添加到对应文件标号的列表中\n        if file_index not in cells_by_file:",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_gene_matrix",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "description": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "peekOfCode": "def retrieve_gene_matrix(cell_list, gene_indices, split_files_dir, cells_per_file=10000):\n    # 创建一个字典来按文件标号组织细胞ID\n    cells_by_file = {}\n    for cell_id in cell_list:\n        # 计算cell_id所在的文件标号\n        file_index = cell_id // cells_per_file\n        # 计算在文件中的序号（如果需要）\n        cell_index = cell_id % cells_per_file\n        # 将cell_id添加到对应文件标号的列表中\n        if file_index not in cells_by_file:",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_cell_point",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "description": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "peekOfCode": "def retrieve_cell_point(cell_id, split_files_dir, cells_per_file=10000):\n    file_index = cell_id // cells_per_file\n    # 计算在文件中的序号（如果需要）\n    cell_index = cell_id % cells_per_file\n    file_path = os.path.join(split_files_dir, f'split_{file_index}.npz')\n        # 加载对应的分割稀疏矩阵文件\n    matrix_sparse = scipy.sparse.load_npz(file_path)\n        # 根据cells_by_file中的索引选择数据\n    selected_cell_vector = matrix_sparse[cell_index, :]\n    # print(f\"dfs------{dfs}\")",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "description": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "peekOfCode": "def main():\n    print(\"start spilting data\")\n    parser = argparse.ArgumentParser(description=\"Split h5ad file into multiple smaller files.\")\n    parser.add_argument('input_file', type=str, help='Path to the input .h5ad file')\n    parser.add_argument('output_dir', type=str, help='Directory where the output files will be saved')\n    parser.add_argument('pathways_file', type=str, help='Path to the pathways .tsv file')\n    parser.add_argument('cells_per_file', type=int, help='Number of cells per split file')\n    parser.add_argument('species', type=str, nargs='?', default='Human',help='Choose species Mouse or Human [default: Human]')\n    args = parser.parse_args()\n    # 获取文件扩展名",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "st_mean",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def st_mean(st_exp):\n    value = st_exp.mean()\n    # mask = st_exp>=value\n    mask = st_exp>value\n    st_exp[mask]=1\n    st_exp[~mask]=0\n    return st_exp\ndef st_median(st_exp):\n    value = st_exp.median()\n    mask = st_exp>=value",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "st_median",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def st_median(st_exp):\n    value = st_exp.median()\n    mask = st_exp>=value\n    st_exp[mask]=1\n    st_exp[~mask]=0\n    return st_exp\ndef preprocess_st(st_data,filtering):\n    if filtering == \"mean\":\n        st_data = st_data.apply(st_mean,axis=1)\n    if filtering == \"median\":",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_st",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def preprocess_st(st_data,filtering):\n    if filtering == \"mean\":\n        st_data = st_data.apply(st_mean,axis=1)\n    if filtering == \"median\":\n        st_data = st_data.apply(st_median,axis=1)\n    else:\n        st_data[st_data>0]=1\n    return st_data\ndef get_distance(st_meta,distance_threshold):\n    if 'Z' in st_meta.columns:",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_distance",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def get_distance(st_meta,distance_threshold):\n    if 'Z' in st_meta.columns:\n        st_meta = st_meta.astype({'X':'float','Y':'float','Z':'float'})\n        A = st_meta[[\"X\",\"Y\",\"Z\"]].values\n    if 'z' in st_meta.columns:\n        st_meta = st_meta.astype({'x':'float','y':'float','z':'float'})\n        A = st_meta[[\"x\",\"y\",\"z\"]].values\n    if 'X' in st_meta.columns:\n        st_meta = st_meta.astype({'X':'float','Y':'float'})\n        A = st_meta[[\"X\",\"Y\"]].values",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "co_exp",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def co_exp(matrix):\n    co_exp_ratio = np.count_nonzero(matrix, axis=1)/matrix.shape[1]\n    return co_exp_ratio\ndef co_exp_list(exp_list):\n    co_exp_ratio = np.count_nonzero(exp_list)/len(exp_list)\n    return co_exp_ratio\ndef get_cell_list(st_meta):\n    cell_type = list(set(st_meta[\"cell_type\"].values.tolist()))\n    #print(cell_type)\n    sender_list = []",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "co_exp_list",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def co_exp_list(exp_list):\n    co_exp_ratio = np.count_nonzero(exp_list)/len(exp_list)\n    return co_exp_ratio\ndef get_cell_list(st_meta):\n    cell_type = list(set(st_meta[\"cell_type\"].values.tolist()))\n    #print(cell_type)\n    sender_list = []\n    receiver_list = []\n    for i in range(len(cell_type)):\n        receiver_list += [cell_type[i]]*((len(cell_type)))",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_cell_list",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def get_cell_list(st_meta):\n    cell_type = list(set(st_meta[\"cell_type\"].values.tolist()))\n    #print(cell_type)\n    sender_list = []\n    receiver_list = []\n    for i in range(len(cell_type)):\n        receiver_list += [cell_type[i]]*((len(cell_type)))\n        #sender_list += cell_type[0:[cell_type[i]]*(len(cell_type))]\n        sender_list += cell_type[0:len(cell_type)]\n    #print(sender_list)",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_cell_pair",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def get_cell_pair(st_meta, dist_data,cell_sender_name,cell_receiver_name,n_neighbor=10,min_pairs_ratio = 0.001):\n    cell_sender = st_meta[\"cell\"][st_meta[\"cell_type\"] == cell_sender_name].values.tolist()\n    cell_receiver = st_meta[\"cell\"][st_meta[\"cell_type\"]  == cell_receiver_name].values.tolist()\n    pair_sender = []\n    pair_receiver = []\n    distance = []\n    sender_type = []\n    receiver_type = []\n    for i in cell_sender:\n        pairs = dist_data[i][dist_data[i]!=0].sort_values()[:n_neighbor].index.values.tolist()",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "find_sig_lr_in_chunk",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def find_sig_lr_in_chunk(file_path,lr_pair,cell_pair,gene_list, cell_name_list,per_num=1000,pvalue=0.05,chunk_size=10000,cells_per_file=10000):\n    cell_ligand = cell_pair[\"cell_sender\"].values.tolist()\n    cell_receptor = cell_pair[\"cell_receiver\"].values.tolist()\n    n_chunks = len(cell_ligand) // chunk_size + (1 if len(cell_ligand) % chunk_size > 0 else 0)\n    co_exp_value_sum = []\n    # co_exp_number_sum = []\n    for i in range(n_chunks):\n        start_idx = i * chunk_size\n        end_idx = min(start_idx + chunk_size, len(cell_ligand))\n        current_ligand = cell_ligand[start_idx:end_idx]",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_gene_cell_matrix",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def get_gene_cell_matrix(request_cell_list, request_gene_list, cell_name_list, gene_list, file_path, cells_per_file=1000):\n    \"\"\"\n    Retrieve a matrix of gene expression data for specified cells and genes.\n    Args:\n    request_cell_list (list of str): List of cell identifiers for which the gene expression data is to be retrieved.\n    request_gene_list (list of str): List of gene identifiers for which the gene expression data is to be retrieved.\n    cell_name_list (list of str): Complete list of cell names available in the dataset, used to map request_cell_list to indices.\n    gene_list (list of str): Complete list of gene names available in the dataset, used to map request_gene_list to indices.\n    file_path (str): Path to the file containing the sparse matrix data.\n    cells_per_file (int, optional): Number of cells per split file, used to determine how the data is chunked. Default is 1000.",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_gene_cell_matrix_2",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def get_gene_cell_matrix_2(request_cell_list, request_gene_list, cell_name_list, gene_list, file_path, cells_per_file=1000):\n    \"\"\"\n    Retrieve a matrix of gene expression data for specified cells and genes.\n    Args:\n    request_cell_list (list of str): List of cell identifiers for which the gene expression data is to be retrieved.\n    request_gene_list (list of str): List of gene identifiers for which the gene expression data is to be retrieved.\n    cell_name_list (list of str): Complete list of cell names available in the dataset, used to map request_cell_list to indices.\n    gene_list (list of str): Complete list of gene names available in the dataset, used to map request_gene_list to indices.\n    file_path (str): Path to the file containing the sparse matrix data.\n    cells_per_file (int, optional): Number of cells per split file, used to determine how the data is chunked. Default is 1000.",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "find_sig_lr",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def find_sig_lr(file_path,lr_pair,cell_pair,gene_list, cell_name_list,per_num=1000,pvalue=0.05,chunk_size=10000,cells_per_file=10000):\n    #修改st_data\n    cell_list = cell_pair[\"cell_sender\"].values.tolist()\n    if(len(cell_list)>chunk_size):\n        return find_sig_lr_in_chunk(file_path,lr_pair,cell_pair,gene_list, cell_name_list,cells_per_file)\n    #get ligand-sender matrix\n    data_ligand_sparse = get_gene_cell_matrix(cell_list,lr_pair[\"ligand\"].values.tolist(), cell_name_list, gene_list,file_path,cells_per_file)\n    #get receptor-receiver matrix\n    data_receptor_sparse = get_gene_cell_matrix(cell_pair[\"cell_receiver\"].values.tolist(),lr_pair[\"receptor\"].values.tolist(),cell_name_list, gene_list,file_path,cells_per_file)\n    #转化成稀疏矩阵",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_cell_indices",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def get_cell_indices(receiver_list, cell_index_dict):\n    \"\"\"\n    获取 receiver_list 中的元素在 cell_name_list 中的位置索引。\n    Parameters:\n    receiver_list (list): 需要查找位置的元素列表。\n    cell_name_list (list): 包含元素的列表。\n    Returns:\n    list: receiver_list 中的元素在 cell_name_list 中的位置索引列表。\n    \"\"\"\n    return [cell_index_dict[item] for item in receiver_list if item in cell_index_dict]",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_gene_indices",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def get_gene_indices(receiver_list, gene_index_dict):\n    \"\"\"\n    获取 receiver_list 中的元素在 cell_name_list 中的位置索引。\n    Parameters:\n    receiver_list (list): 需要查找位置的元素列表。\n    gene_list (list): 包含元素的列表。\n    Returns:\n    list: receiver_list 中的元素在 gene_list 中的位置索引列表。\n    \"\"\"\n    return [gene_index_dict[item] for item in receiver_list if item in gene_index_dict]",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "find_high_exp_path_process_in_chunks",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def find_high_exp_path_process_in_chunks(file_path, cell_list, cell_name_list, gene_list, pathway, chunk_size=4000,cells_per_file=10000):\n    # 获取全部cell_index，但不一次性加载所有数据\n    n_chunks = len(cell_list) // chunk_size + (1 if len(cell_list) % chunk_size > 0 else 0)\n    # 初始化用于存储每个chunk结果的列表\n    co_exp_results = []\n    for i in range(n_chunks):\n        # 计算当前块的开始和结束索引\n        start_idx = i * chunk_size\n        end_idx = min(start_idx + chunk_size, len(cell_list))\n        current_list = cell_list[start_idx:end_idx]",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "find_high_exp_path",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def find_high_exp_path(file_path,pathway,per_src_index,per_dest_index,receiver_list,gene_list, cell_name_list,chunk_size=4000,cells_per_file=10000):\n    ## 修改 st_data\n    cell_list_index = get_cell_indices(receiver_list,cell_name_list)\n    # n = len(pathway['src'].values.tolist())\n    # per_exp = np.zeros((n, 1), dtype=int)\n    # for cell_id in cell_list_index:\n    #     gene_vector = retrieve_cell_point(cell_id,file_path,cells_per_file).toarray()\n    #     per_src = gene_vector[per_src_index,:]!= 0\n    #     per_dest = gene_vector[per_dest_index,:]!= 0\n    #     result = np.logical_and(per_src, per_dest)",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_score",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def get_score(sig_lr_pair,tf):\n    tf_score = tf.groupby(by=['receptor'])['score_rt'].sum()\n    tf_score = tf_score*(-1)\n    sig_lr_pair[\"lr_score\"] = 1-sig_lr_pair[\"co_exp_p\"]\n    rt_score = tf_score.map(lambda x:  1/(1 + math.exp(x)))\n    rt = pd.DataFrame({'receptor':rt_score.index, 'rt_score':rt_score.values})  \n    result = pd.merge(sig_lr_pair, rt, on=['receptor'])\n    result[\"score\"]= result.apply(lambda x: math.sqrt(x.lr_score*x.rt_score), axis=1)\n    return result\ndef post_process(results):",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "post_process",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def post_process(results):\n    df_empty = pd.DataFrame(columns=[\"ligand\",\"receptor\",\"species\",\"cell_sender\",\"cell_receiver\",\"co_exp_value\", \"co_exp_number\", \"co_exp_p\",  \"lr_score\", \"rt_score\", \"score\"])\n    pair_empty = pd.DataFrame(columns=[\"cell_sender\",\"cell_receiver\",\"distance\",\"sender_type\",\"receiver_type\"])\n    obj = {}\n    for result in results:\n        if result is not None:\n            df_empty = pd.concat([df_empty, result[0]], axis=0)\n            pair_empty = pd.concat([pair_empty, result[1]], axis=0)\n    obj['lr_score'] = df_empty\n    pair_empty.rename(columns={\"cell_sender\": \"cell_sender_id\", \"cell_receiver\": \"cell_receiver_id\"},inplace=True)",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "process_sender_receiver",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def process_sender_receiver(i, lr_pair, distances_knn, indices_knn,sender_list, receiver_list, st_meta_origin, pathway, valid_st_data, st_data, max_hop):\n    cell_sender = sender_list[i]\n    cell_receiver = receiver_list[i]\n    ####\n    cell_pair, flag  = get_cell_pair_knn(st_meta_origin,cell_sender,cell_receiver,distances_knn,indices_knn)\n    if flag == 0:\n        return\n    ####\n    print (f\"The cell pair number found between {cell_sender} and {cell_receiver} is {cell_pair.shape[0]}\")\n    f_path = find_high_exp_path(pathway, cell_pair[\"cell_receiver\"].values.tolist(), valid_st_data)",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_knn_result",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def get_knn_result(st_meta,k=11):\n    '''\n    **input: \n        st_meta: index由细胞名称组成,x,y列代表坐标，cell_type, cell列同样是细胞名字\n        k: 邻居数+1(排除自身)\n    ** return\n        distances_knn: 每个点和邻居的距离\n        indices_knn: 每个店的邻居的index!!!这里的index是数字,并不是前面的名字(和st_meta中的index不同)\n    '''\n    # 获得x,y坐标 array",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_cell_pair_knn",
+        "kind": 2,
+        "importPath": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "description": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "peekOfCode": "def get_cell_pair_knn(st_meta_origin,cell_sender,cell_receiver,distances_knn,indices_knn,min_pairs_ratio = 0.001):\n    ####\n    sender_array = np.array(st_meta_origin[st_meta_origin['cell_type'] == cell_sender].index)\n    receiver_array = np.array(indices_knn[sender_array,:])\n    all_pair_number = min(sender_array.shape[0]*receiver_array.shape[0],st_meta_origin.shape[0])\n    print(f\"all_pair_number ---- {all_pair_number}\" )\n    # 初始化一个空列表，用于存储每行的结果\n    result_indices = []\n    # 遍历receiver_array的每一行\n    for i, row in enumerate(receiver_array):",
+        "detail": "fyp.datas.after.CytoTour-jan-dev.utils",
+        "documentation": {}
+    },
+    {
         "label": "balance_dataset",
         "kind": 6,
         "importPath": "fyp.datasets.balance_dataset",
@@ -3615,7 +4583,7 @@
         "kind": 2,
         "importPath": "fyp.datasets.preprecossing",
         "description": "fyp.datasets.preprecossing",
-        "peekOfCode": "def calculate_cluster_centroid_for_genes(\n        adata,\n        gene_list,\n        save_path=\"./\",\n        groupby ='leiden',\n        X_dimension='X_pca',\n    ):\n    filtered_data = adata[:, gene_list]\n    # filtered_data.to_df().to_csv(save_path+\"data_cell.csv\");\n    # adata.obs.to_csv(save_path+\"data_type.csv\")",
+        "peekOfCode": "def calculate_cluster_centroid_for_genes(\n        adata,\n        gene_list,\n        save_path=\"./\",\n        groupby ='leiden',\n        X_dimension='X_pca',\n    ):\n    filtered_data = adata[:, gene_list]\n    cluster_centroid_data = np.empty((0, filtered_data.n_vars))\n    clustername = filtered_data.obs[groupby].unique().tolist()",
         "detail": "fyp.datasets.preprecossing",
         "documentation": {}
     },
@@ -4602,6 +5570,1423 @@
         "description": "integer.node",
         "peekOfCode": "class newnode:\n    def __init__(self,node1,node2):\n        self.node1 = node1\n        self.node2 = node2\n        self.f = None\n        self.edge = [];\n        self.indegree = 0;\n    def __str__(self):\n        return \"{}_{}\".format(self.node1,self.node2)\n    def __repr__(self):",
         "detail": "integer.node",
+        "documentation": {}
+    },
+    {
+        "label": "balance_dataset",
+        "kind": 6,
+        "importPath": "lr.datasets.balance_dataset",
+        "description": "lr.datasets.balance_dataset",
+        "peekOfCode": "class balance_dataset(data.Dataset):\n    def __init__(self,similarities, num_samples,embeddings,distances,datas):\n        \"\"\"Creates Hierarchical Clustering dataset with triples.\n        @param labels: ground truth labels\n        @type labels: np.array of shape (n_datapoints,)\n        @param similarities: pairwise similarities between datapoints\n        @type similarities: np.array of shape (n_datapoints, n_datapoints)\n        \"\"\"\n        self.similarities = similarities\n        self.embeddings = embeddings",
+        "detail": "lr.datasets.balance_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "HCDataset",
+        "kind": 6,
+        "importPath": "lr.datasets.hc_dataset",
+        "description": "lr.datasets.hc_dataset",
+        "peekOfCode": "class HCDataset(data.Dataset):\n    \"\"\"Hierarchical clustering dataset.\"\"\"\n    def __init__(self, features, labels, similarities, num_samples,sample=0):\n        \"\"\"Creates Hierarchical Clustering dataset with triples.\n        @param labels: ground truth labels\n        @type labels: np.array of shape (n_datapoints,)\n        @param similarities: pairwise similarities between datapoints\n        @type similarities: np.array of shape (n_datapoints, n_datapoints)\n        \"\"\"\n        self.features = features",
+        "detail": "lr.datasets.hc_dataset",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "kind": 2,
+        "importPath": "lr.datasets.loading",
+        "description": "lr.datasets.loading",
+        "peekOfCode": "def load_data(dataset, start_idx,end_idx,label_idx,normalize=True):\n    \"\"\"Load dataset.\n    @param dataset: dataset name\n    @type dataset: str\n    @param normalize: whether to normalize features or not\n    @type normalize: boolean\n    @return: feature vectors, labels, and pairwise similarities computed with cosine similarity\n    @rtype: Tuple[np.array, np.array, np.array]\n    \"\"\"\n    x = []",
+        "detail": "lr.datasets.loading",
+        "documentation": {}
+    },
+    {
+        "label": "preprocessing_cluster",
+        "kind": 2,
+        "importPath": "lr.datasets.preprecossing",
+        "description": "lr.datasets.preprecossing",
+        "peekOfCode": "def preprocessing_cluster(adata,\n                        N_pcs=50,\n                        K=30,\n                        copy=False,\n                        resolution=0.5,\n                    ):\n        # if(N_pcs > len(adata.var)):\n        #     N_pcs = len(adata.var)\n        sc.tl.pca(\n            adata,",
+        "detail": "lr.datasets.preprecossing",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_cluster_centroid_for_genes",
+        "kind": 2,
+        "importPath": "lr.datasets.preprecossing",
+        "description": "lr.datasets.preprecossing",
+        "peekOfCode": "def calculate_cluster_centroid_for_genes(\n        adata,\n        gene_list,\n        save_path=\"./\",\n        groupby ='leiden',\n        X_dimension='X_pca',\n    ):\n    filtered_data = adata[:, gene_list]\n    cluster_centroid_data = np.empty((0, filtered_data.n_vars))\n    clustername = filtered_data.obs[groupby].unique().tolist()",
+        "detail": "lr.datasets.preprecossing",
+        "documentation": {}
+    },
+    {
+        "label": "sort_data",
+        "kind": 2,
+        "importPath": "lr.datasets.preprecossing",
+        "description": "lr.datasets.preprecossing",
+        "peekOfCode": "def sort_data(\n    adata1,\n    adata2,\n    N_1=2000,\n    N_2=2000\n):\n    temp1 = adata1.copy()\n    sc.pp.highly_variable_genes(temp1, n_top_genes=N_1)\n    temp1 = temp1[:, temp1.var['highly_variable']]\n    temp2 = adata2.copy()",
+        "detail": "lr.datasets.preprecossing",
+        "documentation": {}
+    },
+    {
+        "label": "samples_triples",
+        "kind": 2,
+        "importPath": "lr.datasets.triples",
+        "description": "lr.datasets.triples",
+        "peekOfCode": "def samples_triples(n_nodes, num_samples):\n    num_samples = int(num_samples)\n    all_nodes = np.arange(n_nodes)\n    mesh = np.array(np.meshgrid(all_nodes, all_nodes))\n    pairs = mesh.T.reshape(-1, 2)\n    pairs = pairs[pairs[:, 0] < pairs[:, 1]]\n    n_pairs = pairs.shape[0]\n    if num_samples < n_pairs:\n        print(\"Generating all pairs subset\")\n        subset = np.random.choice(np.arange(n_pairs), num_samples, replace=False)",
+        "detail": "lr.datasets.triples",
+        "documentation": {}
+    },
+    {
+        "label": "generate_all_triples",
+        "kind": 2,
+        "importPath": "lr.datasets.triples",
+        "description": "lr.datasets.triples",
+        "peekOfCode": "def generate_all_triples(n_nodes):\n    triples = []\n    for n1 in np.arange(n_nodes):\n        for n2 in np.arange(n1 + 1, n_nodes):\n            for n3 in np.arange(n2 + 1, n_nodes):\n                triples += [(n1, n2, n3)]\n    print(\"Generating all pairs {}\".format(str(len(triples))))\n    return np.array(triples)",
+        "detail": "lr.datasets.triples",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "lr.lr.after.CytoTour",
+        "description": "lr.lr.after.CytoTour",
+        "peekOfCode": "def main(arguments):\n    print(\"start filtering LRIs with spatial data\")\n    st_files = arguments.get(\"<st_file>\")\n    spilt_dir = arguments.get(\"<spilt_dir>\")\n    cells_per_file = int(arguments.get(\"<cells_per_file>\"))\n    lr_pair = arguments.get(\"<lr_pair>\")\n    pathwaydb = arguments.get(\"<pathwaydb>\")\n    cell_sender = str(arguments.get(\"--cell_sender\"))\n    cell_receiver = str(arguments.get(\"--cell_receiver\"))\n    parallel = arguments.get(\"--parallel\")",
+        "detail": "lr.lr.after.CytoTour",
+        "documentation": {}
+    },
+    {
+        "label": "PathGraph",
+        "kind": 6,
+        "importPath": "lr.lr.after.Cytograph",
+        "description": "lr.lr.after.Cytograph",
+        "peekOfCode": "class PathGraph(object):\n    def __init__(self,valid_gene,max_hop=4):\n        self.max_hop = max_hop\n        self.n_nodes = len(valid_gene)\n        # Initialize the adjacency matrix\n        # Create a matrix with `num_of_nodes` rows and columns\n        self.lr_g = np.zeros((self.max_hop+1,self.n_nodes,self.n_nodes))\n        self.tf_g = np.zeros((self.max_hop+1,self.n_nodes,self.n_nodes))\n        self.hop_g = np.zeros((self.n_nodes,self.n_nodes))\n        self.nodes = valid_gene",
+        "detail": "lr.lr.after.Cytograph",
+        "documentation": {}
+    },
+    {
+        "label": "preprocessh5ad",
+        "kind": 2,
+        "importPath": "lr.lr.after.splith5ad",
+        "description": "lr.lr.after.splith5ad",
+        "peekOfCode": "def preprocessh5ad(h5ad_filePath,output_dir,pathway_path,species='Human'):\n    adata = sc.read_h5ad(h5ad_filePath)\n    st_data = adata.to_df()\n    st_data = st_data.transpose()\n    st_data = st_data[st_data.apply(np.sum,axis=1)!=0]\n    st_gene = st_data.index.values.tolist()\n    # print(f\"st_gene------{len(st_gene)}---{st_gene[0]}\")\n    pathway = pd.read_table(pathway_path,delimiter='\\t',encoding= 'unicode_escape')\n    pathway = pathway[[\"src\",\"dest\",\"src_tf\",\"dest_tf\"]][pathway['species'] == species].drop_duplicates()\n    pathway = pathway[(pathway['src'].isin(st_gene))&(pathway['dest'].isin(st_gene))]",
+        "detail": "lr.lr.after.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "split_h5ad",
+        "kind": 2,
+        "importPath": "lr.lr.after.splith5ad",
+        "description": "lr.lr.after.splith5ad",
+        "peekOfCode": "def split_h5ad(input_file, output_dir, pathway_path, cells_per_file=10000, species='Human'):\n    # 加载h5ad文件\n    adata = preprocessh5ad(input_file, output_dir, pathway_path, species)\n    # 计算需要分割成多少个文件\n    n_cells = adata.shape[0]\n    n_files = np.ceil(n_cells / cells_per_file).astype(int)\n    # 确保输出目录存在\n    os.makedirs(output_dir, exist_ok=True)\n    # 保存元数据为CSV文件\n    if 'meta' in adata.obsm_keys():",
+        "detail": "lr.lr.after.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "split_csv",
+        "kind": 2,
+        "importPath": "lr.lr.after.splith5ad",
+        "description": "lr.lr.after.splith5ad",
+        "peekOfCode": "def split_csv(input_file, output_dir, pathway_path, cells_per_file=10000,species='Human'):\n    # 加载CSV文件\n    st_data = pd.read_csv(input_file,index_col=0)\n    st_data = st_data[st_data.sum(axis=1) != 0]\n    st_gene = st_data.index.values.tolist()\n    # print(f\"st_gene------{len(st_gene)}---{st_gene[0]}\")\n    pathway = pd.read_table(pathway_path,delimiter='\\t',encoding= 'unicode_escape')\n    pathway = pathway[[\"src\",\"dest\",\"src_tf\",\"dest_tf\"]][pathway['species'] == species].drop_duplicates()\n    pathway = pathway[(pathway['src'].isin(st_gene))&(pathway['dest'].isin(st_gene))]\n    valid_gene = list(set(pathway['src'].values).union(set(pathway['dest'].values)))",
+        "detail": "lr.lr.after.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_cell_matrix",
+        "kind": 2,
+        "importPath": "lr.lr.after.splith5ad",
+        "description": "lr.lr.after.splith5ad",
+        "peekOfCode": "def retrieve_cell_matrix(cell_list, split_files_dir, cells_per_file=10000):\n    # 创建一个字典来按文件标号组织细胞ID\n    cells_by_file = {}\n    for cell_id in cell_list:\n        # 计算cell_id所在的文件标号\n        file_index = int(cell_id.split('_')[-1]) // cells_per_file\n        # 计算在文件中的序号（如果需要）\n        cell_index = int(cell_id.split('_')[-1]) % cells_per_file\n        # 将cell_id添加到对应文件标号的列表中\n        if file_index not in cells_by_file:",
+        "detail": "lr.lr.after.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_cell_matrix_2",
+        "kind": 2,
+        "importPath": "lr.lr.after.splith5ad",
+        "description": "lr.lr.after.splith5ad",
+        "peekOfCode": "def retrieve_cell_matrix_2(cell_list, split_files_dir, cells_per_file=10000):\n    # 创建一个字典来按文件标号组织细胞ID\n    cells_by_file = {}\n    for cell_id in cell_list:\n        # 计算cell_id所在的文件标号\n        file_index = int(cell_id.split('_')[-1]) // cells_per_file\n        # 计算在文件中的序号（如果需要）\n        cell_index = int(cell_id.split('_')[-1]) % cells_per_file\n        # 将cell_id添加到对应文件标号的列表中\n        if file_index not in cells_by_file:",
+        "detail": "lr.lr.after.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_gene_matrix",
+        "kind": 2,
+        "importPath": "lr.lr.after.splith5ad",
+        "description": "lr.lr.after.splith5ad",
+        "peekOfCode": "def retrieve_gene_matrix(cell_list, gene_indices, split_files_dir, cells_per_file=10000):\n    # 创建一个字典来按文件标号组织细胞ID\n    cells_by_file = {}\n    for cell_id in cell_list:\n        # 计算cell_id所在的文件标号\n        file_index = cell_id // cells_per_file\n        # 计算在文件中的序号（如果需要）\n        cell_index = cell_id % cells_per_file\n        # 将cell_id添加到对应文件标号的列表中\n        if file_index not in cells_by_file:",
+        "detail": "lr.lr.after.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "retrieve_cell_point",
+        "kind": 2,
+        "importPath": "lr.lr.after.splith5ad",
+        "description": "lr.lr.after.splith5ad",
+        "peekOfCode": "def retrieve_cell_point(cell_id, split_files_dir, cells_per_file=10000):\n    file_index = cell_id // cells_per_file\n    # 计算在文件中的序号（如果需要）\n    cell_index = cell_id % cells_per_file\n    file_path = os.path.join(split_files_dir, f'split_{file_index}.npz')\n        # 加载对应的分割稀疏矩阵文件\n    matrix_sparse = scipy.sparse.load_npz(file_path)\n        # 根据cells_by_file中的索引选择数据\n    selected_cell_vector = matrix_sparse[cell_index, :]\n    # print(f\"dfs------{dfs}\")",
+        "detail": "lr.lr.after.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "lr.lr.after.splith5ad",
+        "description": "lr.lr.after.splith5ad",
+        "peekOfCode": "def main():\n    print(\"start spilting data\")\n    parser = argparse.ArgumentParser(description=\"Split h5ad file into multiple smaller files.\")\n    parser.add_argument('input_file', type=str, help='Path to the input .h5ad file')\n    parser.add_argument('output_dir', type=str, help='Directory where the output files will be saved')\n    parser.add_argument('pathways_file', type=str, help='Path to the pathways .tsv file')\n    parser.add_argument('cells_per_file', type=int, help='Number of cells per split file')\n    parser.add_argument('species', type=str, nargs='?', default='Human',help='Choose species Mouse or Human [default: Human]')\n    args = parser.parse_args()\n    # 获取文件扩展名",
+        "detail": "lr.lr.after.splith5ad",
+        "documentation": {}
+    },
+    {
+        "label": "st_mean",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def st_mean(st_exp):\n    value = st_exp.mean()\n    # mask = st_exp>=value\n    mask = st_exp>value\n    st_exp[mask]=1\n    st_exp[~mask]=0\n    return st_exp\ndef st_median(st_exp):\n    value = st_exp.median()\n    mask = st_exp>=value",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "st_median",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def st_median(st_exp):\n    value = st_exp.median()\n    mask = st_exp>=value\n    st_exp[mask]=1\n    st_exp[~mask]=0\n    return st_exp\ndef preprocess_st(st_data,filtering):\n    if filtering == \"mean\":\n        st_data = st_data.apply(st_mean,axis=1)\n    if filtering == \"median\":",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_st",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def preprocess_st(st_data,filtering):\n    if filtering == \"mean\":\n        st_data = st_data.apply(st_mean,axis=1)\n    if filtering == \"median\":\n        st_data = st_data.apply(st_median,axis=1)\n    else:\n        st_data[st_data>0]=1\n    return st_data\ndef get_distance(st_meta,distance_threshold):\n    if 'Z' in st_meta.columns:",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_distance",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def get_distance(st_meta,distance_threshold):\n    if 'Z' in st_meta.columns:\n        st_meta = st_meta.astype({'X':'float','Y':'float','Z':'float'})\n        A = st_meta[[\"X\",\"Y\",\"Z\"]].values\n    if 'z' in st_meta.columns:\n        st_meta = st_meta.astype({'x':'float','y':'float','z':'float'})\n        A = st_meta[[\"x\",\"y\",\"z\"]].values\n    if 'X' in st_meta.columns:\n        st_meta = st_meta.astype({'X':'float','Y':'float'})\n        A = st_meta[[\"X\",\"Y\"]].values",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "co_exp",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def co_exp(matrix):\n    co_exp_ratio = np.count_nonzero(matrix, axis=1)/matrix.shape[1]\n    return co_exp_ratio\ndef co_exp_list(exp_list):\n    co_exp_ratio = np.count_nonzero(exp_list)/len(exp_list)\n    return co_exp_ratio\ndef get_cell_list(st_meta):\n    cell_type = list(set(st_meta[\"cell_type\"].values.tolist()))\n    #print(cell_type)\n    sender_list = []",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "co_exp_list",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def co_exp_list(exp_list):\n    co_exp_ratio = np.count_nonzero(exp_list)/len(exp_list)\n    return co_exp_ratio\ndef get_cell_list(st_meta):\n    cell_type = list(set(st_meta[\"cell_type\"].values.tolist()))\n    #print(cell_type)\n    sender_list = []\n    receiver_list = []\n    for i in range(len(cell_type)):\n        receiver_list += [cell_type[i]]*((len(cell_type)))",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_cell_list",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def get_cell_list(st_meta):\n    cell_type = list(set(st_meta[\"cell_type\"].values.tolist()))\n    #print(cell_type)\n    sender_list = []\n    receiver_list = []\n    for i in range(len(cell_type)):\n        receiver_list += [cell_type[i]]*((len(cell_type)))\n        #sender_list += cell_type[0:[cell_type[i]]*(len(cell_type))]\n        sender_list += cell_type[0:len(cell_type)]\n    #print(sender_list)",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_cell_pair",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def get_cell_pair(st_meta, dist_data,cell_sender_name,cell_receiver_name,n_neighbor=10,min_pairs_ratio = 0.001):\n    cell_sender = st_meta[\"cell\"][st_meta[\"cell_type\"] == cell_sender_name].values.tolist()\n    cell_receiver = st_meta[\"cell\"][st_meta[\"cell_type\"]  == cell_receiver_name].values.tolist()\n    pair_sender = []\n    pair_receiver = []\n    distance = []\n    sender_type = []\n    receiver_type = []\n    for i in cell_sender:\n        pairs = dist_data[i][dist_data[i]!=0].sort_values()[:n_neighbor].index.values.tolist()",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "find_sig_lr_in_chunk",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def find_sig_lr_in_chunk(file_path,lr_pair,cell_pair,gene_list, cell_name_list,per_num=1000,pvalue=0.05,chunk_size=10000,cells_per_file=10000):\n    cell_ligand = cell_pair[\"cell_sender\"].values.tolist()\n    cell_receptor = cell_pair[\"cell_receiver\"].values.tolist()\n    n_chunks = len(cell_ligand) // chunk_size + (1 if len(cell_ligand) % chunk_size > 0 else 0)\n    co_exp_value_sum = []\n    # co_exp_number_sum = []\n    for i in range(n_chunks):\n        start_idx = i * chunk_size\n        end_idx = min(start_idx + chunk_size, len(cell_ligand))\n        current_ligand = cell_ligand[start_idx:end_idx]",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_gene_cell_matrix",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def get_gene_cell_matrix(request_cell_list, request_gene_list, cell_name_list, gene_list, file_path, cells_per_file=1000):\n    \"\"\"\n    Retrieve a matrix of gene expression data for specified cells and genes.\n    Args:\n    request_cell_list (list of str): List of cell identifiers for which the gene expression data is to be retrieved.\n    request_gene_list (list of str): List of gene identifiers for which the gene expression data is to be retrieved.\n    cell_name_list (list of str): Complete list of cell names available in the dataset, used to map request_cell_list to indices.\n    gene_list (list of str): Complete list of gene names available in the dataset, used to map request_gene_list to indices.\n    file_path (str): Path to the file containing the sparse matrix data.\n    cells_per_file (int, optional): Number of cells per split file, used to determine how the data is chunked. Default is 1000.",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_gene_cell_matrix_2",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def get_gene_cell_matrix_2(request_cell_list, request_gene_list, cell_name_list, gene_list, file_path, cells_per_file=1000):\n    \"\"\"\n    Retrieve a matrix of gene expression data for specified cells and genes.\n    Args:\n    request_cell_list (list of str): List of cell identifiers for which the gene expression data is to be retrieved.\n    request_gene_list (list of str): List of gene identifiers for which the gene expression data is to be retrieved.\n    cell_name_list (list of str): Complete list of cell names available in the dataset, used to map request_cell_list to indices.\n    gene_list (list of str): Complete list of gene names available in the dataset, used to map request_gene_list to indices.\n    file_path (str): Path to the file containing the sparse matrix data.\n    cells_per_file (int, optional): Number of cells per split file, used to determine how the data is chunked. Default is 1000.",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "find_sig_lr",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def find_sig_lr(file_path,lr_pair,cell_pair,gene_list, cell_name_list,per_num=1000,pvalue=0.05,chunk_size=10000,cells_per_file=10000):\n    #修改st_data\n    cell_list = cell_pair[\"cell_sender\"].values.tolist()\n    if(len(cell_list)>chunk_size):\n        return find_sig_lr_in_chunk(file_path,lr_pair,cell_pair,gene_list, cell_name_list,cells_per_file)\n    #get ligand-sender matrix\n    data_ligand_sparse = get_gene_cell_matrix(cell_list,lr_pair[\"ligand\"].values.tolist(), cell_name_list, gene_list,file_path,cells_per_file)\n    #get receptor-receiver matrix\n    data_receptor_sparse = get_gene_cell_matrix(cell_pair[\"cell_receiver\"].values.tolist(),lr_pair[\"receptor\"].values.tolist(),cell_name_list, gene_list,file_path,cells_per_file)\n    #转化成稀疏矩阵",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_cell_indices",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def get_cell_indices(receiver_list, cell_index_dict):\n    \"\"\"\n    获取 receiver_list 中的元素在 cell_name_list 中的位置索引。\n    Parameters:\n    receiver_list (list): 需要查找位置的元素列表。\n    cell_name_list (list): 包含元素的列表。\n    Returns:\n    list: receiver_list 中的元素在 cell_name_list 中的位置索引列表。\n    \"\"\"\n    return [cell_index_dict[item] for item in receiver_list if item in cell_index_dict]",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_gene_indices",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def get_gene_indices(receiver_list, gene_index_dict):\n    \"\"\"\n    获取 receiver_list 中的元素在 cell_name_list 中的位置索引。\n    Parameters:\n    receiver_list (list): 需要查找位置的元素列表。\n    gene_list (list): 包含元素的列表。\n    Returns:\n    list: receiver_list 中的元素在 gene_list 中的位置索引列表。\n    \"\"\"\n    return [gene_index_dict[item] for item in receiver_list if item in gene_index_dict]",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "find_high_exp_path_process_in_chunks",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def find_high_exp_path_process_in_chunks(file_path, cell_list, cell_name_list, gene_list, pathway, chunk_size=4000,cells_per_file=10000):\n    # 获取全部cell_index，但不一次性加载所有数据\n    n_chunks = len(cell_list) // chunk_size + (1 if len(cell_list) % chunk_size > 0 else 0)\n    # 初始化用于存储每个chunk结果的列表\n    co_exp_results = []\n    for i in range(n_chunks):\n        # 计算当前块的开始和结束索引\n        start_idx = i * chunk_size\n        end_idx = min(start_idx + chunk_size, len(cell_list))\n        current_list = cell_list[start_idx:end_idx]",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "find_high_exp_path",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def find_high_exp_path(file_path,pathway,per_src_index,per_dest_index,receiver_list,gene_list, cell_name_list,chunk_size=4000,cells_per_file=10000):\n    ## 修改 st_data\n    cell_list_index = get_cell_indices(receiver_list,cell_name_list)\n    # n = len(pathway['src'].values.tolist())\n    # per_exp = np.zeros((n, 1), dtype=int)\n    # for cell_id in cell_list_index:\n    #     gene_vector = retrieve_cell_point(cell_id,file_path,cells_per_file).toarray()\n    #     per_src = gene_vector[per_src_index,:]!= 0\n    #     per_dest = gene_vector[per_dest_index,:]!= 0\n    #     result = np.logical_and(per_src, per_dest)",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_score",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def get_score(sig_lr_pair,tf):\n    tf_score = tf.groupby(by=['receptor'])['score_rt'].sum()\n    tf_score = tf_score*(-1)\n    sig_lr_pair[\"lr_score\"] = 1-sig_lr_pair[\"co_exp_p\"]\n    rt_score = tf_score.map(lambda x:  1/(1 + math.exp(x)))\n    rt = pd.DataFrame({'receptor':rt_score.index, 'rt_score':rt_score.values})  \n    result = pd.merge(sig_lr_pair, rt, on=['receptor'])\n    result[\"score\"]= result.apply(lambda x: math.sqrt(x.lr_score*x.rt_score), axis=1)\n    return result\ndef post_process(results):",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "post_process",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def post_process(results):\n    df_empty = pd.DataFrame(columns=[\"ligand\",\"receptor\",\"species\",\"cell_sender\",\"cell_receiver\",\"co_exp_value\", \"co_exp_number\", \"co_exp_p\",  \"lr_score\", \"rt_score\", \"score\"])\n    pair_empty = pd.DataFrame(columns=[\"cell_sender\",\"cell_receiver\",\"distance\",\"sender_type\",\"receiver_type\"])\n    obj = {}\n    for result in results:\n        if result is not None:\n            df_empty = pd.concat([df_empty, result[0]], axis=0)\n            pair_empty = pd.concat([pair_empty, result[1]], axis=0)\n    obj['lr_score'] = df_empty\n    pair_empty.rename(columns={\"cell_sender\": \"cell_sender_id\", \"cell_receiver\": \"cell_receiver_id\"},inplace=True)",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "process_sender_receiver",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def process_sender_receiver(i, lr_pair, distances_knn, indices_knn,sender_list, receiver_list, st_meta_origin, pathway, valid_st_data, st_data, max_hop):\n    cell_sender = sender_list[i]\n    cell_receiver = receiver_list[i]\n    ####\n    cell_pair, flag  = get_cell_pair_knn(st_meta_origin,cell_sender,cell_receiver,distances_knn,indices_knn)\n    if flag == 0:\n        return\n    ####\n    print (f\"The cell pair number found between {cell_sender} and {cell_receiver} is {cell_pair.shape[0]}\")\n    f_path = find_high_exp_path(pathway, cell_pair[\"cell_receiver\"].values.tolist(), valid_st_data)",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_knn_result",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def get_knn_result(st_meta,k=11):\n    '''\n    **input: \n        st_meta: index由细胞名称组成,x,y列代表坐标，cell_type, cell列同样是细胞名字\n        k: 邻居数+1(排除自身)\n    ** return\n        distances_knn: 每个点和邻居的距离\n        indices_knn: 每个店的邻居的index!!!这里的index是数字,并不是前面的名字(和st_meta中的index不同)\n    '''\n    # 获得x,y坐标 array",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "get_cell_pair_knn",
+        "kind": 2,
+        "importPath": "lr.lr.after.utils",
+        "description": "lr.lr.after.utils",
+        "peekOfCode": "def get_cell_pair_knn(st_meta_origin,cell_sender,cell_receiver,distances_knn,indices_knn,min_pairs_ratio = 0.001):\n    ####\n    sender_array = np.array(st_meta_origin[st_meta_origin['cell_type'] == cell_sender].index)\n    receiver_array = np.array(indices_knn[sender_array,:])\n    all_pair_number = min(sender_array.shape[0]*receiver_array.shape[0],st_meta_origin.shape[0])\n    print(f\"all_pair_number ---- {all_pair_number}\" )\n    # 初始化一个空列表，用于存储每行的结果\n    result_indices = []\n    # 遍历receiver_array的每一行\n    for i, row in enumerate(receiver_array):",
+        "detail": "lr.lr.after.utils",
+        "documentation": {}
+    },
+    {
+        "label": "balancehc",
+        "kind": 6,
+        "importPath": "lr.model.balancehc",
+        "description": "lr.model.balancehc",
+        "peekOfCode": "class balancehc(nn.Module):\n    def __init__(self,nodes,embeddings,hyperparamter=1, rank=2, temperature=0.05, init_size=1e-3, max_scale=1. - 1e-3,):\n        super(balancehc, self).__init__()\n        self.nodes = nodes\n        self.leaves_embeddings = embeddings\n        self.n_nodes = len(embeddings)\n        self.embeddings = nn.Embedding(self.n_nodes, rank)\n        self.temperature = temperature\n        self.scale = nn.Parameter(torch.Tensor([init_size]), requires_grad=True)\n        self.embeddings.weight.data = torch.tensor(embeddings);",
+        "detail": "lr.model.balancehc",
+        "documentation": {}
+    },
+    {
+        "label": "HypHC",
+        "kind": 6,
+        "importPath": "lr.model.hyphc",
+        "description": "lr.model.hyphc",
+        "peekOfCode": "class HypHC(nn.Module):\n    \"\"\"\n    Hyperbolic embedding model for hierarchical clustering.\n    \"\"\"\n    def __init__(self, n_nodes=1, rank=2, temperature=0.05, init_size=1e-3, max_scale=1. - 1e-3):\n        super(HypHC, self).__init__()\n        self.n_nodes = n_nodes\n        self.embeddings = nn.Embedding(n_nodes, rank)\n        self.temperature = temperature\n        self.scale = nn.Parameter(torch.Tensor([init_size]), requires_grad=True)",
+        "detail": "lr.model.hyphc",
+        "documentation": {}
+    },
+    {
+        "label": "RAdam",
+        "kind": 6,
+        "importPath": "lr.optim.radam",
+        "description": "lr.optim.radam",
+        "peekOfCode": "class RAdam(torch.optim.Adam):\n    \"\"\"Riemannian Adam with the same API as :class:`torch.optim.Adam`\n    Parameters\n    ----------\n    params : iterable\n        iterable of parameters to optimize or dicts defining\n        parameter groups\n    lr : float (optional)\n        learning rate (default: 1e-3)\n    betas : Tuple[float, float] (optional)",
+        "detail": "lr.optim.radam",
+        "documentation": {}
+    },
+    {
+        "label": "copy_or_set_",
+        "kind": 2,
+        "importPath": "lr.optim.radam",
+        "description": "lr.optim.radam",
+        "peekOfCode": "def copy_or_set_(dest, source):\n    \"\"\"\n    Parameters\n    ----------\n    dest : torch.Tensor\n        Destination tensor where to store new data\n    source : torch.Tensor\n        Source data to put in the new tensor\n    Returns\n    -------",
+        "detail": "lr.optim.radam",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "lr.symnmf.analysis",
+        "description": "lr.symnmf.analysis",
+        "peekOfCode": "def main():\n    np.random.seed(0)\n    N = len(sys.argv)\n    if (N == 3):\n        k = float(sys.argv[1])\n        if (k.is_integer()):\n            k = int(k)\n        path = sys.argv[2]\n    else:\n        print(\"An Error Has Occurred\")",
+        "detail": "lr.symnmf.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "add_to_clusters",
+        "kind": 2,
+        "importPath": "lr.symnmf.analysis",
+        "description": "lr.symnmf.analysis",
+        "peekOfCode": "def add_to_clusters(cluster_num,row,clusters):\n    for i in range(len(row)):\n        clusters[cluster_num].append(row[i])\ndef Hw1(k,points):\n    iteration = 300\n    try:\n        centroids = k_means(k,iteration,points)\n    except(AssertionError):\n        print(\"An Error Has Occurred\")\n        return",
+        "detail": "lr.symnmf.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "Hw1",
+        "kind": 2,
+        "importPath": "lr.symnmf.analysis",
+        "description": "lr.symnmf.analysis",
+        "peekOfCode": "def Hw1(k,points):\n    iteration = 300\n    try:\n        centroids = k_means(k,iteration,points)\n    except(AssertionError):\n        print(\"An Error Has Occurred\")\n        return\n    return centroids\ndef read_file_nmf(path):\n    file = open(path,\"r\")",
+        "detail": "lr.symnmf.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "read_file_nmf",
+        "kind": 2,
+        "importPath": "lr.symnmf.analysis",
+        "description": "lr.symnmf.analysis",
+        "peekOfCode": "def read_file_nmf(path):\n    file = open(path,\"r\")\n    line = file.readline()\n    arr=[]\n    while line.strip() != \"\":\n        temp = []\n        for word in line.split(\",\"):\n            temp.append(float(word))\n        arr.append(temp)\n        line = file.readline()",
+        "detail": "lr.symnmf.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "euclidean_distance",
+        "kind": 2,
+        "importPath": "lr.symnmf.analysis",
+        "description": "lr.symnmf.analysis",
+        "peekOfCode": "def euclidean_distance(p, q):\n    dist = 0\n    for i in range(len(p)):\n        dist+=(p[i]-q[i])**2\n    dist = dist**0.5\n    return dist\ndef find_min_cluster(p,clusters):\n    min_index = 0\n    min_dist = euclidean_distance(p[0],clusters[0][0])\n    for i in range(1,len(clusters)):",
+        "detail": "lr.symnmf.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "find_min_cluster",
+        "kind": 2,
+        "importPath": "lr.symnmf.analysis",
+        "description": "lr.symnmf.analysis",
+        "peekOfCode": "def find_min_cluster(p,clusters):\n    min_index = 0\n    min_dist = euclidean_distance(p[0],clusters[0][0])\n    for i in range(1,len(clusters)):\n        dist = euclidean_distance(p[0],clusters[i][0])\n        if(dist<min_dist):\n            min_dist = dist\n            min_index = i\n    return min_index\ndef k_means(k,iter_max,points):",
+        "detail": "lr.symnmf.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "k_means",
+        "kind": 2,
+        "importPath": "lr.symnmf.analysis",
+        "description": "lr.symnmf.analysis",
+        "peekOfCode": "def k_means(k,iter_max,points):\n    prev_centroid = points[:k]\n    update_dist = euclidean_distance(prev_centroid[0],prev_centroid[1])\n    centroids = []\n    iter_count = 0\n    while(iter_count<iter_max and update_dist>0.0001):\n        iter_count +=1\n        clusters = find_clusters(points,k,prev_centroid)\n        centroids = update_centroids(points,k,clusters)\n        update_dist = dist_cent(prev_centroid,centroids)",
+        "detail": "lr.symnmf.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "dist_cent",
+        "kind": 2,
+        "importPath": "lr.symnmf.analysis",
+        "description": "lr.symnmf.analysis",
+        "peekOfCode": "def dist_cent(prev_centroids, new_centroids):\n    sum = 0\n    for prev, new in zip(prev_centroids, new_centroids):\n        sum += euclidean_distance(prev, new)\n    return sum\ndef find_clusters(points,k,prev_centroid):\n    clusters_points = [0] * len(points)\n    for i in range(len(points)):\n        min_index = 0\n        min_dist = euclidean_distance(points[i],prev_centroid[0])",
+        "detail": "lr.symnmf.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "find_clusters",
+        "kind": 2,
+        "importPath": "lr.symnmf.analysis",
+        "description": "lr.symnmf.analysis",
+        "peekOfCode": "def find_clusters(points,k,prev_centroid):\n    clusters_points = [0] * len(points)\n    for i in range(len(points)):\n        min_index = 0\n        min_dist = euclidean_distance(points[i],prev_centroid[0])\n        for j in range(k):\n            curr_dist = euclidean_distance(points[i],prev_centroid[j])\n            if(curr_dist<min_dist):\n                min_dist = curr_dist\n                min_index = j",
+        "detail": "lr.symnmf.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "update_centroids",
+        "kind": 2,
+        "importPath": "lr.symnmf.analysis",
+        "description": "lr.symnmf.analysis",
+        "peekOfCode": "def update_centroids(points,k,clusters):\n    new_centroid = [0] * k\n    for i in range(k):\n        coor_data_points = [points[j] for j in range(len(points)) if clusters[j] == i]\n        points_amount = len(coor_data_points)\n        new_centroid[i] = list(sum(coord) / points_amount for coord in zip(*coor_data_points))\n    return new_centroid\nif __name__ == \"__main__\":\n    main()",
+        "detail": "lr.symnmf.analysis",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "lr.symnmf.symnmf",
+        "description": "lr.symnmf.symnmf",
+        "peekOfCode": "def main():\n    num_arg = len(sys.argv)\n    if (num_arg != 4):\n        print(\"An Error Has Occurred\")\n        return\n    else:\n        k = float(sys.argv[1])\n        goal = sys.argv[2]\n        text_file = sys.argv[3]\n    file_mat = pd.read_csv(text_file,header=None).values.tolist()",
+        "detail": "lr.symnmf.symnmf",
+        "documentation": {}
+    },
+    {
+        "label": "print_matrix",
+        "kind": 2,
+        "importPath": "lr.symnmf.symnmf",
+        "description": "lr.symnmf.symnmf",
+        "peekOfCode": "def print_matrix(matrix):\n    for row in matrix:\n        row_round= [f'{item:.4f}' for item in row]\n        print(','.join(row_round))\nif __name__ == \"__main__\":\n    main()",
+        "detail": "lr.symnmf.symnmf",
+        "documentation": {}
+    },
+    {
+        "label": "isometric_transform",
+        "kind": 2,
+        "importPath": "lr.utils.lca",
+        "description": "lr.utils.lca",
+        "peekOfCode": "def isometric_transform(a, x):\n    \"\"\"Reflection (circle inversion of x through orthogonal circle centered at a).\"\"\"\n    r2 = torch.sum(a ** 2, dim=-1, keepdim=True) - 1.\n    u = x - a\n    return r2 / torch.sum(u ** 2, dim=-1, keepdim=True) * u + a\ndef reflection_center(mu):\n    \"\"\"Center of inversion circle.\"\"\"\n    return mu / torch.sum(mu ** 2, dim=-1, keepdim=True)\ndef euc_reflection(x, a):\n    \"\"\"",
+        "detail": "lr.utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "reflection_center",
+        "kind": 2,
+        "importPath": "lr.utils.lca",
+        "description": "lr.utils.lca",
+        "peekOfCode": "def reflection_center(mu):\n    \"\"\"Center of inversion circle.\"\"\"\n    return mu / torch.sum(mu ** 2, dim=-1, keepdim=True)\ndef euc_reflection(x, a):\n    \"\"\"\n    Euclidean reflection (also hyperbolic) of x\n    Along the geodesic that goes through a and the origin\n    (straight line)\n    \"\"\"\n    xTa = torch.sum(x * a, dim=-1, keepdim=True)",
+        "detail": "lr.utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "euc_reflection",
+        "kind": 2,
+        "importPath": "lr.utils.lca",
+        "description": "lr.utils.lca",
+        "peekOfCode": "def euc_reflection(x, a):\n    \"\"\"\n    Euclidean reflection (also hyperbolic) of x\n    Along the geodesic that goes through a and the origin\n    (straight line)\n    \"\"\"\n    xTa = torch.sum(x * a, dim=-1, keepdim=True)\n    norm_a_sq = torch.sum(a ** 2, dim=-1, keepdim=True).clamp_min(MIN_NORM)\n    proj = xTa * a / norm_a_sq\n    return 2 * proj - x",
+        "detail": "lr.utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca",
+        "kind": 2,
+        "importPath": "lr.utils.lca",
+        "description": "lr.utils.lca",
+        "peekOfCode": "def hyp_lca(a, b, return_coord=True):\n    \"\"\"\n    Computes projection of the origin on the geodesic between a and b, at scale c\n    More optimized than hyp_lca1\n    \"\"\"\n    r = reflection_center(a)\n    b_inv = isometric_transform(r, b)\n    o_inv = a\n    o_inv_ref = euc_reflection(o_inv, b_inv)\n    o_ref = isometric_transform(r, o_inv_ref)",
+        "detail": "lr.utils.lca",
+        "documentation": {}
+    },
+    {
+        "label": "sl_np_mst",
+        "kind": 2,
+        "importPath": "lr.utils.linkage",
+        "description": "lr.utils.linkage",
+        "peekOfCode": "def sl_np_mst(similarities):\n    n = similarities.shape[0]\n    similarities=similarities.astype('double')\n    ij, _ = mst(similarities, n)\n    uf = unionfind.UnionFind(n)\n    uf.merge(ij)\n    return uf.tree\ndef sl_from_embeddings(xs, S):\n    xs0 = xs[None, :, :]\n    xs1 = xs[:, None, :]",
+        "detail": "lr.utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "sl_from_embeddings",
+        "kind": 2,
+        "importPath": "lr.utils.linkage",
+        "description": "lr.utils.linkage",
+        "peekOfCode": "def sl_from_embeddings(xs, S):\n    xs0 = xs[None, :, :]\n    xs1 = xs[:, None, :]\n    sim_mat = S(xs0, xs1)  # (n, n)\n    return sl_np_mst(sim_mat.numpy())\ndef nn_merge_uf_fast_np(xs, S, partition_ratio=None, verbose=False):\n    \"\"\" Uses Cython union find and numpy sorting\n    partition_ratio: either None, or real number > 1\n    similarities will be partitioned into buckets of geometrically increasing size\n    \"\"\"",
+        "detail": "lr.utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "nn_merge_uf_fast_np",
+        "kind": 2,
+        "importPath": "lr.utils.linkage",
+        "description": "lr.utils.linkage",
+        "peekOfCode": "def nn_merge_uf_fast_np(xs, S, partition_ratio=None, verbose=False):\n    \"\"\" Uses Cython union find and numpy sorting\n    partition_ratio: either None, or real number > 1\n    similarities will be partitioned into buckets of geometrically increasing size\n    \"\"\"\n    n = xs.shape[0]\n    xs0 = xs[None, :, :]\n    xs1 = xs[:, None, :]\n    dist_mat = -S(xs0, xs1)  # (n, n)\n    i, j = np.meshgrid(np.arange(n, dtype=int), np.arange(n, dtype=int))",
+        "detail": "lr.utils.linkage",
+        "documentation": {}
+    },
+    {
+        "label": "Artanh",
+        "kind": 6,
+        "importPath": "lr.utils.math",
+        "description": "lr.utils.math",
+        "peekOfCode": "class Artanh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        x = x.clamp(-1 + 1e-5, 1 - 1e-5)\n        ctx.save_for_backward(x)\n        dtype = x.dtype\n        x = x.double()\n        return (torch.log_(1 + x).sub_(torch.log_(1 - x))).mul_(0.5).to(dtype)\n    @staticmethod\n    def backward(ctx, grad_output):",
+        "detail": "lr.utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "Arcosh",
+        "kind": 6,
+        "importPath": "lr.utils.math",
+        "description": "lr.utils.math",
+        "peekOfCode": "class Arcosh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        x = x.clamp(min=1 + 1e-7)\n        ctx.save_for_backward(x)\n        z = x.double()\n        return (z + torch.sqrt_(z.pow(2) - 1)).clamp_min_(1e-15).log_().to(x.dtype)\n    @staticmethod\n    def backward(ctx, grad_output):\n        input, = ctx.saved_tensors",
+        "detail": "lr.utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "Arsinh",
+        "kind": 6,
+        "importPath": "lr.utils.math",
+        "description": "lr.utils.math",
+        "peekOfCode": "class Arsinh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        ctx.save_for_backward(x)\n        z = x.double()\n        return (z + torch.sqrt_(1 + z.pow(2))).clamp_min_(1e-15).log_().to(x.dtype)\n    @staticmethod\n    def backward(ctx, grad_output):\n        input, = ctx.saved_tensors\n        return grad_output / (1 + input ** 2) ** 0.5",
+        "detail": "lr.utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "arctanh",
+        "kind": 2,
+        "importPath": "lr.utils.math",
+        "description": "lr.utils.math",
+        "peekOfCode": "def arctanh(x):\n    return Artanh.apply(x)\ndef tanh(x):\n    return x.clamp(-15, 15).tanh()\nclass Arcosh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        x = x.clamp(min=1 + 1e-7)\n        ctx.save_for_backward(x)\n        z = x.double()",
+        "detail": "lr.utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "tanh",
+        "kind": 2,
+        "importPath": "lr.utils.math",
+        "description": "lr.utils.math",
+        "peekOfCode": "def tanh(x):\n    return x.clamp(-15, 15).tanh()\nclass Arcosh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        x = x.clamp(min=1 + 1e-7)\n        ctx.save_for_backward(x)\n        z = x.double()\n        return (z + torch.sqrt_(z.pow(2) - 1)).clamp_min_(1e-15).log_().to(x.dtype)\n    @staticmethod",
+        "detail": "lr.utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "arcosh",
+        "kind": 2,
+        "importPath": "lr.utils.math",
+        "description": "lr.utils.math",
+        "peekOfCode": "def arcosh(x):\n    return Arcosh.apply(x)\ndef cosh(x, clamp=15):\n    return x.clamp(-clamp, clamp).cosh()\nclass Arsinh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        ctx.save_for_backward(x)\n        z = x.double()\n        return (z + torch.sqrt_(1 + z.pow(2))).clamp_min_(1e-15).log_().to(x.dtype)",
+        "detail": "lr.utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "cosh",
+        "kind": 2,
+        "importPath": "lr.utils.math",
+        "description": "lr.utils.math",
+        "peekOfCode": "def cosh(x, clamp=15):\n    return x.clamp(-clamp, clamp).cosh()\nclass Arsinh(torch.autograd.Function):\n    @staticmethod\n    def forward(ctx, x):\n        ctx.save_for_backward(x)\n        z = x.double()\n        return (z + torch.sqrt_(1 + z.pow(2))).clamp_min_(1e-15).log_().to(x.dtype)\n    @staticmethod\n    def backward(ctx, grad_output):",
+        "detail": "lr.utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "arsinh",
+        "kind": 2,
+        "importPath": "lr.utils.math",
+        "description": "lr.utils.math",
+        "peekOfCode": "def arsinh(x):\n    return Arsinh.apply(x)\ndef sinh(x, clamp=15):\n    return x.clamp(-clamp, clamp).sinh()",
+        "detail": "lr.utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "sinh",
+        "kind": 2,
+        "importPath": "lr.utils.math",
+        "description": "lr.utils.math",
+        "peekOfCode": "def sinh(x, clamp=15):\n    return x.clamp(-clamp, clamp).sinh()",
+        "detail": "lr.utils.math",
+        "documentation": {}
+    },
+    {
+        "label": "dasgupta_cost",
+        "kind": 2,
+        "importPath": "lr.utils.metrics",
+        "description": "lr.utils.metrics",
+        "peekOfCode": "def dasgupta_cost(tree, similarities):\n    \"\"\" Non-recursive version of DC for binary trees.\n    Optimized for speed by reordering similarity matrix for locality\n    \"\"\"\n    n = len(list(tree.nodes()))\n    root = n - 1\n    n_leaves = len(similarities)\n    leaves = descendants_traversal(tree)\n    n_desc, left_desc = descendants_count(tree)\n    cost = [0] * n ",
+        "detail": "lr.utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mst",
+        "kind": 2,
+        "importPath": "lr.utils.mst",
+        "description": "lr.utils.mst",
+        "peekOfCode": "def mst(dists, n):\n    ij = np.empty((n - 1, 2), dtype=np.int)\n    Z = ij\n    l = np.empty(n-1)\n    l_ = l\n    merged = np.zeros(n, dtype=np.int)\n    D = np.empty(n)\n    D[:] = - np.inf\n    j = np.empty(n, dtype=np.int)\n    x = 0 ",
+        "detail": "lr.utils.mst",
+        "documentation": {}
+    },
+    {
+        "label": "reorder",
+        "kind": 2,
+        "importPath": "lr.utils.mst",
+        "description": "lr.utils.mst",
+        "peekOfCode": "def reorder( A,  idx, n):\n    \"\"\"\n    A : (n, n)\n    idx: (n)\n    \"\"\"\n    B = np.empty((n, n))\n    B_ = B\n    for i in range(n):\n        k = idx[i]\n        for j in range(n):",
+        "detail": "lr.utils.mst",
+        "documentation": {}
+    },
+    {
+        "label": "egrad2rgrad",
+        "kind": 2,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "def egrad2rgrad(p, dp):\n    \"\"\"Converts Euclidean gradient to Hyperbolic gradient.\"\"\"\n    lambda_p = lambda_(p)\n    dp /= lambda_p.pow(2)\n    return dp\ndef lambda_(x):\n    \"\"\"Computes the conformal factor.\"\"\"\n    x_sqnorm = torch.sum(x.data.pow(2), dim=-1, keepdim=True)\n    return 2 / (1. - x_sqnorm).clamp_min(MIN_NORM)\ndef inner(x, u, v=None):",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "lambda_",
+        "kind": 2,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "def lambda_(x):\n    \"\"\"Computes the conformal factor.\"\"\"\n    x_sqnorm = torch.sum(x.data.pow(2), dim=-1, keepdim=True)\n    return 2 / (1. - x_sqnorm).clamp_min(MIN_NORM)\ndef inner(x, u, v=None):\n    \"\"\"Computes inner product for two tangent vectors.\"\"\"\n    if v is None:\n        v = u\n    lx = lambda_(x)\n    return lx ** 2 * (u * v).sum(dim=-1, keepdim=True)",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "inner",
+        "kind": 2,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "def inner(x, u, v=None):\n    \"\"\"Computes inner product for two tangent vectors.\"\"\"\n    if v is None:\n        v = u\n    lx = lambda_(x)\n    return lx ** 2 * (u * v).sum(dim=-1, keepdim=True)\ndef gyration(u, v, w):\n    \"\"\"Gyration.\"\"\"\n    u2 = u.pow(2).sum(dim=-1, keepdim=True)\n    v2 = v.pow(2).sum(dim=-1, keepdim=True)",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "gyration",
+        "kind": 2,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "def gyration(u, v, w):\n    \"\"\"Gyration.\"\"\"\n    u2 = u.pow(2).sum(dim=-1, keepdim=True)\n    v2 = v.pow(2).sum(dim=-1, keepdim=True)\n    uv = (u * v).sum(dim=-1, keepdim=True)\n    uw = (u * w).sum(dim=-1, keepdim=True)\n    vw = (v * w).sum(dim=-1, keepdim=True)\n    a = - uw * v2 + vw + 2 * uv * vw\n    b = - vw * u2 - uw\n    d = 1 + 2 * uv + u2 * v2",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "ptransp",
+        "kind": 2,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "def ptransp(x, y, u):\n    \"\"\"Parallel transport.\"\"\"\n    lx = lambda_(x)\n    ly = lambda_(y)\n    return gyration(y, -x, u) * lx / ly\ndef expmap(u, p):\n    u_norm = u.norm(dim=-1, p=2, keepdim=True).clamp_min(MIN_NORM)\n    second_term = tanh(lambda_(p) * u_norm / 2) * u / u_norm\n    gamma_1 = mobius_add(p, second_term)\n    return gamma_1",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "expmap",
+        "kind": 2,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "def expmap(u, p):\n    u_norm = u.norm(dim=-1, p=2, keepdim=True).clamp_min(MIN_NORM)\n    second_term = tanh(lambda_(p) * u_norm / 2) * u / u_norm\n    gamma_1 = mobius_add(p, second_term)\n    return gamma_1\ndef project(x):\n    \"\"\"Projects points on the manifold.\"\"\"\n    norm = x.norm(dim=-1, p=2, keepdim=True).clamp_min(MIN_NORM)\n    eps = BALL_EPS[x.dtype]\n    maxnorm = (1 - eps)",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "project",
+        "kind": 2,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "def project(x):\n    \"\"\"Projects points on the manifold.\"\"\"\n    norm = x.norm(dim=-1, p=2, keepdim=True).clamp_min(MIN_NORM)\n    eps = BALL_EPS[x.dtype]\n    maxnorm = (1 - eps)\n    cond = norm > maxnorm\n    projected = x / norm * maxnorm\n    return torch.where(cond, projected, x)\ndef mobius_add(x, y):\n    \"\"\"Mobius addition.\"\"\"",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "mobius_add",
+        "kind": 2,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "def mobius_add(x, y):\n    \"\"\"Mobius addition.\"\"\"\n    x2 = torch.sum(x * x, dim=-1, keepdim=True)\n    y2 = torch.sum(y * y, dim=-1, keepdim=True)\n    xy = torch.sum(x * y, dim=-1, keepdim=True)\n    num = (1 + 2 * xy + y2) * x + (1 - x2) * y\n    denom = 1 + 2 * xy + x2 * y2\n    return num / denom.clamp_min(MIN_NORM)\ndef mobius_mul(x, t):\n    \"\"\"Mobius scalar multiplication.\"\"\"",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "mobius_mul",
+        "kind": 2,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "def mobius_mul(x, t):\n    \"\"\"Mobius scalar multiplication.\"\"\"\n    normx = x.norm(dim=-1, p=2, keepdim=True).clamp_min(MIN_NORM)\n    return tanh(t * arctanh(normx)) * x / normx\ndef get_midpoint_o(x):\n    \"\"\"\n    Computes hyperbolic midpoint between x and the origin.\n    \"\"\"\n    return mobius_mul(x, 0.5)\ndef hyp_dist_o(x):",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "get_midpoint_o",
+        "kind": 2,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "def get_midpoint_o(x):\n    \"\"\"\n    Computes hyperbolic midpoint between x and the origin.\n    \"\"\"\n    return mobius_mul(x, 0.5)\ndef hyp_dist_o(x):\n    \"\"\"\n    Computes hyperbolic distance between x and the origin.\n    \"\"\"\n    x_norm = x.norm(dim=-1, p=2, keepdim=True)",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist_o",
+        "kind": 2,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "def hyp_dist_o(x):\n    \"\"\"\n    Computes hyperbolic distance between x and the origin.\n    \"\"\"\n    x_norm = x.norm(dim=-1, p=2, keepdim=True)\n    return 2 * arctanh(x_norm)\ndef hyp_dist(x,y):\n    \"\"\"\n    hyperbolic distance\n    \"\"\"",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_dist",
+        "kind": 2,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "def hyp_dist(x,y):\n    \"\"\"\n    hyperbolic distance\n    \"\"\"\n    if(torch.Tensor == type(x)) == False:\n        x=torch.tensor(x)\n    if(torch.Tensor == type(y)) == False:\n        y=torch.tensor(y)        \n    return arcosh(1+ 2*( (x-y).norm(dim=-1, p=2, keepdim=True))/((1- y.norm(dim=-1, p=2, keepdim=True))*(1- x.norm(dim=-1, p=2, keepdim=True))));",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "MIN_NORM",
+        "kind": 5,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "MIN_NORM = 1e-15\nBALL_EPS = {torch.float32: 4e-3, torch.float64: 1e-5}\ndef egrad2rgrad(p, dp):\n    \"\"\"Converts Euclidean gradient to Hyperbolic gradient.\"\"\"\n    lambda_p = lambda_(p)\n    dp /= lambda_p.pow(2)\n    return dp\ndef lambda_(x):\n    \"\"\"Computes the conformal factor.\"\"\"\n    x_sqnorm = torch.sum(x.data.pow(2), dim=-1, keepdim=True)",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "BALL_EPS",
+        "kind": 5,
+        "importPath": "lr.utils.poincare",
+        "description": "lr.utils.poincare",
+        "peekOfCode": "BALL_EPS = {torch.float32: 4e-3, torch.float64: 1e-5}\ndef egrad2rgrad(p, dp):\n    \"\"\"Converts Euclidean gradient to Hyperbolic gradient.\"\"\"\n    lambda_p = lambda_(p)\n    dp /= lambda_p.pow(2)\n    return dp\ndef lambda_(x):\n    \"\"\"Computes the conformal factor.\"\"\"\n    x_sqnorm = torch.sum(x.data.pow(2), dim=-1, keepdim=True)\n    return 2 / (1. - x_sqnorm).clamp_min(MIN_NORM)",
+        "detail": "lr.utils.poincare",
+        "documentation": {}
+    },
+    {
+        "label": "descendants_traversal",
+        "kind": 2,
+        "importPath": "lr.utils.tree",
+        "description": "lr.utils.tree",
+        "peekOfCode": "def descendants_traversal(tree):\n    \"\"\"Get all descendants non-recursively, in traversal order.\"\"\"\n    n = len(list(tree.nodes()))\n    root = n - 1\n    traversal = []\n    children = [list(tree.neighbors(node)) for node in range(n)]  # children remaining to process\n    is_leaf = [len(children[node]) == 0 for node in range(n)]\n    stack = [root]\n    while len(stack) > 0:\n        node = stack[-1]",
+        "detail": "lr.utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": "descendants_count",
+        "kind": 2,
+        "importPath": "lr.utils.tree",
+        "description": "lr.utils.tree",
+        "peekOfCode": "def descendants_count(tree):\n    \"\"\"For every node, count its number of descendant leaves, and the number of leaves before it.\"\"\"\n    n = len(list(tree.nodes()))\n    root = n - 1\n    left = [0] * n\n    desc = [0] * n\n    leaf_idx = 0\n    children = [list(tree.neighbors(node))[::-1] for node in range(n)]  # children remaining to process\n    stack = [root]\n    while len(stack) > 0:",
+        "detail": "lr.utils.tree",
+        "documentation": {}
+    },
+    {
+        "label": {
+            "name": "",
+            "kind": 6,
+            "peekOfCode": "class  UnionFind:\n    def __init__(self, n):\n        self.n = n\n        # self.c = c\n        self.parent = [i for i in range(n)]\n        self.rank = [0 for i in range(n)]\n        self._next_id = n\n        self._tree = [-1 for i in range(2*n-1)]\n        self._id = [i for i in range(n)]\n    def _find(self, i):"
+        },
+        "kind": 6,
+        "importPath": "lr.utils.unionfind",
+        "description": "lr.utils.unionfind",
+        "peekOfCode": "class  UnionFind:\n    def __init__(self, n):\n        self.n = n\n        # self.c = c\n        self.parent = [i for i in range(n)]\n        self.rank = [0 for i in range(n)]\n        self._next_id = n\n        self._tree = [-1 for i in range(2*n-1)]\n        self._id = [i for i in range(n)]\n    def _find(self, i):",
+        "detail": "lr.utils.unionfind",
+        "documentation": {}
+    },
+    {
+        "label": "node",
+        "kind": 6,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "class node:\n    \"\"\"\n    Class of the node of the tree\n    \"\"\"\n    def __init__(self,value=None,son=[],name='',hyper=None):\n        self.value = value;\n        self.hyper = hyper;\n        self.son = son;\n        self.name =name;\n        self.f = None;",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "newnode",
+        "kind": 6,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "class newnode:\n    \"\"\"\n    Class of the aligned nodes by linear programming\n    \"\"\"\n    def __init__(self,node1,node2):\n        self.node1 = node1\n        self.node2 = node2\n        self.f = None\n        self.edge = [];\n        self.indegree = 0;",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "tree_alignment",
+        "kind": 6,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "class tree_alignment:\n    \"\"\"\n    Class is used to perform tree alignment between two trees\n    \"\"\"\n    def __init__(self,root1,root2,cost1,lr=False,datas1=None,datas2=None):\n        self.cost1 = cost1;\n        self.dp = dict();\n        self.forestdp = dict();\n        self.anslist = [];\n        self.ansnodes = [];",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "show_graph",
+        "kind": 6,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "class show_graph:\n    def __init__(self,ans,root1,root2,color=None):\n        self.ans = ans;\n        self.pos_x=[];\n        self.pos_y=[];\n        self.edges=[];\n        self.label_hash = dict(); \n        self.labels = [];\n        self.hover_text =[];\n        self.values=[];",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "show_tree",
+        "kind": 6,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "class show_tree:\n    def __init__(self,root1,color=None):\n        self.pos_x=[];\n        self.pos_y=[];\n        self.edges=[];\n        self.label_hash = dict(); \n        self.labels = [];\n        self.hover_text =[];\n        self.values=[];\n        self.cnt = 0;",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "show_the_tree",
+        "kind": 2,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "def show_the_tree(folder_path1,after=False):\n    nodes1 = build_hyper_tree_from_folder(folder_path1,after)\n    show_tree(nodes1[0]).show_fig()\ndef deep_search_tree(now,depth,path,f):\n    \"\"\"\n    Search the tree and calculate the information\n    \"\"\"\n    now.f=f\n    now.depth=depth;\n    path.append(now);",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "deep_search_tree",
+        "kind": 2,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "def deep_search_tree(now,depth,path,f):\n    \"\"\"\n    Search the tree and calculate the information\n    \"\"\"\n    now.f=f\n    now.depth=depth;\n    path.append(now);\n    now.path=path.copy();\n    if(f!=now):\n        now.distance_to_root = f.distance_to_root + hyp_dist(f.value,now.value)",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "build_hyper_tree_from_folder",
+        "kind": 2,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "def build_hyper_tree_from_folder(folder_path,after=False,mst1=False):\n    \"\"\"\n    Build the tree from the folder\n    \"\"\"\n    if(mst1):\n        pos_1 = pd.read_csv(folder_path + 'datas.csv')\n        pos = pos_1.set_index(pos_1.columns[0]).values\n        edge = np.load(folder_path + \"datalink.npy\");\n        father_name = np.load(folder_path + \"dataname.npy\")\n        father_name = father_name.astype(np.int)",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "search_tree",
+        "kind": 2,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "def search_tree(now,c,c1,n):\n    \"\"\"\n    Merge the tree nodes according of the c\n    \"\"\"\n    if(len(now.son) < 2):\n        return now,True;\n    sons = []\n    flag = True\n    for i in range(len(now.son)):\n        son,f1 = search_tree(now.son[i],c,c1,n);",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "find_path_root",
+        "kind": 2,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "def find_path_root(now,dfs,path,dfs_node,f):\n    \"\"\"\n    Find the path to the root\n    \"\"\"\n    now.path=path.copy();\n    now.f=f\n    now.dfs=dfs;\n    path.append(now);\n    dfs_node.append(now);\n    for i in now.son:",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "find_indegree",
+        "kind": 2,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "def find_indegree(lists,indegree):\n    \"\"\"\n    Find the indegrees\n    \"\"\"\n    ans=[]\n    for i in lists:\n        if(i.indegree == indegree):\n            ans.append(i);\n    return ans;\ndef run_alignment_linear(nodes1,nodes2):",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "run_alignment_linear",
+        "kind": 2,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "def run_alignment_linear(nodes1,nodes2):\n    \"\"\"\n    Alignment two trees by linear programming\n    \"\"\"\n    values1 = np.array([i.value for i in nodes1])\n    values2 = np.array([i.value for i in nodes2])\n    similarities =np.zeros((len(values1),len(values2)))\n    for i in range(len(values1)):\n        for j in range(len(values2)):\n            similarities[i][j]=np.corrcoef(values1[i],values2[j])[0][1]",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "run_alignment",
+        "kind": 2,
+        "importPath": "lr.alignment",
+        "description": "lr.alignment",
+        "peekOfCode": "def run_alignment(nodes1,nodes2,folder_path1,folder_path2,meta_list1,meta_list2):\n    \"\"\"\n    Alignment two trees by dynmaic programming\n    \"\"\"\n    T=tree_alignment(nodes1[0],nodes2[0],1);\n    minn = T.run_alignment();\n    T.show_ans();\n    ans = T.get_ans()\n    G=show_graph(ans,nodes1[0],nodes2[0]);\n    # G.show_fig()",
+        "detail": "lr.alignment",
+        "documentation": {}
+    },
+    {
+        "label": "add_meta",
+        "kind": 2,
+        "importPath": "lr.core",
+        "description": "lr.core",
+        "peekOfCode": "def add_meta(now,meta_list,merge):\n    if(int(now.name)<len(meta_list)):\n        now.name= now.name +'_'+ meta_list[int(now.name)];\n    merge.append(now)\n    for i in now.son:\n        add_meta(i,meta_list,merge)\ndef remove_meta(now):\n    if(len(now.name.split('_')) >1):\n        now.name = now.name.split('_')[0]\n    for i in now.son:",
+        "detail": "lr.core",
+        "documentation": {}
+    },
+    {
+        "label": "remove_meta",
+        "kind": 2,
+        "importPath": "lr.core",
+        "description": "lr.core",
+        "peekOfCode": "def remove_meta(now):\n    if(len(now.name.split('_')) >1):\n        now.name = now.name.split('_')[0]\n    for i in now.son:\n        remove_meta(i)\ndef merge_by_radius(cell_path,folder_path,radius,method='average',meta_col='celltype'):\n    \"\"\"\n    Merge the cells of the datasets according to the radius \n    Parameters\n    ----------",
+        "detail": "lr.core",
+        "documentation": {}
+    },
+    {
+        "label": "merge_by_radius",
+        "kind": 2,
+        "importPath": "lr.core",
+        "description": "lr.core",
+        "peekOfCode": "def merge_by_radius(cell_path,folder_path,radius,method='average',meta_col='celltype'):\n    \"\"\"\n    Merge the cells of the datasets according to the radius \n    Parameters\n    ----------\n    cell_path : string\n        Path to the dataset's cell data h5ad file \n    folder_path1 : string\n        Path to the folder to save the result files of the dataset      \n    radius : float",
+        "detail": "lr.core",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_cluster_celltype",
+        "kind": 2,
+        "importPath": "lr.core",
+        "description": "lr.core",
+        "peekOfCode": "def calculate_cluster_celltype(adata,groupby = 'leiden', meta_col = 'celltype'):\n    meta_list = []\n    clustername = adata.obs[groupby].unique().tolist()\n    clustername = list(map(int, clustername))\n    clustername.sort()\n    for value in clustername:\n        indices = [i for i, x in enumerate(adata.obs[groupby]) if x == str(value)]\n        t = [adata.obs[meta_col].tolist()[index] for index in indices]\n        most_common_element = max(t, key=t.count)\n        meta_list.append(most_common_element)",
+        "detail": "lr.core",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_meta_ori",
+        "kind": 2,
+        "importPath": "lr.core",
+        "description": "lr.core",
+        "peekOfCode": "def calculate_meta_ori(folder_path,adata):\n    v = pd.read_csv(folder_path+\"merge_labels.csv\")\n    meta = adata.obs['celltype']\n    cell_type = []\n    cluster = []\n    for i in range(len(v)):\n        cell_type.append(meta.iloc[v['meta_label'][i]][0])\n        cluster.append(adata.obs['leiden'].iloc[v['meta_label'][i]][0])\n    v['celltype_meta']=cell_type\n    v['cluster']=cluster",
+        "detail": "lr.core",
+        "documentation": {}
+    },
+    {
+        "label": "alignment_process",
+        "kind": 2,
+        "importPath": "lr.core",
+        "description": "lr.core",
+        "peekOfCode": "def alignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col='celltype',contin=False,resolution=0.5,method='average',alignment=1,n_pca=50,mst1=False):\n    \"\"\"\n    Performs alignment of two datasets. \n    Parameters\n    ----------\n    cell_path1 : string\n        Path to the first dataset's cell data h5ad file \n    cell_path2 : string\n        Path to the second dataset's cell data h5ad file \n    folder_path1 : string",
+        "detail": "lr.core",
+        "documentation": {}
+    },
+    {
+        "label": "get_count_data",
+        "kind": 2,
+        "importPath": "lr.eval",
+        "description": "lr.eval",
+        "peekOfCode": "def get_count_data(adata,counts_location=None):\n    data = adata.layers[counts_location].copy() if counts_location else adata.X.copy()\n    if not isinstance(data, np.ndarray):\n        data= data.toarray()\n    data_df = pd.DataFrame(data,index=adata.obs_names,columns=adata.var_names).transpose()\n    return data_df\ndef check_paths(output_folder,output_prefix=None):\n    output_path = os.path.join(os.getcwd(), output_folder)\n    Path(output_path).mkdir(parents=True, exist_ok=True)\n    return output_path",
+        "detail": "lr.eval",
+        "documentation": {}
+    },
+    {
+        "label": "check_paths",
+        "kind": 2,
+        "importPath": "lr.eval",
+        "description": "lr.eval",
+        "peekOfCode": "def check_paths(output_folder,output_prefix=None):\n    output_path = os.path.join(os.getcwd(), output_folder)\n    Path(output_path).mkdir(parents=True, exist_ok=True)\n    return output_path\ndef remove_batch_effect(pseudo_bulk, bulk_adata, out_dir, project='',batch_effect=True):\n    \"\"\"\n    Remove batch effect between pseudo_bulk and input bulk data.\n    Parameters\n    ----------\n    pseudo_bulk : anndata.AnnData",
+        "detail": "lr.eval",
+        "documentation": {}
+    },
+    {
+        "label": "remove_batch_effect",
+        "kind": 2,
+        "importPath": "lr.eval",
+        "description": "lr.eval",
+        "peekOfCode": "def remove_batch_effect(pseudo_bulk, bulk_adata, out_dir, project='',batch_effect=True):\n    \"\"\"\n    Remove batch effect between pseudo_bulk and input bulk data.\n    Parameters\n    ----------\n    pseudo_bulk : anndata.AnnData\n        An :class:`~anndata.AnnData` containing the pseudo expression.\n    bulk_adata : anndata.AnnData\n        An :class:`~anndata.AnnData` containing the input expression.\n    out_dir : string, optional",
+        "detail": "lr.eval",
+        "documentation": {}
+    },
+    {
+        "label": "get_atc",
+        "kind": 2,
+        "importPath": "lr.eval",
+        "description": "lr.eval",
+        "peekOfCode": "def get_atc(ans,nodes1,adata1,adata2,inter_gene):\n    anslist_dist = dict(ans)\n    anslist_dist.keys()\n    def search_lineage(now,path,anss):\n        path.append(now.name)\n        if(now.son==[]):\n            anss.append(path);\n            return\n        for i in now.son:\n            search_lineage(i,path.copy(),anss);",
+        "detail": "lr.eval",
+        "documentation": {}
+    },
+    {
+        "label": "chord_graph",
+        "kind": 2,
+        "importPath": "lr.eval",
+        "description": "lr.eval",
+        "peekOfCode": "def chord_graph(ans,nodes1,nodes2):\n    def cost(i,j):\n        df = pd.DataFrame(\n            {\"A\": i.value, \"B\":j.value})\n        mincost = df.corr(method=\"spearman\").iloc[0, 1] +1\n        return mincost/2\n    l1=[]\n    l2=[]\n    l3=[]\n    for i,j in ans:",
+        "detail": "lr.eval",
+        "documentation": {}
+    },
+    {
+        "label": "show_3d",
+        "kind": 2,
+        "importPath": "lr.eval",
+        "description": "lr.eval",
+        "peekOfCode": "def show_3d(ans,nodes1,nodes2):\n    t=show_graph(ans,nodes1[0],nodes2[0]);\n    s = 13\n    # Helix equation\n    x, y, z =t.pos_x,t.pos_y,[0 for i in t.pos_x]\n    names = [i+' '+j for i,j in zip(t.labels,t.hover_text)]\n    x=np.array(x)\n    y=np.array(y)\n    layout = go.Layout(\n        scene=dict(",
+        "detail": "lr.eval",
+        "documentation": {}
+    },
+    {
+        "label": "show_2d",
+        "kind": 2,
+        "importPath": "lr.eval",
+        "description": "lr.eval",
+        "peekOfCode": "def show_2d(ans,nodes1,nodes2):\n    show_graph(ans,nodes1[0],nodes2[0],color=['#184e77','#1a759f','#168aad',\"#34a0a4\",'#52b69a','#99d98c','#76c893','#99d98c']).show_fig()",
+        "detail": "lr.eval",
+        "documentation": {}
+    },
+    {
+        "label": "add_meta",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def add_meta(now,meta_list,merge):\n    if(int(now.name)<len(meta_list)):\n        now.name= now.name +'_'+ meta_list[int(now.name)];\n    merge.append(now)\n    for i in now.son:\n        add_meta(i,meta_list,merge)\ndef remove_meta(now):\n    if(len(now.name.split('_')) >1):\n        now.name = now.name.split('_')[0]\n    for i in now.son:",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "remove_meta",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def remove_meta(now):\n    if(len(now.name.split('_')) >1):\n        now.name = now.name.split('_')[0]\n    for i in now.son:\n        remove_meta(i)\ndef save_graph(embeddings,tree,y_true,save):\n    colors = get_colors(y_true, 1234)\n    fig = plt.figure(figsize=(15, 15))\n    ax = fig.add_subplot(111)\n    circle = plt.Circle((0, 0), 1.0, color='r', alpha=0.1)",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "save_graph",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def save_graph(embeddings,tree,y_true,save):\n    colors = get_colors(y_true, 1234)\n    fig = plt.figure(figsize=(15, 15))\n    ax = fig.add_subplot(111)\n    circle = plt.Circle((0, 0), 1.0, color='r', alpha=0.1)\n    ax.add_artist(circle)\n    ax.scatter(embeddings[:n, 0], embeddings[:n, 1], c=colors, s=50, alpha=0.6)\n    ax.scatter(embeddings[n:,0],embeddings[n:,1],color ='black',s=20,alpha=0.6)\n    for n1, n2 in tree.edges():\n        x1 = embeddings[n1]",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "mobius_add",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def mobius_add(x, y):\n    \"\"\"Mobius addition in numpy.\"\"\"\n    xy = np.sum(x * y, 1, keepdims=True)\n    x2 = np.sum(x * x, 1, keepdims=True)\n    y2 = np.sum(y * y, 1, keepdims=True)\n    num = (1 + 2 * xy + y2) * x + (1 - x2) * y\n    den = 1 + 2 * xy + x2 * y2\n    return num / den\ndef mobius_mul(x, t):\n    \"\"\"Mobius multiplication in numpy.\"\"\"",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "mobius_mul",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def mobius_mul(x, t):\n    \"\"\"Mobius multiplication in numpy.\"\"\"\n    normx = np.sqrt(np.sum(x * x, 1, keepdims=True))\n    return np.tanh(t * np.arctanh(normx)) * x / normx\ndef geodesic_fn(x, y, nb_points=100):\n    \"\"\"Get coordinates of points on the geodesic between x and y.\"\"\"\n    t = np.linspace(0, 1, nb_points)\n    x_rep = np.repeat(x.reshape((1, -1)), len(t), 0)\n    y_rep = np.repeat(y.reshape((1, -1)), len(t), 0)\n    t1 = mobius_add(-x_rep, y_rep)",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "geodesic_fn",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def geodesic_fn(x, y, nb_points=100):\n    \"\"\"Get coordinates of points on the geodesic between x and y.\"\"\"\n    t = np.linspace(0, 1, nb_points)\n    x_rep = np.repeat(x.reshape((1, -1)), len(t), 0)\n    y_rep = np.repeat(y.reshape((1, -1)), len(t), 0)\n    t1 = mobius_add(-x_rep, y_rep)\n    t2 = mobius_mul(t1, t.reshape((-1, 1)))\n    return mobius_add(x_rep, t2)\ndef plot_geodesic(x, y, ax):\n    \"\"\"Plots geodesic between x and y.\"\"\"",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "plot_geodesic",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def plot_geodesic(x, y, ax):\n    \"\"\"Plots geodesic between x and y.\"\"\"\n    points = geodesic_fn(x, y)\n    ax.plot(points[:, 0], points[:, 1], color='black', linewidth=1.5, alpha=1)\ndef hyp_lca_numpy(x, y):\n    \"\"\"\n    Computes the hyperbolic LCA in numpy.\n    \"\"\"\n    x = torch.from_numpy(x).view((1, 2))\n    y = torch.from_numpy(y).view((1, 2))",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "hyp_lca_numpy",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def hyp_lca_numpy(x, y):\n    \"\"\"\n    Computes the hyperbolic LCA in numpy.\n    \"\"\"\n    x = torch.from_numpy(x).view((1, 2))\n    y = torch.from_numpy(y).view((1, 2))\n    lca = hyp_lca(x, y, return_coord=True)\n    return lca.view((2,)).numpy()\ndef is_leaf(tree, node):\n    \"\"\"",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "is_leaf",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def is_leaf(tree, node):\n    \"\"\"\n    Check if node is a leaf in tree.\n    \"\"\"\n    return len(list(tree.neighbors(node))) == 0\ndef complete_tree(tree, leaves_embeddings):\n    \"\"\"\n    Get embeddings of internal nodes from leaves' embeddings using LCA construction.\n    \"\"\"\n    def _complete_tree(embeddings, node):",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "complete_tree",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def complete_tree(tree, leaves_embeddings):\n    \"\"\"\n    Get embeddings of internal nodes from leaves' embeddings using LCA construction.\n    \"\"\"\n    def _complete_tree(embeddings, node):\n        children = list(tree.neighbors(node))\n        if len(children) == 2:\n            left_c, right_c = children\n            left_leaf = is_leaf(tree, left_c)\n            right_leaf = is_leaf(tree, right_c)",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def train(model,dataloader,optimizer,similarities,epoches):\n    \"\"\"\n    Train the embedding model\n    \"\"\"\n    best_cost = np.inf\n    best_model = None\n    counter = 0\n    for epoch in range(epoches):\n        model.train()\n        total_loss = 0.0",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "train2",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def train2(model,dataloader1,optimizer,epoches):\n    \"\"\"\n    Train the rotation model\n    \"\"\"\n    best_cost = np.inf\n    best_model = None\n    counter = 0\n    for epoch in range(epoches):\n        model.train()\n        total_loss1 = 0.0",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "train3",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def train3(model,dataloader1,dataloader2,optimizer,epoches):\n    \"\"\"\n    Train the rotation model\n    \"\"\"\n    best_cost = np.inf\n    best_model = None\n    counter = 0\n    for epoch in range(epoches):\n        model.train()\n        total_loss1 = 0.0",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "sl_np_mst_ij",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def sl_np_mst_ij(xs, S):\n    \"\"\"\n    Return the ij to merge the unionfind\n    \"\"\"\n    xs = project(xs).detach()\n    xs0 = xs[None, :, :]\n    xs1 = xs[:, None, :]\n    sim_mat = S(xs0, xs1)  # (n, n)\n    similarities = sim_mat.numpy()\n    n = similarities.shape[0]",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "get_colors",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def get_colors(y, color_seed=1234):\n    \"\"\"\n    Random color assignment for label classes.\n    \"\"\"\n    np.random.seed(color_seed)\n    colors = {}\n    for k in np.unique(y):\n        r = np.random.random()\n        b = np.random.random()\n        g = np.random.random()",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "search_merge_tree",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def search_merge_tree(now,ids,save_path,values,fathers,xys):\n    \"\"\"\n    Search the tree and save the information\n    \"\"\"\n    fathers.append(ids);\n    values.append(now.name);\n    xys.append(now.value);\n    now_id = len(values)-1;\n    for son in now.son:\n        search_merge_tree(son,now_id,save_path,values,fathers,xys)",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "deep_search_tree",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def deep_search_tree(now,depth,path,f):\n    \"\"\"\n    Search the tree and calculate the information\n    \"\"\"\n    now.f=f\n    now.depth=depth;\n    path.append(now);\n    now.path=path.copy();\n    if(f!=now):\n        now.distance_to_root = f.distance_to_root + hyp_dist(f.value,now.value)",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "merge_points",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def merge_points(similarities,root,nodes,embeddings,epoches,c1,c2,n):\n    root,_ = search_tree(root,c1,c2,n)\n    print(_)\n    if(_ == True):\n        return torch.tensor(embeddings),root,_\n    nodes_merge = [];\n    add_meta(root,[],nodes_merge)\n    for i in nodes_merge:\n        if(int(i)<n):\n            i.subson = [int(i)]",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "rotate",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def rotate(nodes,embeddings,epoches,n,similarities):\n    deep_search_tree(nodes[-1],0,[],nodes[-1])\n    result1 = []\n    result2 = []\n    distances = []\n    for i in nodes:\n        if(int(i)>=n):\n            if(int(i.son[0]) <n and int(i.son[1])<n ):\n                for i1,j1 in itertools.combinations(i.subson,2):\n                    for j in i.rest(n):",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "merge_points_with_c",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def merge_points_with_c(embeddings,nodes,data_path,start,end,label,folder_path,epoches,c1,c2):\n    # np.random.seed(1234)\n    # torch.manual_seed(1234)\n    x, y_true, similarities = load_data(data_path,start,end,label)\n    n=len(x)\n    root = nodes[-1];\n    _ = False\n    while(_ == False):\n        temp,root,_ = merge_points(similarities,root,nodes,embeddings,epoches,c1,c2,n)\n        for i in nodes:",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "multi_train",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def multi_train(times,dataset,dataloader,learning_rate,similarities,epoches1):\n    best_cost = np.inf;\n    best_model = None;\n    for i in range(times):\n        model = HypHC(dataset.n_nodes, 2, 5e-2, 5e-2 ,0.999)\n        model.to(\"cpu\")\n        Optimizer = getattr(optim, 'RAdam')\n        optimizer = Optimizer(model.parameters(),learning_rate)\n        cost= train(model,dataloader,optimizer,similarities,epoches1);\n        if(cost<best_cost):",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "get_Hyper_tree",
+        "kind": 2,
+        "importPath": "lr.hyper",
+        "description": "lr.hyper",
+        "peekOfCode": "def get_Hyper_tree(data_path,start,end,label,epoches1,epoches2,meta_list,model_path=None,save_path='./',learning_rate =0.0005, mst1 = False,multi = 10):\n    \"\"\"\n    Embedding the dataset into hyperbolic tree structure\n    Parameters\n    ----------\n    data_path : string\n        Path of the cluster center file\n    start : int\n        Index of the starting in the data file\n    end : int",
+        "detail": "lr.hyper",
+        "documentation": {}
+    },
+    {
+        "label": "str2bool",
+        "kind": 2,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "def str2bool(v):\n    if isinstance(v, bool):\n        return v\n    if v.lower() in ('yes', 'true', 't', 'y', '1'):\n        return True\n    elif v.lower() in ('no', 'false', 'f', 'n', '0'):\n        return False\n    else:\n        raise argparse.ArgumentTypeError('Boolean value expected.')\nwarnings.filterwarnings(\"ignore\")",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument('--cell_path1','-cp1', type=str)\nparser.add_argument('--folder_path1','-f1', type=str)\nparser.add_argument('--radius1','-r1', type=float,default=15)\nparser.add_argument('--capacity1','-c1', type=float,default=0.1)\nparser.add_argument('--epoches1','-e1', type=int,default=10)\nparser.add_argument('--cell_path2','-cp2', type=str)\nparser.add_argument('--folder_path2','-f2', type=str)\nparser.add_argument('--radius2','-r2', type=float,default=15)\nparser.add_argument('--capacity2','-c2', type=float,default=0.1)",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "args = parser.parse_args()\nif(args.cell_path1 ==None):\n    print(\"Please input the h5 file path for data 1\")\n    exit()\nif(args.cell_path2 ==None):\n    print(\"Please input the h5 file paht for data 2\")\n    exit()\nif(os.path.exists(args.cell_path1)==False):\n    print(\"Input correct path for data 1\")\nif(os.path.exists(args.cell_path2)==False):",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "cell_path1",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "cell_path1 = args.cell_path1\ncell_path2= args.cell_path2\nfolder_path1 = args.folder_path1\nfolder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "folder_path1",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "folder_path1 = args.folder_path1\nfolder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "folder_path2",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "folder_path2 = args.folder_path2\nradius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "radius1",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "radius1 = args.radius1\nradius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "radius2",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "radius2 = args.radius2\nc1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "c1",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "c1 = args.capacity1\nc2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "c2",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "c2 = args.capacity2\nepoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "epoches1",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "epoches1 = args.epoches1\nepoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "epoches2",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "epoches2 = args.epoches2\ncontin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "contin",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "contin = str2bool(args.contin)\nmethod = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "method",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "method = args.method\nalignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "alignment",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "alignment = args.alignment\nresolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "resolution",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "resolution = args.resolution\nn_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "n_pca",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "n_pca = args.n_pca\nmeta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "lr.run_sc",
+        "documentation": {}
+    },
+    {
+        "label": "meta_col",
+        "kind": 5,
+        "importPath": "lr.run_sc",
+        "description": "lr.run_sc",
+        "peekOfCode": "meta_col = args.meta_col\nalignment_process(cell_path1,cell_path2,folder_path1,folder_path2,radius1,radius2,c1,c2,epoches1,epoches2,meta_col=meta_col,contin=contin,resolution=resolution,method=method,alignment=alignment,n_pca=n_pca)\n# python run_sc.py -cp1 './datas/120/1/sample1_small.h5' -f1 \"./datas/120/1/\" -r1 52.48461374600768 -c1 0.1 -e1 10 -cp2 './datas/120/2/sample1_small.h5' -f2 \"./datas/120/2/\" -r2 52.43896907992145 -c2 0.1 -e2 10 --contin True --alignment 1 --resolution 1 --n_pca 100",
+        "detail": "lr.run_sc",
         "documentation": {}
     },
     {

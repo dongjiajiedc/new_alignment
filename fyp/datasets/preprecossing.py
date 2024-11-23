@@ -38,40 +38,48 @@ def calculate_cluster_centroid_for_genes(
         X_dimension='X_pca',
     ):
     filtered_data = adata[:, gene_list]
-    # filtered_data.to_df().to_csv(save_path+"data_cell.csv");
-    # adata.obs.to_csv(save_path+"data_type.csv")
-    if(X_dimension=='X_pca'):
-        cluster_centroid_data = np.empty((0, adata.obsm[X_dimension].shape[1]))
-    else:
-        cluster_centroid_data = np.empty((0, filtered_data.n_vars))
+    cluster_centroid_data = np.empty((0, filtered_data.n_vars))
     clustername = filtered_data.obs[groupby].unique().tolist()
-
     for i in clustername:
-        if(X_dimension=='X_pca'):
-            a_cluster_data = pd.DataFrame(filtered_data[filtered_data.obs[groupby] == "{}".format(i)].obsm[X_dimension])
-        else:
-            a_cluster_data = filtered_data[filtered_data.obs[groupby] == "{}".format(i)].to_df()
-
+        a_cluster_data = filtered_data[filtered_data.obs[groupby] == "{}".format(i)].to_df()
         a_cluster_median = a_cluster_data.mean(axis=0).values
         cluster_centroid_data = np.vstack(
             (cluster_centroid_data, a_cluster_median)
         )
     clustername = list(map(int, clustername))
-    if(X_dimension == 'X_pca'):
-        cluster_centroid = pd.DataFrame(
-            cluster_centroid_data,
-            index=clustername,
-        ).sort_index()
-    else:
-        cluster_centroid = pd.DataFrame(
-            cluster_centroid_data,
-            index=clustername,
-            columns=filtered_data.var_names
-        ).sort_index()
-    cluster_centroid.to_csv(save_path+"datas.data",header=None);
+    cluster_centroid = pd.DataFrame(
+        cluster_centroid_data,
+        index=clustername,
+        columns=filtered_data.var_names
+    ).sort_index()
+    # print(save_path+"datas.csv")
     cluster_centroid.to_csv(save_path+"datas.csv");
+    
+    
+    if(X_dimension!='X_pca'):
+        cluster_centroid.to_csv(save_path+"datas.data",header=None);
+    else:
+        cluster_centroid_data = np.empty((0, adata.obsm[X_dimension].shape[1]))
+        clustername = filtered_data.obs[groupby].unique().tolist()
 
+        for i in clustername:
+            a_cluster_data = pd.DataFrame(filtered_data[filtered_data.obs[groupby] == "{}".format(i)].obsm[X_dimension])
+
+            a_cluster_median = a_cluster_data.mean(axis=0).values
+            cluster_centroid_data = np.vstack(
+                (cluster_centroid_data, a_cluster_median)
+            )
+            
+        clustername = list(map(int, clustername))
+        cluster_centroid = pd.DataFrame(
+            cluster_centroid_data,
+            index=clustername,
+        ).sort_index()
+
+        cluster_centroid.to_csv(save_path+"datas.data",header=None);
+    
     return cluster_centroid
+
 
 def sort_data(
     adata1,
